@@ -70,3 +70,31 @@ When assembling context for task agents or new sessions, consider:
 5. **Entity Prompt** — agent identity and role
 
 See `~/cool/klatch/docs/PROMPTASSEMBLY.md` for the full model.
+
+## Sensitive Data Policies
+
+### Granola Meeting Transcripts
+
+Granola captures meeting transcripts that may contain sensitive content: VA/OCTO work discussions, team dynamics, personnel matters, client conversations, and proprietary information.
+
+**Rules:**
+1. **Read-only, human-initiated only.** No agent autonomously queries Granola. Xian must explicitly request a Granola lookup.
+2. **Content stays in its project context.** VA meeting content stays in VA. Piper meeting content stays in Piper. No cross-pollination of raw meeting transcripts.
+3. **No verbatim extraction to shared repos.** Summaries and action items are fine; raw transcript excerpts should not be committed to git or shared across projects.
+4. **Archie has Granola access** but must follow these rules. If Archie's morning briefing pulls Granola action items, it should summarize, not quote.
+
+### VA Content Boundaries
+
+VA work is done under contract (Kind Systems → A6 → OCTO). VA-specific content should not appear in:
+- Public repositories
+- Cross-project intelligence briefs (the daily sweep should not index VA repos)
+- Shared knowledge stores outside the VA folder and VA-specific Cowork sessions
+
+VA content CAN appear in:
+- `~/cool/VA/` (xian's local VA folder)
+- Archie's Cowork session (session-local storage)
+- The VA Decision Reviews Claude Project knowledge base
+- `~/cool/dispatch/va-project-knowledge/` (local reference, gitignored if sensitive)
+- Private repositories that xian controls
+
+*Last updated: March 25, 2026*

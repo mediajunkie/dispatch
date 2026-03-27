@@ -301,3 +301,150 @@ Despite API outage costing coordination time, xian had a highly productive VA da
 8. ⬜ Piper Alpha Cowork project setup (top Piper priority)
 9. ⬜ Accounts consolidation planning
 10. Carried: RFA, agent activity CSV, daily intelligence service, five-layer template
+
+### Evening sweep (7:10 PM):
+- Archie: Granola policy signal delivered but no response yet (hasn't had a session since).
+- Archie finding: .projects/ folder is NOW EMPTY. All imported knowledge docs disappeared since Sunday. Possible destructive sync or session behavior change. All content safe in VA/dispatch/va-project-knowledge/ (backed up Sunday). Sync hypothesis may be moot — or this is evidence of a different kind of sync behavior.
+- Piper Morgan: Latest commit `dfa511bb` (Mar 24 session — omnibus, briefing refresh, TODO triage, Dispatch retro eval). Untracked files include Mar 22-23 cloud agent logs (exec, ppm, cxo, arch) and cross-pollination briefs from Klatch — these need committing.
+- Klatch: Dispatch report for Calliope pushed (a727ae7). MAXT Session 01 findings logged — Theseus tested against full 5-layer model, found subliminal injection issue + 8 findings total.
+- Designinproduct: Janus backfilled March 1-18 briefs, added brief archive page + hub pagination. 24 unified briefs now complete for March.
+- Dispatch repo: uncommitted changes — .gitignore, PROTOCOLS.md update (Granola/VA policies), plans/ folder (consolidation plan). Needs xian to commit+push.
+- Cross-pollination briefs: March 24 is latest in unified (dinp), March 25 in Klatch delivery. No March 25 brief in Piper yet — Janus may not have run today's sweep.
+- Accounts consolidation plan written and ready at ~/cool/dispatch/plans/
+- Granola policy signal sent to Archie, awaiting acknowledgment
+
+### Xian's pending agent check-ins (reported 2:14 PM):
+- VA: Working with Code agent + Chat assistant. Archie touched base but needs return visit + memo delivery
+- VA overdue: Capacity sheet (Wed cadence), TMS training
+- Piper: Weekly Ship posted. Next: Docs for logs/publishing, CXO for M1 UAT, CIO for Piper Alpha
+- Klatch: Calliope check-in, log cleanup, MAXT review, Mnemosyne messages overdue
+
+### End of day (11:17 PM):
+- VA work ran late — unusually critical time in the project. Xian feels caught up on VA.
+- Piper and Klatch neglected today (side projects, it happens).
+- Tomorrow should have more flexibility.
+- Archie re-import experiment queued for tomorrow (test if .projects/ repopulates)
+- Dispatch repo needs commit+push (gitignore, PROTOCOLS, plans/)
+- Archie Granola policy signal awaiting response
+
+### Day summary:
+Highly productive infrastructure day. Completed: Serena MCP fix, Klatch import report for Calliope, MCP/UTCP/A2A research, Feb+March cross-pollination digests, belt+suspenders consumption guide for all agent types, hooks+instructions doc, Granola/VA data policies, accounts consolidation plan (4 phases), dispatch GitHub repo created, Archie Granola policy signal, Docs housekeeping memo. Evening sweep revealed Archie's imported .projects/ folder emptied — all content safe in backup. VA day ran long but xian feels caught up on the critical project phase.
+
+### Updated task queue (end of day):
+1. ⬜ Phase 0 email consolidation checklist (tomorrow morning)
+2. ⬜ Archie re-import experiment + Granola policy confirmation
+3. ⬜ Radio Free Airlift Cowork project setup
+4. ⬜ Hook edits for Piper + Klatch (session-start scripts)
+5. ⬜ Archie project instructions update (Granola + cross-pollination + dispatch mount)
+6. ⬜ Piper Alpha Cowork project (carry forward — needs CIO sync)
+7. Carried: agent activity CSV, daily intelligence service, five-layer template, One Job
+8. Docs owes: HIGH-COMPLEXITY v3/v4 eval + untracked files commit
+
+---
+
+## 2026-03-26 (Thursday)
+
+**Duration**: Starting 7:26 AM
+**Focus**: Blog post, VA retro at 9 AM, make rounds on Piper/Klatch, flexible day
+
+### Morning briefing from xian (7:26 AM):
+- Post Building Piper Morgan blog entry to Medium (first task)
+- VA retro at 9:00 AM, few other meetings, mostly caught up
+- Flexible day after VA morning — good for making rounds
+- Piper: manual M1 testing needs focused afternoon time; routine tasks (logs, comms); CIO for Piper Alpha; distribute intelligence to Chat agents
+- Klatch: Calliope check-in, logging, Daedalus re MAXT findings, Mnemosyne messages overdue
+
+### Archie status:
+- No new signals since Granola policy signal (Mar 25). No morning briefing generated for Mar 26 (Archie may not have had a session yet today).
+- Granola policy signal still awaiting acknowledgment.
+
+### Task queue (from yesterday):
+1. ⬜ Phase 0 email consolidation checklist
+2. ⬜ Archie re-import experiment + Granola policy confirmation
+3. ⬜ Radio Free Airlift Cowork project setup
+4. ⬜ Hook edits for Piper + Klatch
+5. ⬜ Archie project instructions update
+6. Carried: Piper Alpha Cowork, agent activity CSV, daily intelligence service, five-layer template, One Job
+
+### What happened:
+- 7:36 AM: Accounts consolidation Phase 0 — discovered email changes NOT supported. Revised to full migration strategy.
+- 7:54 AM: Xian published "Ten Roles, One Day" blog post with ChatGPT juggler illustration.
+- 8:09 AM: All 3 data exports completed. Exports inspected — all 4 accounts cataloged (343+43+37+6 conversations).
+- 8:41 AM: designinproduct.com upgraded to Max. API key created. VA stays on kindsys Pro.
+- 9:00 AM: Xian in VA retro. Consolidation plan v2 written (migration-based, not email-based).
+- 12:16 PM: Phase 1 migration begins. "Dharma Bots" created on target account (hep cat transcript preserved).
+- 12:48 PM: Play Acting PM mined → CIO memo delivered with PA digest + file relevance table.
+- 1:05 PM: Music materials extracted to ~/cool/layersofmeta/ (3 projects, 22 conversations).
+- 1:52 PM: One Job migration. Cross-comparison with repo shows Nov 2025 activity — repo is source of truth, not export.
+- 2:15 PM: Migration plan for One Job finalized. Xian in transit, will upload when home.
+
+### Phase 1 migration scorecard:
+- ✅ Dharma Bots (How to Use Claude) — migrated with transcript
+- ✅ Play Acting PM — mined, CIO memo sent, archived
+- ✅ Music materials — extracted to ~/cool/layersofmeta/
+- ✅ PM backup shell — archived (in ZIP)
+- 🔄 One Job — plan ready, awaiting xian file uploads from repo
+- ⬜ ZIP manifest created at dispatch/claude-project-downloads/MANIFEST.md
+
+### Billing intervention (4:27-5:56 PM):
+- 4:27 PM: Crispybacon Pro canceled (annual, access through June — use API credits)
+- 4:48 PM: Mediajunkie downgraded from Max to Pro (saves ~$40/month)
+- 4:48 PM: Designinproduct.com upgraded to 20x Max (new primary workhorse)
+- 5:00 PM: API key repointing begins — mapped all .env files and keychain entries
+- 5:10 PM: Claude Code re-authenticated to designinproduct.com account (global default)
+- 5:10 PM: Klatch .env updated with dinp API key
+- 5:42 PM: Keychain cleanup — deleted 2 stale alpha testing keys, created dedicated VA key
+- 5:52 PM: Piper Morgan keychain updated to dinp key
+- 5:56 PM: VA .env created with dedicated kindsys key + .gitignore updated
+- Xian leaving to pick up wife. Remaining: downgrade kindsys to Pro, faoilean laptop setup.
+
+### Billing status after intervention:
+| Account | Tier | Monthly | Role |
+|---------|------|---------|------|
+| designinproduct.com | 20x Max | ~$100 | Primary workhorse (NEW) |
+| kindsys.us | 5x Max → Pro (pending) | ~$60 → ~$20 | VA only |
+| mediajunkie.com | Pro (downgraded) | ~$20 | Until migration complete |
+| crispybacon | Pro (canceled, through June) | $0 | Burn remaining credits |
+
+### Rounds status (from xian, working while we did billing):
+- Piper: Met with some agents (details TBD when xian catches up)
+- Klatch: Met with some agents (details TBD)
+- VA: Admin backlog still pending but no deadline pressure
+
+### Resume when xian returns:
+1. Downgrade kindsys to Pro
+2. faoilean laptop: claude logout/login with dinp
+3. Catch up on rounds
+4. Token dashboard/alerts design session
+
+### End of day (evening):
+- Kindsys downgraded to Pro (pending period end)
+- Genius lyrics experiment started — navigated to genius.com, found Layers of Meta artist page (4 songs, verified artist), viewed "All I Know" entry as reference, opened second tab for layersofmeta.com. Paused for other priorities.
+- Xian did Klatch work late evening, too tired for Piper.
+- Hit token limit overnight — likely from account changes and heavy Dispatch/Cowork usage.
+
+### Day summary:
+Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, music archived, One Job migrated). Billing restructured: dinp upgraded to 20x Max (new primary), mediajunkie downgraded to Pro, crispybacon canceled, API keys repointed across repos. CIO memo with PAPM digest delivered. Genius lyrics experiment started but paused. Token limits hit — billing controls needed.
+
+---
+
+## 2026-03-27 (Friday)
+
+**Duration**: Starting 7:41 AM
+**Focus**: Migration completion (urgent), billing controls, Dispatch migration planning, troubleshooting broken sessions
+
+### Morning briefing from xian (7:41 AM):
+**Priority 1 — URGENT**: Fix faoilean laptop (claude logout/login with dinp) — blocking Klatch Code sessions
+**Priority 2**: Set hard spending limits on all accounts — stop overage charges ($10-30/week)
+**Priority 3**: Push migration aggressively — exports aging, don't want extended transition
+**Priority 4**: Plan and execute Dispatch migration from kindsys to dinp account
+**Priority 5**: Dashboard/tracker planning discussion
+
+**Additional context:**
+- Some Claude Code sessions broken from API key changes, need troubleshooting
+- Some long-running Code chats may need fresh sessions with context handoff
+- Klatch work done last night, Piper deferred
+- This morning: Docs (delivering mail), then CXO (M1 testing), CIO (PA + intelligence)
+- VA: Light day (remote standup), Chat tracking deadlines (SC product guide screenshots, TMS training, capacity tracker, GitHub migration on GFE)
+
+### What happened:

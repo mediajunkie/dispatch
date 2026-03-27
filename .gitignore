@@ -1,0 +1,17 @@
+# Claude local settings
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary/working files
+*.tmp
+*.swp
+*~
+
+# Sensitive content that should stay local
+# (uncomment if needed)
+# va-project-knowledge/files/
+claude-project-downloads/*.zip
+claude-project-downloads/*/conversations.json
