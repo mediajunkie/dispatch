@@ -1,0 +1,118 @@
+# Release Runbook
+
+How to ship a new version of Klatch.
+
+## Prerequisites
+
+- All tests passing (`npm test`)
+- All work merged to `main`
+- `main` is demo-ready (branch discipline)
+
+## Steps
+
+### 1. Decide the version
+
+Klatch versions map to roadmap steps:
+
+| Version | Step | Dimension |
+|---------|------|-----------|
+| 0.3.0 | Steps 1-3 | Foundation |
+| 0.4.0 | Step 4 | Agency |
+| 0.5.0 | Step 5 | Role definition |
+| 0.6.0 | Step 6 | Conversation structure |
+| 0.7.0 | Step 7 | Orchestration |
+| 0.8.0 | Step 8 Phase 1 | Data consolidation: Claude Code import |
+| 0.8.1 | Step 8 Phase 1 | Bug fixes |
+| 0.8.2 | Step 8 complete | Import & unify: claude.ai import, fork continuity, metadata |
+| 0.8.5 | Step 8¾ | Import refinements: project context, kit briefing, session browser |
+| 0.8.6 | Step 8 polish | Sidebar redesign, prompt architecture, project settings |
+
+Minor versions (0.5.5, 0.5.6) are used for significant sub-step work.
+
+### 2. Update CHANGELOG.md
+
+Add a new section at the top of `CHANGELOG.md` following the existing format:
+
+```
+## [X.Y.Z] — YYYY-MM-DD
+
+### Step N: Title
+
+Brief description of what this release enables.
+
+### Added
+- Feature bullet points
+
+### Changed
+- Changed behavior
+
+### Fixed
+- Bug fixes
+
+### Technical
+- Infrastructure / test / architecture changes
+```
+
+### 3. Update ROADMAP.md
+
+Move the completed step from "Next Steps" to "Completed" section.
+
+### 4. Update README.md
+
+- Update the version in the "What it does today (vX.Y.Z)" heading
+- Update the feature list to reflect new capabilities
+- Update the roadmap milestones list if steps were completed or added
+
+### 5. Commit the release docs
+
+```bash
+git add CHANGELOG.md docs/ROADMAP.md README.md
+git commit -m "Release vX.Y.Z: Step N — description"
+```
+
+### 6. Tag the release
+
+```bash
+git tag -a vX.Y.Z -m "vX.Y.Z: One-line summary"
+git push origin main
+git push origin vX.Y.Z
+```
+
+### 7. Create GitHub Release
+
+```bash
+gh release create vX.Y.Z \
+  --title "vX.Y.Z — Dimension: Step title" \
+  --notes-file /tmp/release-notes.md \
+  --latest
+```
+
+Release notes format (write to a temp file first to avoid shell escaping issues):
+- **What's new** — 1-2 sentence summary referencing the dimension
+- **Features** — user-facing bullet points
+- **Technical** — API/DB/architecture changes
+- **Quality** — test count, infrastructure improvements
+- **Full changelog** link: `https://github.com/Design-in-Product/klatch/compare/vPREV...vX.Y.Z`
+
+### 8. Update COORDINATION.md
+
+Update your section's status and "Last completed" to reference the release.
+
+### 9. Verify
+
+- [ ] `gh release list` shows the new release as Latest
+- [ ] `git tag -l` includes the new tag
+- [ ] CHANGELOG.md has the new entry
+- [ ] ROADMAP.md reflects the completed step
+- [ ] README.md version and feature list are current
+- [ ] Tests still passing after all commits
+
+## Title Convention
+
+Release titles follow: `vX.Y.Z — Dimension: Step title`
+
+Examples:
+- v0.4.0 — Agency: Conversation control
+- v0.5.0 — Role Definition: Channel identity
+- v0.6.0 — Conversation Structure: Multi-entity conversations
+- v0.7.0 — Orchestration: Interaction modes

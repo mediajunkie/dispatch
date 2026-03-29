@@ -1,0 +1,120 @@
+# 10 min read
+# Draft in
+# Growing Product People
+
+Confession: I was once a UX designer who went over to “the dark side” (why do I feel like a Sith revealing his Jedi training?). This is both a superpower for me and a blurred line that many leaders already find confusing. Where does product end and UX begin, or vice versa?
+
+Having been making internet things for a few decades now I’ve been given a lot of titles along the way: content strategist, information architect, strategist, interaction designer, UX designer, design manager, product director, and even technical program manager.
+
+What hasn’t changed is that I’ve always been deeply involved in figuring out what to build, why, and how. I’ve also witnessed the rise (and sometimes fall) of a parade of roles, disciplines, and identities all contributing to our understanding of how to make software for an internetworked world.
+
+It never hurts to bear in mind that the rise of UX, interaction design, design thinking, lean startup, jobs to be done, and (dare I say it) product people — just to choose a few at random — may also serve broader agendas beyond professional development and business theory, providing vehicles for consultants, individual practitioners, “thought leaders,” conferences, schools, certification programs, and so on.
+
+That is UI. This is UX.
+There’s a type of meme that just thrives on LinkedIn that compares two objects or two still lives side by side and labels one “UI” and the other “UX.”
+
+Sometimes they are helpful. Usually not.
+
+
+I’d love to get permission from Jose’ Torre, from his UI vs UX — is Not a Thing. If we can’t get it I will make up a facetious example of our own!
+As with so many things, there are four key insights about UI vs. UX:
+
+The term UX gained currency to make a distinction vs. UI. It says “we don’t just design the interface — that’s part of it but we are responsible for before, during after, what, how, and why as well.”
+
+In the realm of competing mindshare, the UX frame pushed traditional communications/graphics designers to the margins, in the UX-savvy “visual designer” subrole, or as illustrators or marketing / communications designers.
+
+Be aware of the technical distinction between the interaction on a single screen and the user journey but pick your battles when it comes to debating the terminology.
+
+Resist the urge to divide your design roles into crude “UI” and “UX” buckets. It’s OK to have designers who are more focused on crafting the interface and others who are more engaged in strategy, systems designs, multi-screen flows, and so on, but it’s all UX so this terminology is misleading and ultimately makes it hard to hire for and build a balanced team.
+
+About “UI/UX”
+Inevitably people who were both UX-aware and rooted in traditional design training and education would gravitate toward a role description that also suits the needs of many companies looking to meet all the user experience design needs with a single all-purpose, frictionless task-switching, 24/7 unicorn, “UI/UX designer.”
+
+Please don’t say “UIUX.” It sets my teeth on edge.
+
+Per insight 3 I don’t “correct” people who frame the work as “UI/UX” but I do tend to infer that these nuances might be lost on them, at least at this stage of things, and ultimately I am a descriptivist when it comes to language. It is what it is.
+
+You do need at least one information architect
+A somewhat overlooked discipline from the dawn of the web, information architecture (IA), provides a critical missing layer in a lot of software planning and development, what I call the “meaning layer.”
+
+In any complex system there is a picture of what you’re building needed that is not simply a catalog of screens and interactive states, nor is it a sitemap or flow diagram, nor is it a technical stack or a database schema. It sits amidst all of these artifacts and provides a coherent story and picture that explains what we are building for whom, why, and how.
+
+
+One of a number of great examples Christina Wodtke included in her Five Models for Making Sense of Complex Systems.
+
+This “meaning mapping” exercise can include up to everyone in the org, but is best facilitated and documented by an adept information architect. I recommend that all product managers study IA and learn to use the methods and skills of that practice to provide these maps of meaning that help guide successful projects.
+
+“UX design” or “product design”?
+I wouldn’t get hung up on titles, but there is a slight trend in some fields to frame the software design role as product design instead of UX design. This is never intended as an erasure of UX as far as I’ve seen, but it does somewhat take the need for user-centered design as baked in to the whole process already and so maybe less useful as a role distinction.
+
+I’ve seen product designers used in two primary senses:
+
+A “unicorn” (aka the Facebook model). A designers who might be able to or even have some time to do research and strategy who is also a talented interaction designer and visual designer and has time to do both of those jobs and a good prototyper and skilled at writing (at least) front-end code, and good at usability testing, and probably makes their own bitters for their bespoke cocktails, with or without alcohol.
+A user-centered designer who is holistically responsible for designing a software product as opposed to an industrial object or an amusement park ride or a billboard, has a product sensibility, thrives in a product org.
+It’s probably obvious I prefer the latter connotation but just make sure everyone’s on the same page if you start using that sort of terminology.
+
+Regardless of how you label the job reqs, design is an invaluable problem solving tradition with much to offer to the process of software development, and a laser-like focus on the UX provided across the board by your service is, at end, everybody’s business.
+
+How UX and Product can play well together
+UX and Product should be “superfriends” — allies with a shared understanding of the value of designing experiences to meet well understood customer needs. Product managers should refrain from dictating design solutions and designers should respect and be curious about the business and technical constraints shaping the eventual solution.
+
+UX practitioners are given a mandate to be idealistic about the user’s need and concerns. I call them the “tribunes of the people.” There is a common tendency among UX designers (and a lot of great software developers) to want to keep noodling, er sorry, “iterating,” on an idea in search of perfection, at the risk of diminishing return.
+
+Product managers (and, honestly, the best product designers) recognize the need for a bias to action, to push forward with sufficient consensus or a compelling hypothesis and start giving reality a vote in how the product evolves.
+
+Product and UX also need to partner very tightly on product discovery: the stage of understanding the problem space and the day-to-day habits and needs of the target customers. Product can’t just “leave it to the UX researchers” because product isn’t all grooming backlogs, closing sprints, and shipping code. To work together, product managers and UX strategists need to work through differences in their lingo, their point of view, and the burning questions they need to answer, and develop plans to share the time and attention of existing and future customers to make the most of it.
+
+Without tight alignment on the discovery process, there is a huge risk of wasted parallel effort.
+
+Should UX report to Product?
+Like so many UX-related questions, the answer to this one is: It depends. The answer tends to have more to do with the skillsets and experience of the leadership ranks of the company, as well as how far into design-lead strategy the company is willing to lean.
+
+A good product lead should be comfortable managing the UX team or working collegially with a UX lead peer.
+
+And, regardless, UX design savvy is table stakes for all product pros.
+
+The flywheel
+Most great products have a core value that most users are drawn to and that most new users experience as part of their exploration of the product (the so-called “first-time user experience”).
+
+The design of this first-time experience as a whole, along with features that may appear in an ongoing way all the way through to a user’s full “initiation” into the product’s capabilities, is generally referred to as “onboarding.”
+
+Until you’re sure you’ve nailed that core initial experience, focus on getting that right. Better to have one “A+ good” feature and everything else crappy than to ship an MVP with six C- features and two B+’s. Then, once you’ve achieved fit with that core value proposition, use design methods to craft a series of recurring experiences, including reminders and prompts that fit into the journey of your customer’s existing habits, and that building a whole system and ultimately an engine around that core “flywheel” experience.
+
+Everything else should lead back to giving customers reasons for returning to and repeating that foundational experience, or enhancing it, building off of it, and leveling it up.
+
+Startups do it backward
+One thing you may notice if you work in either startups or an entrepreneurial unit in a larger org is that bootstrapping something new sometimes means throwing the book out the window and doing whatever it takes to get from zero to something.
+
+For example, nonprofit project I joined as the pandemic started hitting was in a “cowboy coding” phase of trying to get a minimal set of features working, even if rough around the edges. I often refer to this level of functionality as “the plumbing.”
+
+Getting the plumbing right is necessary but not sufficient for an MVP.
+
+So at this point the team was laser-focused on shipping code. As you might imagine, the earliest software builds had some degree of functionality but very unappealing and hard to understand screens with undifferentiated buttons large all caps block labels and strangely distributed screen real estate.
+
+It wasn’t hard for some talented interaction designers to see many way to make these screens better, so now the project had code with screen designers chasing after the engineers giving them Figma mocks to adapt. So then along came more people skilled in user interface design, interaction design, and user research.
+
+
+The above screen was a first-draft design for the Safe Places toolkit for mapping and redacting GPS locations to assist with contact tracing. The below screen represents the result of several rounds of design iteration.
+Mostly the team just wanted what they called “screen testing” (QA, usability, and user-acceptance testing) of the screens in each build. This was another necessary, but not ultimately sufficient step. Like proofreading, usability testing is a great way to catch mistakes and fix them at the end of the process, but not helpful for anticipating and avoiding errors or for coming up with better ideas in general.
+
+So when I arrived the people to do “real UX research” were getting in line behind some dedicated and persistent volunteers who had gradually introduced more coherent interaction design and some appropriate design ops practices (as well as team management, and copy when needed — thanks for al that, Ali!).
+
+Product folks were at the very end of that line. Now of course, in the long run this is backwards. The “right way” to do all this is to start with product discover and UX research, do interaction design and iteration, testing, etc, and then groom user or job stories with engineer, build, test, and ultimately ship the features.
+
+In reality, each of these practices that naturally “wanted” to precede the others was playing catch-up. Product managers were writing specs to capture what had been built instead of the other way around. UX researchers were studying and de-risking assumptions that were already baked into the technical architecture and the codebase.
+
+Fortunately, at this point a strong product executive talent with deep UX and discovery experience, as well as passion for front-loading product “the right way” showed up on the scene, led the research project to understand how ordinary people felt about contact-tracing, privacy, trust, government, healthcare, surveillance, and so on.
+
+
+It didn’t say confidential anywhere and plus it’s an open-source project so sharing this screen out of contexts from a research deck should be cool, right?
+Sharing and presenting these findings to the working team and the steering leadership made a incredibly strong case for the value and necessity of this kind of work, and so this exec was recruited to take on leadership of the product team I had been kindling and to our great relief she said yes.
+
+Now we were cooking with gas.
+
+Key takeaways
+UX is a core product competency. Shipping a great product means designing (and developing and delivering) software that provides a great experience for customers
+Information architecture provides a set of essential tool for mapping the meaning layer of a product.
+User-centered design, UX design, and design in general provide a set of frameworks, viewpoints, and problem-solving tools well suited to software projects, but ultimately ensuring the delivery of a great user experience is everybody’s business, not just that of the designers.
+Whichever UX design specialties your designers excel in (research, interaction design, sketching and studio critique, prototyping, motion design, etc.) consider unifying them under a single banner and mission by dubbing them all product designers.
+UX and Product share a broad overlapping set of concerns and work best together when clear boundaries are negotiated when it comes to who makes which decisions.
+All great products provide a core flywheel experience that satisfies first-time users and forms the foundation of a potential ongoing user journey that returns to this flywheel and related experiences on the regular.

@@ -448,3 +448,119 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - VA: Light day (remote standup), Chat tracking deadlines (SC product guide screenshots, TMS training, capacity tracker, GitHub migration on GFE)
 
 ### What happened:
+- Morning: Xian fixed faoilean laptop auth (claude logout/login with dinp). Set hard spending limits on all accounts.
+- Dispatch-Kind session lost during migration. Dispatch-DinP session started at ~3:35 PM on designinproduct.com account.
+- 3:35 PM: Dispatch-DinP fully briefed (read all memory files, activity log, protocols, consolidation plan v2, Archie signals).
+- 3:37 PM: Priorities narrowed to: (1) finish migrations ASAP, (2) dashboard. Everything else waits.
+- Note: Code sessions need careful mapping — which chats migrated correctly vs still entangled with old accounts. Track as migrations proceed.
+- 5:00-5:30 PM: Phase 1 dormant archives completed — Saint Lucifer (25 docs) and Images for Music Videos (1 doc) extracted and stowed in layersofmeta/claude-project-archives/. Layers of Meta and Radio Free Airlift set up as Cowork projects.
+- 5:30-6:30 PM: Conversation-to-project matching analysis rebuilt from scratch (429 conversations across 4 exports). Predecessor Dispatch did this work but never saved it to a file. Saved to migration-staging/conversation-project-matching-analysis.md.
+- 6:18-7:00 PM: Xian reviewed all unmatched conversations in batches. All 429 conversations now resolved: 269 Piper Morgan, 28 VA, 16 Epistrophikon, 18 RFA, 9 Klatch, 5 One Job, 3 Rebel Alliance, 3 Layers of Meta, 2 Wedgestock, 1 Design in Product, 1 Dharma Bots, ~15 miscellaneous, ~60 deleted (under 5 msgs).
+- 7:00-8:00 PM: Extracted all conversation transcripts into per-project folders (migration-staging/transcripts/). 333 transcript files across 12 project folders. Also sent RFA knowledge doc (28K) to its Cowork session.
+- 8:00-10:30 PM: Built migration packages with MIGRATION-INSTRUCTIONS.md for each project (in migration-staging/ready/). Executed first 4 migrations with xian:
+  - ✅ Rebel Alliance — Chat Project created, 3 convos in knowledge, memory text used as instructions
+  - ✅ Voice & Tone — Chat Project created, 18 docs + 1 convo in knowledge, 900-char prompt set, initial chat oriented with handoff from predecessor
+  - ✅ Wedgestock — Chat Project created, 2 docs + 1 convo in knowledge. Noted: also needs Cowork space + Code chat migration (deferred to second pass)
+  - ⏳ Epistrophikon — package ready (41 docs + 16 convos) but not yet created by xian. NEXT UP.
+
+### Key decisions made:
+- Migration order: Rebel Alliance → Voice & Tone → Wedgestock → Epistrophikon → Design in Product → Klatch → Piper Morgan
+- For projects with reasonable conversation counts: add transcripts directly to Chat Project knowledge base
+- For Piper Morgan (269 convos, 26MB) and other large projects: set up Cowork project so legacy conversations live in a folder for historical/forensic access
+- Complete all Chat Project creations first, then circle back for Cowork/Code layers on Wedgestock, Design in Product, Klatch, Piper Morgan
+- Project memory can't be set directly — Claude creates memories organically. Use project instructions or initial conversation to seed context instead.
+- Conversations under 5 messages were deleted from consideration during triage (not during extraction — all matched convos extracted regardless of length)
+
+### Stopping point (10:33 PM):
+**Where we are**: 4 of 7 Chat Projects migrated. Epistrophikon package is ready, just needs xian to create the project and drag in 57 files.
+**What's next in order**:
+1. Epistrophikon — create Chat Project, upload 41 docs + 16 convos
+2. Design in Product — needs Chat or Cowork + Janus Code migration
+3. Klatch — complex, Code + Cowork + Chat disentangling
+4. Piper Morgan — biggest, full five-layer, Cowork for 269 conversation transcripts
+5. Second pass: Cowork/Code layers for Wedgestock, Design in Product, Klatch, Piper Morgan
+6. Write Dispatch-Kind revival prompt
+7. Dashboard/tracker design
+
+### Files created/updated this session:
+- `migration-staging/conversation-project-matching-analysis.md` — complete matching of all 429 conversations
+- `migration-staging/transcripts/` — 333 transcript files in 12 project subfolders
+- `migration-staging/ready/rebel-alliance/` — migration package (complete, migrated)
+- `migration-staging/ready/voice-and-tone/` — migration package (complete, migrated)
+- `migration-staging/ready/wedgestock/` — migration package (complete, migrated)
+- `migration-staging/ready/epistrophikon/` — migration package (ready, not yet migrated)
+- `migration-staging/rfa-website-hosting-strategy.md` — 28K knowledge doc sent to RFA Cowork session
+- `dispatch-activity-log.md` — this file, updated
+
+---
+
+## 2026-03-28 (Saturday)
+
+**Duration**: Morning through afternoon (session lost mid-day)
+**Focus**: Continuing account migrations, Piper Morgan knowledge audit, Dispatch session stability
+
+*Note: This entry reconstructed by successor Dispatch session from file evidence and xian's corrections. The Dispatch-DinP session that did this work was lost due to a SendUserMessage tool provisioning bug. Activity log not updated incrementally — lesson learned.*
+
+### What happened:
+
+**Migrations completed:**
+- ✅ Epistrophikon — Chat Project created and migrated (41 docs + 16 convos)
+- ✅ Design in Product — Chat Project migrated
+- ✅ Klatch — Chat Project migrated (60+ knowledge docs + 9 conversations staged in migration-staging/ready/klatch/)
+
+**Migration scorecard (cumulative):**
+- ✅ Rebel Alliance (Mar 27)
+- ✅ Voice & Tone (Mar 27)
+- ✅ Wedgestock (Mar 27)
+- ✅ Epistrophikon (Mar 28)
+- ✅ Design in Product (Mar 28)
+- ✅ Klatch (Mar 28)
+- 🔄 Piper Morgan — in progress (see below)
+- ⬜ Second pass: Cowork/Code layers for Wedgestock, DinP, Klatch, Piper Morgan
+
+**Piper Morgan migration — knowledge base audit:**
+- Knowledge base: 638 files, 6.32 MB
+- Phase 1-2: Deduplication resolved (~72 duplicates identified, safe to remove)
+- Phase 3: OTHER category triage — 200 files being reviewed in 8 batches
+  - Batches 1-5 of 8 complete (decisions documented in TRIAGE-DECISIONS-IN-PROGRESS.md)
+  - Batches 6-8 completed in background conversation with successor Dispatch session
+  - **TRIAGE COMPLETE**: ~105 KEEP, ~59 ARCHIVE, ~16 DELETE
+- Key decisions confirmed by xian:
+  - Archive omnibus logs older than 1 month (not 2 weeks as initially suggested)
+  - Delete code scripts from Chat knowledge (13 files, pre-Code era)
+  - Delete superseded role docs (PROGRAMMER.md, ARCHITECT.md → BRIEFING-ESSENTIAL-* files)
+  - Keep BRIEFING-ESSENTIAL-CIO.md (current, Mar 19)
+  - Archive all presentations except IAC
+  - Updated canonical-queries file uploaded by xian (March version replaces Dec 2025)
+
+**Dispatch session crisis:**
+- SendUserMessage tool not provisioned in new Dispatch session — messages invisible in Dispatch UI
+- Xian attempted fix: cleared local-agent-mode-sessions .json files — did not resolve
+- Conversation history lost when session was cleared
+- Backup ZIP partially corrupted
+- Predecessor session's accumulated context recovered from ~/cool/dispatch/ filesystem (handoff docs, memory files, activity log)
+- Memory system restored to .auto-memory from filesystem backup
+- Next fix to attempt: delete vm_bundles or claude-code-vm folder and relaunch Claude Desktop
+
+### Decisions:
+- Activity log must be updated incrementally after each step, not batched at end of session — prevents total loss on session crash
+- Filesystem-first documentation strategy validated again (this recovery was possible because predecessor sessions externalized everything)
+
+### Dispatch fix attempts:
+- vm_bundles/claude-code-vm deletion and relaunch — workspace re-downloaded but SendUserMessage still not provisioned
+- Conclusion: server-side provisioning issue, not fixable locally
+
+### Piper Morgan knowledge base extraction:
+- Applied all triage decisions programmatically from export JSON
+- Final KEEP set: 465 files (4,733 KB) written to migration-staging/ready/piper-morgan/knowledge-final/
+- Archive set: 93 files (870 KB) written to migration-staging/ready/piper-morgan/knowledge-archive/
+- Deleted: 80 files (595 KB) — not extracted
+- Manifest at knowledge-final/_MANIFEST.txt
+- Ready for xian to create Chat Project and drag in knowledge-final/ contents
+
+### Pending:
+- **Next**: Xian creates Piper Morgan Chat Project on designinproduct.com, uploads knowledge-final/ contents
+- **Then**: Second pass — Cowork/Code layers for Wedgestock, DinP, Klatch, Piper Morgan
+- **Then**: Write Dispatch-Kind revival prompt
+- **Deferred**: Dashboard/tracker design, agent activity CSV, daily intelligence service, five-layer template
+- **Note**: Xian pausing Dispatch usage after Piper migration until SendUserMessage bug is fixed by Anthropic

@@ -77,8 +77,8 @@
 | Project | Source Account | Target | Status |
 |---------|--------------|--------|--------|
 | Dharma Bots (How to Use Claude) | kindsys | designinproduct.com | ✅ Migrated |
-| Play Acting PM | kindsys | (mine for PA context) | ⬜ Pending |
-| PM backup shell | mediajunkie | (archive only) | ⬜ Archive |
-| Images for music videos | mediajunkie | (stow in layersofmeta) | ⬜ Pending |
-| Saint Lucifer Video | crispybacon | (stow in layersofmeta) | ⬜ Pending |
+| Play Acting PM | kindsys | (mine for PA context) | ✅ Mined, archived at dispatch/archives/papm/ |
+| PM backup shell | mediajunkie | (archive only) | ✅ Archived (in export ZIP) |
+| Images for music videos | mediajunkie | (stow in layersofmeta) | ✅ Stowed in layersofmeta/claude-project-archives/ |
+| Saint Lucifer Video | crispybacon | (stow in layersofmeta) | ✅ Stowed in layersofmeta/claude-project-archives/ |
 | All other projects | various | designinproduct.com | ⬜ Phase 2-3 |

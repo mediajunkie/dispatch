@@ -1,0 +1,482 @@
+# Website Hosting and Content Strategy
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Hosting Strategy Report</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 40vh;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .tab-active {
+            border-color: #3b82f6;
+            color: #3b82f6;
+            background-color: #eff6ff;
+        }
+        .arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9ca3af;
+        }
+        .arrow::after {
+            content: '→';
+            font-size: 2rem;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body class="bg-neutral-50 text-neutral-800">
+
+<!-- Chosen Palette: Warm Neutrals (bg-neutral-50, text-neutral-800, accent-blue-500) -->
+<!-- Application Structure Plan: The SPA is structured as a multi-section decision-making guide. It begins with a 'Current Portfolio' overview to frame the problem, followed by a task-oriented 'Recommendations' section with tabs for different site types (Legacy vs. Active Blogs). This separation is crucial because hosting needs for static archives and dynamic WP sites are fundamentally different. It then moves to a forward-looking 'Unlock Content Value' section to address the user's interest in RAG/SEO. An 'Interactive Cost Calculator' provides a tangible, personalized financial incentive. The flow concludes with actionable 'Next Steps'. This structure guides the user from understanding their current state to comparing specific solutions and quantifying the benefits, making a complex decision manageable and data-driven. -->
+<!-- Visualization & Content Choices: 
+- Current Portfolio: Report Info -> User's website categories. Goal -> Organize. Method -> HTML/CSS cards with icons. Interaction -> None. Justification -> Clear, at-a-glance summary of assets.
+- Recommendations (Legacy): Report Info -> Cheaper alternatives to Rackspace. Goal -> Compare. Method -> Chart.js Bar Chart for cost, HTML table for features. Interaction -> Tab selection. Justification -> Visual cost comparison is immediate; detailed table provides necessary depth. Library: Chart.js.
+- Recommendations (Blogs): Report Info -> WP Engine alternatives. Goal -> Compare. Method -> Chart.js Bar Chart and HTML table. Interaction -> Tab selection. Justification -> Same as above, tailored to WP hosting specifics. Library: Chart.js.
+- Unlock Content Value: Report Info -> RAG/SEO ideas for archives. Goal -> Organize/Inform. Method -> HTML/CSS flowchart diagram. Interaction -> None. Justification -> Visually explains a technical process more effectively than text alone.
+- Cost Calculator: Report Info -> Desire to reduce costs. Goal -> Inform/Compare. Method -> Chart.js Doughnut Chart. Interaction -> Sliders for current costs update chart and savings calculation in real-time. Justification -> Highly engaging, makes the financial benefits concrete and personal. Library: Chart.js.
+-->
+<!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+
+<div id="app" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+    <header class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-bold text-neutral-900 tracking-tight">Website Hosting Strategy Re-evaluation</h1>
+        <p class="mt-4 text-lg text-neutral-600 max-w-3xl mx-auto">An interactive guide to analyzing your current setup, exploring cost-effective alternatives, and unlocking the potential of your content archives.</p>
+    </header>
+
+    <nav class="sticky top-0 z-10 bg-neutral-50/80 backdrop-blur-md border-b border-neutral-200 mb-12">
+        <div class="flex justify-center items-center space-x-4 sm:space-x-8 py-3 text-sm sm:text-base font-medium">
+            <a href="#portfolio" class="text-neutral-600 hover:text-blue-600 transition-colors">Portfolio</a>
+            <a href="#recommendations" class="text-neutral-600 hover:text-blue-600 transition-colors">Recommendations</a>
+            <a href="#value" class="text-neutral-600 hover:text-blue-600 transition-colors">Unlock Value</a>
+            <a href="#calculator" class="text-neutral-600 hover:text-blue-600 transition-colors">Cost Calculator</a>
+            <a href="#next-steps" class="text-neutral-600 hover:text-blue-600 transition-colors">Next Steps</a>
+        </div>
+    </nav>
+
+    <main class="space-y-20">
+        
+        <section id="portfolio" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold text-center mb-2 text-neutral-900">Current Portfolio Overview</h2>
+            <p class="text-center text-neutral-600 mb-10 max-w-2xl mx-auto">Your digital assets fall into three main categories, each with distinct hosting requirements and opportunities for optimization.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-neutral-200 text-center">
+                    <div class="text-4xl mb-4">🗄️</div>
+                    <h3 class="text-xl font-semibold mb-2">Legacy Archive Sites</h3>
+                    <p class="text-neutral-600">Hosted on Rackspace (e.g., ezone.org). Characterized by low human traffic, static or semi-static content, and high potential value in the data.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-neutral-200 text-center">
+                    <div class="text-4xl mb-4">✒️</div>
+                    <h3 class="text-xl font-semibold mb-2">Active WordPress Blogs</h3>
+                    <p class="text-neutral-600">Hosted on WP Engine (e.g., mediajunkie.com). Dynamic sites requiring specific PHP/MySQL environments, focused on performance and reliability.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-neutral-200 text-center">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="text-xl font-semibold mb-2">Modern Static Sites</h3>
+                    <p class="text-neutral-600">Hosted on GitHub Pages/Netlify. Built with modern workflows (e.g., Jekyll). Represents the most cost-effective and low-maintenance model.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="recommendations" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold text-center mb-2 text-neutral-900">Hosting Recommendations</h2>
+            <p class="text-center text-neutral-600 mb-10 max-w-2xl mx-auto">Let's break down the optimal strategies for your different site types. Use the tabs below to explore tailored recommendations and compare potential solutions against your current setup.</p>
+            
+            <div class="flex justify-center border-b border-neutral-200 mb-8">
+                <button id="tab-legacy" class="tab-button tab-active px-6 py-3 font-medium border-b-2">For Legacy/Archive Sites</button>
+                <button id="tab-blogs" class="tab-button px-6 py-3 font-medium border-b-2 border-transparent text-neutral-500">For Active Blogs</button>
+            </div>
+
+            <div id="content-legacy">
+                 <div class="text-center mb-8">
+                    <h3 class="text-2xl font-semibold">Replacing Rackspace for Archives</h3>
+                    <p class="text-neutral-600 max-w-3xl mx-auto mt-2">For sites with low traffic, the key is minimizing recurring costs while ensuring preservation and accessibility. Static hosting is the most significant cost-saving opportunity.</p>
+                </div>
+                <div class="chart-container mb-10">
+                    <canvas id="legacyCostChart"></canvas>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-neutral-100">
+                                <th class="p-4 font-semibold">Feature</th>
+                                <th class="p-4 font-semibold text-center">Static Hosting (e.g., Cloudflare Pages, Netlify)</th>
+                                <th class="p-4 font-semibold text-center">Object Storage (e.g., AWS S3, Backblaze B2)</th>
+                                <th class="p-4 font-semibold text-center">Low-Cost VPS (e.g., DigitalOcean, Linode)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white">
+                            <tr class="border-b border-neutral-200">
+                                <td class="p-4">Est. Monthly Cost</td>
+                                <td class="p-4 text-center text-green-600 font-semibold">$0 - $5</td>
+                                <td class="p-4 text-center text-green-600 font-semibold">$1 - $10</td>
+                                <td class="p-4 text-center text-orange-600 font-semibold">$6 - $20</td>
+                            </tr>
+                            <tr class="border-b border-neutral-200">
+                                <td class="p-4">Maintenance Effort</td>
+                                <td class="p-4 text-center">Very Low</td>
+                                <td class="p-4 text-center">Low</td>
+                                <td class="p-4 text-center">Medium</td>
+                            </tr>
+                            <tr class="border-b border-neutral-200">
+                                <td class="p-4">Performance</td>
+                                <td class="p-4 text-center">Excellent (CDN)</td>
+                                <td class="p-4 text-center">Good</td>
+                                <td class="p-4 text-center">Variable</td>
+                            </tr>
+                             <tr class="border-b border-neutral-200">
+                                <td class="p-4">Supports Dynamic Code</td>
+                                <td class="p-4 text-center">✖️ (Serverless only)</td>
+                                <td class="p-4 text-center">✖️</td>
+                                <td class="p-4 text-center">✔️</td>
+                            </tr>
+                            <tr class="border-b border-neutral-200">
+                                <td class="p-4">Ideal For</td>
+                                <td class="p-4 text-center">Archived sites converted to static HTML</td>
+                                <td class="p-4 text-center">Storing raw files and simple HTML sites</td>
+                                <td class="p-4 text-center">Legacy apps that cannot be made static</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="content-blogs" class="hidden">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-semibold">Alternatives to WP Engine</h3>
+                    <p class="text-neutral-600 max-w-3xl mx-auto mt-2">Managed WordPress hosting offers convenience at a premium. Depending on your comfort level, you can find significant savings with other high-performance options.</p>
+                </div>
+                <div class="chart-container mb-10">
+                    <canvas id="blogCostChart"></canvas>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-neutral-100">
+                                <th class="p-4 font-semibold">Feature</th>
+                                <th class="p-4 font-semibold text-center">Other Managed WP Hosts (e.g., Kinsta, Flywheel)</th>
+                                <th class="p-4 font-semibold text-center">Self-Hosted WP on VPS</th>
+                                <th class="p-4 font-semibold text-center">Headless WP + Static Site Gen</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white">
+                            <tr class="border-b border-neutral-200">
+                                <td class="p-4">Est. Monthly Cost</td>
+                                <td class="p-4 text-center text-orange-600 font-semibold">$25 - $50</td>
+                                <td class="p-4 text-center text-green-600 font-semibold">$10 - $25</td>
+                                <td class="p-4 text-center text-green-600 font-semibold">$5 - $15</td>
+                            </tr>
+                            <tr class="border-b border-neutral-200">
+                                <td class="p-4">Maintenance Effort</td>
+                                <td class="p-4 text-center">Low</td>
+                                <td class="p-4 text-center">High</td>
+                                <td class="p-4 text-center">Medium (Setup)</td>
+                            </tr>
+                            <tr class="border-b border-neutral-200">
+                                <td class="p-4">Performance & Security</td>
+                                <td class="p-4 text-center">Excellent</td>
+                                <td class="p-4 text-center">Your Responsibility</td>
+                                <td class="p-4 text-center">Best-in-class</td>
+                            </tr>
+                             <tr class="border-b border-neutral-200">
+                                <td class="p-4">Technical Complexity</td>
+                                <td class="p-4 text-center">Low</td>
+                                <td class="p-4 text-center">High</td>
+                                <td class="p-4 text-center">High (Setup)</td>
+                            </tr>
+                            <tr class="border-b border-neutral-200">
+                                <td class="p-4">Ideal For</td>
+                                <td class="p-4 text-center">Price shopping for similar managed service</td>
+                                <td class="p-4 text-center">Full control & cost savings for the tech-savvy</td>
+                                <td class="p-4 text-center">Future-proofing, max performance, and RAG projects</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="value" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold text-center mb-2 text-neutral-900">Unlock Content Value</h2>
+            <p class="text-center text-neutral-600 mb-10 max-w-2xl mx-auto">Your archives are more than just old files. By converting them to a modern format, you can enable powerful new capabilities like semantic search and AI-driven insights (RAG).</p>
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-neutral-200">
+                <h3 class="text-xl font-semibold text-center mb-6">Workflow: From Legacy Archive to RAG-Enabled Site</h3>
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
+                    <div class="text-center p-4 flex-1">
+                        <div class="text-3xl mb-2">💾</div>
+                        <h4 class="font-semibold">1. Scrape & Export</h4>
+                        <p class="text-sm text-neutral-500">Convert dynamic/HTML sites into structured Markdown (.md) files.</p>
+                    </div>
+                    <div class="arrow w-full md:w-auto h-8 md:h-auto"></div>
+                    <div class="text-center p-4 flex-1">
+                        <div class="text-3xl mb-2">🤖</div>
+                        <h4 class="font-semibold">2. Process & Embed</h4>
+                        <p class="text-sm text-neutral-500">Use scripts to clean content and generate vector embeddings for semantic meaning.</p>
+                    </div>
+                     <div class="arrow w-full md:w-auto h-8 md:h-auto"></div>
+                    <div class="text-center p-4 flex-1">
+                        <div class="text-3xl mb-2">⚡</div>
+                        <h4 class="font-semibold">3. Deploy as Static Site</h4>
+                        <p class="text-sm text-neutral-500">Use a static site generator (Jekyll, Astro) to build the site from Markdown.</p>
+                    </div>
+                     <div class="arrow w-full md:w-auto h-8 md:h-auto">
+                    </div>
+                    <div class="text-center p-4 flex-1">
+                        <div class="text-3xl mb-2">🔍</div>
+                        <h4 class="font-semibold">4. Implement RAG</h4>
+                        <p class="text-sm text-neutral-500">Use serverless functions to query the vector data and provide AI-powered search/chat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="calculator" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold text-center mb-2 text-neutral-900">Interactive Cost Calculator</h2>
+            <p class="text-center text-neutral-600 mb-10 max-w-2xl mx-auto">Use the sliders to input your approximate current monthly hosting costs. The chart will update to show your potential annual savings by adopting the recommended strategies.</p>
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-neutral-200">
+                    <div class="space-y-6">
+                        <div>
+                            <label for="rackspace-cost" class="font-medium">Current Rackspace Monthly Cost: <span id="rackspace-value" class="font-bold text-blue-600">$100</span></label>
+                            <input id="rackspace-cost" type="range" min="20" max="500" value="100" class="w-full h-2 bg-neutral-200 rounded-lg appearance-none cursor-pointer">
+                        </div>
+                        <div>
+                            <label for="wpengine-cost" class="font-medium">Current WP Engine Monthly Cost: <span id="wpengine-value" class="font-bold text-blue-600">$50</span></label>
+                            <input id="wpengine-cost" type="range" min="20" max="500" value="50" class="w-full h-2 bg-neutral-200 rounded-lg appearance-none cursor-pointer">
+                        </div>
+                    </div>
+                    <div class="mt-8 text-center bg-blue-50 p-6 rounded-lg">
+                        <p class="text-lg text-blue-800">Potential Annual Savings</p>
+                        <p id="savings-output" class="text-4xl font-bold text-blue-900 mt-2">$1,620</p>
+                    </div>
+                </div>
+                <div class="chart-container" style="height: 350px;">
+                    <canvas id="savingsChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="next-steps" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold text-center mb-2 text-neutral-900">Summary & Next Steps</h2>
+            <p class="text-center text-neutral-600 mb-10 max-w-2xl mx-auto">Based on this analysis, here is a prioritized action plan to modernize your hosting infrastructure and reduce costs.</p>
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-sm border border-neutral-200 space-y-4">
+                <div class="flex items-start">
+                    <div class="text-blue-500 font-bold text-2xl mr-4">1.</div>
+                    <div>
+                        <h4 class="font-semibold">Audit & Archive Legacy Sites</h4>
+                        <p class="text-neutral-600">Identify which Rackspace-hosted sites can be converted to static HTML. Use a tool like HTTrack for a simple scrape, then deploy the output to Cloudflare Pages or Netlify for free/low-cost hosting.</p>
+                    </div>
+                </div>
+                 <div class="flex items-start">
+                    <div class="text-blue-500 font-bold text-2xl mr-4">2.</div>
+                    <div>
+                        <h4 class="font-semibold">Price-Shop Managed WordPress Hosting</h4>
+                        <p class="text-neutral-600">Get quotes from competitors like Kinsta or Flywheel. They often provide free migration services and may offer better performance for a lower price than WP Engine.</p>
+                    </div>
+                </div>
+                 <div class="flex items-start">
+                    <div class="text-blue-500 font-bold text-2xl mr-4">3.</div>
+                    <div>
+                        <h4 class="font-semibold">Pilot a Headless Project</h4>
+                        <p class="text-neutral-600">For `mediajunkie.com`, consider a redesign using a headless approach. Keep WordPress as the backend CMS but build a new frontend with a static site generator like Astro or Next.js. This is the perfect foundation for your RAG experimentation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+    const chartOptions = (title) => ({
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                position: 'bottom',
+            },
+            title: {
+                display: true,
+                text: title,
+                font: { size: 16 }
+            },
+             tooltip: {
+                callbacks: {
+                    label: function(context) {
+                        let label = context.dataset.label || '';
+                        if (label) {
+                            label += ': ';
+                        }
+                        if (context.parsed.y !== null) {
+                            label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
+                        }
+                        return label;
+                    }
+                }
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: true,
+                ticks: {
+                    callback: function(value) {
+                        return '$' + value;
+                    }
+                }
+            }
+        }
+    });
+
+    const legacyCostCtx = document.getElementById('legacyCostChart').getContext('2d');
+    const legacyCostChart = new Chart(legacyCostCtx, {
+        type: 'bar',
+        data: {
+            labels: ['Current (Rackspace)', 'Static Hosting', 'Object Storage', 'Low-Cost VPS'],
+            datasets: [{
+                label: 'Estimated Monthly Cost',
+                data: [100, 2, 5, 12],
+                backgroundColor: ['#ef4444', '#22c55e', '#60a5fa', '#f97316'],
+            }]
+        },
+        options: chartOptions('Cost Comparison for Legacy/Archive Sites')
+    });
+
+    const blogCostCtx = document.getElementById('blogCostChart').getContext('2d');
+    const blogCostChart = new Chart(blogCostCtx, {
+        type: 'bar',
+        data: {
+            labels: ['Current (WP Engine)', 'Other Managed', 'Self-Hosted VPS', 'Headless Static'],
+            datasets: [{
+                label: 'Estimated Monthly Cost',
+                data: [50, 35, 15, 10],
+                backgroundColor: ['#ef4444', '#f97316', '#60a5fa', '#22c55e'],
+            }]
+        },
+        options: chartOptions('Cost Comparison for Active Blogs')
+    });
+    
+    const savingsCtx = document.getElementById('savingsChart').getContext('2d');
+    let savingsChart;
+
+    const rackspaceSlider = document.getElementById('rackspace-cost');
+    const wpengineSlider = document.getElementById('wpengine-cost');
+    const rackspaceValue = document.getElementById('rackspace-value');
+    const wpengineValue = document.getElementById('wpengine-value');
+    const savingsOutput = document.getElementById('savings-output');
+
+    const estimatedNewLegacyCost = 5; 
+    const estimatedNewBlogCost = 20;
+
+    function updateSavings() {
+        const rackspaceCost = parseInt(rackspaceSlider.value);
+        const wpengineCost = parseInt(wpengineSlider.value);
+
+        rackspaceValue.textContent = `$${rackspaceCost}`;
+        wpengineValue.textContent = `$${wpengineCost}`;
+        
+        legacyCostChart.data.datasets[0].data[0] = rackspaceCost;
+        legacyCostChart.update();
+        
+        blogCostChart.data.datasets[0].data[0] = wpengineCost;
+        blogCostChart.update();
+
+        const currentAnnualCost = (rackspaceCost + wpengineCost) * 12;
+        const newAnnualCost = (estimatedNewLegacyCost + estimatedNewBlogCost) * 12;
+        const annualSavings = currentAnnualCost - newAnnualCost;
+
+        savingsOutput.textContent = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(annualSavings);
+
+        if (savingsChart) {
+            savingsChart.data.datasets[0].data = [newAnnualCost, annualSavings > 0 ? annualSavings : 0];
+            savingsChart.update();
+        } else {
+             savingsChart = new Chart(savingsCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['New Annual Cost', 'Potential Annual Savings'],
+                    datasets: [{
+                        data: [newAnnualCost, annualSavings > 0 ? annualSavings : 0],
+                        backgroundColor: ['#3b82f6', '#16a34a'],
+                        borderColor: '#f9fafb',
+                        borderWidth: 4,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom' },
+                        title: {
+                            display: true,
+                            text: 'Annual Cost Breakdown',
+                            font: { size: 16 }
+                        },
+                        tooltip: {
+                             callbacks: {
+                                label: function(context) {
+                                    return `${context.label}: ${new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(context.raw)}`;
+                                }
+                            }
+                        }
+                    },
+                    cutout: '60%'
+                }
+            });
+        }
+    }
+
+    rackspaceSlider.addEventListener('input', updateSavings);
+    wpengineSlider.addEventListener('input', updateSavings);
+    updateSavings();
+
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = {
+        'tab-legacy': document.getElementById('content-legacy'),
+        'tab-blogs': document.getElementById('content-blogs')
+    };
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            tabButtons.forEach(btn => {
+                btn.classList.remove('tab-active');
+                btn.classList.add('text-neutral-500', 'border-transparent');
+            });
+            button.classList.add('tab-active');
+            button.classList.remove('text-neutral-500', 'border-transparent');
+
+            Object.values(tabContents).forEach(content => content.classList.add('hidden'));
+            tabContents[button.id].classList.remove('hidden');
+        });
+    });
+
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+# Draft in
+# Growing Product People
+
+When the call came in it was actually a series of texts from one of my oldest friends, whom I’ll call “AJ”. He told me that a privacy-oriented open source project at the MIT media lab was spinning out a volunteer-based nonprofit to build a non-surveilling contact tracing app and could I “help with the product”?
+
+The timing was perfect. I was recently at the end of a four-year stint as VP of product at an extremely lean innovative behavioral health moonshot, and had resumed a consulting practice coaching business leaders, clarifying product roadmaps, sorting out information architectures, recommending baseline product ops cadences and practices, and most often helping leaders identify, recruit, and make their first product hire or hire their first head of product.
+
+Depending on the scale of the company this could be a hands-on PM or an executive. It might be the first and only product hire or there may already be product managers in the company but no leadership.
+
+In a healthy early-stage company one of the founders should be “running product” until the product-market fit is established and an MVP is launched or close.
+
+A product person generally prefers the term “product” to the more cumbersome (and loaded) “product management” and a shibboleth of the product tribe is using the word “product” by itself with very little ceremony. “I’m product at company x.” “I do the product.” “I’m a product person.” I used to call myself “Product guy to the stars” till guy felt too excluding, plus an LA friend asked me which stars and then I had to explain it was just an expression and nevermind….
+
+Many larger companies (and some consulting agencies) are only now grafting product practices onto their software development lifecycles, and may still be showing many of the seams from having recently introduced and adapted to UX, design thinking, and user-centered design.
+
+So back to the coronavirus pandemic response project. My consulting had slowed down a bit as the nation gradually started sheltering in place and decision-makers in general seemed to be taking a “wait and see” attitude to their upcoming spending and hiring plans.
+
+Fortunately, I had just pitched the idea for this book to the Sense & Respond crew and in that sense the timing was perfect. Aside from jail, a lockdown might be the ideal scenario for getting a book written (sure, ok, in an emotionally frictionless universe, otherwise there is some risk of off-the charts isolation and aggravated writer’s cramp).
+
+And then the call, or text rather, from AJ came in and I signed up for the slack and there was already a product in beta, on github, and the core group was working 20 hours a day seven days a week and it felt like the most urgent priority in the world (and since I am neither a first responder nor an essential worker, it basically was the most urgent thing I had encountered since the news of the pandemic spread).
+
+So they were coding a mile a minute, but there was no roadmap, there was no UX strategy, there were a number of assumptions about the “customer” (regular people who may or may not be infected with a new virus) that did not appear to have been de-risked yet, and there were a handful of product managers and people I’d call “product curious” milling around in the slack, getting no traction, unable to provide value to the software developers, and either losing interest or finding a role on an adjacent team, such as comms or program management.
+
+Not only did this offer me something, anything I could do to feel as though I had some agency (beyond streaming TV and chilling) but it was also almost the ideal laboratory for growing product people under incredible pressure with very high stakes.
+
+Put me in, coach
+
+Yes, I said to AJ. Of course I’ll help any way I can. I’ll help with that roadmap. I’ll help with the product. Just point me to it.
+
+This did mean, to the frustration of my gracious publishers and to some extent myself as well, that my schedule for writing this book ended up slipping by about six months!
+
+So job one for me now was to round up the product people, new and experienced. Gather them into a scrum group, identify priorities, and start providing value to the rest of the org.
+
+We were also going to have to get everyone to agree on what we mean when we say “product,” get buy-in that the technology part of the project needed to be managed with a “product mindset,” distinguish product discovery from product management from product ownership (not to mention project management), and clarify exactly how product people could provide both immediate tactical value and long-term strategic focus to the project.
+
+Along the way, I was going to have to identify product people with varying skills sets: product owners with scrum master experience, release managers, product discovery and ux research principals, feature- and theme-directing product managers, product team leadership that could make the case for product thinking at the executive level.
+
+Which raises the question, What exactly makes someone a “product person”? I’ll give you a way to answer that question for yourself in the next chapter but before we rush right past the elephant in the room, what exactly are we talking about when we say “product”?
+
+What exactly is a (digital software) “product”?
+
+So let’s get a couple of terms and concepts defined for the sake of this book.
+
+In software terms, a product is a package of features and services delivered to a market to address a hypothetical need or “job”. Digital software product management is a relatively young discipline with roots in 20th century industrial product development, software program management, business analysis, Silicon Valley-style technical product management, user-centered design, and lean startup practices.
+
+A product manager is responsible for defining and delivering a fix, feature, product, or product line, depending on the scope of their responsibility.
+
+This is what products used to look like.
+
+A product owner works closely on or with an engineering team to groom a backlog of potential features and fixes, plan sprints, manage scrums, run retrospectives, etc. — may or may not also be a scrum master, engineering manager / team lead, or (usually relatively junior, tactical) product manager.
+
+Product management is not the same thing as project management, although most product managers, especially product owners, have some project management among their obligations. At more senior levels this more often manifests as program management and product operations or “product ops” (the structure, organization, and cadences of the product development process).
+
+Key takeaways
+- A company’s first product hire (or first head of product) will have a huge impact on the direction of the product.
+- It’s key to establish a shared understanding of the meaning and value of both product management as a practice and of fostering a product mindset across your entire business.
+- In addition to hiring experienced product professionals, success will also depend on identifying and cultivating the instincts of potential product people already on staff in many different roles concerned with the making of valuable software experiences.

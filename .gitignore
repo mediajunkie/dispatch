@@ -15,3 +15,14 @@ Thumbs.db
 # va-project-knowledge/files/
 claude-project-downloads/*.zip
 claude-project-downloads/*/conversations.json
+
+# Large binaries and VM artifacts
+Cache_Data-backup/
+vm_bundles/
+claude-code-vm.zip
+__MACOSX/
+
+# Raw migration data (sensitive, large; curated packages in ready/ are committed)
+migration-staging/transcripts/
+migration-staging/conversations/
+migration-staging/project-conversations/

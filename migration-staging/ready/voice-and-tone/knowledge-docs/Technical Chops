@@ -1,0 +1,146 @@
+# 13 min read
+# Draft in
+# Growing Product People
+
+Code is the material, the substance, that software is made of. It’s where the rubber meets the road. Everything else is just a picture or a plan of what actually gets built.
+
+Whether trained as engineers or not, great product people have a deep understanding of this material: its texture, its grain, where it’s resilient, where it’s brittle, what it’s good for, what it has to be tortured to achieve.
+
+How technical?
+At one point I noticed that that friend I’m calling AJ would refer to himself by saying “I’m not technical, but…” I asked him if he would welcome some feedback and when he agreed, I told him that he is technical and he is selling himself short. I pointed out various ways in which he was technically savvy and I said maybe you’re not a technologist (someone who specializes in working with technology professionally) but you’re darn technical. Later he told me another person had offered him the best way to draw a useful line for others, so now he says “I’m not a coder, but….”
+
+A lot of great product managers start off as engineers. It’s not the only path, of course, as we’ve seen, but especially on the silicon valley / lean paradigm engineers and eng managers have always comprised a large chunk of the product manager corps, and to this day often have roles carved out for them with variations on titles such as “technical product manager.”
+
+The word “eng” is pronounced enj.
+
+But even if a product manager might have never themselves worked as an engineer or wouldn’t be able to consistently deliver product-quality code at a professional level, it behooves them nonetheless to become fluent in mySQL, in git, in the preferred IDE (coding environment) the developers are using, in the toolkit and affordances of tech.
+
+In big shops product manager often can’t commit code changes (even typo fixes) or make pull requests, but all product people long to get their “hands on the metal” and prefer direct access to code and data whenever possible.
+
+The fulcrum of collaboration between product and engineering is around architectural decisions and their consequences, and occasionally analogous choices about algorithmic complexity.
+
+In order to participate meaningfully in these conversations, let alone the decisions, the product manager needs to fully fluent in the project’s technical architecture (domain models, layers in the technical stack, the languages, libraries and data structures, message routing, and so on).
+
+Fluency with the technical stack they work on and a deep understanding of its strengths and weaknesses are table stakes for a product person.
+
+Data structures will bite you later if you’re not careful. Decisions you make now will have long term ramifications and you may find engineers pushing back in the future when you want something that today’s architecture didn’t contemplate.
+
+Again, skills in modeling, mapping, graphing, and visualizing complexity come in real handy here in getting everyone on the same page.
+
+The statistician
+One of the biggest things that changed for me when I transitioned from UX to Product roles was that I spent a lot less time drawing pictures and a lot more time writing words and looking at numbers.
+
+So. Many. Numbers.
+
+You really can’t do a good job as a product person unless you can be happy spending an entire eight hour day slicing and turning and visualizing tables of numbers that contain all the hidden secrets you are dying to know.
+
+Are signups increasing?
+
+Is churn coming down?
+
+What is the life-time value of our average paying customer? What is the cost of acquisition for a new customer. How is the ratio between those two numbers doing.
+
+Some thing doesn’t feel right about this morning’s north-star metrics. Did we just get mentioned by an influencer? and so on…
+
+Teasing out insights from data. Working with engineers to instrument every critical step along the way of your critical funnels (user flow sequences). Gathering data from wherever you can, allying with researchers and scientists, consuming public and private data sets and slamming them against the data “exhaust” your product has been storing in a “data lake.” Understanding effects of scaling the user base orders of magnitude and the network effects of viral content fanning out across a follower base. These are the daily bread of product management.
+
+Experiments (the mad scientist)
+Remember that triangle with the word “scientist” over one one end? Scientist are not engineers (although both are “technical”).
+
+The engineer designs and builds things that work.
+
+Scientists formulate hypotheses and devise experiments to test them, refine models, and gradually accumulate insights into their fields of study.
+
+This restless desire to experiment and discover hitherto unpossessed knowledge enables your team to unleash the potential of a product and unlock all the value it might possess.
+
+
+A pipeline tool for prioritizing tracking growth experiments (in AirTable) developed by Jesse Avshalomov, co-founder and chief marketing officer at Medinas Health (a pre-owned medical equipment marketplace), who taught me almost everything I know about growth experimentation.
+The number one purpose of experiments (this is true for research too) is to hedge your riskiest assumptions. This is often referred to as “de-risking.” The basic point is you can’t test everything and most of the time you don’t need to. Running experiments is as expensive as any other use of planning and development time and time is finite. The most important experiments are the ones that help you mitigate the risks that threaten your fundamental value proposition, and by extension your entire business strategy.
+
+Let me make two more quick points about experiments:
+
+A/B tests (also known as split test, bucket tests, and multivariate tests) are just one of many types of experiments available to you. They can be an excellent way of optimizing a particular experience but they can also result in “polishing a local maximum” at the expense of much more valuable overlooked experiments, and they can function as blinders that prevent you from questioning much more fundamental assumptions about your product experience and what
+The product folks running the experiments need to have a thorough understanding of probability, uncertainty, significance. Tests can’t be stopped just because the results are starting to look good, or allowed to run past the target sample size in hopes that they will resolve to a better result. Significance can easily be over-interpreted, leading to business bets being made on the back of random statistical noise or internet “weather.”
+At my last startup, I once ran an A/A test. Our hypothesis was that bucket sizes of 2000 users each were enough to yield statistically significant insights. To test this we split all new users into two buckets but then offered them each exactly the same flow. We then ran the experiment until we had 2000 in each bucket. Sure enough, by then the variations had smoothed out and the results in each A bucket were almost identical, and this had not been the case when there were still, say, only 1400 in each bucket (at that point the second A was appearing to beat the first one, for no meaningful reason).
+
+Machine learning
+Another aspect of technical acumen that stands product people in good stead these days is at least a passing familiarity with core concepts of data science and particularly machine learning.
+
+Machine learning is a school of AI (artificial intelligence) research in which large data sets are used to “train” algorithms to solve problems or identify results without directly calculating but rather by pattern recognition (this is a very sloppy definition!).
+
+While experiencing a bit of a faddish spike in interest over the past few years (tangled up with chat bots, conversational design, and natural language processing or NLP), the huge potential remains for building products that make use of the data they accumulate to make the services they provide more effective and — for the end user — more magical.
+
+It’s hard enough to build software that runs, let alone software that learns and gets better over time, but even when getting the basics right it’s possible to establish foundations based on understanding those risky assumptions, hypotheses, and experiments that will need to be explored to achieve the desired product experience. Designing with that goal of what might be called the software equivalent of self-knowledge and the ability for self-improvement lays the groundwork for that evolution.
+
+Or as Tom Kerwin put it “A self-improving core feedback loop. It gives feedback to the user, and feedback to itself. And maybe feedback to the builders for how to improve the feedback mechanisms.”
+
+Risk management
+As products scale up and user bases grow, problems multiple. Successful populated software attracts criminals, vandals, bored script kiddies, and griefers. Robust platforms promise almost 100% uptime to paying customers. Data must be kept secure, encrypted, and safe from attack. Governments may require that users be given the ability to remove or delete their data.
+
+Performance, reliability, safety, security. These are all entire specialties in software engineering and product managers can make careers focusing on any single one of these factors as well, but most product folks — at least past the proof-of-concept startup phase where scale issues can be safely ignored — spend at least some of their time working through challenges in these dimensions.
+
+Persuasion
+All those technical chops, all that STEM education, all that time reading xkcd will pay off in the end if it helps build rapport with engineering teams, show respect for their folkways and the things that inspire and scare them, and build bridges for productive communication and the ability to reach alignment (or, at worst, figure out who isn’t prepared to help you meet your goals).
+
+Speaking geek, knowing the tribal inside jokes, the retro l33t dorkiness, all of these things are a way of showing respect for your colleagues. In my Yahoo days I loved checking in on an internal mailing list called “devel-random”.
+
+Software developers had lists to discuss all the active languages as well as other common reference points (devel-javascript, say, or devel-php), so devel-random was like a water cooler. Hanging out there gave me more insight into the morale and ethos of our engineers than attending 100s of hours of kickoffs and all-hands would ever have. It gave me a way in.
+
+I still remember the day someone on the lists suggested, after our third corporate reorganization in as many years, that we really ought to go out and get the .reorg domain, lmfao.
+
+Back in the dawn of the web, a fellow at MIT named Jeff Bigler articulated the concept of a tact filter, noting a cultural distinction between how self-identified geeks apply a filter for tact “on the way in” (they filter what they hear other people say to them) and thus do not filter what they say to each other for tact “on the way out.” By contrast, “normal” people (in this context, non-engineers) learn to apply their tact filter to what they say and can be put off by the blunt needling style more common in geek culture. (By contrast, geeks can find the euphemisms and circumlocutions of polite speech to be phony and wasteful.) As long as you’re aware of what sort of tact filter the person you’re talking to uses, you can avoid giving or taking needless offense.
+
+Most of the time engineers do not report to product managers. Product people succeed through persuasion, by understanding the needs and motivations (and fears) of the people they’re collaborating with, developing a shared understanding (and, yes, a diagram) of what everyone agrees is the goal, and then making sure everyone feels they have ownership of and a stake in what comes out.
+
+You earn and maintain respect by being reasonable and savvy. The quickest way to lose respect is to “ask for a pony,” to treat the technology like undifferentiated magic and reveal your ignorance of the underlying mechanisms. (By the way, it’s always better to call out your own ignorance and make it clear you are eager to learn rather than attempt to hide what you don’t know.)
+
+Once a product person has earned the respect of their eng peers, this also gives them the ability to “call bullshit” in the friendliest possible way when the dev is playing at “Scotty in the engine room” and padding estimates or shading the truth to avoid acknowledging that an idea is feasible and possibly even good.)
+
+
+Yoinked from “Can’nae take any more, Captain!” — How operations guys are like Scotty.
+Scrum mastery
+A huge part of the common ground of product and engineering collaboration takes place these days via agile scrum development practices. Beyond the specifics of rituals such as retrospectives and product demos, the essence of agile (and lean) software development involves decomposing the work into valuable chunks that can be achieved in a limited timeframe (generally a week or two) referred to as a sprint.
+
+
+A very concave “burndown chart” for a sprint, from The Burndown Chart Reveal Many Secrets by Ziryan Salayi. This one is called “Hurry Up” — see his article for illustrations of “Super Mario,” “Big Finish,” and “Nearly Perfect Burndown.” Personally, I like to bake in an early win up front so you get under that line right away, maaaaaan.
+It’s sort of a fractal principal, as it can be applied to a single day or an entire quarter as well, but the general pattern is the same. Define an outcome that is hypothetically achievable in a clear timeframe, make corrections along the way if necessary, and at the end of that time report on what was achieved. Was the goal met? Did it run into problems or change? Was it scoped incorrectly? The point is not perfection but to learn from each iteration and do better on each subsequent cycle of the “cadence.”
+
+Product managers, especially the ones working close to the product owner role, work closely with engineering leads and teams to groom backlogs of wishlist items, prioritizing them against roadmap goals and making difficult tradeoffs. They agree on how much time to spend building things and how much time to spend fixing things, and what alternating rhythm produces the best outcome.
+
+The product manager needs to take the lead in coming up with a “definition of done.” Software projects can easily spin out into fussiness, yak shaving, rabbitholes, and diminishing returns. Product is the home of “good enough.” Other stakeholders need to have a say in this, but ultimately it’s up to product to make the call.
+
+Perfection is a process, not a static state of achievement. There will always be unfixed bugs. If you’re not embarrassed by something about your MVP you waited too long to ship it. Someone has to take ownership of the downside risk of an incorrect decision while ensuring that all the hard work of team results in actually shipping something that actually runs. That’s product.
+
+Product managers have a saying “Good enough is good enough.”
+
+Should Product report to Eng?
+A question I get asked a lot when wearing my “product ops” consulting hat is how product and engineering should interact. There are a lot of enterpriwes where these two practices do not get along well. At Yahoo, product and eng were peer orgs and rivals in a long-standing power struggle.
+
+In less technical companies, it may make sense to have an engineering leader in charge of the tech org (say, a CTO) and to have product and engineering managers all reporting into this org. Of course it depends on the size of the teams, the nature of the work, the experience of the leaders.
+
+For my first two years as VP of Product at 7 Cups I also managed the engineering team. It was a small group and I had sufficient technical architecture and team management experience to handle it, but I was never 100% comfortable with that arrangement (despite it being sort of a Holy Grail scenario for a head of product) because the best eng team is an empowered team that runs its own affairs while respecting and collaborating deeply with a strong partner product group.
+
+Over at the nonprofit responding to the coronavirus pandemic, by this time renamed the PathCheck Foundation, we had managed to empower an amazing product lead to set work rallying the troops I had gathered and drilled, building out the team further, organizing it around user-centered aims and introducing serious discovery processes into the development cycle.
+
+At this point the product team had strong executive leadership and reported directly into the CEO (and no longer in to the CTO, who was now leading an Eng organization instead of a broader Tech org, in the parlance).
+
+My work here was done, I thought.
+
+Except not quite, as now the CTO asked me to hop over to his side of the product-engineering divide and help out with the program management there. The positive energy flowing into the strategy and design end of the product practice had an unintended effect of somewhat de emphasizing the execution (or “product owner”) side of things. There were some rough spots in the handoffs and communication loops between orgs, so we did what we could to build up the capacity on the eng side to fully take advantage of the strengths emanating from product.
+
+As someone who’s been wearing product hats for years now, it was a fascinating glimpse at how things had evolved from the most adjacent team in the house.
+
+Growing product engineers
+We are all people making stuff together. Some of have different specialties and get the final say in specific matters. Many of are concerned, involved, and contributing to matters in which we don’t have the final say. That’s how multidisciplinary teams collaborate on shared goals.
+
+Kindling a product mindset in your company goes beyond hiring and training product managers: It also means cultivating product engineers. There are a lot of great engineers out there who are not product engineers, and that’s fine. It’s great, actually. Some work on embedded systems. Some deal with civil infrastructure. Some design roller coasters. The list is endless.
+
+Product engineers make products. They care about the product they are making. They understand user experience even if they are not designers. They think about the customer journey even though they are not researchers or marketers. They write, test, and deploy code that runs user-facing software for people, and it shows.
+
+Key takeaways
+Product people need first-class technical chops and fluency with the software materials they work on.
+This includes comfort with data, science, statistics, and probability.
+Product people are experimenters, and use data to find pathways to better customer experiences.
+Great product people know how to persuade, cajole, inspire, and lead developers without being their boss.
+Lean, agile, iteration on coherent achievable goals can move mountains.
+Product engineers are product people too.

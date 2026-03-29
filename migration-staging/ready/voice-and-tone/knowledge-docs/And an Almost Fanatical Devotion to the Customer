@@ -1,0 +1,124 @@
+# 8 min read
+# Draft in
+# Growing Product People
+
+Taking a step back, and looking at the core qualities of a product person reviewed in the previous post, I have to mention a further quality shared by all great product people: 
+
+Obsessive customer focus.
+
+In fact, the folks at Folding Burritos took it upon themselves to recontextualize that canonical venn diagram I shared at the top in a much larger critical context:
+
+shamelessly stolen from foldingburritos.com
+
+The silicon valley school of product management kicked off by author and consultant Marty Cagan and the lean startup movement both share the commitment to “getting outside the building,” which exhorts product people to look up from their graphs and their draft specs and their “jobs to be done” and make sure they are spending part of every week meeting and talking to real people.
+
+UX people are (or should be) your allies in this drive to understand the habits and needs of the people whose problems you are solving.
+
+Customer discovery across the product life cycle
+
+Products have life cycles. They start off as ideas or hypotheses in search of validation. In these earliest stages, you don’t yet know if you have “product-market fit.” You may be going on a hunch or you may be responding to a signal from another product effort (or pivoting from a preceding hypothesis).
+
+Early stage startups, innovation labs, skunkworks, and any generative product team that is empowered to meet their goals creatively may be in the process of finding a product-market fit to build on.
+
+At this stage the assignment is:
+
+-ully understand the needs of a specific type of customer’s job to be done and
+invent a sufficiently valuable improvement to how that job is done today to persuade this type of customer to adopt a new habit.
+
+An eye for product-market fit
+
+After we sold a startup to Dropbox I took a few months off to get my “work-life balance” back together, to stop eating garbage, to spend time at home with my family, to play music, and to find a meaningful next product to sink my teeth into.
+
+In due time I discovered a recently graduated Ycombinator startup that was looking for someone “to help with their product” or possibly with their UX, or both, it wasn’t 100% clear?
+
+I took a look at their website and did a little bit of digging and was immediately impressed by two things:
+
+1. The website was a confusing hot mess.
+2. The service being provided was striking a nerve and drawing in a growing base of users who were somehow managing to find their way through a maze of options to the core experience of a caring, compassionate conversation with a stranger.
+
+This company (7 Cups) passed my “crawl through glass” test. It’s as if a shopkeeper had literally strewn broken glass on a soggy off-red carpet and nonetheless customers were crawling through that glass to get what was on offer behind the counter.
+
+That’s product-market fit.
+
+I took the job. Optimizing an onboarding flow I can do any day of the week. Striking gold? That’s more of a twice a year on a blue moon kind of a thing.
+
+The product-market fit engine
+
+Right now you can’t go wrong working from Rahul Vohra’s Product-Market Fit Engine. 
+
+Vohra is the founder of Superhuman, a startup that makes an invitation only, fee-based email client for busy executives. The product has been praised for its next-level user experience (comparable, some say, to the feeling of seeing gmail for the first time) and criticized for a confirmation and tracking statistical view for email senders that borders on spooky.
+
+Vohra worked from a widely accepted (because it’s just so good) observation by Sean Ellis, a forerunner of many later growth hackers, who noted that if you ask your customers how they would feel if they could no longer use your product, the critical group to watch is the percentage who respond “very disappointed.”
+
+The unscientific consensus is that if you reach 40% or above you likely have a good product-market fit. Vohra’s engine uses an extended survey to help you segment your audience and then focus on the needs of that “[would be] very disappointed” group of users (while immediately boosting your relative percentage by dropping the least disappointed personas from your roadmap).
+
+The benefit of this process, now available as a coda document, whether you follow it strictly or not, is that it gives a direct operational way to measure and manage to product-market fit until you have achieved it.
+
+Mention it to your product folks to show you know the score.
+
+Actually having customers
+
+If you already have product-market fit, good on you, mate! That means you’ve got a set of early adopters. Nurture them! They are your allies in the evolution of your idea. Learn how to include them in the conversation and address their contributions without losing control of design process.
+
+Allow them to help you but don’t become hostages to your earliest, most “old skool” users either, or you risk never finding that next layer of the onion who need a bit more help discovering the value of your offering (or for whom you need to evolve your offering to make it truly valuable for them as well.
+
+So now, job one is talking to different segments of your own customer base, and you’d be surprised how many businesses actively prevent their software teams from doing this at all!
+
+The next level is talking to people who might represent your next, larger wave of customers.
+
+UX researchers, behaviorial psychologists, scientific marketers, and data scientists can all be great allies in identifying and reaching these next-tier-out potential customer personas.
+
+Making collaborators of your engaged customers
+
+When you have engaged customers first be grateful for this. Gratitude is strongly associated with happiness! Next, do what you can to provide support for your earliest users. If you can’t host a community for all of them, find a subset who can make themselves available as a panel for feedback and discussion and to get a preview for how your new ideas might land with some of your more vocal existing customers.
+
+Don’t just pay lip service to wanting to hear their ideas. It’s not a matter of letting your most committed customers define your roadmap priorities, but a combination of watching the real user behavior visible in your data (and other observations) and listening to what is being asked for, what complaints keep arising, and what is being loved enables you to meaningfully co-evolve your product into something you may never have envisioned at the outset.
+
+Design centered on users
+
+Beyond literal collaboration and co-creation, product management is lost without a close partnership with UX design leaders and practitioners. Product people need to have a deep and thorough understanding of the meaning and value of user-centered design.
+
+I sometimes envision it this way
+
+A product driven business drives a lot of strategy through its product roadmap, and a product is only as good as the experience it delivers to the end customer (or user, it’s ok to say user, really), and the way to deliver a great user experience to your customers is to deeply understand their needs via UX research and user-centered design. Boom.
+In a product-centered business, product strategy depends on successful execution of a product strategy (as tracked in a product roadmap), and no product succeeds without providing a valuable experience for its core customers. And the way to understanding customer needs and crafting solutions to meet them is through design, as we’ll get into further in the next chapter.
+
+Dialing in all the signals
+
+Customer obsession means hungrily consuming every possible signal indicating how people are behaving in regard to your product. You have to find ways to measure how they discover your product and become aware of it. What leads them to visit your site or download your app. How many people who start the signup process complete it? Once people have begun using your product which features do they gravitate toward, which do they shun, and which do they try and then give up on?
+
+What are people saying about your product on social media?
+
+What do the reviews look like?
+
+The techniques for understanding your customers (both current and potential) are myriad, and we’ll cover some more specifics throughout the rest of the book. Just be aware that the best picture leverages both quantitative data (for the what) and qualitative research (for the why). In the end, the more signals you can aggregate the clearer a picture you’ll be able to dial in, and then over time when you start to get a feel for your signals and how they model the real world, you can become very sensitive to the emerging patterns and early indicators of opportunities or problems.
+
+Net Promoter Score (NPS) is the devil. There’s nothing wrong with asking people if they would recommend your product, and it’s a very good idea to ask them why, but the weird pseudo scientific NPS scoring system is wack.
+
+Meanwhile, back at the pandemic…
+
+One of the key markers I looked for that told me if a volunteer on the privacy-preserving contact-tracing project was (or had the potential to be) a good product person was if they asked a variation on this question:
+
+“Do we even know if this is what people want?”
+
+To take a step back, the larger organization was working on promulgating privacy principles and encouraging major players (governments, tech giants, health systems) to sign on to these ideas an approaches, preserving anonymity and avoiding inadvertently fostering a surveillance state.
+
+This wasn’t simply a matter of idealism, although concern for privacy was naturally a rallying factor for people drawn to the organization’s mission. There was also a pragmatic hypothesis that if people in various societies (especially those with more individualistic and libertarian traditions) did not believe their location and other personal data would be kept private they would refuse to comply with the use of contact-tracing software, leave their devices at home, or start carrying them around inside tinfoil pouches.
+
+But there was also an embedded assumption the product people noticed: That digital contact tracing was (at least part of) the solution to help meet public health needs addressing a runaway pandemic.
+
+There was logic here. Manual contact tracing relies more on memory and an interview process. Getting permission to upload anonymized location or contact / exposure data could surely speed up this process and help reduce some errors?
+
+But did we know that for sure? This was the question that I looked for when onboarding a volunteer onto the new product team. I had asked it this way myself: “Are we sure they don’t need pencil sharpeners and more clipboards?”
+
+To be fair, there had been some initial validation of the founding hypothesis for the contact tracing software platform we were building, but it was undocumented and rarely articulated, which meant nobody with a product sensibility had yet captured it and shared it with everyone concerned.
+
+This also represented an opportunity.
+
+Key takeaways
+- Product people talk to customers on a weekly basis.
+- People will crawl through glass for a valuable product.
+- Your users are among your best partners in evolving your product.
+- Form as rich a picture of your customers and their behavior as you possibly can.
+NPS is the devil.
+- De-risk your critical assumptions about customers.

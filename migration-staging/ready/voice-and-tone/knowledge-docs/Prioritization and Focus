@@ -1,0 +1,105 @@
+# 11 min read
+# Draft in
+# Growing Product People
+
+Most of the traits and sensibilities of product people discussed so far focus on Doing the Thing Right. None of that matters, though, without an ability to focus the team and Doing the Right Thing.
+
+Products are more than just a bundle of features and bug fixes, and roadmaps are more than just giant wishlist.
+
+The product practice sits at the nexus of every input into, and every stakeholder of, the customer experience that represents your company’s brand. Product people shoulder the difficult but critical responsibility of weighing the opportunities (and risks) and forging a consensus that moves the team forward and helps deliver valuable outcomes.
+
+There will always be a surplus of great ideas, new problems, ongoing unaddressed issues, deep-pocketed partners, eager sales efforts, business fads, and competitive setbacks.
+
+There will always be too many good ideas to do them all at once, without even getting into the opportunity costs involved in each or the fact that many good ideas are mutually incompatible.
+
+For example, you can’t have two top priorities. You can have any number of important things that you think matter but only one of them can be the top priority (and if not, then you have zero top priorities, not two).
+
+Weighing these priorities, wishes, good ideas, problems, etc. against each other is a fundamental product practice that takes place at every level of the business. Whoever speaks for product in the C-suite will ultimately decide what the entire product org or effort focuses on, what gets funded, who gets hired, headcount, and so on.
+
+Product leadership needs to address and respond to the business strategy through a product roadmap and operational plan. Product practitioners need to make hard choices about what to ship, what to work on next, the order of the backlog, the priority of bugs, and so on.
+
+Prioritization methods
+One sign you’ve found a product person is that they are tackling prioritization in a systematic way. There is no one single ideal prioritization method or process or exercise that will suit every occasion and context, but product people realize that there are always too many good ideas to go around, that stakeholders with varying degree of insight and claim over outcomes all need to be understood, respected, and addressed, and that a transparent open process for weighing and evaluating priorities works best.
+
+The most common prioritization methods involve weighing the effort to execute an idea against the potential impact of doing so. In its simplest form, all ideas can be rated as high or low effort and then high or low impact. This enables a first-order rough sort. High impact, low effort things go first! Low impact, high effort things happen never. The other two categories then require more careful orchestration to balance the longer-term and larger efforts that may yield profoundly good results against the drumbeat of relatively trivial or tactical tasks that are easy to do but won’t in and of themselves “move the needle.”
+
+The next level of sophistication for that process is to use t-shirt sizes for estimates (small, medium, and large or S, M, L) which gives you another point on each scale. Most commonly a large surface such as a wall is cleared to enable an X and Y axis with Y (vertical) for impact and X (horizontal) for effort. The same logic applies at all of these scales: the stuff in furthest in the high impact/low effort corner comes first, and it’s the diagonal in the middle that requires the most scrutiny.
+
+For more complex decisions, frameworks such as RICE (reach, impact, confidence, and effort). This model keeps the concept of effort and impact from the simple one above but also give you a variable to scope the reach of the idea (is it going to impact all of your customers all the time? new users? a subset of existing users? etc.) as well a variable to capture how confident the estimate (or the consensus of the group) is, relative to other ideas.
+
+This latter factor helps address the subjectivity of a quasi-algebraic scoring model such as RICE, but ironically does so by introducing an additional subjective variable.
+
+I am quite fond of the Eisenhower matrix, with which most executives are familiar. It is a two-by-two grid that divides tasks, projects, or goals first by whether they are urgent or not, and then by whether they are important or not. The great advantage of this analysis is that it prevents you for confusing urgency for importance (and vice versa).
+
+It is far too easy for any of us at any level of an organization to become reactive to urgent interruptions, emergencies, crisis, deadlines, launch dates, publicity schedules, quarterly reports, and so on. It is not possible to avoid urgent priorities and of course most urgent things need to be addressed, but not everything that’s urgent is important, and not every urgent thing needs to be handled at the highest level.
+
+More critically, there are many important things that are not urgent in the sense that they are not due immediately and they are not blocking anything right now but being postponed, but the great risk is that these things never get addressed (or, more likely, only ever get addressed when they become urgent, generally by way of catching on fire).
+
+This analysis reminds us to plan and schedule longer term and slower-burning matters so that they come to fruition when they are needed and we escape the “take a crisis number” method of planning that is more akin to a panic attack than a sustainable execution process.
+
+The Eisenhower matrix reminds you to do those things that are urgent and important immediately, and decide when important things that are not urgent need to happen (schedule them). It tells you to delegate the things that are urgent but not important to us directly, and to delete (forget about) the things that are neither urgent nor important enough to ever be worthy of your attention.
+
+
+The famous Eisenhower Matrix helps you plan ahead for important things that are not literally on fire at right this exact moment.
+Radical focus
+It goes beyond prioritization of one goal over another, one feature over another, one market over another. A core mission of product people is to maintain focus, to avoid spreading everyone too thin chasing distractions. This is not always a welcome voice in the room. The product person takes away the punchbowl right when the party is getting going.
+
+Research by NYU and University of Hamburg psychology professor Gabriele Oettingen has shown that daydreaming about the future, merely imagining the outcomes you are hoping to achieve, by itself make you less likely to accomplish those goals. This may seem counterintuitive to any of us raised on the power of positive thinking, vision boards, or The Secret.
+
+Apparently, the problem is that once your brain has “seen” this vision of the happy outcome, it naturally (I mean literally, in a chemical sense) relaxes and feels less motivated to do the work necessary to get there. It’s the opposite of delay gratification.
+
+Fortunately, there is a way to escape this trap. There is nothing inherently wrong with envisioning desirable outcomes (or with daydreaming for that matter). The trick is to go beyond this and to spend time thinking thoroughly and unflinchingly about what obstacles are likely to prevent you from achieving this outcome. Then you make plans for how you will overcome these obstacles and at this point we’re into the operationalization of any process, but the point remains that the key moment involves honestly assessing the challenges, risks, and potential downsides of the idea under consideration.
+
+Radical candor
+Product people say “Wait!” They say “What about…?” they say “We have to stop this thing many of us love” and they say “No” even to you, the boss.
+
+Now, if you, the boss, overrule your head of product, or if the consensus of a leadership team is to do so, they will “disagree and commit” and do everything possible to make the idea work. They won’t drag their feet to sandbag the idea or say “I told you so” if it fails. They aren’t afraid to take a position because they are not afraid of being wrong or of “losing.” They will give you their best possible advice and let the chips fall.
+
+No optional complexity
+One of the things I’ve learned shipping code for several decades is that every project is plenty complex enough from the get go. Building software on the internet (“in the cloud”) for mobile users migrating across multiple device platforms and operating systems and client applications is an inherently complex exercise that also requires orchestrating the efforts of multiple teams trained in entirely different disciplines and schools of thought.
+
+So why make it harder?
+
+I’ve learned that if there is anything you don’t have to do, don’t do it. I call this rule “No optional complexity.” In my dad’s generation they had a version of this insight they called KISS (“Keep it simple, stupid!”). That was more about not overthinking things but I feel it comes from the same wellspring of wisdom.
+
+Of course, this is easier said than done, and frankly always easier to recognize in hindsight, after you’ve once again insisted on including a feature or pursuing an initiative that wasn’t really necessary. So why is it so hard to recognize that once again complexity is multiplying like the enchanted brooms of the sorcerer’s apprentice?
+
+
+Mickey had an OKR about keeping things tidy. Then he decided to use regular expressions. Now he has two problems.
+It’s because complexity can occur at any scale, in any aspect of your work. It can have to do with trying to market to too many different types of customers all at once. It can involve going after a consumer market and a B2B market at the same time. It can involve (it usually does) shipping way too many B-features instead of one A+ feature. It can involve how to build and staff your teams.
+
+When I was directing the product team at CloudOn, a productivity startup making a collaborative product for editing cloud-stored documents on gesture-based mobile devices, we made the decision to port our iOS product (which initially ran just on iPads) to Android tablets. We reasoned that we could extend our market to the much larger Android base worldwide and that we could reuse so much of research and discovery and design work, as well as the platform and R&D technology that went in the iOS instance that “fast following” our Apple releases with near-parity versions for Android should be a relatively efficient use of our engineering resources.
+
+In retrospect, in the long run, I believe this was a big mistake. We never reached nearly the same number of users on the Android platform, which is itself a severely fragmented ecosystem of devices running many different version of the operating system. Furthermore, the anticipated efficiencies never materialized to anything like the degree expected. (It was probably more like 180% of the work to release on both platforms than the 120% we had been projecting.) The devil is always in the details and the unique aspects of the Android OS perpetually demanded extra attention and testing. Worse, Android native users could tell our app was a port from iOS. It didn’t feel like a native Android experience. Addressing those subtleties also took time and never fully met expectations.
+
+We could have saved ourselves a great deal of grief and met some of our goals a lot more easily by focusing entirely on the iOS universe until we had that really nailed.
+
+The other thing that makes recognizing this problem hard is that some forms of complexity are needed either to achieve the valuable experience you are trying to offer or to stretch towards your goals in an achievable way.
+
+In the exact same context at CloudOn we made another decision that I stand by to this day. We debated intensely about whether to offer a document editor (like Word or Google Docs) for the phone form factor. It wasn’t clear to us that people really wanted to edit, comment on, or otherwise work on documents on their small screens.
+
+We even spent some time prototyping and testing workflows that we felt made the most sense when mobile, such as approving edits and replying to comments and of course reading drafts. What surprised us once we did ship the iPhone version of the CloudOn app was that people were absolutely willing to edit documents (and even spreadsheets) on their tiny little screens. Almost the exact same percentage of sessions involved editing. Now it’s possible that the editing done on phones was more light editing than that done on tablets, but the end result was that the experience didn’t need to be significantly different on the much smaller screen (mostly navigation had to be hidden away), and the added “complexity” of supporting phones in addition to tablets was affordable and worthwhile.
+
+Difficult choices
+In the end it all comes down to difficult choices. The easy ones take care of themselves. The tough ones involve deciding between two or more things you want when you can only have one, or choosing which punishment to take when it’s impossible to avoid the hit one way or another.
+
+Beyond having the expertise, analytical skill, and perspicacity necessary to weigh and measure hard choices and recommend what to do, a product person needs to be able to bring everyone else along with them. They can’t dictate the decision most of the time. They need everyone to buy in, most of all leadership.
+
+I’ve used the word estimate or estimation here when talking about prioritization and it’s worth noting that for many engineers (and product people) the whole concept of estimation is fraught with peril. It’s a minefield that in many organizations devolves into sandbagging or death marches.
+
+I’m a fan of Tom Kerwin’s concept of pivot triggers (with its wonderful IF BS STOP mnemonic), which suggests framing the need to weigh and balance effort in terms of “investment” (instead of the usual estimation frame), saying
+
+Your engineers are probably familiar with the debate around estimation. That’s where you think about what you want to build, and then estimate how long it’ll take to get it all done. The unspoken assumptions are often something like “our customers will want this, because it’s obvious to us that they ought to” and “this thing will work in the end, if we keep going long enough.” Once you’re busy working to the plan, the only signal telling you that the plan isn’t working is that vague sense of creeping uncertainty we came across before.
+
+Instead of estimation, think investing. That’s where you ask yourself: what’s going to be better for people in the world after we’ve done this, and how much time and energy is it worth us spending to get to “better”?
+
+You’re more interested in how to know when you’ve done enough. Your focus stays on figuring out how to actually get to “better” from where you are today, not on completing the plan you had a few months ago.
+
+Look for people who can bring together a consensus about difficult choices and channel the energy of the team on a focused goal. Those are your product people.
+
+Key takeaways
+Product management involves constantly choosing among possible directions.
+Prioritization is a skill that product offers up and down the org chart, especially when planning, setting OKRs, and making roadmaps.
+Product people help keep everyone focused and face the challenges that need to be overcome without flinching
+Complexity will always find its way into your work so avoid adding any optional complexity.
+Rely on product people to help make the most difficult decisions about where to invest your precious resources.

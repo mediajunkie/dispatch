@@ -1,0 +1,87 @@
+# 6 min read
+# Draft in
+# Growing Product People
+
+The diagram. Every discipline has one. It’s often a venn diagram but not always. It divides work into categories or practices and overlaps them. Generally, the profession in question defines itself as the linchpin for these competing concerns that have to find some harmonious way to coexist.
+
+These diagrams aren’t so much wrong as they are subjective. As long as you are aware that the adjacent disciplines probably have their own diagram that puts them at the center of the universe and you don’t make them signing off on your worldview a prerequisite for getting along, you can describe your work in any way that helps your community of practice work through it together.
+
+So you won’t be surprised to learn that product management has its own canonical diagram, made famous by Mind the Product founder Martin Eriksson:
+
+Lo and behold, product management finds itself in the navel of the universe.
+
+Again it’s not wrong, but I could swear that when I was a UX director I felt like we were the ones holding it all together, connecting what the customers were trying to tell us with what the business needed and the technology dictates through the magic of user-centered design.
+
+Fortunately product managers are generally pretty good at “taking the piss” out of themselves, as an occupational necessity, so the above image has inspired a generation of riffs and memes, with this variant being my personal favorite:
+
+I am reliably informed that as long as “bring the donuts” you won’t actually be hated by everyone.
+
+Let’s use this diagram instead
+
+But there is a diagram I like a lot better these days for helping people understand what product people do, and it gets away from this simple mechanistic notion of balancing or stitching together a handful of discrete adjacent disciplines.
+
+Joff Redfern, a VP of Product at Atlassian calls this the “PM Craft Triangle”:
+
+Joff Redfern’s PM Craft Triangle
+
+At the apex, the triangle is labeled General Manager (GM), representing the business leadership and ownership of the bottom line that represents a major aspect of product craft. (A lot of people call a product manager the “CEO of the product.” They’re wrong but we’ll come back to that.)
+
+A product manager is not the CEO of the product.
+
+At the left hand is the Artist. As you can see these are not jobs or subdisciplines of the software development lifecycle but temperaments, aptitudes, cultivated sensibilities. The artist is creative, sees things in fresh ways, makes beautiful things that engage the senses. You know the type.
+
+And in the right corner, we have the Scientist, the seeker of evidence, the formulator of hypotheses, the measurer, the experimenter, that statistician.
+
+In Joff’s telling (I’ll ask him to take a look at this before publication), most of us start off in one of those corners, based on our own primary or innate tendencies. Cultivating product craft in ourself or others involves movement toward the center, learning about and growing by incorporating the wisdom of the other pillar temperaments.
+
+(This movement often starts by progressing along an edge toward one of the other two point of view.)
+
+Highly skilled product professionals make it to smaller triangle that more fully incorporates these three cross-pressures:
+
+The smaller triangle represents more mature craft, no longer hugging the corner of one or the edge of just two of the three points of view
+
+Even once you (or your team) have “made it” to the inner triangle, it’s quite natural that each product person will still hang out closer to the corner they started in:
+
+
+When I was five years old I told people I wanted to be an artist “and a lawyer” — maybe I was ahead of my time.
+
+The fourth essential temperament
+
+Going back to original craft pyramid, I’d personally add one more temperament that I have found shared by by most of the best product people I have worked with:
+
+
+Yes, the supreme talent of the best product people is nosiness. If you aren’t willing to stick your nose into everybody’s business, this may not be your bag.
+
+This temperament is that of the Nosy Person, or “nosiness.” You’ve got to be a busybody. 
+
+Product people are the ones who look at the leadership team meeting in a room all day arguing over company strategy and roadmap and think “I want to be in that room. They need me in that room.”
+
+A product person has to be a jack of all trades, fluent in the argot of each of their colleagues’ tribes, intensely curious about the what and the how and the why of every aspect of putting the product together and shipping it into the hands and minds of real people.
+
+And you need to be able to do this without freaking people out!
+
+You have to quietly know the whole plan and who is doing which part of it and how well that part is going and you’re going to be the one who raises the alarm when the date slips or the traffic spikes or the reviews are going south on the app store, and you’re going to be the one waking up in the middle of the night to remember that there is one more language still incomplete for the internationalization and localization deadline.
+
+Nosiness will take you far.
+
+Meanwhile, back in Cambridge
+
+Before plowing ahead, let’s check in on the project initially called Private Kit and later Safe Paths and eventual PathCheck. A lot of people were saying the product needed focus and the product needed help, and a lot of people were showing up and saying they could fix the product or that they had been recruited to run the product or be head of product.
+
+Many of them were correct, too, as people in the founding leadership repeatedly reached out to experts in their network but without a mature vocabulary for distinguishing a tech business from an engineering team from a product organization.
+
+Leadership was crying out for an “MVP spec” they could use to show to partners, potential investors, and so on. Serious product folks with legitimate principles pushed back against this top-down approach, possibly misreading the pace of the moment and the limited value of “best practices” when chasing a pandemic at breakneck speed.
+
+I agreed to pull together that doc and started identifying the user stories already defined and mapped by the UX volunteers to figure out which were in scope for MVP and to get buy-in from all the stakeholders.
+
+Meanwhile, after rallying the product-identified people in the project slack, I next met with the engineering leads and asked them the key question: How can I help?
+
+It became clear that there was no testing or quality assurance going on yet and while this is not my forte, I certainly know how to write up a few manual test cases based on user story happy paths and some obvious alternative flows, edge conditions, and error cases, so I set to work doing just that and almost like magic within a few weeks and amazing Testing lead (Diarmid Mackenzie) appeared out of Italy and took the entire volunteer QA program to professional heights in remarkably short order.
+
+When this started happening, I knew it was time to return to the cabal of devs and founders cranking out the cowboy code and ask them the same question as before: What can I help with?
+
+Key takeaways
+- Product does indeed sit at the junction of UX/design, technology, and business in all its myriad wonderful manifestations (from marketing to data analysis to customer success to partnerships and more).
+- But more importantly, great product people are strongly rooted in one or more of the mindsets of a general manager, artist, or analytical scientist, and professional and career growth for the individual comes from strengthening complementary skills and points of view.
+- Likewise a great product team will strive for similar balance and complementarity drawing on all of these critical ways of solving problems and creating things that work.
+- The best product people are also profoundly nosy. Go ahead and read them in.
