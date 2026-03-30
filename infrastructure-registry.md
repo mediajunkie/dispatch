@@ -35,24 +35,29 @@ Last updated: 2026-03-29
 
 | Role | Slug | Environment | Interface | Device | Account | Chat Project | Status |
 |------|------|-------------|-----------|--------|---------|-------------|--------|
-| Lead Developer | lead | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Active |
-| Chief Architect | architect | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Active |
-| Chief of Staff | exec | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Active |
-| CXO | cxo | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Active |
-| PPM | ppm | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Active |
-| CIO | cio | Chat Project | claude.ai | browser | dinp | PM (dinp) | Active — needs migration to new project |
-| Comms | comms | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Active |
-| Docs | docs | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Active |
-| HOSR | hosr | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Active |
-| ETA | eta | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Active |
-| Piper Alpha (PA) | pa | Code (in-repo) | Claude Code | kindbook | dinp | PM (dinp) | Planned — first agent inhabiting PM role |
+| Lead Developer | lead | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | **MIGRATE** — last Code agent on old infra |
+| Chief Architect | arch | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Active — needs transition |
+| Chief of Staff | exec | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Active — needs transition |
+| CXO | cxo | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Active — needs transition |
+| PPM | ppm | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Active — needs transition |
+| CIO | cio | Chat Project | claude.ai | browser | dinp | PM (dinp) | **IN PROGRESS** — handoff from kindsys, onboarding to dinp Chat |
+| Comms | comms | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Active — needs transition |
+| Docs | docs | Code (local) | Claude Code | faoilean | dinp | PM (dinp) | **DONE** — transitioned Mar 30 |
+| HOSR | hosr | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Active — needs transition |
+| ETA | eta | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Dormant — not urgent |
+| Piper Alpha (PA) | pa | Code (local) | Claude Code | faoilean | dinp | PM (dinp) | **DONE** — launched Mar 30, onboarded |
 
 **Migration notes:**
 - Chat Project: Created on dinp Mar 29. Knowledge uploaded (465 files). Memory seeded. Agent onboarding in progress (one at a time with handoff memos).
-- CIO previously ran in kindsys Chat Project — needs transition to dinp Chat Project.
-- Cowork: **Created Mar 29** on kindbook (dinp account). Imported from PM Chat Project. Connected to local repo ~/Development/piper-morgan. 269 conversation transcripts available for forensic access via migration-staging archive.
-- Code: All Code agents already repointed to dinp API key.
-- Agent migration to Cowork: deferred — separate phase, one agent at a time with handoff memos.
+- CIO: transitioning from kindsys Chat → dinp Chat Project (in progress Mar 30).
+- Cowork: **Created Mar 29** on kindbook (dinp account). Imported from PM Chat Project. Connected to local repo ~/Development/piper-morgan. PA and Docs running on faoilean have access to Cowork project files locally.
+- Code: API key repointed to dinp (Mar 26). Active Code agents transitioning to new sessions with dinp Chat Project access.
+- **Agent migration scorecard (Mar 30):**
+  - Done: Docs (faoilean), Piper Alpha (faoilean)
+  - In progress: CIO (Chat, kindsys → dinp)
+  - To do: Lead Dev, Architect, CoS, CXO, PPM, Comms, HOSR
+  - Deferred: ETA (dormant)
+  - **Deadline: Apr 3** (kindsys Pro limits)
 
 ---
 
