@@ -50,8 +50,9 @@ Last updated: 2026-03-29
 **Migration notes:**
 - Chat Project: Created on dinp Mar 29. Knowledge uploaded (465 files). Memory seeded. Agent onboarding in progress (one at a time with handoff memos).
 - CIO previously ran in kindsys Chat Project — needs transition to dinp Chat Project.
-- Cowork: Not yet set up. Planned for 269 conversation transcripts (historical/forensic access).
+- Cowork: **Created Mar 29** on kindbook (dinp account). Imported from PM Chat Project. Connected to local repo ~/Development/piper-morgan. 269 conversation transcripts available for forensic access via migration-staging archive.
 - Code: All Code agents already repointed to dinp API key.
+- Agent migration to Cowork: deferred — separate phase, one agent at a time with handoff memos.
 
 ---
 
@@ -74,8 +75,9 @@ Last updated: 2026-03-29
 
 **Migration notes:**
 - Chat Project: Created on dinp Mar 28. Knowledge uploaded (60+ docs, 9 convos).
-- Cowork: Not yet set up. Planned.
+- Cowork: **Created Mar 29** on kindbook (dinp account). Imported from Chat Project. Connected to local repo ~/Development/klatch. Description, instructions, and memory seeded.
 - Code: All Code agents already repointed to dinp API key.
+- Agent migration to Cowork: deferred — separate phase after all Cowork spaces provisioned.
 
 ---
 
@@ -91,6 +93,7 @@ Last updated: 2026-03-29
 
 **Migration notes:**
 - Chat Project: Migrated to dinp Mar 28.
+- Cowork: **Created Mar 29** on kindbook (dinp account). Imported from Chat Project. Connected to local repo ~/Development/designinproduct. No specialized instructions yet — role TBD (possible Janus extension or separate agent).
 - CCR: Intelligence Sweep trigger runs daily (7 AM PDT), pushes to main.
 
 ---
@@ -132,14 +135,43 @@ Last updated: 2026-03-29
 
 ---
 
+## Wedgestock / Cuneo (Cuneiform Learning)
+
+**GitHub:** Design-in-Product/cuneo
+**Local:** ~/Development/cuneo (kindbook), ~/Development/cuneo (faoilean — verify clone exists)
+**Account:** designinproduct.com
+
+| Role | Environment | Interface | Device | Account | Status |
+|------|-------------|-----------|--------|---------|--------|
+| Opus tutor | Chat Project | claude.ai | browser | dinp | Active (Wedgestock project, 58-msg conversation) |
+| Cowork agent | Cowork | Claude Desktop | faoilean | dinp | **NEW** — created Mar 29, imported from Chat, connected to local cuneo repo |
+| Code auditor | Code | Claude Code | (either) | dinp | Ad hoc — no dedicated session, used via other projects |
+
+**Cowork space setup (Mar 29):**
+- Created on faoilean, designinproduct.com account
+- Imported from Wedgestock Chat Project
+- Connected to local folder: ~/Development/cuneo
+- Instructions/description: not yet copied from Chat Project (manual step pending)
+
+**Consolidated artifacts in repo:**
+- `index.html` — published primer (cuneo.dinp.xyz)
+- `data/cuneiform-signs.json` — canonical 51-sign database (Unicode 16.0 verified)
+- `tools/` — flashcard quiz (JSX), evolution visualizer (HTML)
+- `reference/` — earlier HTML reference docs from Chat
+- `transcripts/` — Opus tutoring session + Cowork session transcript
+
+**No standalone Claude Code sessions exist for this project on either machine.**
+
+---
+
 ## Other Projects (Lower Priority)
 
 | Project | Account | Chat Project | Cowork | Code | Status |
 |---------|---------|-------------|--------|------|--------|
 | Epistrophikon | dinp | Migrated Mar 28 | — | — | Active (writing project) |
-| Rebel Alliance | dinp | Migrated Mar 27 | Planned | — | Active |
+| Rebel Alliance | dinp | Migrated Mar 27 | **Created Mar 29** (kindbook) | — | Active |
 | Voice & Tone | dinp | Migrated Mar 27 | — | — | Active |
-| Wedgestock | dinp | Migrated Mar 27 | Planned | Planned | Active |
+| Wedgestock/Cuneo | dinp | Migrated Mar 27 | **Created Mar 29** (faoilean) | Ad hoc | Active |
 | Radio Free Airlift | dinp | In progress | Set up Mar 27 | — | Active |
 | Layers of Meta | dinp | Created | Set up Mar 27 | — | Active |
 | One Job | dinp | Migrated Mar 26 | — | — | Active |
