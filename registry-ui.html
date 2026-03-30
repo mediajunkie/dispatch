@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infrastructure Registry</title>
+<style>
+  :root {
+    --bg: #1a1a2e;
+    --surface: #16213e;
+    --surface2: #1c2a4a;
+    --border: #2a3a5c;
+    --text: #e0e0e0;
+    --text-dim: #8892a8;
+    --accent: #e94560;
+    --accent2: #0f3460;
+    --done: #2ecc71;
+    --progress: #f39c12;
+    --migrate: #e74c3c;
+    --dormant: #7f8c8d;
+    --active: #3498db;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.6em;
+    margin-bottom: 4px;
+    color: var(--accent);
+  }
+  .subtitle {
+    color: var(--text-dim);
+    font-size: 0.85em;
+    margin-bottom: 20px;
+  }
+  .controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .controls input, .controls select {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 0.85em;
+  }
+  .controls input { width: 220px; }
+  .controls select { width: 160px; }
+  .controls label {
+    font-size: 0.8em;
+    color: var(--text-dim);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .controls input[type="checkbox"] { width: auto; }
+  .btn {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85em;
+  }
+  .btn:hover { opacity: 0.85; }
+  .btn-secondary {
+    background: var(--accent2);
+  }
+
+  /* Summary bar */
+  .summary {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .summary-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 12px 18px;
+    min-width: 140px;
+  }
+  .summary-card .label { font-size: 0.75em; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.5px; }
+  .summary-card .value { font-size: 1.5em; font-weight: 600; margin-top: 2px; }
+  .summary-card .value.done { color: var(--done); }
+  .summary-card .value.progress { color: var(--progress); }
+  .summary-card .value.migrate { color: var(--migrate); }
+
+  /* Deadlines */
+  .deadlines {
+    background: var(--surface);
+    border: 1px solid var(--migrate);
+    border-radius: 6px;
+    padding: 12px 18px;
+    margin-bottom: 20px;
+    font-size: 0.85em;
+  }
+  .deadlines strong { color: var(--migrate); }
+  .deadlines .deadline-item { margin: 4px 0; }
+
+  /* Project sections */
+  .project {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: var(--surface2);
+    cursor: pointer;
+    user-select: none;
+  }
+  .project-header:hover { background: var(--border); }
+  .project-name {
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  .project-meta {
+    font-size: 0.8em;
+    color: var(--text-dim);
+    display: flex;
+    gap: 12px;
+  }
+  .project-body {
+    padding: 0;
+    overflow-x: auto;
+  }
+  .project-body.collapsed { display: none; }
+  .project-info {
+    padding: 10px 16px;
+    font-size: 0.8em;
+    color: var(--text-dim);
+    border-bottom: 1px solid var(--border);
+  }
+  .project-info code { color: var(--text); font-size: 0.95em; }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82em;
+  }
+  th {
+    text-align: left;
+    padding: 8px 12px;
+    background: var(--surface2);
+    color: var(--text-dim);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  th:hover { color: var(--text); }
+  th.sorted-asc::after { content: ' ▲'; }
+  th.sorted-desc::after { content: ' ▼'; }
+  td {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  tr:hover td { background: rgba(233, 69, 96, 0.05); }
+  tr.hidden { display: none; }
+
+  /* Status badges */
+  .status {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.85em;
+    font-weight: 500;
+  }
+  .status-done { background: rgba(46,204,113,0.15); color: var(--done); }
+  .status-progress { background: rgba(243,156,18,0.15); color: var(--progress); }
+  .status-migrate { background: rgba(231,76,60,0.15); color: var(--migrate); }
+  .status-active { background: rgba(52,152,219,0.15); color: var(--active); }
+  .status-dormant { background: rgba(127,140,141,0.15); color: var(--dormant); }
+  .status-blocked { background: rgba(231,76,60,0.25); color: var(--migrate); }
+
+  /* Editable cells */
+  td[contenteditable="true"]:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
+    background: var(--surface2);
+  }
+
+  /* Notes section */
+  .notes {
+    padding: 12px 16px;
+    font-size: 0.8em;
+    color: var(--text-dim);
+    border-top: 1px solid var(--border);
+  }
+  .notes ul { padding-left: 18px; }
+  .notes li { margin: 3px 0; }
+
+  /* Export area */
+  .export-area {
+    display: none;
+    margin-top: 16px;
+  }
+  .export-area textarea {
+    width: 100%;
+    height: 300px;
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 10px;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 0.8em;
+  }
+
+  /* Accounts table */
+  .accounts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 16px;
+  }
+  .account-card {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 12px;
+  }
+  .account-card.primary { border-color: var(--done); }
+  .account-card.deprecated { border-color: var(--migrate); opacity: 0.7; }
+  .account-card .email { font-weight: 600; font-size: 0.9em; }
+  .account-card .tier { color: var(--text-dim); font-size: 0.8em; }
+  .account-card .cost { font-size: 1.1em; font-weight: 600; margin: 4px 0; }
+  .account-card .scope { font-size: 0.75em; color: var(--text-dim); }
+</style>
+</head>
+<body>
+
+<h1>Infrastructure Registry</h1>
+<p class="subtitle">Where every agent lives, at every layer. The slot machine view. Updated <span id="lastUpdated">2026-03-30</span></p>
+
+<!-- Deadlines -->
+<div class="deadlines">
+  <strong>Migration Deadlines</strong>
+  <div class="deadline-item">Apr 3 — PM roles must migrate off kindsys.us (Pro limits)</div>
+  <div class="deadline-item">Apr 15 — All roles must migrate off mediajunkie.com</div>
+  <div class="deadline-item">Jun 2026 — crispybacon credits expire</div>
+</div>
+
+<!-- Summary -->
+<div class="summary" id="summary"></div>
+
+<!-- Controls -->
+<div class="controls">
+  <input type="text" id="search" placeholder="Filter by role, project, device..." oninput="filterAll()">
+  <select id="statusFilter" onchange="filterAll()">
+    <option value="">All statuses</option>
+    <option value="done">Done</option>
+    <option value="progress">In Progress</option>
+    <option value="migrate">Needs Migration</option>
+    <option value="active">Active</option>
+    <option value="dormant">Dormant</option>
+    <option value="blocked">Blocked</option>
+  </select>
+  <select id="projectFilter" onchange="filterAll()">
+    <option value="">All projects</option>
+  </select>
+  <label><input type="checkbox" id="editMode" onchange="toggleEdit()"> Edit mode</label>
+  <button class="btn btn-secondary" onclick="exportMarkdown()">Export Markdown</button>
+</div>
+
+<!-- Projects container -->
+<div id="projects"></div>
+
+<!-- Export area -->
+<div class="export-area" id="exportArea">
+  <textarea id="exportText" readonly></textarea>
+  <button class="btn" onclick="copyExport()" style="margin-top: 8px;">Copy to clipboard</button>
+</div>
+
+<script>
+const DATA = {
+  accounts: [
+    { email: 'xian@designinproduct.com', tier: '20x Max', cost: '~$100', status: 'PRIMARY', scope: 'All personal/creative/entrepreneurial', class: 'primary' },
+    { email: 'ccrumlish@kindsys.us', tier: 'Pro', cost: '~$20', status: 'VA only — PM migrate by Apr 3', scope: 'VA Decision Reviews', class: '' },
+    { email: 'xian@mediajunkie.com', tier: 'Pro', cost: '~$20', status: 'DEPRECATED — migrate by Apr 15', scope: '—', class: 'deprecated' },
+    { email: 'crispybacon@atswimtwobirds.com', tier: 'Pro (canceled)', cost: '$0', status: 'Burn credits through Jun 2026', scope: '—', class: 'deprecated' }
+  ],
+  projects: [
+    {
+      name: 'Piper Morgan',
+      github: 'mediajunkie/piper-morgan-product',
+      local: '~/Development/piper-morgan',
+      account: 'designinproduct.com',
+      notes: ['Chat Project on dinp (465 files, memory seeded)', 'Cowork created Mar 29 on kindbook', 'Deadline: Apr 3 for kindsys migration'],
+      agents: [
+        { role: 'Lead Developer', slug: 'lead', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'dinp', chat: 'PM (dinp)', status: 'migrate', statusText: 'MIGRATE — last on old infra' },
+        { role: 'Chief Architect', slug: 'arch', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'dinp', chat: 'PM (dinp)', status: 'active', statusText: 'Needs transition' },
+        { role: 'Chief of Staff', slug: 'exec', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'dinp', chat: 'PM (dinp)', status: 'active', statusText: 'Needs transition' },
+        { role: 'CXO', slug: 'cxo', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'dinp', chat: 'PM (dinp)', status: 'active', statusText: 'Needs transition' },
+        { role: 'PPM', slug: 'ppm', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'dinp', chat: 'PM (dinp)', status: 'active', statusText: 'Needs transition' },
+        { role: 'CIO', slug: 'cio', env: 'Chat Project', interface: 'claude.ai', device: 'browser', account: 'dinp', chat: 'PM (dinp)', status: 'progress', statusText: 'IN PROGRESS — kindsys → dinp' },
+        { role: 'Comms', slug: 'comms', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'dinp', chat: 'PM (dinp)', status: 'active', statusText: 'Needs transition' },
+        { role: 'Docs', slug: 'docs', env: 'Code (local)', interface: 'Claude Code', device: 'faoilean', account: 'dinp', chat: 'PM (dinp)', status: 'done', statusText: 'DONE — Mar 30' },
+        { role: 'HOSR', slug: 'hosr', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'dinp', chat: 'PM (dinp)', status: 'active', statusText: 'Needs transition' },
+        { role: 'ETA', slug: 'eta', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'dinp', chat: 'PM (dinp)', status: 'dormant', statusText: 'Dormant' },
+        { role: 'Piper Alpha', slug: 'pa', env: 'Code (local)', interface: 'Claude Code', device: 'faoilean', account: 'dinp', chat: 'PM (dinp)', status: 'done', statusText: 'DONE — launched Mar 30' }
+      ]
+    },
+    {
+      name: 'Klatch',
+      github: 'Design-in-Product/klatch',
+      local: '~/Development/klatch',
+      account: 'designinproduct.com',
+      notes: ['Chat Project on dinp (60+ docs, 9 convos)', 'Cowork created Mar 29 on kindbook', 'All Code agents on dinp API key'],
+      agents: [
+        { role: 'Daedalus', slug: 'daedalus', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'dinp', chat: 'Klatch (dinp)', status: 'active', statusText: 'Active' },
+        { role: 'Argus', slug: 'argus', env: 'Code (cloud)', interface: 'Claude Code', device: 'CCR sandbox', account: 'dinp', chat: 'Klatch (dinp)', status: 'active', statusText: 'Active' },
+        { role: 'Calliope', slug: 'calliope', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'dinp', chat: 'Klatch (dinp)', status: 'active', statusText: 'Active' },
+        { role: 'Theseus Prime', slug: 'theseus', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'dinp', chat: 'Klatch (dinp)', status: 'active', statusText: 'Active' },
+        { role: 'Mnemosyne', slug: 'mnemosyne', env: 'Chat Project', interface: 'claude.ai', device: 'browser', account: 'dinp', chat: 'Klatch (dinp)', status: 'active', statusText: 'Active' },
+        { role: 'Ariadne', slug: 'ariadne', env: 'Klatch (in-app)', interface: 'Klatch UI', device: '—', account: '—', chat: '—', status: 'dormant', statusText: 'Test agent' },
+        { role: 'Hermes', slug: 'hermes', env: 'Klatch (in-app)', interface: 'Klatch UI', device: '—', account: '—', chat: '—', status: 'dormant', statusText: 'Test agent' }
+      ]
+    },
+    {
+      name: 'Design in Product',
+      github: 'mediajunkie/designinproduct',
+      local: '~/Development/designinproduct',
+      account: 'designinproduct.com',
+      notes: ['Chat Project migrated Mar 28', 'Cowork created Mar 29 on kindbook', 'CCR sweep runs daily 7 AM PDT'],
+      agents: [
+        { role: 'Janus', slug: 'janus', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'dinp', chat: 'DinP (dinp)', status: 'active', statusText: 'Active' }
+      ]
+    },
+    {
+      name: 'VA Decision Reviews',
+      github: '(private)',
+      local: '~/cool/VA/',
+      account: 'kindsys.us',
+      notes: ['Intentionally separate from dinp — contract work', 'Archie on dinp Cowork, accesses kindsys Chat', 'Dedicated kindsys API key'],
+      agents: [
+        { role: 'Archie', slug: 'archie', env: 'Cowork', interface: 'Claude Cowork', device: 'cloud', account: 'dinp', chat: 'VA (kindsys)', status: 'active', statusText: 'Active' },
+        { role: 'VA Code agent', slug: '—', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'kindsys', chat: 'VA (kindsys)', status: 'active', statusText: 'Active' },
+        { role: 'DRAGONS Chat', slug: '—', env: 'Chat Project', interface: 'claude.ai', device: 'browser', account: 'kindsys', chat: 'VA (kindsys)', status: 'active', statusText: 'Active' }
+      ]
+    },
+    {
+      name: 'Dispatch',
+      github: 'mediajunkie/dispatch (private)',
+      local: '~/cool/dispatch/',
+      account: 'designinproduct.com',
+      notes: ['Dispatch-DinP bug fixed — ready to revive', 'Dispatch-Kind revival prompt written', 'Janus covering cross-project coordination'],
+      agents: [
+        { role: 'Dispatch-DinP', slug: 'dispatch-dinp', env: 'Cowork', interface: 'Claude Cowork', device: 'kindbook', account: 'dinp', chat: '—', status: 'active', statusText: 'Bug fixed — ready to revive' },
+        { role: 'Dispatch-Kind', slug: 'dispatch-kind', env: 'Cowork', interface: 'Claude Cowork', device: '—', account: 'kindsys', chat: '—', status: 'dormant', statusText: 'Deprecated — revival prompt ready' },
+        { role: 'Janus (acting)', slug: 'janus', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'dinp', chat: '—', status: 'active', statusText: 'Covering cross-project' }
+      ]
+    },
+    {
+      name: 'Wedgestock / Cuneo',
+      github: 'Design-in-Product/cuneo',
+      local: '~/Development/cuneo',
+      account: 'designinproduct.com',
+      notes: ['Chat Project migrated Mar 27', 'Cowork created Mar 29 on faoilean', 'All artifacts consolidated in repo'],
+      agents: [
+        { role: 'Opus tutor', slug: '—', env: 'Chat Project', interface: 'claude.ai', device: 'browser', account: 'dinp', chat: 'Wedgestock (dinp)', status: 'active', statusText: 'Active' },
+        { role: 'Cowork agent', slug: '—', env: 'Cowork', interface: 'Claude Desktop', device: 'faoilean', account: 'dinp', chat: 'Wedgestock (dinp)', status: 'active', statusText: 'NEW — Mar 29' },
+        { role: 'Code auditor', slug: '—', env: 'Code', interface: 'Claude Code', device: '(either)', account: 'dinp', chat: '—', status: 'dormant', statusText: 'Ad hoc' }
+      ]
+    }
+  ]
+};
+
+// Render
+function render() {
+  renderSummary();
+  renderProjects();
+  populateProjectFilter();
+}
+
+function renderSummary() {
+  const allAgents = DATA.projects.flatMap(p => p.agents);
+  const counts = { done: 0, progress: 0, migrate: 0, active: 0, dormant: 0, blocked: 0 };
+  allAgents.forEach(a => { if (counts[a.status] !== undefined) counts[a.status]++; });
+
+  document.getElementById('summary').innerHTML = `
+    <div class="summary-card"><div class="label">Total Agents</div><div class="value">${allAgents.length}</div></div>
+    <div class="summary-card"><div class="label">Migrated</div><div class="value done">${counts.done}</div></div>
+    <div class="summary-card"><div class="label">In Progress</div><div class="value progress">${counts.progress}</div></div>
+    <div class="summary-card"><div class="label">Needs Migration</div><div class="value migrate">${counts.migrate + counts.active}</div></div>
+    <div class="summary-card"><div class="label">Dormant / Test</div><div class="value" style="color:var(--dormant)">${counts.dormant}</div></div>
+  `;
+}
+
+function renderProjects() {
+  const container = document.getElementById('projects');
+  container.innerHTML = DATA.projects.map((p, pi) => `
+    <div class="project" data-project="${p.name}">
+      <div class="project-header" onclick="toggleProject(${pi})">
+        <span class="project-name">${p.name}</span>
+        <span class="project-meta">
+          <span>${p.agents.length} roles</span>
+          <span>${p.account}</span>
+          <span>${p.agents.filter(a => a.status === 'done').length}/${p.agents.length} migrated</span>
+        </span>
+      </div>
+      <div class="project-body" id="project-${pi}">
+        <div class="project-info">
+          <strong>Repo:</strong> <code>${p.github}</code> &nbsp;|&nbsp;
+          <strong>Local:</strong> <code>${p.local}</code> &nbsp;|&nbsp;
+          <strong>Account:</strong> ${p.account}
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th onclick="sortTable(${pi}, 0)">Role</th>
+              <th onclick="sortTable(${pi}, 1)">Slug</th>
+              <th onclick="sortTable(${pi}, 2)">Environment</th>
+              <th onclick="sortTable(${pi}, 3)">Interface</th>
+              <th onclick="sortTable(${pi}, 4)">Device</th>
+              <th onclick="sortTable(${pi}, 5)">Account</th>
+              <th onclick="sortTable(${pi}, 6)">Chat Project</th>
+              <th onclick="sortTable(${pi}, 7)">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${p.agents.map((a, ai) => `
+              <tr data-status="${a.status}" data-searchable="${[a.role, a.slug, a.env, a.device, a.account, a.statusText, p.name].join(' ').toLowerCase()}">
+                <td>${a.role}</td>
+                <td><code>${a.slug}</code></td>
+                <td>${a.env}</td>
+                <td>${a.interface}</td>
+                <td>${a.device}</td>
+                <td>${a.account}</td>
+                <td>${a.chat}</td>
+                <td><span class="status status-${a.status}">${a.statusText}</span></td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+        ${p.notes.length ? `
+        <div class="notes">
+          <ul>${p.notes.map(n => `<li>${n}</li>`).join('')}</ul>
+        </div>` : ''}
+      </div>
+    </div>
+  `).join('');
+}
+
+function populateProjectFilter() {
+  const sel = document.getElementById('projectFilter');
+  DATA.projects.forEach(p => {
+    const opt = document.createElement('option');
+    opt.value = p.name;
+    opt.textContent = p.name;
+    sel.appendChild(opt);
+  });
+}
+
+// Interactions
+function toggleProject(idx) {
+  document.getElementById(`project-${idx}`).classList.toggle('collapsed');
+}
+
+function filterAll() {
+  const search = document.getElementById('search').value.toLowerCase();
+  const statusFilter = document.getElementById('statusFilter').value;
+  const projectFilter = document.getElementById('projectFilter').value;
+
+  document.querySelectorAll('.project').forEach(proj => {
+    const projName = proj.dataset.project;
+    if (projectFilter && projName !== projectFilter) {
+      proj.style.display = 'none';
+      return;
+    }
+    proj.style.display = '';
+
+    let visibleCount = 0;
+    proj.querySelectorAll('tbody tr').forEach(row => {
+      const matchSearch = !search || row.dataset.searchable.includes(search);
+      const matchStatus = !statusFilter || row.dataset.status === statusFilter;
+      const visible = matchSearch && matchStatus;
+      row.classList.toggle('hidden', !visible);
+      if (visible) visibleCount++;
+    });
+  });
+}
+
+function toggleEdit() {
+  const editable = document.getElementById('editMode').checked;
+  document.querySelectorAll('td').forEach(td => {
+    td.contentEditable = editable;
+  });
+}
+
+function sortTable(projectIdx, colIdx) {
+  const table = document.querySelector(`#project-${projectIdx} table`);
+  const tbody = table.querySelector('tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  const th = table.querySelectorAll('th')[colIdx];
+  const asc = !th.classList.contains('sorted-asc');
+
+  table.querySelectorAll('th').forEach(h => h.classList.remove('sorted-asc', 'sorted-desc'));
+  th.classList.add(asc ? 'sorted-asc' : 'sorted-desc');
+
+  rows.sort((a, b) => {
+    const aText = a.cells[colIdx].textContent.trim();
+    const bText = b.cells[colIdx].textContent.trim();
+    return asc ? aText.localeCompare(bText) : bText.localeCompare(aText);
+  });
+  rows.forEach(r => tbody.appendChild(r));
+}
+
+function exportMarkdown() {
+  let md = '# Infrastructure Registry\n\n';
+  md += `*Exported from UI: ${new Date().toISOString().split('T')[0]}*\n\n`;
+
+  DATA.projects.forEach(p => {
+    md += `## ${p.name}\n\n`;
+    md += `| Role | Slug | Environment | Interface | Device | Account | Chat Project | Status |\n`;
+    md += `|------|------|-------------|-----------|--------|---------|-------------|--------|\n`;
+    p.agents.forEach(a => {
+      md += `| ${a.role} | ${a.slug} | ${a.env} | ${a.interface} | ${a.device} | ${a.account} | ${a.chat} | ${a.statusText} |\n`;
+    });
+    md += '\n';
+  });
+
+  document.getElementById('exportArea').style.display = 'block';
+  document.getElementById('exportText').value = md;
+}
+
+function copyExport() {
+  const textarea = document.getElementById('exportText');
+  textarea.select();
+  navigator.clipboard.writeText(textarea.value);
+}
+
+// Init
+render();
+</script>
+</body>
+</html>
