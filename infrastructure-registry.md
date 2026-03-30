@@ -40,7 +40,7 @@ Last updated: 2026-03-29
 | Chief of Staff | exec | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Active — needs transition |
 | CXO | cxo | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Active — needs transition |
 | PPM | ppm | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Active — needs transition |
-| CIO | cio | Chat Project | claude.ai | browser | dinp | PM (dinp) | **IN PROGRESS** — handoff from kindsys, onboarding to dinp Chat |
+| CIO | cio | Chat Project | claude.ai | browser | dinp | PM (dinp) | **DONE** — transitioned Mar 30 |
 | Comms | comms | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Active — needs transition |
 | Docs | docs | Code (local) | Claude Code | faoilean | dinp | PM (dinp) | **DONE** — transitioned Mar 30 |
 | HOSR | hosr | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Active — needs transition |
@@ -111,14 +111,15 @@ Last updated: 2026-03-29
 
 | Role | Slug | Environment | Interface | Device | Account | Chat Project | Status |
 |------|------|-------------|-----------|--------|---------|-------------|--------|
-| Archie | archie | Cowork | Claude Cowork | cloud | dinp | VA (kindsys) | Active |
+| Archie | archie | Cowork | Claude Cowork | kindbook | kindsys | VA (kindsys) | **Recreated Mar 30** |
 | VA Code agent | — | Code (local) | Claude Code | kindbook | kindsys | VA (kindsys) | Active |
 | DRAGONS Chat | — | Chat Project | claude.ai | browser | kindsys | VA (kindsys) | Active |
 
 **Notes:**
-- Archie runs on dinp account but accesses VA Chat Project on kindsys.
+- Archie Cowork space: **Recreated Mar 30** on kindbook, kindsys account (correctly aligned). Previous dinp space was lost during migration. Connected to ~/cool/VA/.
 - VA stays on kindsys per data boundary policy (contract work).
 - API key: dedicated kindsys key in ~/cool/VA/.env
+- Signaling channel intact at ~/cool/VA/dispatch/ (briefings, memos, knowledge package all preserved)
 
 ---
 
@@ -130,13 +131,14 @@ Last updated: 2026-03-29
 
 | Role | Slug | Environment | Interface | Device | Account | Status |
 |------|------|-------------|-----------|--------|---------|--------|
-| Dispatch-DinP | dispatch-dinp | Cowork | Claude Cowork | kindbook | dinp | **BLOCKED** — SendUserMessage bug |
-| Dispatch-Kind | dispatch-kind | Cowork | Claude Cowork | — | kindsys | Deprecated |
+| Dispatch-DinP | dispatch-dinp | Cowork | Claude Cowork | kindbook | dinp | — | Bug fixed — ready to revive |
+| Dispatch-Kind | dispatch-kind | Cowork | Claude Cowork | kindbook | kindsys | — | **TODO** — create on kindsys, reboot Archie |
 | Janus (acting) | janus | Code (local) | Claude Code | kindbook | dinp | Active — covering cross-project coordination |
 
 **Notes:**
-- Dispatch-DinP blocked by Anthropic cloud-layer bug (SendUserMessage not provisioned).
-- Janus covering Dispatch's cross-project coordination role until bug is fixed.
+- Dispatch-DinP: bug fixed. Ready to revive when xian chooses. Revival prompt at `~/cool/dispatch/HANDOFF-PROMPT-DISPATCH-DINP.md`.
+- Dispatch-Kind: **TODO** — create Cowork space on kindsys account, kindbook. Revival prompt at `~/cool/dispatch/HANDOFF-PROMPT-DISPATCH-KIND.md`. Can help reboot Archie in the new VA Cowork space.
+- Janus covering Dispatch's cross-project coordination role in the interim.
 
 ---
 
