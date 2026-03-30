@@ -11,8 +11,8 @@ Last updated: 2026-03-29
 | Account | Tier | Cost/mo | Status | Scope |
 |---------|------|---------|--------|-------|
 | xian@designinproduct.com | 20x Max | ~$100 | **PRIMARY** | All personal/creative/entrepreneurial |
-| ccrumlish@kindsys.us | Pro | ~$20 | Active (VA only) | VA Decision Reviews |
-| xian@mediajunkie.com | Pro | ~$20 | **DEPRECATED** — cancel after migration done | — |
+| ccrumlish@kindsys.us | Pro (downgraded Mar 29) | ~$20 | Active (VA only) — PM roles must migrate by Apr 3 | VA Decision Reviews |
+| xian@mediajunkie.com | Pro (downgraded Mar 29) | ~$20 | **DEPRECATED** — active roles must migrate by Apr 15 | — |
 | crispybacon@atswimtwobirds.com | Pro (canceled) | $0 | Burn credits through June 2026 | — |
 
 ---
