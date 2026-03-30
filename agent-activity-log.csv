@@ -1,0 +1,28 @@
+date,project,role,slug,environment,device,account,session_type,duration_estimate,summary,source
+2026-03-21,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,work,"afternoon",M1 sprint work + session logs,activity-log
+2026-03-21,piper-morgan,Docs,docs,Code,kindbook,kindsys,work,"afternoon",Omnibus log pilot with Dispatch (4 iterations),activity-log
+2026-03-21,dispatch,Dispatch,dispatch,Cowork,kindbook,kindsys,work,"afternoon–evening",First session: onboarding + omnibus pilot,activity-log
+2026-03-22,dispatch,Dispatch,dispatch,Cowork,kindbook,kindsys,work,"morning–evening",March 21 omnibus + five-layer injection + workflow mapping,activity-log
+2026-03-22,piper-morgan,Docs,docs,Code,kindbook,kindsys,review,"afternoon",Evaluated v1 of March 21 omnibus,activity-log
+2026-03-23,dispatch,Dispatch,dispatch,Cowork,kindbook,kindsys,work,"8:02 AM–evening",VA workflow + Archie onboarding + Klatch report + RFA briefing,activity-log
+2026-03-23,VA,Archie,archie,Cowork,cloud,dinp,onboarding,"12:05 PM",Onboarded as VA Ops Partner + filesystem signaling,activity-log
+2026-03-24,dispatch,Dispatch,dispatch,Cowork,kindbook,kindsys,work,"8:16 AM + 11:01 PM",Morning briefing + API outage all day + evening debrief,activity-log
+2026-03-24,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,work,"daytime",Completed M1 sprint work (minus manual testing),activity-log
+2026-03-24,piper-morgan,Docs,docs,Code,kindbook,kindsys,work,"daytime",Attending to HIGH-COMPLEXITY eval memos,activity-log
+2026-03-24,designinproduct,Janus,janus,Code,kindbook,dinp,work,"morning",Fixed cross-pollination script + scheduled prompt + backfill,activity-log
+2026-03-24,klatch,Theseus Prime,theseus,Code,kindbook,dinp,work,"morning",AXT with fork Aether — five-layer delivery issues found,activity-log
+2026-03-25,dispatch,Dispatch,dispatch,Cowork,kindbook,kindsys,work,"11:34 AM–11:17 PM",Sprint review day + Serena fix + MCP research + digests + billing,activity-log
+2026-03-25,VA,Archie,archie,Cowork,cloud,dinp,work,"8:30 AM",Auto morning briefing (Sprint Review + budget cut news),activity-log
+2026-03-25,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,work,"daytime","Piper Ship posted, routine",activity-log
+2026-03-26,dispatch,Dispatch,dispatch,Cowork,kindbook,kindsys,work,"7:26 AM–evening","Phase 1 migration + billing restructuring + API key repointing",activity-log
+2026-03-26,designinproduct,Janus,janus,Code,kindbook,dinp,work,"late evening","Repo reconciliation, atlas/globe/weather, sweep re-run",git-log
+2026-03-27,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,work,"3:35 PM–10:33 PM","Migration completion: 4 Chat Projects + conversation matching + transcript extraction",activity-log
+2026-03-27,klatch,Daedalus,daedalus,Code,kindbook,dinp,work,"10:04 AM–5:10 PM","Step 9 complete + Round 12 Tier 1 + File Domain Model + v0.8.9",git-log
+2026-03-27,klatch,Calliope,calliope,Code,kindbook,dinp,work,"10:19 AM–12:29 PM","AXT extension + calibration pilot + editorial calendar + 3 blog drafts",git-log
+2026-03-28,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,work,"morning–afternoon","Epistrophikon/DinP/Klatch migrations + PM knowledge audit (session lost mid-day)",activity-log
+2026-03-28,designinproduct,Janus,janus,Code,kindbook,dinp,work,"1:56 PM–8:46 PM","Sweep fix + March 27 backfill + atlas cleanup + founding-era briefs (8)",git-log
+2026-03-29,designinproduct,Janus,janus,Code,kindbook,dinp,work,"9:57 AM–8:18 PM","Branch fix + PM Chat migration + registry + Cowork audits + 5 Cowork spaces provisioned",git-log
+2026-03-30,piper-morgan,CIO,cio,Chat,browser,kindsys→dinp,transition,"morning","Handoff from kindsys project — in progress",xian-report
+2026-03-30,piper-morgan,Docs,docs,Code,faoilean,dinp,work,"morning","Transitioned to new infrastructure on faoilean",xian-report
+2026-03-30,piper-morgan,Piper Alpha,pa,Code,faoilean,dinp,onboarding,"morning","Launched on faoilean — first agent inhabiting PM role",xian-report
+2026-03-30,designinproduct,Janus,janus,Code,kindbook,dinp,work,"6:25 AM–","Sweep verification + Dispatch-Kind prompt + agent activity CSV + registry",git-log
