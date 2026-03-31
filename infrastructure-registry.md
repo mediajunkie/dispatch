@@ -37,7 +37,7 @@ Last updated: 2026-03-29
 |------|------|-------------|-----------|--------|---------|-------------|--------|
 | Lead Developer | lead | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | **TODO** — last Code agent to migrate |
 | Chief Architect | arch | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | **DONE** — transitioned Mar 30 |
-| Chief of Staff | exec | Chat Project | claude.ai | browser | dinp | PM (dinp) | **TODO** — last Chat agent to migrate |
+| Chief of Staff | exec | Chat Project | claude.ai | browser | dinp | PM (dinp) | **DONE** — transitioned Mar 30 |
 | CXO | cxo | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | **DONE** — transitioned Mar 30 |
 | PPM | ppm | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | **DONE** — transitioned Mar 30 |
 | CIO | cio | Chat Project | claude.ai | browser | dinp | PM (dinp) | **DONE** — transitioned Mar 30 |
@@ -53,8 +53,8 @@ Last updated: 2026-03-29
 - Cowork: **Created Mar 29** on kindbook (dinp account). Imported from PM Chat Project. Connected to local repo ~/Development/piper-morgan. PA and Docs running on faoilean have access to Cowork project files locally.
 - Code: API key repointed to dinp (Mar 26). Active Code agents transitioning to new sessions with dinp Chat Project access.
 - **Agent migration scorecard (Mar 30, 6:32 PM):**
-  - Done: CIO, Docs, PA, Architect, CXO, PPM, Comms, HOSR (8 of 11)
-  - To do: Chief of Staff (Chat), Lead Developer (Code)
+  - Done: CIO, Docs, PA, Architect, CXO, PPM, Comms, HOSR, Chief of Staff (9 of 11)
+  - To do: Lead Developer (Code) — last PM agent on kindsys
   - Deferred: ETA (dormant)
   - **Deadline: Apr 3** (kindsys Pro limits)
   - Note: at least one role questioning whether Code or Cowork might be a better fit — evaluating over time
@@ -94,7 +94,7 @@ Last updated: 2026-03-29
 
 | Role | Slug | Environment | Interface | Device | Account | Chat Project | Status |
 |------|------|-------------|-----------|--------|---------|-------------|--------|
-| Janus | janus | Code (local) | Claude Code | kindbook | dinp | DinP (dinp) | Active |
+| Janus | janus | Code (local) | Claude Code | kindbook | **mediajunkie** | DinP (dinp) | **TODO** — migrate to dinp account |
 
 **Migration notes:**
 - Chat Project: Migrated to dinp Mar 28.
