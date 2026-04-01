@@ -2,7 +2,7 @@
 
 *Where every agent lives, at every layer. The slot machine view.*
 
-Last updated: 2026-03-29
+Last updated: 2026-03-31
 
 ---
 
@@ -35,7 +35,7 @@ Last updated: 2026-03-29
 
 | Role | Slug | Environment | Interface | Device | Account | Chat Project | Status |
 |------|------|-------------|-----------|--------|---------|-------------|--------|
-| Lead Developer | lead | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | **TODO** — last Code agent to migrate |
+| Lead Developer | lead | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | **DONE** — transitioned Mar 30 |
 | Chief Architect | arch | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | **DONE** — transitioned Mar 30 |
 | Chief of Staff | exec | Chat Project | claude.ai | browser | dinp | PM (dinp) | **DONE** — transitioned Mar 30 |
 | CXO | cxo | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | **DONE** — transitioned Mar 30 |
@@ -43,9 +43,17 @@ Last updated: 2026-03-29
 | CIO | cio | Chat Project | claude.ai | browser | dinp | PM (dinp) | **DONE** — transitioned Mar 30 |
 | Comms | comms | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | **DONE** — transitioned Mar 30 |
 | Docs | docs | Code (local) | Claude Code | faoilean | dinp | PM (dinp) | **DONE** — transitioned Mar 30 |
-| HOSR | hosr | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | **DONE** — transitioned Mar 30 |
-| ETA | eta | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Dormant — not urgent |
+| HOST | hosr | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | **DONE** — transitioned Mar 30 |
+| ETA | eta | Code (local) | Claude Code | kindbook | dinp | PM (dinp) | Archived — backed up, no session planned |
+| Mobile Consultant | — | — | — | — | dinp | PM (dinp) | Archived — backed up with handoff prompt, no session planned |
 | Piper Alpha (PA) | pa | Code (local) | Claude Code | faoilean | dinp | PM (dinp) | **DONE** — launched Mar 30 |
+| Special Assignments | spec | Code (local) | Claude Code | — | dinp | PM (dinp) | Inactive |
+| Programmer | prog | Code (local) | Claude Code | — | dinp | PM (dinp) | Inactive |
+| Vibe Coder | vibe | Code (local) | Claude Code | — | dinp | PM (dinp) | Inactive |
+| Exec Coach | coach | Chat Project | claude.ai | browser | dinp | PM (dinp) | Inactive |
+| SecOps | secops | Code (local) | Claude Code | — | dinp | PM (dinp) | Inactive |
+| Researcher | research | Code (local) | Claude Code | — | dinp | PM (dinp) | Inactive |
+| Unicorn Web Designer | web | Code (local) | Claude Code | — | dinp | PM (dinp) | Inactive — upcoming work expected |
 
 **Migration notes:**
 - Chat Project: Created on dinp Mar 29. Knowledge uploaded (465 files). Memory seeded. Agent onboarding in progress (one at a time with handoff memos).
@@ -53,11 +61,10 @@ Last updated: 2026-03-29
 - Cowork: **Created Mar 29** on kindbook (dinp account). Imported from PM Chat Project. Connected to local repo ~/Development/piper-morgan. PA and Docs running on faoilean have access to Cowork project files locally.
 - Code: API key repointed to dinp (Mar 26). Active Code agents transitioning to new sessions with dinp Chat Project access.
 - **Agent migration scorecard (Mar 30, 6:32 PM):**
-  - Done: CIO, Docs, PA, Architect, CXO, PPM, Comms, HOSR, Chief of Staff (9 of 11)
-  - To do: Lead Developer (Code) — last PM agent on kindsys
-  - Deferred: ETA (dormant)
-  - **Deadline: Apr 3** (kindsys Pro limits)
-  - Note: at least one role questioning whether Code or Cowork might be a better fit — evaluating over time
+  - **All active roles migrated.** Lead Dev, Architect, CXO, PPM, CIO, Comms, Docs, HOST, Chief of Staff, Piper Alpha (10 active).
+  - ETA, Mobile Consultant: archived (backed up, no sessions planned). Migrated to the extent possible.
+  - Cowork custodian: not yet set up (later pass, after existing migrations complete).
+  - **Apr 3 kindsys deadline: clear.** No PM roles remain on kindsys.
 
 ---
 
@@ -94,7 +101,7 @@ Last updated: 2026-03-29
 
 | Role | Slug | Environment | Interface | Device | Account | Chat Project | Status |
 |------|------|-------------|-----------|--------|---------|-------------|--------|
-| Janus | janus | Code (local) | Claude Code | kindbook | **mediajunkie** | DinP (dinp) | **TODO** — migrate to dinp account |
+| Janus | janus | Code (local) | Claude Code | faoilean | dinp | DinP (dinp) | **DONE** — migrated to dinp account Mar 31 |
 
 **Migration notes:**
 - Chat Project: Migrated to dinp Mar 28.
@@ -131,14 +138,14 @@ Last updated: 2026-03-29
 
 | Role | Slug | Environment | Interface | Device | Account | Status |
 |------|------|-------------|-----------|--------|---------|--------|
-| Dispatch-DinP | dispatch-dinp | Cowork | Claude Cowork | kindbook | dinp | — | Bug fixed — ready to revive |
-| Dispatch-Kind | dispatch-kind | Cowork | Claude Cowork | kindbook | kindsys | — | **TODO** — create on kindsys, reboot Archie |
-| Janus (acting) | janus | Code (local) | Claude Code | kindbook | dinp | Active — covering cross-project coordination |
+| Dispatch-DinP | dispatch-dinp | Cowork | Claude Cowork | kindbook | dinp | — | **Active** — revived Mar 31. RFC-001 issued, coordinating layer mappings. |
+| Dispatch-Kind | dispatch-kind | Cowork | Claude Cowork | kindbook | kindsys | — | **Not started** — needs Cowork space created on kindsys |
+| Janus (acting) | janus | Code (local) | Claude Code | faoilean | dinp | Active — cross-project coordination shared with Dispatch-DinP |
 
 **Notes:**
-- Dispatch-DinP: bug fixed. Ready to revive when xian chooses. Revival prompt at `~/cool/dispatch/HANDOFF-PROMPT-DISPATCH-DINP.md`.
-- Dispatch-Kind: **TODO** — create Cowork space on kindsys account, kindbook. Revival prompt at `~/cool/dispatch/HANDOFF-PROMPT-DISPATCH-KIND.md`. Can help reboot Archie in the new VA Cowork space.
-- Janus covering Dispatch's cross-project coordination role in the interim.
+- Dispatch-DinP: **Active since Mar 31.** Bug fixed, revived. Issued RFC-001 (Five-Layer Context Model). Coordinating layer mapping assessments from PM and Klatch. Flagged stale weekly xpoll digest to Janus.
+- Dispatch-Kind: **Not started.** Cowork space not yet created on kindsys. Revival prompt at `~/cool/dispatch/HANDOFF-PROMPT-DISPATCH-KIND.md`. Part of VA/kindsys stack completion.
+- Janus sharing cross-project coordination with Dispatch-DinP (no longer sole cover).
 
 ---
 
@@ -198,8 +205,8 @@ Last updated: 2026-03-29
 ## Known Issues / Open Questions
 
 1. **kindbook auth**: Verified as dinp on Mar 27 — but has it persisted? Needs spot-check.
-2. **CIO (Piper)**: Last ran in kindsys Chat Project. Needs transition to dinp PM Chat Project.
+2. ~~**CIO (Piper)**: Last ran in kindsys Chat Project. Needs transition to dinp PM Chat Project.~~ **DONE** Mar 30.
 3. **Mnemosyne (Klatch)**: Runs in Chat — which account? Needs verification.
-4. **Archie account confusion**: Runs on dinp Cowork but accesses kindsys Chat Project. Is this stable?
+4. ~~**Archie account confusion**: Runs on dinp Cowork but accesses kindsys Chat Project. Is this stable?~~ **Resolved** — Archie recreated Mar 30 on kindsys Cowork (correctly aligned).
 5. **Code session continuity**: Some long-running Code chats may need fresh sessions after API key changes. Track as agents are onboarded.
 6. **Dispatch cloud bug**: SendUserMessage not provisioned. Server-side fix needed from Anthropic.

@@ -1,45 +1,55 @@
-# Current Week Intelligence Brief: March 19–25, 2026
+# Current Week Intelligence Brief: March 26–31, 2026
 
 **For:** In-session context (paste into chat as knowledge base)
 
 ## This Week at a Glance
 
-Piper Morgan hit its largest coordination day (9 concurrent agents) and discovered the Capability Awareness Gap — five disconnected systems claiming what Piper can do, producing silent failures. Fixed via canonical registry. Klatch formalized the 5-layer prompt assembly model and agent traditions pattern, established standing intelligence monitoring, and shipped klatch creation UI. Both projects converged on identical architectural solutions (registry routing, floor-first dispatch, two-track testing) without coordination.
+Klatch shipped its densest feature day (Step 9 Files complete, File Domain Model approved, Round 12 infrastructure, first native tool use) then entered a holding pattern. Piper Morgan broke a 96-hour silence with ~40 commits: a blog-first publishing pipeline paved through two real publishes, a complete dev/active cleanup skill, and the onboarding of its first new agent role (Piper Alpha). Both projects converged independently on fidelity-as-discipline — Klatch through systematic methodology (AXT-per-layer, Compaction API research, Layer 5 calibration pilot) and Piper Morgan through operational discovery (silent schema drift, stranded branches, the "three clocks" problem). The Chat-to-Cowork import experiment validated the five-layer model as a transfer analysis framework: Layers 1-3 transfer at 100%, Layer 5 at 0%.
 
 ## Key Discoveries
 
-**Capability Awareness Gap (Mar 19-20):** Five sources claimed PM's capabilities (PIPER.md, soft invocation detector, dispatcher registry, ContextAssembler, floor addendum), producing implicit contracts the system couldn't fulfill. Fix: single canonical dispatcher registry, all else derives. Direct application: validate your entity capabilities against a live registry.
+**Chat-to-Cowork Import Fidelity Mapped (Mar 26):** A real-world 28-document VA project import was analyzed against the five-layer model. Layers 1-3 transfer cleanly. Layer 5 (behavioral calibration) is structurally absent — months of learned preferences live only in conversation history, which doesn't serialize. Three physically distinct knowledge layers (Chat snapshot, Code memory, repo files) do not auto-sync. The five-layer model proved predictive as a transfer analysis framework, not just a prompt assembly spec.
 
-**5-Layer Prompt Assembly Now Canonical (Mar 22):** Klatch published `docs/PROMPT-ASSEMBLY.md` — the structure for context across agent transitions. Layers: Kit Briefing (environmental), Project Instructions (behavioral), Project Memory (factual), Channel Addendum (conversational), Entity Prompt (identity). Klatch's architecture answer to PM's briefing staleness problem.
+**File Domain Model Approved (Mar 27):** Klatch established files as first-class domain objects with five visibility scopes (Kit, Project, Channel, Entity, Message). Core principle: pointers, not payloads. Two directional operations — promotion (upward: message attachment becomes project knowledge) and projection (downward: project knowledge delivered to entity with framing prompt). Memory modeled as a file with a reserved name, unifying memory and file systems. Foundational architecture for Steps 10-11.
 
-**Agent Traditions Pattern (Mar 22–24):** Formal per-agent documentation (7 sections: role, style, responsibilities, conventions, relationships, institutional memory, standing instructions). Solves cold-start: agent inactive for days reads traditions, knows what it knows. Argus doc especially relevant — written after losing work to incomplete rebase, emphasizes institutional memory and verification protocols.
+**Step 9 Files Complete in Two Days (Mar 27):** Daedalus shipped five sub-features (upload/serve, inline rendering, kit briefing awareness, code block export via native tool use, demo pipeline) across client, server, and prompt layers. First native tool use in Klatch — the streaming API was refactored from fire-and-forget to a tool-use loop with MAX_TOOL_ROUNDS=5 safety. Establishes the pattern for all future tool capabilities.
 
-**Convergence Without Coordination:** CXO and PPM independently arrived at identical Sprint Completion Gate criteria. Klatch's AAXT/MAXT testing mirrors PM's planned E2E framework. Both projects landed on "automated gates qualitative" pattern independently. Convergence validates the approach as fundamental, not project-specific.
+**Layer 5 Calibration Pilot (Mar 27-28):** Calliope created the first externalized Layer 5 document — structured capture of working preferences, workflow patterns, and communication style accumulated through sessions with xian. Direct response to the import fidelity finding that behavioral calibration transfers at 0%. Hypothesis: if calibration is written down, it can be absorbed by successor sessions.
 
-**Intelligence-to-Action Cycle (Mar 20–23):** Klatch intelligence sweep → Calliope triage → Daedalus implementation: 5 features shipped in one day. Piper Morgan Lead Dev reviewed the sweep, noted cross-relevant insights in session log. The loop works when format is structured and routing is clear.
+**Silent Schema Drift (Mar 29-30):** Piper Morgan's second blog publish surfaced a CSV field count mismatch (11 vs 13 columns) that produced zero errors but empty output. The parser silently returned nothing. Bug only surfaced two days after the schema changed. Canonical import/export hazard applicable to any fixed-schema parser, including Klatch's JSONL and metadata.json handlers.
+
+**The Three Clocks Problem (Mar 30-31):** Piper Alpha's onboarding exposed that institutional knowledge lives in three asynchronous stores — Chat snapshots, Code memory files, and repo-committed docs — with no auto-sync mechanism. Each updates on a different cadence. This extends the fidelity question from intra-session (what survives compaction) to inter-session (what survives across storage mechanisms). Maps directly onto the five-layer model's physical topology.
+
+**Agent Onboarding as Stress Test (Mar 30-31):** Piper Alpha read all 60 ADRs, 15 omnibus logs, and 6 months of briefs to build context from scratch. Produced a floor/ceiling/path taxonomy: floor moments (LLM competence suffices), ceiling moments (domain knowledge required that docs don't provide), path moments (routing decisions between regimes). First empirical data on cold-start cost in a multi-agent system.
 
 ## What Piper Morgan Should Know
 
-- Sonnet 4.6 is now default on Free/Pro: 30–50% latency reduction, same price, 1M context beta. Evaluate for applicable agent roles.
-- Compaction API (beta, Opus/Sonnet 4.6): Server-side context summarization, custom instructions preserved. Could simplify PM's context assembly for long-running sessions.
-- Cowork Projects import now available: Three-surface landscape emerging (claude.ai projects, Claude Code repos, Cowork folders). Affects context portability strategy.
-- Klatch's intelligence sweeps are actionable. Check `docs/intel/2026-03-23-sweep.md` in the Klatch repo for detailed findings on Sonnet, Compaction, Cowork, and Claude Agent Teams.
+- Import fidelity profile confirms your briefing infrastructure works: Layer 2-3 content (BRIEFING-CURRENT-STATE, knowledge base, role definitions) transfers at 100%. But pair with the MAXT subliminal finding — agents may use briefing content without being able to attribute it. Probe behaviorally, not declaratively.
+- Klatch's File Domain Model formalizes what PM does implicitly with knowledge base artifacts. The promotion/projection vocabulary and five-scope taxonomy are directly applicable if PM ever redesigns how knowledge flows to agent roles.
+- Compaction API (issue #18) and Effort parameter (issue #17) research spikes are in progress at Klatch. Findings will be reusable for PM's session context management — particularly relevant for long agent sessions where briefing content may be silently dropped during compaction.
+- Klatch's nomenclature guide is in progress to resolve "system prompt" terminology collision. When the draft is ready, PM should review for early alignment before the projects share any infrastructure.
+- Auto-prompt caching (`cache_control: { type: 'ephemeral' }`) is a one-line cost win for any multi-turn API calls. Cache reads at 10% of input token cost.
 
 ## What Klatch Should Know
 
-- Registry-driven capability gating prevents phantom offers: gate all capability offers on a live dispatcher registry, not on what prompts claim.
-- PM's workflow hijack design principle: "The session belongs to the user, not the workflow." Applies to interaction mode entry/exit UX. Can users always escape a roundtable or directed session?
-- Audit cascade methodology: when issues are discovered, diagnose against current architectural state (not filing date), narrow or widen scope based on what's already fixed, execute efficiently in a single session.
-- Two-perspective testing validates quality gates: CXO and PPM converged on identical criteria independently. When multiple reviewers from different domains arrive at the same gaps without coordination, the design is sound.
+- Silent schema drift is a real hazard: PM's CSV parser returned empty arrays, not errors, when field count changed. Audit import parsers for fixed-schema assumptions — Claude Chat export JSONL, metadata.json, and memory.md formats could all change without notice.
+- The three clocks problem extends your fidelity framework. Current AXT methodology tests intra-session transfer. Cross-store synchronization (Chat vs Code memory vs repo) is a fourth factor to add when the Compaction API evaluation concludes.
+- Piper Alpha's floor/ceiling/path taxonomy is applicable to roundtable agent onboarding and context injection strategy. Cold-start cost is measurable and the categories map to testable AAXT assertions.
+- PM's session-end discipline: nothing stranded on branches, all work committed and pushed to main. Multi-agent teams with discrete sessions face the same risk. Consider adding this to agent traditions as a non-negotiable wrap rule.
+- Cross-pollination hooks are converging: PM proposed session-start freshness hooks matching what Klatch already has. Your implementation can serve as reference when PM builds theirs.
 
 ## For Both Teams
 
-- Session wrap verification is non-negotiable: `git log`, `ls` deliverables, test suite pass before claiming "done." Never force push without explicit approval. This prevents invisible work loss.
-- Principles do active work: PDR-003 (Products emerge from Projects) resolved navigation design disagreements by invoking architecture. Formalize your architectural commitments, let them resolve downstream conflicts.
-- Intelligence-to-action velocity depends on format. Structured sweeps with relevance scores, routing assignments to specific agents, and pre-decided next steps collapse implementation latency.
+- Fidelity-as-discipline is now a shared first-class concern. Klatch is building methodology (AXT-per-layer, Compaction API spike, three-factor model). PM is discovering it empirically (schema drift, stranded branches, knowledge migration checklists). The term deserves formal treatment in both projects' documentation.
+- The five-layer model keeps earning its keep in new domains: prompt assembly (original purpose), testing framework (MAXT), transfer analysis (import fidelity), cold-start diagnostic (Piper Alpha onboarding). Each application finds the model predictive. Neither project planned this convergence.
+- Layer 5 remains the frontier. Four angles this week: MAXT found it subliminally accessible, import found it absent, Calliope piloted externalization, Piper Alpha's cold start confirmed it's the ceiling factor. Layers 1-3 are solved; Layer 5 is where the hard questions live.
+- Infrastructure and features can ship in the same session when infrastructure items are scoped small. Klatch's Round 12 (caching, dynamic discovery, kit briefing) shipped alongside Step 9. The "small bets" pattern applied to infrastructure.
 
 ## Status Flags
 
-- **Klatch MAXT Session 01:** Imminent. Will be first empirical validation of 5-layer model across real context transition. Watch for failure taxonomy results (Correct → Reconstructed → Confabulated → Absent → Phantom).
-- **Piper Morgan M1 Spring Gate:** Filed #926. Criteria converged independently (fresh-account testing, Colleague Test rubric ≥7, canonical retest ≥85%, error path coverage).
-- **Cross-Pollination Loop:** Closed (Piper Morgan Lead Dev reviewed brief March 21 and noted insights in session log). Process validates and accelerates further.
+- **Klatch holding pattern:** No commits since March 27. Daedalus has two Tier 2 research spikes outstanding (Compaction API #18, Effort parameter #17) awaiting Argus. 189 pre-existing test failures assigned to Argus Round 13 (root causes diagnosed: jsdom config, stale dist/, unmocked dependency). RFC-001 (Five-Layer Context Model) filed for Calliope review.
+- **Piper Morgan active:** Blog-first pipeline operational (two publishes shipped). Piper Alpha Phase 0 complete (first operational session). PM Docs running heavy sessions (dev/active cleanup, blog stabilization). Cross-pollination hooks proposed to CIO + exec inboxes.
+- **kindsys.us migration deadline:** April 3. 9/11 PM agent roles migrated; CoS + Lead Dev remaining.
+- **PM Chat Project upload pending:** Knowledge-final set (465 files, 4.7 MB) staged but not uploaded. Pending since March 28.
+- **Klatch ecosystem deadlines:** Haiku 3 retirement April 19. Daedalus assigned to audit 16K max_tokens setting. Output token limits increased to 64K/128K; 1M context GA.
+- **Cross-pollination loop:** Active. Briefs generating daily. PM session-start hooks proposed to close the consumption gap.
