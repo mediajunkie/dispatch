@@ -1,1 +1,4 @@
 date,account,cycle_day,usage_status,notes
+2026-03-31,dinp,mid-week,session 21% / weekly 39% all-models / 4% sonnet,healthy - resets Thu 5PM. No extra usage enabled.
+2026-03-31,kindsys,mid-week,session 0% / weekly 30% all-models / 7% sonnet,OVERAGE: extra usage $153.45/$150 (102%). Auto-reload on. Downgrading to Pro Apr 4. Extra usage stopped.
+2026-03-31,mediajunkie,mid-week,session 0% / weekly 7% all-models / 0% sonnet,extra usage $80.40/$200 (40%). Balance $8.39 auto-reload off. Canceling Apr 15. Low utilization - overflow capacity.
