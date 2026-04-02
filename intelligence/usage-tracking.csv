@@ -2,3 +2,6 @@ date,account,cycle_day,usage_status,notes
 2026-03-31,dinp,mid-week,session 21% / weekly 39% all-models / 4% sonnet,healthy - resets Thu 5PM. No extra usage enabled.
 2026-03-31,kindsys,mid-week,session 0% / weekly 30% all-models / 7% sonnet,OVERAGE: extra usage $153.45/$150 (102%). Auto-reload on. Downgrading to Pro Apr 4. Extra usage stopped.
 2026-03-31,mediajunkie,mid-week,session 0% / weekly 7% all-models / 0% sonnet,extra usage $80.40/$200 (40%). Balance $8.39 auto-reload off. Canceling Apr 15. Low utilization - overflow capacity.
+2026-04-02,dinp,7/31,58% weekly (5% sonnet) - extra usage OFF,"Up from 39% Mar 31. Session 29%. Renews Apr 26. $100/mo Visa ····1274"
+2026-04-02,kindsys,29/31,44% weekly (5% sonnet) - extra usage ON $0 spent,"Overage cycle closed. $24.99 prepaid credit. Downgrades to Pro Apr 4. MC ····5835"
+2026-04-02,mediajunkie,18/31,8% weekly (0% sonnet) - extra usage ON $0 spent,"Barely used. $8.39 balance auto-reload OFF. Cancels Apr 15. -$98.16 proration credit Mar 15"
