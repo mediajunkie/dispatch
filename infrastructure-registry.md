@@ -77,11 +77,12 @@ Last updated: 2026-03-31
 
 | Role | Slug | Environment | Interface | Device | Account | Chat Project | Status |
 |------|------|-------------|-----------|--------|---------|-------------|--------|
-| Daedalus | daedalus | Code (local) | Claude Code | kindbook | dinp | Klatch (dinp) | Active |
-| Argus | argus | Code (cloud) | Claude Code | CCR sandbox | dinp | Klatch (dinp) | Active |
-| Calliope | calliope | Code (local) | Claude Code | kindbook | dinp | Klatch (dinp) | Active |
-| Theseus Prime | theseus | Code (local) | Claude Code | kindbook | dinp | Klatch (dinp) | Active |
-| Mnemosyne | mnemosyne | Chat Project | claude.ai | browser | dinp | Klatch (dinp) | Active |
+| Daedalus | daedalus | Code (local) | Claude Code | faoilean | dinp | Klatch (dinp) | **DONE** — migrated Apr 1 |
+| Argus | argus | Code (local) | Claude Code | faoilean | dinp | Klatch (dinp) | **DONE** — migrated Apr 1 (local w/ remote control, replacing CCR) |
+| Calliope | calliope | Code (local) | Claude Code | faoilean | dinp | Klatch (dinp) | **DONE** — migrated Apr 1 |
+| Theseus Prime | theseus | Code (local) | Claude Code | faoilean | dinp | Klatch (dinp) | TODO — tomorrow (MAXT of file features) |
+| Mnemosyne | mnemosyne | Chat Project | claude.ai | browser | dinp | Klatch (dinp) | Active — already on dinp |
+| Metis | metis | Cowork | Claude Cowork | faoilean | dinp | Klatch (dinp) | Active — barely started |
 | Ariadne | ariadne | Klatch (in-app) | Klatch UI | — | — | — | Test agent |
 | Hermes | hermes | Klatch (in-app) | Klatch UI | — | — | — | Test agent |
 
@@ -89,7 +90,8 @@ Last updated: 2026-03-31
 - Chat Project: Created on dinp Mar 28. Knowledge uploaded (60+ docs, 9 convos).
 - Cowork: **Created Mar 29** on kindbook (dinp account). Imported from Chat Project. Connected to local repo ~/Development/klatch. Description, instructions, and memory seeded.
 - Code: All Code agents already repointed to dinp API key.
-- Agent migration to Cowork: deferred — separate phase after all Cowork spaces provisioned.
+- Agent migration: Calliope, Daedalus, Argus migrated to faoilean Apr 1 (local with remote control). Theseus tomorrow. Argus moved from CCR cloud to local+remote control.
+- Metis: new Cowork agent, barely started.
 
 ---
 
