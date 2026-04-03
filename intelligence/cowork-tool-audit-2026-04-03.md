@@ -11,6 +11,8 @@
 | Control your Mac (osascript) | Connected | AppleScript/JXA automation via osascript |
 | Scheduled Tasks | Connected | Create, list, update cron-triggered remote agents |
 | MCP Registry | Connected | Search for and suggest new connectors |
+| Plugins | Connected | Search for and suggest installable plugin bundles |
+| Cowork utilities | Connected | File management, CronCreate/CronDelete/CronList, RemoteTrigger, TaskOutput/TaskStop |
 
 ## Missing / Not Connected
 
@@ -19,6 +21,9 @@
 | Slack | Not connected | Was available in earlier sessions; needs re-authentication |
 | Gmail | Not connected | Only Google Drive is connected; Gmail not available |
 | Google Calendar | Not connected | Not connected; Google Sheets also absent |
+| GitHub | Not connected | PR/issue work falls back to browser automation |
+| Notion | Not connected | Knowledge base queries require manual lookup or browser |
+| Linear | Not connected | Ticket management requires browser automation or out-of-band requests |
 
 ## 5 Known Bug Patterns Causing Connector Drops
 
