@@ -1,45 +1,55 @@
 # Cowork Tool Access Audit — 2026-04-03
 
-## Current Session Status
+## Currently Connected
 
-### Connected and Working
-- **Google Drive** — fetch and search tools functional
-- **Claude in Chrome** — full suite (navigate, read page, form input, tabs, screenshots)
-- **Control Chrome** — overlapping Chrome MCP (open URLs, execute JS, get page content, manage tabs)
-- **Computer Use** — full desktop control (screenshots, clicks, typing, scrolling, drag). Requires per-app access approval each session
-- **Control your Mac** — osascript tool for AppleScript/JXA automation
-- **Scheduled Tasks** — create, list, update
-- **MCP Registry** — can search for and suggest new connectors
-- **Plugins** — can search for and suggest installable plugin bundles
-- **Cowork utilities** — file management (present files, request directory access, allow deletes)
+| Tool | Status | Notes |
+|------|--------|-------|
+| Google Drive | Connected | Fetch and search tools functional |
+| Claude in Chrome (Chrome MCP) | Connected | Navigate, read page, form input, tabs, screenshots, JS eval |
+| Control Chrome | Connected | Overlapping Chrome MCP — open URLs, execute JS, manage tabs |
+| Computer Use | Connected | Full desktop control: screenshots, clicks, typing, scrolling, drag. Requires per-app access approval each session |
+| Control your Mac (osascript) | Connected | AppleScript/JXA automation via osascript |
+| Scheduled Tasks | Connected | Create, list, update cron-triggered remote agents |
+| MCP Registry | Connected | Search for and suggest new connectors |
 
-### Missing (Should Be Available)
-- **Slack** — was available in earlier sessions, now gone. Needs re-authentication
-- **Gmail / Google Calendar / Google Sheets** — only Google Drive is connected
-- **GitHub, Notion, Linear, Jira, Asana** — not connected
+## Missing / Not Connected
 
-## Why Connectors Disappear
+| Tool | Status | Notes |
+|------|--------|-------|
+| Slack | Not connected | Was available in earlier sessions; needs re-authentication |
+| Gmail | Not connected | Only Google Drive is connected; Gmail not available |
+| Google Calendar | Not connected | Not connected; Google Sheets also absent |
 
-Known bugs documented in GitHub issues:
+## 5 Known Bug Patterns Causing Connector Drops
 
-1. **OAuth token expiration** (#18442) — tokens expire in idle sessions with no way to trigger re-auth automatically
-2. **Desktop auto-updates** (#31864) — updates can silently break MCP extension registrations; connectors show "enabled" but tools never load
-3. **Keychain permission errors** (#19456) — macOS Keychain permissions get revoked after Desktop updates; token refresh fails silently
-4. **Connected but not loading** (#38343) — connector appears connected in UI but tools never materialize, especially with newer Streamable HTTP transport
-5. **Scheduled tasks can't access connectors** (#35899) — connectors don't initialize until a human message warms the session
+### 1. OAuth Token Expiry (#18442)
+Tokens expire in idle sessions with no mechanism to trigger re-authentication automatically. The connector shows as enabled but tool calls fail silently at runtime. Requires manual re-auth via Settings → Connectors.
+
+### 2. Desktop Auto-Updates (#31864)
+Claude Desktop updates can silently break MCP extension registrations. Connectors show "enabled" in the UI but tools never load after the update. Always verify each connector after any Desktop update — do not trust the green checkmark alone.
+
+### 3. Keychain Permission Errors (#19456)
+macOS Keychain permissions get revoked after Desktop updates. Token refresh fails silently, blocking any connector that stores OAuth credentials in Keychain. Check macOS Keychain Access for locked or denied Claude Desktop entries when connectors start failing unexpectedly.
+
+### 4. Connected-But-Not-Loading (#38343)
+Connector appears connected in the UI but tools never materialize in the session. Especially common with newer Streamable HTTP transport. Symptom: tool calls time out or return nothing rather than an auth error. Fix: disable the connector, wait ~5 seconds, re-enable.
+
+### 5. Scheduled Tasks Can't Access Connectors (#35899)
+Connectors don't initialize until a human message warms the session. Remote agents triggered via Scheduled Tasks run in a cold process context and cannot access connectors that were active in an interactive session. No current workaround except using API-key-based connectors (not OAuth) for scheduled workflows.
 
 ## Recommended Actions
 
 ### Immediate
-- Re-add Slack via Settings → Connectors in Claude Desktop
-- Add Gmail/Calendar connectors if desired
-- After any Desktop update: verify each connector, don't trust green checkmark alone
-- Check macOS Keychain Access for locked Claude Desktop entries
+- Re-add **Slack** via Settings → Connectors in Claude Desktop
+- Add **Gmail** and **Google Calendar** connectors
+- After any Desktop update: manually verify each connector rather than trusting UI status
+- Check **macOS Keychain Access** for locked or denied Claude Desktop credential entries
 
 ### Ongoing Resilience
-- Establish a session-start connector check ritual
-- Keep Desktop from auto-updating during active work if possible
-- Use Chrome extension + Computer Use as fallback paths when connectors drop
+- Establish a session-start connector check ritual (brief smoke test on each connector)
+- Keep Desktop from auto-updating during active work when possible
+- Use Chrome MCP + Computer Use as fallback paths when OAuth-based connectors drop
+- For scheduled task workflows, prefer connectors that authenticate via static API key, not OAuth session
 
 ## Sources
 - https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities
