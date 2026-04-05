@@ -448,3 +448,139 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - VA: Light day (remote standup), Chat tracking deadlines (SC product guide screenshots, TMS training, capacity tracker, GitHub migration on GFE)
 
 ### What happened:
+
+*(Session unavailable — API/session issues. Day reconstructed from git.)*
+
+- Piper Morgan triage: Docs delivering mail, CXO M1 testing in progress, CIO receiving PA + intelligence briefing
+- VA: Light standup day; Chat tracking deadlines (SC product guide screenshots, TMS training, capacity tracker, GitHub migration on GFE)
+- Klatch work carried from prior night; Piper deferred again
+- No commits from Dispatch on this date; SendUserMessage bug still blocking live sessions
+
+---
+
+## 2026-03-28 (Saturday)
+
+**Duration**: Not available (Dispatch-DinP paused pending SendUserMessage fix)
+**Focus**: Piper Morgan migration, blog publishing
+
+### What happened:
+- Piper Morgan Chat Project created on designinproduct.com
+- PM knowledge-final set (465 files, 4.7 MB) staged at migration-staging/ready/piper-morgan/knowledge-final/ — upload to Chat Project still pending
+- PPM triage session; second PM blog post published to Medium
+- Klatch in holding pattern: Daedalus two Tier 2 research spikes (Compaction API #18, Effort parameter #17) queued for Argus
+- Dispatch-DinP paused; no live session
+
+---
+
+## 2026-03-29 (Sunday)
+
+**Duration**: Not available (autonomous sessions)
+**Focus**: Cowork provisioning, infrastructure registry, migration packaging
+
+### What happened:
+- **5 Cowork spaces provisioned**: Wedgestock, Rebel Alliance, Klatch, DinP, Piper Morgan — all connected and entered in registry
+- **Infrastructure registry** built at ~/cool/dispatch/infrastructure-registry.md — master map of all agents, accounts, sessions, and tools
+- Cowork local storage audit on faoilean completed and committed
+- Migration packages prepared; conversation-project matching analysis committed
+- Account downgrade deadlines set: mediajunkie Apr 15, kindsys Apr 3
+- PM Docs and Piper Alpha active (blog stabilization, omnibus log work)
+
+---
+
+## 2026-03-30 (Monday)
+
+**Duration**: Not available (autonomous sessions)
+**Focus**: PM agent migration, RFC-001 drafting, infrastructure tooling
+
+### What happened:
+- **PM agent migration**: 8/11 roles migrated; then 9/11 (CoS migrated). Lead Dev remaining as of end of day.
+- **Archie Cowork recreated on kindsys** — prior session had lost .projects/ folder; recreated fresh
+- **Agent activity CSV enriched**: 30 → 143 entries — comprehensive history now captured
+- **Janus flagged for dinp migration** (last PM role still on mediajunkie)
+- **RFC-001: Five-Layer Context Model drafted** and filed to Klatch and PM for review
+- **Dispatch-Kind revival prompt written** — protocol for reactivating Kind coordination
+- **Daily Brief design spec** added — framework for daily brief content and cadence
+- **Usage dashboard v0 spec** and tracking CSV scaffolded
+- **Infrastructure registry UI** built (interactive HTML at registry-ui.html)
+- Chat ↔ Cowork sync test protocol committed (investigating Archie .projects/ sync behavior)
+- Janus migration handoff memo delivered to Dispatch inbox
+
+---
+
+## 2026-03-31 (Tuesday)
+
+**Duration**: Full day (Dispatch-DinP session active)
+**Focus**: RFC responses, five-layer context model, Janus migration handoff, usage baseline
+
+### What happened:
+- **RFC-001 Five-Layer Context Model**: Both Klatch (Calliope) and PM filed responses. Novel contribution: L5a/L5b sub-component split (declarative vs. procedural calibration). Both projects confirmed same structural profile — strong L1-L3, weak L4-L5.
+- **Janus migration handoff memo** filed: migration status, RFC-001 response, registry refresh confirmed; Janus designated for dinp migration
+- **First usage dashboard baseline**: dinp 5x Max at 39% weekly; kindsys at 30% weekly with overage ($153.45/$150)
+- **Coordination Rounds design spec** added — framework for systematic agent check-ins
+- **Daily brief for Mar 31** live — automated brief system operational
+- 9/11 PM roles migrated; CoS final; Lead Dev remaining before Apr 3 deadline
+
+---
+
+## 2026-04-01 (Wednesday)
+
+**Duration**: Full day (Dispatch-DinP Session 2)
+**Focus**: Morning brief sweep, daily brief system operational, cross-pollination digests
+
+### What happened:
+- **Daily brief system confirmed operational** — brief delivered autonomously via scheduled task; Session 2 running since Mar 31
+- **Janus migration to dinp complete** — confirmed off mediajunkie; session log closed cleanly
+- **Klatch migration progress**: 3 of 4 Code agents on faoilean (Theseus deferred)
+- **PA five-layer mapping staged**: Piper Alpha completed RFC-001 layer mapping — same L1-L3 strength, L4-L5 gap confirmed across both PM and Klatch
+- **Mar 31 end-of-day wrap committed**: priority queue, Janus session updates, coordination rounds spec
+- Cross-pollination briefs current per-session (Mar 30-31 in klatch/docs/intel/); weekly digest stale
+- kindsys overage confirmed ($153.45); extra usage stopped; Pro downgrade scheduled Apr 4
+
+---
+
+## 2026-04-02 (Thursday)
+
+**Duration**: Active session day
+**Focus**: Usage snapshots, xpoll refresh request, kindsys migration prep
+
+### What happened:
+- **First usage snapshot committed**: Apr 2 — dinp 58% weekly, kindsys 44% weekly, mediajunkie 8%; first data in tracking CSV
+- **Mail to Janus**: Dispatch requested xpoll digest refresh for Apr 1–2 (current-week brief was stale)
+- **Correction memo from Janus**: confirmed PM migration complete and knowledge current
+- **Klatch migration**: Calliope/Daedalus/Argus confirmed on faoilean (3 of 4); Theseus still pending
+- **RFC-001 nomenclature landed**: Klatch renamed L4 → "Channel context," L5 → "Role prompt"; two Klatch blog posts published ("Your Model or Theirs," "What Doesn't Transfer")
+- **Piper Alpha** completed daily check-in flow design and backlog review (89 MVP issues, May 27 target)
+- kindsys migration deadline tomorrow (Apr 3); CoS + Lead Dev still needed; Klatch agents done
+
+---
+
+## 2026-04-03 (Friday)
+
+**Duration**: Active session day
+**Focus**: Cowork tool audit, session resilience ops doc, daily brief automation confirmed
+
+### What happened:
+- **Cowork tool access audit** conducted and filed (3 commits, structured findings) — mapped tool availability across Cowork vs. Code sessions
+- **Session resilience ops doc** written (SESSION-RESILIENCE-OPS.md) — standard procedures for handling Cowork session interruptions
+- **Weekly xpoll digest refreshed** — Apr 1–3 digest committed after stale Mar 26-31 period
+- **Daily brief for Apr 3** committed — automated system confirmed reliable across multiple days
+- **Klatch FDM Phases 2–5** shipped overnight: channel file pinning (L4 injection), project knowledge base (L3 injection), dual-write, file promotion endpoint + UI. 808 tests, zero failures.
+- **Argus compaction research filed**: recommends raising threshold 80K → 160K
+- Ted Nadeau coordination thread emerging (Ted liaison role in DinP session log)
+
+---
+
+## 2026-04-04 (Saturday)
+
+**Duration**: Active session day
+**Focus**: Dispatch-Kind protocol ratified, Open Laws scaffolded, VA wind-down
+
+### What happened:
+- **Dispatch-Kind coordination protocol ratified — full duplex live**: Dispatch-Kind sent formal protocol proposal; Dispatch-DinP accepted. Both instances now exchange signals via ~/cool/dispatch/mail/ using standard signal format. First operational cross-Dispatch communication channel.
+- **VA contract ended**: xian, Jerry, and Grace removed from VA Decision Reviews effective Apr 3 (budget cuts). VA workspace frozen; Archie's Cowork session paused; morning briefing runner disabled.
+- **Open Laws workspace scaffolded**: Vergil agent established at ~/cool/OpenLaws/ (mediajunkie/openlaws repo). Kind Systems skunkworks: xian + Jerry (engineer, San Diego) + Stan (senior architect). Directive from John: "pursue a maximalist AI agenda." Six-week hypothesis cycles starting.
+- **Ted Nadeau memo to Janus** filed: Ted proposing distinct DinP agent architecture — ted-listener, web presence builder, cross-pollination connector — with CRUD-based role differentiation
+- **Vergil cross-pollination proposal to Janus**: Vergil requesting reader registration and proposing OpenLaws as new cross-pollination source (4.33M law sections, 53 jurisdictions; clear vectors to Klatch and Piper Morgan)
+- **Worktree merge convention discovered**: worktrees should merge to main before archiving; confirmed from dispatch repo's multiple active worktrees
+- kindsys Pro downgrade took effect; $24.99 prepaid credit remaining
+- Daily brief for Apr 4 committed
