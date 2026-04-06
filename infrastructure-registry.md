@@ -80,7 +80,7 @@ Last updated: 2026-03-31
 | Daedalus | daedalus | Code (local) | Claude Code | faoilean | dinp | Klatch (dinp) | **DONE** — migrated Apr 1 |
 | Argus | argus | Code (local) | Claude Code | faoilean | dinp | Klatch (dinp) | **DONE** — migrated Apr 1 (local w/ remote control, replacing CCR) |
 | Calliope | calliope | Code (local) | Claude Code | faoilean | dinp | Klatch (dinp) | **DONE** — migrated Apr 1 |
-| Theseus Prime | theseus | Code (local) | Claude Code | faoilean | dinp | Klatch (dinp) | TODO — tomorrow (MAXT of file features) |
+| Theseus Prime | theseus | Code (local) | Claude Code | faoilean | dinp | Klatch (dinp) | **DONE** — migrated Apr 4 |
 | Mnemosyne | mnemosyne | Chat Project | claude.ai | browser | dinp | Klatch (dinp) | Active — already on dinp |
 | Metis | metis | Cowork | Claude Cowork | faoilean | dinp | Klatch (dinp) | Active — barely started |
 | Ariadne | ariadne | Klatch (in-app) | Klatch UI | — | — | — | Test agent |

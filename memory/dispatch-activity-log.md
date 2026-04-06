@@ -584,3 +584,29 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - **Worktree merge convention discovered**: worktrees should merge to main before archiving; confirmed from dispatch repo's multiple active worktrees
 - kindsys Pro downgrade took effect; $24.99 prepaid credit remaining
 - Daily brief for Apr 4 committed
+
+
+
+---
+
+## 2026-04-05 (Sunday)
+**Focus**: Klatch sprint push, AAXT Phase 1 ship, activity log backfill, cross-project coordination signals
+
+### What happened:
+- **Klatch — massive overnight push (13 commits)**: AAXT Scaffolded Probing Phase 1 shipped (probe generator, scorer, auxiliary LLM client). Round 18 complete (AAXT x FDM — 12 new tests covering file injection on imported channels). Compaction threshold raised 80K to 160K with per-entity effort parameter. AuditBench methodology review filed (4 recommendations for AXT cross-pollination). v0.9.0 CHANGELOG draft started. New agent Metis added to Klatch roster. Blog draft Paste It Again with three-zones illustration ready for review.
+- **Dispatch — activity log backfilled Mar 28 to Apr 4**: 8 commits covering the gap from session interruptions. Trigger migration plan memo received from DinP. Dispatch-Kind coordination protocol acceptance signal acknowledged. Vergil cross-pollination proposal sent to Janus. Daily briefs for Apr 3 and Apr 4 committed.
+- **DinP — session log housekeeping (4 commits)**: Apr 3 and Apr 4 session logs closed. Klatch migration confirmed complete. Ted liaison role documented. Sweep receipt and cross-pollination brief for Apr 4 committed.
+- **Piper Morgan**: Repo not found at expected mount path (ongoing since at least Apr 4). Agents appear idle pending Chat Project knowledge upload (465 files, now 8 days pending).
+- **VA/Archie**: Confirmed wound down as of Apr 3 (budget cuts). Workspace preserved. Open Laws replaces VA on active roster.
+
+### Key signals:
+- AAXT Scaffolded Probing is the first automated fidelity assessment tool — directly implements RFC-001 fidelity assessment protocol
+- Dispatch-Kind bilateral signaling channel now formally live (both sides acknowledged)
+- Intelligence surface narrowed from three projects (Klatch/PM/VA) to two (Klatch/PM) + Open Laws TBD
+- mediajunkie cancellation 10 days out (Apr 15) — final Janus walkthrough still pending
+
+### Pending (end of day):
+- **Critical**: PM Chat Project upload (465 files, 8 days pending — highest priority)
+- **This week**: mediajunkie final walkthrough with Janus (Apr 15 deadline)
+- **This week**: Open Laws Cowork space provisioning
+- **Queued**: Trigger migration plan review, Paste It Again blog review, RFC-001 v2 synthesis, coordination round design iteration, usage dashboard refresh (3 days stale)
