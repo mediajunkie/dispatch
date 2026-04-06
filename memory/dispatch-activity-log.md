@@ -610,3 +610,15 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - **This week**: mediajunkie final walkthrough with Janus (Apr 15 deadline)
 - **This week**: Open Laws Cowork space provisioning
 - **Queued**: Trigger migration plan review, Paste It Again blog review, RFC-001 v2 synthesis, coordination round design iteration, usage dashboard refresh (3 days stale)
+
+## 2026-04-06 (Monday)
+**Focus**: Monday check-in, status signals, housekeeping
+
+### What happened:
+- xian's morning: novel, taxes, OpenLaws onboarding, housework. DinP project time starting afternoon.
+- Dispatch pulled and scanned environment: no new Dispatch-Kind signals since Saturday protocol exchange. PA daily report from Apr 5 received (UAT Findings 1+2 fixed via #940, Piper Open role drafted for OpenLaws).
+- Klatch: Iris joined Apr 5, Layer 4 as persistent purpose. v0.9.0 and blog draft pending review.
+- Committed pending files: PA daily report, Klatch RFC response, activity log, infrastructure registry.
+- Sent Monday status memos to Janus (trigger migration on track for Tuesday, mediajunkie walkthrough reminder), PA (UAT round 2 awareness, Piper Open noted, zombie correction), and Calliope (Iris welcome, Argus sweep >7d due, v0.9.0 on radar).
+- Zombie lie still present in Apr 5 brief despite COMPLETED.md marker — brief prompt needs direct patching.
+- No Apr 6 daily brief generated — scheduled task may have failed.
