@@ -622,3 +622,15 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - Sent Monday status memos to Janus (trigger migration on track for Tuesday, mediajunkie walkthrough reminder), PA (UAT round 2 awareness, Piper Open noted, zombie correction), and Calliope (Iris welcome, Argus sweep >7d due, v0.9.0 on radar).
 - Zombie lie still present in Apr 5 brief despite COMPLETED.md marker — brief prompt needs direct patching.
 - No Apr 6 daily brief generated — scheduled task may have failed.
+
+## 2026-04-07 (Tuesday)
+**Focus**: Morning signals, usage tracking, daily brief fix, OpenLaws orientation
+
+### What happened:
+- Daily brief task fixed: patched prompt to use osascript (sandbox can't access host via Bash) and added zombie lie guard for Piper Chat. Apr 7 brief generated successfully — task reliable again.
+- Usage snapshots captured for all 3 accounts: dinp 46% (5x Max, healthy), kindsys 25% (Pro, watch), mediajunkie 2% (dormant). Logged to CSV.
+- kindsys upgraded back to Max — AI maximalist sprint for OpenLaws requires it. Will reevaluate after initial intensity settles.
+- Tuesday morning briefings sent to Janus (trigger migration today, mediajunkie walkthrough, xpoll sync), PA (UAT status request, Piper Open ready), Calliope (Argus sweep overdue 11d, v0.9.0/blog on review list, Iris check-in).
+- Dispatch-Kind: still no reply to Monday check-in. xian working on Kind side this morning, likely in contact.
+- xian met with OpenLaws team, now in research mode. Checked in with Janus re: trigger migration and remaining migration items.
+- No new inbound signals overnight. Quiet across all projects.
