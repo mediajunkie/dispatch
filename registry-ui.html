@@ -254,13 +254,13 @@
 <body>
 
 <h1>Infrastructure Registry</h1>
-<p class="subtitle">Where every agent lives, at every layer. The slot machine view. Updated <span id="lastUpdated">2026-03-31</span></p>
+<p class="subtitle">Where every agent lives, at every layer. The slot machine view. Updated <span id="lastUpdated">2026-04-07</span></p>
 
 <!-- Deadlines -->
 <div class="deadlines">
   <strong>Migration Deadlines</strong>
-  <div class="deadline-item">Apr 3 — kindsys.us Pro limits (CLEAR — no PM roles remain)</div>
-  <div class="deadline-item">Apr 15 — All roles must migrate off mediajunkie.com (sweep trigger only remaining dep)</div>
+  <div class="deadline-item" style="text-decoration: line-through; opacity: 0.5;">Apr 3 — kindsys.us Pro limits (CLEAR — passed, VA project ended Apr 3)</div>
+  <div class="deadline-item">Apr 15 — All roles must migrate off mediajunkie.com (sweep trigger migrated to dinp)</div>
   <div class="deadline-item">Jun 2026 — crispybacon credits expire</div>
 </div>
 
@@ -299,8 +299,8 @@
 const DATA = {
   accounts: [
     { email: 'xian@designinproduct.com', tier: '20x Max', cost: '~$100', status: 'PRIMARY', scope: 'All personal/creative/entrepreneurial', class: 'primary' },
-    { email: 'ccrumlish@kindsys.us', tier: 'Pro', cost: '~$20', status: 'VA only — PM migrate by Apr 3', scope: 'VA Decision Reviews', class: '' },
-    { email: 'xian@mediajunkie.com', tier: 'Pro', cost: '~$20', status: 'DEPRECATED — migrate by Apr 15', scope: '—', class: 'deprecated' },
+    { email: 'ccrumlish@kindsys.us', tier: 'Pro (downgraded Mar 29)', cost: '~$20', status: 'VA wound down Apr 3 — budget cut', scope: 'VA Decision Reviews (ended)', class: 'deprecated' },
+    { email: 'xian@mediajunkie.com', tier: 'Pro (downgraded Mar 29)', cost: '~$20', status: 'DEPRECATED — migrate by Apr 15', scope: '—', class: 'deprecated' },
     { email: 'crispybacon@atswimtwobirds.com', tier: 'Pro (canceled)', cost: '$0', status: 'Burn credits through Jun 2026', scope: '—', class: 'deprecated' }
   ],
   projects: [
@@ -337,13 +337,14 @@ const DATA = {
       github: 'Design-in-Product/klatch',
       local: '~/Development/klatch',
       account: 'designinproduct.com',
-      notes: ['Chat Project on dinp (60+ docs, 9 convos)', 'Cowork created Mar 29 on kindbook', 'All Code agents on dinp API key'],
+      notes: ['Chat Project on dinp (60+ docs, 9 convos)', 'Cowork created Mar 29 on kindbook', 'All Code agents migrated to faoilean (Theseus last, Apr 4)', 'Metis: new Cowork agent, barely started'],
       agents: [
-        { role: 'Daedalus', slug: 'daedalus', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'dinp', chat: 'Klatch (dinp)', status: 'active', statusText: 'Active' },
-        { role: 'Argus', slug: 'argus', env: 'Code (cloud)', interface: 'Claude Code', device: 'CCR sandbox', account: 'dinp', chat: 'Klatch (dinp)', status: 'active', statusText: 'Active' },
-        { role: 'Calliope', slug: 'calliope', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'dinp', chat: 'Klatch (dinp)', status: 'active', statusText: 'Active' },
-        { role: 'Theseus Prime', slug: 'theseus', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'dinp', chat: 'Klatch (dinp)', status: 'active', statusText: 'Active' },
-        { role: 'Mnemosyne', slug: 'mnemosyne', env: 'Chat Project', interface: 'claude.ai', device: 'browser', account: 'dinp', chat: 'Klatch (dinp)', status: 'active', statusText: 'Active' },
+        { role: 'Daedalus', slug: 'daedalus', env: 'Code (local)', interface: 'Claude Code', device: 'faoilean', account: 'dinp', chat: 'Klatch (dinp)', status: 'done', statusText: 'DONE — migrated Apr 1' },
+        { role: 'Argus', slug: 'argus', env: 'Code (local)', interface: 'Claude Code', device: 'faoilean', account: 'dinp', chat: 'Klatch (dinp)', status: 'done', statusText: 'DONE — migrated Apr 1 (local w/ remote control)' },
+        { role: 'Calliope', slug: 'calliope', env: 'Code (local)', interface: 'Claude Code', device: 'faoilean', account: 'dinp', chat: 'Klatch (dinp)', status: 'done', statusText: 'DONE — migrated Apr 1' },
+        { role: 'Theseus Prime', slug: 'theseus', env: 'Code (local)', interface: 'Claude Code', device: 'faoilean', account: 'dinp', chat: 'Klatch (dinp)', status: 'done', statusText: 'DONE — migrated Apr 4' },
+        { role: 'Mnemosyne', slug: 'mnemosyne', env: 'Chat Project', interface: 'claude.ai', device: 'browser', account: 'dinp', chat: 'Klatch (dinp)', status: 'active', statusText: 'Active — already on dinp' },
+        { role: 'Metis', slug: 'metis', env: 'Cowork', interface: 'Claude Cowork', device: 'faoilean', account: 'dinp', chat: 'Klatch (dinp)', status: 'active', statusText: 'Active — barely started' },
         { role: 'Ariadne', slug: 'ariadne', env: 'Klatch (in-app)', interface: 'Klatch UI', device: '—', account: '—', chat: '—', status: 'dormant', statusText: 'Test agent' },
         { role: 'Hermes', slug: 'hermes', env: 'Klatch (in-app)', interface: 'Klatch UI', device: '—', account: '—', chat: '—', status: 'dormant', statusText: 'Test agent' }
       ]
@@ -353,7 +354,7 @@ const DATA = {
       github: 'mediajunkie/designinproduct',
       local: '~/Development/designinproduct',
       account: 'designinproduct.com',
-      notes: ['Chat Project migrated Mar 28', 'Cowork created Mar 29 on kindbook', 'CCR sweep runs daily 7 AM PDT (on mediajunkie — migrate before Apr 15)'],
+      notes: ['Chat Project migrated Mar 28', 'Cowork created Mar 29 on kindbook', 'Sweep trigger migrated to dinp (trig_01TvevRKSadEtCd9E96FTM2j)', 'Weekly digest trigger (trig_01FTQbyrV9qi18Q7ihFiq23u)', 'Old mediajunkie trigger disabled'],
       agents: [
         { role: 'Janus', slug: 'janus', env: 'Code (local)', interface: 'Claude Code', device: 'faoilean', account: 'dinp', chat: 'DinP (dinp)', status: 'done', statusText: 'DONE — migrated Mar 31' }
       ]
@@ -363,11 +364,11 @@ const DATA = {
       github: '(private)',
       local: '~/cool/VA/',
       account: 'kindsys.us',
-      notes: ['Intentionally separate from dinp — contract work', 'Archie Cowork recreated Mar 30 on kindsys', 'Dedicated kindsys API key', 'Archie reboot in progress via Dispatch-Kind'],
+      notes: ['Project ended Apr 3 — budget cut', 'Archie wound down, workspace preserved', 'Dedicated kindsys API key', 'Data boundary policy maintained (contract work)'],
       agents: [
-        { role: 'Archie', slug: 'archie', env: 'Cowork', interface: 'Claude Cowork', device: 'kindbook', account: 'kindsys', chat: 'VA (kindsys)', status: 'progress', statusText: 'Reboot in progress' },
-        { role: 'VA Code agent', slug: '—', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'kindsys', chat: 'VA (kindsys)', status: 'active', statusText: 'Active' },
-        { role: 'DRAGONS Chat', slug: '—', env: 'Chat Project', interface: 'claude.ai', device: 'browser', account: 'kindsys', chat: 'VA (kindsys)', status: 'active', statusText: 'Active — needs migration to Cowork' }
+        { role: 'Archie', slug: 'archie', env: 'Cowork', interface: 'Claude Cowork', device: 'kindbook', account: 'kindsys', chat: 'VA (kindsys)', status: 'dormant', statusText: 'Wound down — VA ended Apr 3' },
+        { role: 'VA Code agent', slug: '—', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'kindsys', chat: 'VA (kindsys)', status: 'dormant', statusText: 'Wound down — VA ended Apr 3' },
+        { role: 'DRAGONS Chat', slug: '—', env: 'Chat Project', interface: 'claude.ai', device: 'browser', account: 'kindsys', chat: 'VA (kindsys)', status: 'dormant', statusText: 'Wound down — VA ended Apr 3' }
       ]
     },
     {
@@ -375,7 +376,7 @@ const DATA = {
       github: 'mediajunkie/dispatch (private)',
       local: '~/cool/dispatch/',
       account: 'designinproduct.com',
-      notes: ['Dispatch-DinP active since Mar 31 — issued RFC-001', 'Dispatch-Kind launched Mar 31 on kindsys', 'Janus sharing coordination with Dispatch-DinP'],
+      notes: ['Dispatch-DinP active — RFC-001 issued, coordinating layer mappings', 'Dispatch-Kind not yet started — needs Cowork space on kindsys', 'Janus sharing coordination with Dispatch-DinP'],
       agents: [
         { role: 'Dispatch-DinP', slug: 'dispatch-dinp', env: 'Cowork', interface: 'Claude Cowork', device: 'kindbook', account: 'dinp', chat: '—', status: 'active', statusText: 'Active — RFC-001, coordination' },
         { role: 'Dispatch-Kind', slug: 'dispatch-kind', env: 'Cowork', interface: 'Claude Cowork', device: 'kindbook', account: 'kindsys', chat: '—', status: 'active', statusText: 'Active — launched Mar 31' },
