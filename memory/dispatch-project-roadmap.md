@@ -47,7 +47,7 @@ This is the long-horizon project list. These are not daily tasks — they are in
 
 ---
 
-## Queued Projects (not yet started or paused)
+## Queued Projects (priority order per xian, Apr 9)
 
 ### 7. Anthropic Accounts Consolidation
 **Status:** Phase 1 partially complete, paused
@@ -55,9 +55,10 @@ This is the long-horizon project list. These are not daily tasks — they are in
 **What:** Consolidate 4 Anthropic accounts to 1-2. Target: designinproduct.com (primary) + kindsys.us (Kind work). Phase 1 migration partially done (Dharma Bots, PAPM, music, One Job). mediajunkie cancels Apr 15. crispybacon canceled (access through June). Detailed plan at plans/anthropic-accounts-consolidation-plan-v2.md.
 **Remaining:** mediajunkie walkthrough with Janus (6 days), crispybacon projects to migrate before June, One Job file uploads pending.
 
-### 8. Radio Free Airlift (RFA)
-**Status:** Briefed Mar 23, paused
+### 8. Radio Free Airlift (RFA) — Priority 1 (queued)
+**Status:** Project set up on designinproduct.com, needs resumed attention
 **Owner:** xian (has existing Claude Project for this)
+**Dispatch role:** Daily check-in item — remind and track progress as xian finds time
 **What:** Personal web presence overhaul. Three properties:
 - ezone.org (Rackspace) — Enterzone webzine archive (1994-1998). Goal: curate as digital coffee table book. Blocked on archive.org repair.
 - mediajunkie.com (WPEngine) — WordPress blog with rich archives. Migrate to self-hosted (Eleventy considered). WPEngine overpriced.
@@ -66,12 +67,13 @@ This is the long-horizon project list. These are not daily tasks — they are in
 **Sequence:** Fix ezone.org → curate Enterzone → migrate mediajunkie.com → consolidate → align modern sites.
 **Blocked on:** archive.org repair for ezone.org content.
 
-### 9. Rebel Alliance Website
-**Status:** NEW — xian mentioned Apr 9, not yet scoped
+### 9. Rebel Alliance Website — Priority 2 (queued)
+**Status:** Successfully migrated to designinproduct.com. Website repo exists. Nearly finished.
 **Owner:** xian
-**What:** Finish the Rebel Alliance website. Cowork space was provisioned Mar 29. Project exists on mediajunkie account (needs migration before Apr 15 or crispybacon before June). Details TBD.
+**Dispatch role:** Track progress as project takes shape; xian will start a Code agent to clone the repo and assess gap to launch.
+**What:** Finish the Rebel Alliance website. Cowork space provisioned Mar 29. Project migrated to dinp account (no longer blocked by mediajunkie deadline).
 
-### 10. Layers of Meta / Music
+### 10. Layers of Meta / Music — Priority 4 (queued)
 **Status:** Materials extracted, paused
 **Owner:** xian
 **What:** Music project. 3 projects, 22 conversations extracted to ~/cool/layersofmeta/. Genius lyrics experiment started (4 songs on artist page). Paused for other priorities.
@@ -79,9 +81,10 @@ This is the long-horizon project list. These are not daily tasks — they are in
 ### 11. The Epistrophikon
 **Status:** Active (xian writes independently)
 **Owner:** xian
+**Dispatch role:** Awareness only — the novel has a claim on xian's time and attention but does not require meta-assistance.
 **What:** Historical novel. xian writes pieces and shares on Wooshville. Not a Dispatch-managed project — just tracking that it exists and xian works on it regularly.
 
-### 12. One Job
+### 12. One Job — Priority 3 (queued)
 **Status:** Migration planned, awaiting file uploads
 **Owner:** xian
 **What:** Project from kindsys account. Repo is source of truth (Nov 2025 activity). Migration plan finalized Mar 26. Xian needs to upload files from repo. Cowork space provisioned.
