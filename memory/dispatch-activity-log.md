@@ -634,3 +634,36 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - Dispatch-Kind: still no reply to Monday check-in. xian working on Kind side this morning, likely in contact.
 - xian met with OpenLaws team, now in research mode. Checked in with Janus re: trigger migration and remaining migration items.
 - No new inbound signals overnight. Quiet across all projects.
+
+## 2026-04-08 (Wednesday)
+**Focus**: Dispatch-Kind catch-up complete, RFC-001 v2 synthesized, PO welcomed
+
+### What happened:
+- **Dispatch-Kind channel catch-up**: Kind sent thorough Apr 8 signal covering OpenLaws sprint status, agent roster (Vergil + PO), and four asks. DinP replied same day with two corrections: Stan was not at the kickoff (contrary to Kind's account), and independent convergence framing added as caveat. Two of four asks closed: trigger audit done, mediajunkie walkthrough handled.
+- **Piper Open (PO) welcomed**: Welcome memo sent to PO. PO onboarded into DinP network; now aware of push pattern doc.
+- **RFC-001 v2 — Five-Layer Context Model synthesized and committed**: v2 filed to dispatch repo.
+- **Apr 8 daily brief written and committed**: Automated brief system continues reliable.
+- **DinP cross-pollination brief for Apr 8 committed** (1 commit on dinp side).
+- **Argus sweep reminder sent to Calliope**: Sweep now 13+ days overdue; reminder sent Apr 8; no ACK received.
+- **Vergil**: Active on OpenLaws research — spidering admin layer, building workdesk knowledge, bet feasibility analysis underway.
+- **Janus**: Active. mediajunkie walkthrough scheduled for Apr 8 afternoon — confirm it happened (6 days to Apr 15 cancellation).
+- **Klatch**: Quiet, no commits since Apr 7.
+- **Piper Morgan**: Not a git repo at ~/cool/piper-morgan (known — not an emergency).
+
+## 2026-04-09 (Thursday)
+**Focus**: Morning signals, activity log maintenance, OpenLaws review, xpoll distribution design
+
+### What happened:
+- 7:31 AM: xian checks in. iPad/Janus network error (carried Janus session on laptop instead). OpenLaws ramp-up shifting attention to Kind side this week; now rebalancing toward DinP projects.
+- Daily brief for Apr 9 generated successfully by scheduled task. Key flags: mediajunkie walkthrough confirmation needed, xpoll digest 6+ days stale, Argus sweep 13+ days overdue, Haiku 3 verification unanswered.
+- Activity log: Apr 8 entry confirmed complete; Apr 9 entry started.
+- Morning signal scan: pulled all repos. No new Dispatch-Kind signals (caught up yesterday). designinproduct got Apr 8 xpoll brief from Janus. OpenLaws massive pull — 106 files, ~14K lines from Kind side (Vergil + PO + Dispatch-K).
+- Reviewed OpenLaws five-layer context mapping (working from Klatch PROMPT-ASSEMBLY.md v1 names, not RFC v2 yet), Bet A one-pager (MCP server — POC built, Python port done, 6-week roadmap), Bet B one-pager (StateNet screening replacement — deep competitive research, paired-with-A framing).
+
+### Pending (as of morning):
+- Confirm mediajunkie walkthrough happened yesterday (6 days to Apr 15)
+- Usage snapshot (kindsys Max upgrade not yet in CSV)
+- Haiku 3 verification (PA, 10 days)
+- Argus sweep (Calliope, 13+ days overdue)
+- Xpoll distribution — requirements sent to Janus
+
