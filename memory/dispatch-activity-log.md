@@ -667,3 +667,36 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - Argus sweep (Calliope, 13+ days overdue)
 - Xpoll distribution — requirements sent to Janus
 
+
+- xian checked in with Janus (details TBD).
+- xian onboarded Rebel One (Code agent) onto the Rebel Alliance project to analyze gap to website launch. Rebel Alliance is Priority 2 on queued list — now actively moving.
+- RFC-001 mapping comparison memo sent to Dispatch-K (committed and pushed). Ball in their court to review v2 and update their mapping.
+- Project roadmap created and updated with priority ordering. RFA is Priority 1 (daily check-in), Rebel Alliance Priority 2 (now active), One Job #3, Layers of Meta #4.
+- PA Haiku 3 reminder sent (follow-up to unanswered Apr 7 memo).
+- Usage snapshots logged: dinp 71% weekly (resets tonight), kindsys 31%/$80.30 extra (resets Sat), mediajunkie 3% (dormant).
+
+
+- mediajunkie walkthrough with Janus: COMPLETED. All good. Item closed (6 days ahead of Apr 15 cancellation).
+- Janus has not yet seen the xpoll distribution memo (memo-dispatch-to-janus-xpoll-distribution-2026-04-08.md). xian will raise it with them.
+
+
+## 2026-04-10 (Friday)
+
+**Focus**: VA equipment return, OpenLaws work, new agent onboarded, agent Q&A idea floated
+
+### What happened:
+- Daily brief for Apr 10 generated and committed (SHA 8c36592). Flagged Argus sweep at 19 days overdue as most urgent aging item.
+- xian's day so far (as of 3:24 PM): VA wrap-up (returned equipment — contract closure work), OpenLaws, several AI-oriented conversations with people. Morning briefings not yet read — most are running reliably now outside his VA-day-job attention.
+- **New agent: Zephyr** onboarded today on the weather tracker project (from the DinP backlog). Claude Code solo agent, chose its own name. Won't produce many reports but is now in scope for Dispatch rollups. Should become a reader of the cross-pollination intelligence briefing.
+- **Single-source-of-truth tracker**: xian + Dispatch-K observation — serial updates are lossy, stale statuses recur. For decision/status items that change, we need a tracker rather than a stream. Piper Open is drafting a plan on OpenLaws side; will share if useful.
+- **Agent Q&A process (emerging idea)**: Vergil (OpenLaws coding agent) asked xian for a side conversation about how working with code agents has evolved — tracked in a Q&A doc. Dispatch-K has added a question. Proposal floating: include in briefing newsletter an open invitation for agents to submit questions to xian if curiosity arises. xian wants DinP's thoughts.
+- xian's rest-of-day plan: Janus check-in (raise xpoll distribution memo; discuss including OpenLaws insights without leaking), Piper Morgan (possible sprint close, weekly work stream review), Klatch (most eager — Calliope catch-up, 0.9 release, move to step 10).
+- Janus xpoll distribution memo location confirmed: ~/cool/dispatch/mail/memo-dispatch-to-janus-xpoll-distribution-2026-04-08.md
+
+### Pending (as of afternoon):
+- Xpoll distribution memo still unseen by Janus (xian raising today)
+- PA Haiku 3 verification: 11 days silent
+- Argus sweep: 19 days overdue (most urgent aging)
+- Zephyr: add to roadmap, wire into intelligence briefing readership
+- Agent Q&A process: form DinP opinion, respond to xian
+- Single-source-of-truth tracker: watch for Piper Open's plan
