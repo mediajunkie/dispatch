@@ -700,3 +700,16 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - Zephyr: add to roadmap, wire into intelligence briefing readership
 - Agent Q&A process: form DinP opinion, respond to xian
 - Single-source-of-truth tracker: watch for Piper Open's plan
+
+## 2026-04-11 (Saturday)
+
+**Focus**: Morning catch-up, weekend cadence
+
+### What happened (overnight + early AM):
+- xian plan: novel ch 2 (morning), Piper insight blog post w/ Docs, Klatch (0.9.0 LinkedIn post, step 10 progress), PM (workstream review, todo delete bug fix to close M1), Janus check-in, RFA restart, possible long-tail dabbling.
+- **Klatch v0.9.0 SHIPPED** Apr 10 - Step 9 (Files & Context Architecture). LinkedIn draft + future-direction memo (Klatch as context interchange protocol) committed. Step 10 phasing plan landed (5 phases). Calliope session wrap on file.
+- **Argus sweep split formalized** by Janus (memo on file): external news scan now automated via CCR trigger Klatch External Intel Sweep (Mondays 9 AM PT, dinp account, writes to klatch/docs/intel/, runs whether Argus is active or not). Internal quality assessment / curation still session-dependent. New flag rule: ">14 days since Argus has *curated*" not "since sweep ran." First automated run delivered Apr 9. Calliope + Argus informed via klatch mail.
+- **Janus harness glitches Apr 10**: 14:24 UTC scheduled run had auth failure, 16:15 UTC manual run committed to detached HEAD, 22:46 UTC re-sweep recovered orphaned commits. Sweep current as of EOD Apr 10. Both anomalies worth investigating but neither blocking.
+- **Zephyr fully operational**: mobile-first dashboard live at weather.dinp.xyz, daily GitHub Action running, NOAA multi-day-lag handled via state.json fingerprinting, fresh-rain SMTP notifications wired, eight sketches preserved at /sketches/. v0 passed Xian+Briggs acceptance test. LOG.md established for cross-session continuity. Zephyr ack memo on file.
+- **Piper Morgan (overnight)**: PR 838ed70c "fix: todo completion now actually persists (#926, #904)" landed - but xian M1 blocker is the todo *delete* bug, distinct from this. Other PM: 10 new sprint-coverage issues #950-959, Apr 9 omnibus (3 sessions, 2 Gate 1 fixes, calendar fix, Nine Voices), drafts cleanup (86 to 19 active + 11 published + 55 superseded), CXO + Arch memos delivered. PM website: Nine Voices act 5 blog post added.
+- **Apr 11 daily brief not yet run** (scheduled task pending or weekend skip - to investigate if it doesn fire by mid-morning).
