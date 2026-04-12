@@ -11,3 +11,6 @@ date,account,cycle_day,usage_status,notes
 2026-04-09,designinproduct.com,5x Max,72%,71%,4%,ON,$22.86/$100,$77.13,resets 11hr,Weekly reset tonight
 2026-04-09,kindsys.us,5x Max,28%,31%,0%,ON,$80.30/$150,$64.68,resets Sat 12PM,OpenLaws sprint; extra usage high but pre-dates Max upgrade
 2026-04-09,mediajunkie.com,5x Max,0%,3%,0%,ON,$0/$200,$108.39,resets Mon 7AM,Dormant - cancels Apr 15
+2026-04-12,dinp,Max 20x,6%,weekly,$200.15 extra (100% of $200 cap),session resets 3h48m
+2026-04-12,kindsys,Max 5x,0%,weekly (idle),$80.30 extra (54% of $150 cap),resets Wed 7AM
+2026-04-12,mediajunkie,Max 5x,3%,weekly,$0 extra (0% of $200 cap),resets 23h47m

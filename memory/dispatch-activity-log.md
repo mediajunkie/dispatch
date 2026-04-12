@@ -713,3 +713,8 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - **Zephyr fully operational**: mobile-first dashboard live at weather.dinp.xyz, daily GitHub Action running, NOAA multi-day-lag handled via state.json fingerprinting, fresh-rain SMTP notifications wired, eight sketches preserved at /sketches/. v0 passed Xian+Briggs acceptance test. LOG.md established for cross-session continuity. Zephyr ack memo on file.
 - **Piper Morgan (overnight)**: PR 838ed70c "fix: todo completion now actually persists (#926, #904)" landed - but xian M1 blocker is the todo *delete* bug, distinct from this. Other PM: 10 new sprint-coverage issues #950-959, Apr 9 omnibus (3 sessions, 2 Gate 1 fixes, calendar fix, Nine Voices), drafts cleanup (86 to 19 active + 11 published + 55 superseded), CXO + Arch memos delivered. PM website: Nine Voices act 5 blog post added.
 - **Apr 11 daily brief not yet run** (scheduled task pending or weekend skip - to investigate if it doesn fire by mid-morning).
+
+### Usage snapshots (Apr 12, 7:12 AM):
+- **dinp (Max 20x)**: 6% weekly, $200.15 extra spent (100% of $200 limit, resets May 1), $32.90 balance, auto-reload on. Session resets in 3h 48m.
+- **kindsys (Max 5x)**: 0% weekly (idle yesterday, no dayjob on weekend), $80.30 extra (54% of $150 limit, resets May 1), $64.68 balance, auto-reload on. Resets Wed 7:00 AM.
+- **mediajunkie (Max 5x)**: 3% weekly, $0 extra (0% of $200 limit), $108.39 balance, auto-reload OFF. Resets in 23h 47m.
