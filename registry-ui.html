@@ -254,13 +254,14 @@
 <body>
 
 <h1>Infrastructure Registry</h1>
-<p class="subtitle">Where every agent lives, at every layer. The slot machine view. Updated <span id="lastUpdated">2026-04-07</span></p>
+<p class="subtitle">Where every agent lives, at every layer. The slot machine view. Updated <span id="lastUpdated">2026-04-13</span></p>
 
 <!-- Deadlines -->
 <div class="deadlines">
   <strong>Migration Deadlines</strong>
   <div class="deadline-item" style="text-decoration: line-through; opacity: 0.5;">Apr 3 — kindsys.us Pro limits (CLEAR — passed, VA project ended Apr 3)</div>
-  <div class="deadline-item">Apr 15 — All roles must migrate off mediajunkie.com (sweep trigger migrated to dinp)</div>
+  <div class="deadline-item" style="text-decoration: line-through; opacity: 0.5;">Apr 9 — Migration formally complete</div>
+  <div class="deadline-item">Apr 15 — mediajunkie.com lapsing to free tier (walkthrough done, no active dependencies)</div>
   <div class="deadline-item">Jun 2026 — crispybacon credits expire</div>
 </div>
 
@@ -299,8 +300,8 @@
 const DATA = {
   accounts: [
     { email: 'xian@designinproduct.com', tier: '20x Max', cost: '~$100', status: 'PRIMARY', scope: 'All personal/creative/entrepreneurial', class: 'primary' },
-    { email: 'ccrumlish@kindsys.us', tier: 'Pro (downgraded Mar 29)', cost: '~$20', status: 'VA wound down Apr 3 — budget cut', scope: 'VA Decision Reviews (ended)', class: 'deprecated' },
-    { email: 'xian@mediajunkie.com', tier: 'Pro (downgraded Mar 29)', cost: '~$20', status: 'DEPRECATED — migrate by Apr 15', scope: '—', class: 'deprecated' },
+    { email: 'ccrumlish@kindsys.us', tier: 'Pro (downgraded Mar 29)', cost: '~$20', status: 'Active — OpenLaws / Kind Systems work', scope: 'VA Decision Reviews (ended), OpenLaws (active)', class: '' },
+    { email: 'xian@mediajunkie.com', tier: 'Lapsing to free Apr 15', cost: '$0', status: 'DEPRECATED — walkthrough done, no dependencies', scope: '—', class: 'deprecated' },
     { email: 'crispybacon@atswimtwobirds.com', tier: 'Pro (canceled)', cost: '$0', status: 'Burn credits through Jun 2026', scope: '—', class: 'deprecated' }
   ],
   projects: [
@@ -309,7 +310,7 @@ const DATA = {
       github: 'mediajunkie/piper-morgan-product',
       local: '~/Development/piper-morgan',
       account: 'designinproduct.com',
-      notes: ['Chat Project on dinp (465 files, memory seeded)', 'Cowork created Mar 29 on kindbook', 'All active roles migrated — Apr 3 deadline clear'],
+      notes: ['Chat Project on dinp (465 files, memory seeded)', 'Cowork created Mar 29 on kindbook', 'All active roles migrated — migration complete Apr 9'],
       agents: [
         { role: 'Lead Developer', slug: 'lead', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'dinp', chat: 'PM (dinp)', status: 'done', statusText: 'DONE — Mar 30' },
         { role: 'Chief Architect', slug: 'arch', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'dinp', chat: 'PM (dinp)', status: 'done', statusText: 'DONE — Mar 30' },
@@ -337,12 +338,13 @@ const DATA = {
       github: 'Design-in-Product/klatch',
       local: '~/Development/klatch',
       account: 'designinproduct.com',
-      notes: ['Chat Project on dinp (60+ docs, 9 convos)', 'Cowork created Mar 29 on kindbook', 'All Code agents migrated to faoilean (Theseus last, Apr 4)', 'Metis: new Cowork agent, barely started'],
+      notes: ['v0.9.0 shipped — Step 10 in design', 'Chat Project on dinp (60+ docs, 9 convos)', 'Cowork created Mar 29 on kindbook', 'All Code agents on faoilean', 'Klatch Intel Sweep trigger on dinp (trig_018xvdqtG4KNW4Ufu86ARfJm) — Monday 9 AM PT, Sonnet 4.6'],
       agents: [
         { role: 'Daedalus', slug: 'daedalus', env: 'Code (local)', interface: 'Claude Code', device: 'faoilean', account: 'dinp', chat: 'Klatch (dinp)', status: 'done', statusText: 'DONE — migrated Apr 1' },
         { role: 'Argus', slug: 'argus', env: 'Code (local)', interface: 'Claude Code', device: 'faoilean', account: 'dinp', chat: 'Klatch (dinp)', status: 'done', statusText: 'DONE — migrated Apr 1 (local w/ remote control)' },
         { role: 'Calliope', slug: 'calliope', env: 'Code (local)', interface: 'Claude Code', device: 'faoilean', account: 'dinp', chat: 'Klatch (dinp)', status: 'done', statusText: 'DONE — migrated Apr 1' },
         { role: 'Theseus Prime', slug: 'theseus', env: 'Code (local)', interface: 'Claude Code', device: 'faoilean', account: 'dinp', chat: 'Klatch (dinp)', status: 'done', statusText: 'DONE — migrated Apr 4' },
+        { role: 'Iris', slug: 'iris', env: 'Code (local)', interface: 'Claude Code', device: 'faoilean', account: 'dinp', chat: 'Klatch (dinp)', status: 'active', statusText: 'Active — UX designer, onboarded Apr 10' },
         { role: 'Mnemosyne', slug: 'mnemosyne', env: 'Chat Project', interface: 'claude.ai', device: 'browser', account: 'dinp', chat: 'Klatch (dinp)', status: 'active', statusText: 'Active — already on dinp' },
         { role: 'Metis', slug: 'metis', env: 'Cowork', interface: 'Claude Cowork', device: 'faoilean', account: 'dinp', chat: 'Klatch (dinp)', status: 'active', statusText: 'Active — barely started' },
         { role: 'Ariadne', slug: 'ariadne', env: 'Klatch (in-app)', interface: 'Klatch UI', device: '—', account: '—', chat: '—', status: 'dormant', statusText: 'Test agent' },
@@ -354,9 +356,45 @@ const DATA = {
       github: 'mediajunkie/designinproduct',
       local: '~/Development/designinproduct',
       account: 'designinproduct.com',
-      notes: ['Chat Project migrated Mar 28', 'Cowork created Mar 29 on kindbook', 'Sweep trigger migrated to dinp (trig_01TvevRKSadEtCd9E96FTM2j)', 'Weekly digest trigger (trig_01FTQbyrV9qi18Q7ihFiq23u)', 'Old mediajunkie trigger disabled'],
+      notes: [
+        'Chat Project migrated Mar 28', 'Cowork created Mar 29 on kindbook',
+        'Intelligence Sweep: trig_01TvevRKSadEtCd9E96FTM2j — daily 7 AM PT, Sonnet 4.6 (on dinp)',
+        'Weekly Digest: trig_01FTQbyrV9qi18Q7ihFiq23u — Monday 8 AM PT, Sonnet 4.6 (on dinp)',
+        'Sweep delivers to 6 reader repos: Klatch, PM, OpenLaws, Dispatch, Rebel Alliance, Weather'
+      ],
       agents: [
         { role: 'Janus', slug: 'janus', env: 'Code (local)', interface: 'Claude Code', device: 'faoilean', account: 'dinp', chat: 'DinP (dinp)', status: 'done', statusText: 'DONE — migrated Mar 31' }
+      ]
+    },
+    {
+      name: 'OpenLaws',
+      github: 'mediajunkie/openlaws',
+      local: '~/cool/OpenLaws/',
+      account: 'kindsys.us',
+      notes: ['Kind Systems work — data boundary applies', 'Cross-pollination source and reader (with data boundary)', 'New project as of Apr 2026'],
+      agents: [
+        { role: 'Vergil', slug: 'vergil', env: 'Code (local)', interface: 'Claude Code', device: 'kindsys', account: 'kindsys', chat: '—', status: 'active', statusText: 'Active — onboarded Apr 10' },
+        { role: 'Piper Open', slug: 'piper-open', env: 'Cowork', interface: 'Claude Cowork', device: 'kindsys', account: 'kindsys', chat: '—', status: 'active', statusText: 'Active — PM assistant' }
+      ]
+    },
+    {
+      name: 'Rebel Alliance',
+      github: '—',
+      local: '~/cool/rebel-alliance/',
+      account: 'designinproduct.com',
+      notes: ['Rebel Alliance website', 'Solo agent onboarded Apr 9-10'],
+      agents: [
+        { role: 'Rebel One', slug: 'rebel-one', env: 'Code (local)', interface: 'Claude Code', device: 'faoilean', account: 'dinp', chat: '—', status: 'active', statusText: 'Active — onboarded Apr 9-10' }
+      ]
+    },
+    {
+      name: 'Weather (Zephyr)',
+      github: '—',
+      local: '~/cool/weather/',
+      account: 'designinproduct.com',
+      notes: ['Rainfall tracker', 'Solo agent onboarded Apr 10'],
+      agents: [
+        { role: 'Zephyr', slug: 'zephyr', env: 'Code (local)', interface: 'Claude Code', device: 'faoilean', account: 'dinp', chat: '—', status: 'active', statusText: 'Active — onboarded Apr 10' }
       ]
     },
     {
@@ -364,11 +402,11 @@ const DATA = {
       github: '(private)',
       local: '~/cool/VA/',
       account: 'kindsys.us',
-      notes: ['Project ended Apr 3 — budget cut', 'Archie wound down, workspace preserved', 'Dedicated kindsys API key', 'Data boundary policy maintained (contract work)'],
+      notes: ['Project wound down Apr 3', 'Workspace preserved', 'Dedicated kindsys API key', 'Data boundary policy maintained (contract work)'],
       agents: [
-        { role: 'Archie', slug: 'archie', env: 'Cowork', interface: 'Claude Cowork', device: 'kindbook', account: 'kindsys', chat: 'VA (kindsys)', status: 'dormant', statusText: 'Wound down — VA ended Apr 3' },
-        { role: 'VA Code agent', slug: '—', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'kindsys', chat: 'VA (kindsys)', status: 'dormant', statusText: 'Wound down — VA ended Apr 3' },
-        { role: 'DRAGONS Chat', slug: '—', env: 'Chat Project', interface: 'claude.ai', device: 'browser', account: 'kindsys', chat: 'VA (kindsys)', status: 'dormant', statusText: 'Wound down — VA ended Apr 3' }
+        { role: 'Archie', slug: 'archie', env: 'Cowork', interface: 'Claude Cowork', device: 'kindbook', account: 'kindsys', chat: 'VA (kindsys)', status: 'dormant', statusText: 'Wound down — workspace preserved' },
+        { role: 'VA Code agent', slug: '—', env: 'Code (local)', interface: 'Claude Code', device: 'kindbook', account: 'kindsys', chat: 'VA (kindsys)', status: 'dormant', statusText: 'Wound down — workspace preserved' },
+        { role: 'DRAGONS Chat', slug: '—', env: 'Chat Project', interface: 'claude.ai', device: 'browser', account: 'kindsys', chat: 'VA (kindsys)', status: 'dormant', statusText: 'Wound down — workspace preserved' }
       ]
     },
     {
