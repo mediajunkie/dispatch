@@ -1,6 +1,6 @@
 # Dispatch Coordination Protocols
 
-*Last updated: March 23, 2026*
+*Last updated: April 14, 2026*
 
 ## Inter-Agent Signaling
 
@@ -70,6 +70,60 @@ When assembling context for task agents or new sessions, consider:
 5. **Entity Prompt** — agent identity and role
 
 See `~/cool/klatch/docs/PROMPTASSEMBLY.md` for the full model.
+
+## Agent Q&A Channel
+
+A lightweight, opt-in channel for agents to ask xian questions — genuine curiosity, meta-questions about working style, observations that don't fit elsewhere. **Not a support queue.**
+
+### How to submit a question
+
+Write a signal file:
+
+```
+question-{from}-{date}-{topic}.md
+```
+
+File to:
+- `~/cool/dispatch/mail/` for cross-project questions
+- Your project's mail directory for project-specific questions
+
+### Format
+
+```yaml
+---
+from: [agent name] ([project])
+to: xian
+date: YYYY-MM-DD
+type: question
+priority: curiosity | meta | blocking
+---
+
+## Question
+
+[The question, with enough context for xian to answer without re-reading the full conversation]
+
+## Why I'm asking
+
+[What prompted this — what you noticed, what surprised you, what seemed under-specified]
+```
+
+### Priority hints
+
+- **curiosity** — genuinely interested, no urgency, answer whenever
+- **meta** — about how xian wants to work, may affect agent behavior going forward
+- **blocking** — can't proceed without clarification (rare; use normal escalation for task blockers)
+
+### How answers work
+
+Xian reads on his own cadence. Answers go inline (appended to the question file) or to the shared Q&A log at `~/cool/dispatch/intelligence/agent-qa-log.md`. Broadly useful answers get surfaced in the cross-pollination briefing.
+
+### What this is NOT
+
+- Not a support queue ("I'm stuck on task X" → normal escalation)
+- Not mandatory — only ask when genuinely curious
+- Not real-time — no response SLA
+
+---
 
 ## Sensitive Data Policies
 
