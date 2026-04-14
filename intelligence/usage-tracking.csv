@@ -14,3 +14,6 @@ date,account,cycle_day,usage_status,notes
 2026-04-12,dinp,Max 20x,6%,weekly,$200.15 extra (100% of $200 cap),session resets 3h48m
 2026-04-12,kindsys,Max 5x,0%,weekly (idle),$80.30 extra (54% of $150 cap),resets Wed 7AM
 2026-04-12,mediajunkie,Max 5x,3%,weekly,$0 extra (0% of $200 cap),resets 23h47m
+2026-04-14,dinp,Max 20x,46%,weekly (resets Sat 6PM),$200.15 extra (100% of $200 cap; resets May 1),session 24% / resets 1h8m; Sonnet-only 2%; balance $32.90
+2026-04-14,kindsys,Max 5x,10%,weekly (resets Mon 8AM),$80.30 extra (54% of $150 cap; resets May 1),session 0%; Sonnet-only 0%; balance $64.68; OpenLaws driving light use
+2026-04-14,mediajunkie,Max 5x,0%,weekly (reset since Apr 12),$0 extra (0% of $200 cap),session 0%; Sonnet never used; balance $108.39; auto-reload off; sub auto-cancels Apr 15; separate API-credit warning observed
