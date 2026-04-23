@@ -718,3 +718,144 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - **dinp (Max 20x)**: 6% weekly, $200.15 extra spent (100% of $200 limit, resets May 1), $32.90 balance, auto-reload on. Session resets in 3h 48m.
 - **kindsys (Max 5x)**: 0% weekly (idle yesterday, no dayjob on weekend), $80.30 extra (54% of $150 limit, resets May 1), $64.68 balance, auto-reload on. Resets Wed 7:00 AM.
 - **mediajunkie (Max 5x)**: 3% weekly, $0 extra (0% of $200 limit), $108.39 balance, auto-reload OFF. Resets in 23h 47m.
+
+
+## 2026-04-12 (Sunday)
+
+**Focus**: Memory research loop completes, heavy PM sprint, Klatch Step 10 progress
+
+### What happened:
+- **First multi-agent research loop completed full cycle**: Janus memory research synthesis initiated, routed to PA and Docs. Docs responded with prior art and follow-up. 5 new PM issues (#972-976) filed directly from research. Type 2 dreaming concept queued as follow-on. First time a research thread has gone synthesis to response to action items across multiple agents.
+- **Piper Morgan Product (26 commits)**: PA day 13. Absorbed Janus memory research, filed 5 new issues (#972-976). 7 M2a issues closed. Inversion sweep found 3 inversions across 8 components. Fixes landed: unified model config (#947 Phase 1), consent boundary (#946), GitHub adapter bugs (#969), temporal migration (#965). Archaeological Debugging published to editorial calendar. Lead Dev M2a canonical baseline distributed to CXO + PPM. Memory prior art response sent to Janus.
+- **Klatch (15 commits)**: Iris session 3 delivered design principles, evaluation skeleton, and Theme 3 interview. Argus session wrapped with verification. Round 18 shipped Step 10 Phase 2 export endpoint (23 tests) plus Phase 1 design doc for canonical context package format. AAXT/PM cross-reference and fabrication probe class design landed. Memory research routed via 4 memos.
+- **Piper Morgan Website**: Archaeological Debugging blog post added (1 commit).
+- **designinproduct (6 commits)**: Apr 12 session log closed, memory research initiative marked complete. Docs reply and Calliope replies logged. Janus sweep receipt filed.
+- **Dispatch (3 commits)**: Janus memory research synthesis routed via mail. Apr 12 usage snapshots logged. dinp upgraded to Max 20x noted. Daily brief filed.
+- **Zephyr (2 commits)**: IEM gap-fill for near-real-time precipitation data. Email failure made non-blocking so site deploy always proceeds.
+- **Usage**: dinp extra usage cap fully consumed (100% of 00 limit). Resets May 1. Auto-reload on, 2.90 balance.
+- **mediajunkie**: 2 days to Apr 15 auto-cancellation. No remaining loose ends.
+## 2026-04-13 (Monday)
+**Focus**: Klatch Phase 3.5 behavioral calibration shipped, PM #925 migration, weekly xpoll digest filed
+
+### What happened:
+- **Klatch — heavy day**: Phase 3.5 behavioral calibration pipeline shipped across 3 sub-phases (3.5a self-authored handoff, 3.5b external extraction, 3.5c micro-reflections). 910 tests total, 18 new behavioral calibration tests. Round 21 assigned. Iris session 4 delivered three deliverables and six UX fixes. Daedalus session wrapped (nine commits). Haiku 3 MODEL_ALIASES bug found via curated sweep; validation tests added. Iris flagged "document of record pending xian" (commit a160ed4) — formal write-up waiting on xian, consensus confirmed by all three agents.
+- **Piper Morgan Product (2 commits)**: PA day 13. #925 STATUS/PRIORITY floor migration shipped. Canonical retest run 3 posted. Session wrap + #977 started mid-session with context handoff.
+- **Piper Morgan Website**: Archaeological Debugging blog post published.
+- **Dispatch**: Weekly cross-pollination digest for Apr 7–13 filed. Registry UI updated (OpenLaws, Rebel, Weather, Iris, triggers, migration complete). Janus→PA temporal validity signal sent. Apr 13 brief committed.
+- **designinproduct**: Apr 13 log closed (all 4 items complete, triggers monitoring). Apr 13 sweep receipt + xpoll brief filed.
+- **OpenLaws**: Vergil eval harness v1 → v1.1 with PO review additions. Datasets scoping, docs reorg, workshop synthesis, laptop handoff continuity memo.
+- **Zephyr**: Email-failure non-blocking deploy fix + IEM gap-fill for near-real-time precip.
+- **Argus**: First clean curated output under the split regime (2026-04-13-sweep-curated.md). Automated sweep also filed.
+- **Rebel**: ~/cool/rebel not yet a git repo (scaffolding underway).
+
+### Deadlines set:
+- **Haiku 3 MODEL_ALIASES fix** — 7-day deadline from Apr 13 curated sweep (due ~Apr 20).
+
+### Pending (carried into Apr 14):
+- Phase 3.5 document of record (new — blocks Klatch close on this initiative)
+- Agent Q&A process — DinP opinion still pending
+- Single-source-of-truth tracker — watch for Piper Open delivery
+- Usage snapshot refresh (last Apr 12, now stale)
+- mediajunkie cancellation — Apr 15 tomorrow, final check today
+
+## 2026-04-14 (Tuesday)
+**Focus**: Klatch Phase 3.5 closed + Phase 4 approved, PM M2b testing track complete, Dispatch Agent Q&A Phase 1 launched
+
+### What happened:
+- **Klatch — Phase 3.5 closed, Phase 4 live**: Round 22 shipped Phase 3.5d (export review UI + preview endpoint, 32 tests). Daedalus session confirmed Phase 3.5 complete and Phase 4 approved. Iris session 5 delivered Phase 3.5d spec + five UX topics. Blog skeleton for Phase 3.5 committed (awaiting results). Phase 3.5 document of record still pending xian — Iris waiting.
+- **Piper Morgan Product — M2b testing track fully complete**: PA day 15 wrapped. Lead Dev shipped 6 issues in one session: context contract audit, 911 lines dead code removed, E2E 9/9 passing, canonical suite (61 queries), AAXT golden scenarios (5 tests), CI integration (#927–#930, #960/#961, #963). CXO memo filed re #950 floor prompt review. Editorial calendar backfilled extensively. Tomorrow: IAC travel, dreaming conversation.
+- **Piper Morgan Website**: "The Closing Sprint" blog post published. RSS dedup fixes committed.
+- **Dispatch**: Agent Q&A channel Phase 1 launched (PROTOCOLS.md + agent-qa-log.md with Vergil precedents). CLAUDE.md behavioral contract added to repo. Usage snapshot Apr 14 captured. Cross-pollination brief filed.
+- **designinproduct**: Apr 14 log closed (7 items completed, Q&A channel launch noted). Agent UI page rebuilt — light theme, mobile-responsive, 10 new agents. Apr 14 sweep substantive. Project tracker and Ted email draft committed.
+- **OpenLaws**: PO Apr 14 work block committed — domain briefing, principles seed, cross-pollination synthesis, eval harness roadmap. Dispatch-K offline coverage continuing via DinP + Janus + PO.
+- **Dispatch-K**: OFFLINE since Apr 14 — laptop at Apple Store.
+- **Zephyr**: Quiet, operational.
+- **Rebel**: Still not a git repo.
+
+### Deadlines:
+- **mediajunkie cancellation**: Apr 15 (today) — auto-cancels, confirm clean.
+- **Haiku 3 MODEL_ALIASES fix**: ~Apr 20 (5 days remaining).
+
+### Pending (carried into Apr 15):
+- Klatch Phase 3.5 document of record — Iris waiting on xian
+- PA Memory Stores access request (linchpin for M5 distribution; also relevant to Klatch Step 10)
+- Single-source-of-truth tracker — still watching for Piper Open delivery
+- mediajunkie cancellation confirmation today
+
+## 2026-04-16 (Thursday)
+
+**Focus**: OpenLaws data-boundary redaction across network; PM heaviest day of week (Gemini wired + floor iter 2 at 72.1%)
+
+### What happened:
+- **OpenLaws data-boundary incident + response**: Janus's Apr 15 cross-pollination brief leaked OpenLaws infrastructure-defect detail into the network. Apr 16 response shipped — redact-in-place across every reader repo (dispatch, klatch, designinproduct, OpenLaws, weather) plus superseded-treat-as signal sent to Calliope and PA. This is now the reference template for boundary-failure handling. Open structural question: exclude OpenLaws from cross-pollination sources entirely, or tighten the filter? Blocks next clean brief cycle.
+- **Piper Morgan Product — 24 commits, heaviest day of week**: Gemini wired as real primary/fallback in LLMClient (#988 JSON mode fix, services/llm). #950 floor prompt iter 2 retest posted at 44 PASS (72.1%) with Five Pillars + anti-flattening landing on Colleague Test. #951 wired calendar + deadline context into floor. M2b + M2c gate closures documented with follow-up index. #964 ethics verification complete (3 follow-ups filed). #980 orphan-script cleanup. CXO inbox cleared 7→0; Docs inbox cleared. PDR-004 internal corrections actioned across omnibus. Lead Dev received xian memo adapting Argus local-LLM research to PM.
+- **Piper Morgan Website**: "The Migration" blog post published to Medium ahead of Apr 22 schedule. PDR-004 principle-name corrections landed for Closing Sprint + Ship #036.
+- **Klatch**: Janus→Calliope redaction-superseded mail filed. Otherwise quiet post-Phase 4 shipping sprint.
+- **designinproduct**: Apr 16 log opened (conference-day framing + data-boundary priority). Apr 16 cross-pollination brief filed; sweep receipts at start + substantive. Apr 15 brief redacted in place.
+- **OpenLaws**: PO filed John call synthesis, Bet C reframed work plan (federal baseline Monday), all-hands script v0.2. Apr 15 brief redacted for data boundary.
+- **Weather/Zephyr**: Redaction commit only; operational.
+- **Janus**: Drove the data-boundary redaction across the network and delivered the Apr 16 brief. Scan-only trigger (4 sources, no reader delivery) first ran cleanly — the CCR 7-repo timeout from Apr 15 is resolved structurally.
+- **Dispatch-K**: Still offline since Apr 14 (laptop at Apple Store). Coverage via DinP + Janus + PO holding.
+- **Rebel**: Still not a git repo.
+
+### Deadlines:
+- **Haiku 3 retirement (Apr 19)** — closed via PM #979 on Apr 15. 2 days of margin. No action.
+- **OpenLaws all-hands (today, Apr 17)** — confirm Loom pre-record vs. drop-in.
+
+### Pending (carried into Apr 17):
+- OpenLaws data-boundary rule decision — exclude OpenLaws as xpoll source, or tighten filter? Blocks next clean brief cycle.
+- PDR-004 Medium + LinkedIn external syndication still carrying old paraphrase (PM exec tracker item 11).
+- All-hands prep / Loom recording if not dropping in.
+- Klatch Phase 3.5 document of record — Iris still waiting (flagged since Apr 13; likely deprioritized by Phase 4 momentum).
+- Iris UX binocular synthesis — xian's observations on five UX topics.
+- Usage snapshot refresh (last Apr 14, 3 days stale).
+
+## 2026-04-19 (Sunday)
+
+**Focus**: Quiet weekend; Docs-PM shipped Sibling Intelligence + Apr 16 omnibus + same-session process fix for incomplete logs
+
+### What happened:
+- **Piper Morgan Product (7 commits)**: Docs session Sun 6:39 AM shipped the Sibling Intelligence insight post (website + Medium + LinkedIn), the Apr 16 omnibus (HIGH-COMPLEXITY: COORDINATION, 6 sessions), and the Apr 19 session log.
+- **Process fix (same session)**: Lead Dev Apr 16 log stopped at 8:45 AM despite working into the evening. Docs flagged as process failure and shipped mitigation in-session — new PostToolUse hook `.claude/hooks/log-maintenance-reminder.sh` (stale-log warning every 15th Bash call if >30 min idle), new NON-NEGOTIABLE "Session Log Maintenance" section in CLAUDE.md, and an escalation note to the feedback memory. Reference template for incomplete-log remediation.
+- **Piper Morgan Website (1 commit)**: Sibling Intelligence blog post published (f5ff7d14d).
+- **Dispatch (1 commit)**: Apr 19 brief filed.
+- **Klatch, designinproduct, OpenLaws, Weather/Zephyr, Rebel**: No commits Apr 19–20.
+- **Dispatch-K**: Still offline — kindsys laptop at Apple Store, day 7. DinP + Janus + PO coverage holding.
+- **Janus**: Scan-only trigger next runs today (Apr 20) at 9 AM PT on restructured 3-repo trigger. Xpoll briefs through Apr 18 delivered to all reader repos on Apr 18; next cycle depends on this morning's scan landing.
+
+### Signals / decisions:
+- Incomplete-log detection moved from ad hoc to tooling: stale-log PostToolUse hook + NON-NEGOTIABLE CLAUDE.md clause is the new discipline across PM.
+- Anti-zombie sweep: nothing newly closed today. Yesterday's drops stand (OpenLaws data-boundary rule, Klatch Phase 3.5 document of record, PDR-004 external syndication, OpenLaws SSH push retry, Iris UX binocular synthesis).
+
+### Pending (carried into Apr 20):
+- Claude Desktop restart for OpenLaws Vergil MCP POC tool registration (30-second task; pair with first OpenLaws session).
+- PM #995 fabrication probe-set coordination — Calliope routed to Argus; parked behind Round 25b. Tracking only.
+- Apr 17 PM omnibus — PA + Lead Dev logs exist; Docs queued this week.
+- "Four Roles, Ninety Minutes" PM narrative — draft exists, shifted from Apr 17 by conference.
+- Usage snapshot refresh (last Apr 17, 3 days stale, at refresh threshold).
+- Argus external sweep at 9 AM PT — if anything substantive surfaces, routes via Janus into this week's xpoll.
+
+
+## 2026-04-21 (Tuesday)
+**Focus**: "Four Roles, Ninety Minutes" shipped; Janus zombie-content fix + anti-zombie sweep prompt hardening; PM #996 weekly audit findings
+
+### What happened:
+- **Piper Morgan Product + Website**: "Four Roles, Ninety Minutes" shipped to blog + Medium late Tue (website `998cc89f3`, product `b644d2d6`). Docs worked the open #996 weekly audit in same session � posted findings + 3-link broken-path fix in `pattern-049`.
+- **Janus � Apr 21 zombie-content fix complete**: Revised Apr 21 cross-pollination brief from 4 insights to 2 (kept PDR-004 canonical-term discipline + Sibling Intelligence; dropped ethics-voice duplicate + weak mechanism-verification). Patched live sweep prompt + reference copy with Step 2.5 anti-zombie orientation, Step 3 retrospective-log rule, Step 4 dedup check. Delivered to all 6 readers clean.
+- **designinproduct**: Apr 21 fix session closed in log. Hub sweep prompt patched against zombie content (filename-date extraction + dedup against recent briefs' Key Insight headings).
+- **Dispatch / klatch / OpenLaws / weather**: Each took the revised Apr 21 cross-pollination brief. Dispatch also filed the Apr 21 brief + weekly sandbox snapshot.
+- **Rebel**: Still not a git repo (back burner since Apr 9).
+- **Dispatch-K**: Day 8 offline (kindsys laptop at Apple Store since Apr 14). DinP + Janus + PO coverage holding.
+
+### Signals / decisions:
+- Anti-zombie sweep prompt hardening � Step 2.5 / Step 3 retrospective-log rule / Step 4 dedup check are the new reference template for duplicate-insight prevention across xpoll cycles.
+- Option 1 dedicated delivery CCR trigger design is ready to build whenever xian is (Janus).
+
+### Pending (carried into Apr 22):
+- Usage snapshot refresh � CSV 5 days stale, past 3-day threshold. dinp extra usage at 100% of $200 cap (resets May 1, 9 days out), kindsys at 66% of $150.
+- PM #996 audit morning review items: BRIEFING-CURRENT-STATE.md 6 days old (1 day from 7-day warn), roadmap.md 10 days stale, patterns/README.md line-6 count inconsistency (says 63, should be 62), 3 macOS-style duplicate files in dev/active/, 14 open issues missing milestone (#982�#996 range), 86 services/ files with mock_/fallback � Docs recommends dedicated sweep issue.
+- PM Apr 17/18/19/20 omnibus logs � deferred to today; 4 days to synthesize.
+- Option 1 dedicated delivery CCR trigger design (Janus) � ready post dinp auth restore.
+- OpenLaws PM session-log PostToolUse hook adoption � decision Apr 20, pending implementation.
+- PM #995 fabrication probe-set coordination � parked behind Round 25b, tracking only.
+- Argus � internal curated sweep Apr 13 now 9 days (under 14-day threshold but in watch zone).

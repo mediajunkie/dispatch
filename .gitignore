@@ -26,3 +26,5 @@ __MACOSX/
 migration-staging/transcripts/
 migration-staging/conversations/
 migration-staging/project-conversations/
+intelligence/.reminder-sent-*
+.reminder-sent-*
