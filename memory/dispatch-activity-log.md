@@ -859,3 +859,58 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - OpenLaws PM session-log PostToolUse hook adoption � decision Apr 20, pending implementation.
 - PM #995 fabrication probe-set coordination � parked behind Round 25b, tracking only.
 - Argus � internal curated sweep Apr 13 now 9 days (under 14-day threshold but in watch zone).
+
+## 2026-04-22 (Wednesday)
+**Focus**: PM HOST Chat→Code migration; #992 ETHICS-ACTIVATE Phases A–D shipped; Dispatch-Kind rebooted
+
+### What happened:
+- **Piper Morgan (Product) — massive day**: HOST migrated from Chat to Code (handoff package, first Code session, first deliverables). #992 ETHICS-ACTIVATE progressed Phases A–D: BoundaryDecision redirect_context, FloorContext denial mode, ConversationalFloor routing, false-positive scan (0/61 triggers). Lead Dev worktree merged. Omnibus logs backfilled (Apr 17–21). 23 DECISIONS.md entries retro-captured. Docs closed #996 audit and published Weekly Ship #039 (Four Roles, Ninety Minutes).
+- **Piper Morgan (Website)**: Blog post published (Weekly Ship #039); content schema fix.
+- **Dispatch**: Bootstrap memo + welcome/channel-check memo sent to Dispatch-Kind (Dispatch-Kind rebooted by xian). Janus xpoll source/reader config review memo delivered. Apr 22 cross-pollination brief committed.
+- **designinproduct**: Janus memo delivered. Sweep prompt patched for branch-push regression. Apr 22 session log opened and delivery completed.
+- **OpenLaws**: PO + Vergil sprint work + migration prep committed. Cross-pollination brief delivered.
+- **Klatch**: Cross-pollination brief delivered (only activity).
+- **Weather/Zephyr**: Cross-pollination brief delivered.
+- **Dispatch-Kind**: Rebooted by xian; welcome/channel-check memo sent, awaiting ACK.
+
+### Signals / decisions:
+- HOST Chat→Code migration shipped end-to-end in a single day — handoff package, first Code session, and first deliverables all on Apr 22. Reference template for future agent migrations.
+- #992 Phase D false-positive scan cleared canonical corpus (0/61), but Lead Dev flagged that corpus lacks the known-risk substrings (uncomfortable/family/personal/private) from Phase 1 audit. Targeted probe set recommended before flag flip to close the confidence gap.
+
+### Pending (carried into Apr 23):
+- **#992 ETHICS-ACTIVATE pre-flip decision** — flip now or run targeted probe set first.
+- **Usage snapshot 6 days stale** (last Apr 17) — dinp 100% of $200 cap, kindsys 66% of $150, both reset May 1.
+- **Janus xpoll source/reader config review** — memo sent Apr 22, awaiting response.
+- **Apple Store $299 Kindbook repair** — check Kind corporate plan coverage.
+- **Dispatch-Kind channel verification** — welcome memo sent, awaiting ACK.
+- **Argus internal curation** — last Apr 13 (10 days, approaching 14-day flag).
+
+## 2026-04-23 (Thursday)
+**Focus**: Dispatch-Kind fully back online with daily memo cadence established; OpenLaws Bet 1 committed for Apr 27–Jun 7 sprint; xpoll constellation expanded 3→9 repos with primary/secondary split
+
+### What happened:
+- **OpenLaws — heaviest day on the network (8 commits)**: Bet 1 (agentic law librarian MVP) commitment formalized for the Apr 27–Jun 7 six-week sprint. Top-5 Bet 2 validation lifecycle docs shipped + state legislative lifecycle references for CA, DE, FL, NY, PA, TX. Bet-C third batch (registers) + second batch top-10 balance. Dispatch-Kind bootstrap integration + Apr 22/23 DK, PO, Vergil logs. Apr 22 research synthesis. Sister-project cross-pollination question bundle assembled and routed through Dispatch-Kind → Dispatch-DinP (7 questions for Klatch, 6 for Piper Morgan, 2 for Dispatch-DinP/Janus).
+- **designinproduct (8 commits)**: NYT Crossword Relay added to gallery, xpoll sources, and reader list (agent name: Inker). Delivery trigger CCR built (Option 1, dedicated 13:00 UTC, separate from scan trigger). Xpoll config inventory + scan expansion from 3 to 9 repos with primary/secondary split (secondary: atlas, globe, cuneo, weather, one-job, optilisten, nyt-crossword — fast-skipped if 48h log empty). Apr 24 cross-pollination brief + substantive sweep receipt filed.
+- **Piper Morgan (product, 5 commits)**: CIO migration prep batch — tick-tock walkthrough doc, PA mail delivery cycle, CIO handoff package, Apr 23 session logs. Compose UI v1 Phase 1 scaffolding + read-only views (#998) landed. Apr 22 omnibus (HIGH-COMPLEXITY: 4 sessions) filed.
+- **Dispatch (9 commits)**: Daily memo exchange with Dispatch-Kind fully established — welcome → bootstrap-ack → reply → corrections → cross-pollination bundle relay. DECISIONS.md entries added (hygiene rule, daily memo cadence, project autonomy). Apr 23 daily brief + Apr 23 xpoll brief filed.
+- **Klatch**: 1 commit (xpoll brief delivery only). Quiet.
+- **Weather/Zephyr**: 1 commit — Janus signal accepting Weather as xpoll scan source.
+- **Piper Morgan (website)**: No commits.
+- **Dispatch-Kind**: Back online (rebooted Apr 23 after 9 days offline since laptop went to Apple Store Apr 14). Full memo exchange established; daily memo cadence agreed. Actively routing OpenLaws cross-pollination traffic.
+- **Inker (NYT Crossword Relay)**: Welcomed to the constellation; first automated xpoll delivery scheduled for Apr 24.
+- **Rebel**: Still not a git repo (back burner).
+
+### Signals / decisions:
+- Daily memo cadence between Dispatch-DinP and Dispatch-Kind formalized in DECISIONS.md. Hygiene rule and project autonomy also captured.
+- Xpoll constellation expanded 3→9 repos with explicit primary/secondary bar. Secondary-source bar: methodology write-ups, publications, shipping announcements, interesting bugs — not raw code commits.
+- Option 1 dedicated delivery CCR trigger built (13:00 UTC), separating scan and delivery.
+- OpenLaws Bet 1 (agentic law librarian MVP) committed for Apr 27–Jun 7 six-week sprint. Cadence reference for next six weeks.
+- Sister-project cross-pollination question bundle framework established (OpenLaws → Klatch/PM/DinP via DK → DinP relay). Flagged not urgent; routing shape left to xian.
+
+### Pending (carried into Apr 24):
+- **OpenLaws → Klatch/PM/DinP cross-pollination bundle routing** — relay as bundle, split to inboxes, or lowest-friction. Bet 1 sprint does not depend on responses.
+- **Usage snapshot refresh** — 7 days stale (last Apr 17, past 3-day threshold). dinp at 100% of $200 cap, kindsys at 66% of $150. Both reset May 1 (7 days out).
+- **Git worktree cleanup** — stash pop left merge conflicts in piper-morgan-product (dev/active/2026-03-30-1940-lead-code-opus-log.md) and piper-morgan-website (blog-content.json, medium-posts.json). Stash entries retained.
+- **#992 Phase E prediction-pillar open-ended-framing probe** — PA recommendation, tracking only.
+- **Gemma 4 local secondary ethics reviewer viability** — Lead Dev investigating this week, tracking only.
+- **Argus internal curation** — last Apr 13 (11 days, watch zone, not yet flagged at 14-day threshold).
