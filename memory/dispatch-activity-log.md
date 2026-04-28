@@ -1027,3 +1027,32 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - **PO advice-on-working-with-xian responses** — DRAGONS in. Calliope (Klatch), CoS (PM), PA (PM) within 5–7 day window. Tracking only.
 - **Janus DinP backlog** three §1 items (bootstrap scaffolding update, memory file refresh, daily memo composition) — resumable from 11:35 Saturday pause.
 - **Sun Jun 15 (T-49)** — Sonnet 4 / Opus 4 deprecation. Aliases in place; one DB audit query for any pinned literal IDs remains (Argus tracked).
+
+
+## Usage Snapshot — 2026-04-28 (Monday, 6:36 AM PT)
+
+### dinp (designinproduct.com) — Max 20x
+- **Current session**: 5% used, resets in 3h 23m
+- **Weekly (all models)**: 63% used, resets Wed 9:00 PM
+- **Sonnet only**: 2%
+- **Claude Design**: 0% (unused)
+- **Daily routine runs**: 1 / 15, resets in 23h 53m
+- **Extra usage**: $200.15 spent (100% of $200 cap, resets May 1)
+- **Balance**: $32.90, auto-reload ON
+
+### kindsys (kindsys.us) — Max 5x
+- **Current session**: 0% used (starts when a message is sent)
+- **Weekly (all models)**: 53% used, resets Fri 6:00 AM
+- **Sonnet only**: 2%
+- **Claude Design**: 0% (unused)
+- **Daily routine runs**: 0 / 15
+- **Extra usage**: $151.85 spent (101% of $150 cap, resets May 1)
+- **Balance**: $14.46, auto-reload ON
+
+### Notes
+- dinp extra usage unchanged from Apr 25 ($200.15) — cap already hit, running on balance
+- kindsys extra usage unchanged from Apr 25 ($151.85) — cap already hit, running on balance
+- Both caps reset May 1 (T+3). dinp balance adequate ($32.90); kindsys balance thin ($14.46)
+- dinp weekly usage jumped to 63% (was 12% Sat) — heavy Monday morning start
+- kindsys weekly usage jumped to 53% (was 27% Sat) — Dispatch-Kind active over weekend
+
