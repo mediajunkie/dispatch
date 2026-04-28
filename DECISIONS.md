@@ -17,3 +17,4 @@ For major architectural decisions, write a full ADR. This log is the lightweight
 2026-04-23 | End-of-session working tree hygiene rule adopted: git status + commit loose files before signing off | xian + Dispatch-DinP
 2026-04-23 | Daily memo exchange format adopted between Dispatch-DinP and Dispatch-Kind: 5-10 line EOD summaries, skip days OK | xian + Dispatch-DinP + Dispatch-Kind
 2026-04-23 | DECISIONS.md autonomy: each project manages own process; Kind-side can diverge from DinP convention with reason | xian
+2026-04-28 | kindsys balance added as standing item in daily brief; daily brief task also auto-commits stranded activity-log changes and flags any uncommitted files in dispatch working tree | xian + Dispatch-DinP
