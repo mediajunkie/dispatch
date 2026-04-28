@@ -914,3 +914,116 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - **#992 Phase E prediction-pillar open-ended-framing probe** — PA recommendation, tracking only.
 - **Gemma 4 local secondary ethics reviewer viability** — Lead Dev investigating this week, tracking only.
 - **Argus internal curation** — last Apr 13 (11 days, watch zone, not yet flagged at 14-day threshold).
+
+## 2026-04-24 (Friday)
+
+**Focus**: OpenLaws Bet 1 pitch sealed v1.0 with breadboards + Vergil verification; PM Comms migration handoff + "The Gate" published; PO advice-on-working-with-xian memo routed DK → DinP → Janus
+
+### What happened:
+
+- **OpenLaws (heaviest day on the network, 21+ commits since Thu)**: Bet 1 pitch iterated v0.1 → v0.3 with PO and xian edit passes; v1.0 sealed with MVP plan + timeline + operationalization committed; pitch breadboards (low-fi discipline) rendered as 3 images; Vergil TX WC verification + anti-hallucination scan landed; ChatGPT canonical-query capture + Vergil signal filed; AX first-instincts v0.2; xian-collaboration-patterns synthesis (source for the "advice on working with xian" memo); Dispatch-Kind Friday wrap; two-week Vergil-Claude pairing experiment captured.
+- **Piper Morgan (product)**: Comms Chat→Code migration handoff package + omnibus log work shipped; voice/tone guide rescue from misfile + nav surfacing; narrative beats scheduled May 5–21 with weekend insight pairs Apr 25–May 17; "The Gate" published with Medium URL captured; two new draft posts staged ("six-issues-before-dinner", "verify-the-paraphrase").
+- **Piper Morgan (website)**: "The Gate" blog post landed.
+- **designinproduct**: Apr 23 log closed, Apr 24 log opened with daily-routine inventory; Janus relay of PO advice request committed; substantive sweep + 7/7 delivery on the Apr 25 xpoll brief.
+- **Dispatch**: Three new memos in `mail/` — DK Friday daily memo, DK relay of PO Janus memo to DinP, plus the Apr 25 xpoll brief committed.
+- **Klatch / Weather/Zephyr**: Brief delivery only — no substantive commits.
+- **Rebel**: Still not a git repo at top-level (back burner since Apr 9); 11ty subfolder pulled clean.
+
+### Signals / decisions:
+
+- PO "advice on working with xian" memo routed DK → DinP → Janus on Apr 24, with cost-minimized response framing per PO. Janus to fan out to CoS (PM), Piper Alpha (PM), Calliope (Klatch), and Janus themselves. Tracking only.
+- Two-week Vergil-Claude pairing experiment captured at OpenLaws — reference for cross-agent pairing structure.
+- OpenLaws Bet 1 pitch v1.0 sealed with MVP plan + timeline + operationalization, pre-loading the Apr 27 sprint kickoff (2 days out). Pitch breadboards rendered as 3 low-fi images — reinforces low-fi discipline as repeatable pattern.
+
+### Pending (carried into Apr 25):
+
+- **Usage snapshot refresh** — last Apr 17, now 8 days stale (well past 3-day threshold). dinp at 100% of $200 cap, kindsys at 66% of $150. Both reset May 1 (6 days out).
+- **OpenLaws Bet 1 sprint kickoff Apr 27** (Monday, 2 days out) — pitch + breadboards + Vergil verification all in place; nothing actively blocked.
+- **PO advice-on-working-with-xian routing through Janus** — informational; tracking only unless xian wants to nudge.
+- **PM "Multi-Wave Investigation"** (13 subagents / 4 parallel waves) on the publication docket for Apr 25 — worth a check on pipermorgan.ai later.
+- **PM migration prompts** (Arch, CXO, PPM) staged but uncommitted in the working tree as of Apr 24.
+- **Argus** — external scan last Apr 20 (5 days, automation healthy); internal curation last Apr 13 (12 days, watch zone, not yet at 14-day flag).
+
+
+## Usage Snapshot — 2026-04-25 (Saturday, 8:27 AM PT)
+
+### dinp (designinproduct.com) — Max 20x
+- **Current session**: 17% used, resets in 1h 55m
+- **Weekly (all models)**: 12% used, resets Wed 9:00 PM
+- **Sonnet only**: 0%
+- **Claude Design**: 0% (unused)
+- **Daily routine runs**: 1 / 15, resets in 21h 39m
+- **Extra usage**: $200.15 spent (100% of $200 cap, resets May 1)
+- **Balance**: $32.90, auto-reload ON
+
+### kindsys (kindsys.us) — Max 5x
+- **Current session**: 0% used
+- **Weekly (all models)**: 27% used, resets Fri 6:00 AM
+- **Sonnet only**: 0%
+- **Claude Design**: 0% (unused)
+- **Daily routine runs**: 0 / 15
+- **Extra usage**: $151.85 spent (101% of $150 cap, resets May 1)
+- **Balance**: $14.46, auto-reload ON
+
+### Notes
+- dinp extra cap fully consumed again (same as Apr 17). May 1 reset in 6 days.
+- kindsys over cap ($151.85 / $150). Balance low at $14.46. OpenLaws sprint starting Monday will increase Kind-side burn.
+- mediajunkie cancelled Apr 15. atswimtwobirds not tracked.
+
+## 2026-04-25 (Saturday)
+**Focus**: #992 ETHICS-ACTIVATE Phase E live + signoff + merge; five-role Chat→Code migration wave completed (CXO + PPM); Janus DinP backlog forensic reconstruction restructured into five role-anchored categories
+
+### What happened:
+- **Piper Morgan (product, heaviest day on the network)**: #992 ETHICS-ACTIVATE Phase E ran live on a fresh 8002 server — three scenarios captured to transcripts, PPM signoff received, branch merged to main. Migration handoff packages shipped for CXO, PPM, and Arch (Apr 24–25), completing the five-role Chat→Code migration wave (HOST, CIO, Comms, CXO, PPM). Apr 22 omnibus deepened to integrate HOST chat content; Apr 23 + Apr 24 omnibus logs filed. PA filed watch-items + scoring-lenses memos to Lead. Editorial calendar updated with "The Multi-Wave Investigation" published URL. #997 dead-flag cleanup (`FeatureFlags.should_use_mock_services`).
+- **Piper Morgan (website)**: "The Multi-Wave Investigation" blog post landed (matches PM editorial calendar update).
+- **designinproduct (heavy Janus session)**: Apr 26 cross-pollination brief shipped substantive (3 sources: klatch, piper-morgan, nyt-crossword); Apr 26 sweep + delivery receipts filed. PO advice + Bet 1 bundle routed (DRAGONS response relayed back through DK → DinP → PO chain). Backlog restructured into xian's five role-anchored categories (`docs/backlog.md` is now the goals register: 6 open / 4 watch-list / 2 parked). OpenLaws xpoll question bundle relayed to Janus for routing to Klatch / PM / custodial roles. Session-pause log filed at 11:35 with standing state.
+- **Dispatch**: DRAGONS Product response relayed to Dispatch-Kind chain for PO; dispatch-dinp reply to DK welcome-reply (4 asks closed); yesterday's daily brief committed.
+- **OpenLaws**: One commit — Saturday log noting Bill citation-batch help opportunity surfaced + Vergil signal filed.
+- **Klatch / Weather / Rebel**: No commits. (Rebel still not a git repo at top — back burner.)
+- **Usage snapshot** refreshed Saturday 8:27 AM PT (captured in this log above); CSV append still pending. dinp at 100% of $200 extra cap; kindsys went *over* the $150 cap ($151.85). Both reset May 1.
+
+### Signals / decisions:
+- **Five-role Chat→Code migration wave complete** (HOST, CIO, Comms, CXO, PPM). Wave-level migration work is done.
+- **#992 Phase E "floor-bypass-by-routing" finding** — Lead Dev surfaced a new bypass class: harassment vector was routed to `list_prs_query` by the pre-classifier before the ethics floor was ever invoked. Lives upstream of Phases A–D. PM-level call pending: re-run Scenario 1 with rephrased input vs. score the literal output as the gate result. Not blocking the merge (already to main), but new tracked-issue candidate. Worth flagging to Klatch Daedalus for Phase 5c write-path design — any routing layer running before trust/safety needs its own "routing did not consume this" test.
+- **"The Colleague Test is the discipline"** (CXO lifetime summary) — the rubric is a tool, but applying it honestly every time is what the role *is*. Cross-import candidate for Klatch's eval methodology framing (AAXT and Sparkline are tools; the discipline is consistent application).
+- **DRAGONS' two highest-cost patterns** landed via the advice memo — anti-fabrication with explicit `[PLACEHOLDER]` markers, and audience segmentation as hard rule (public docs = wins / metrics / decisions only; internal tensions live in the daily log). Account for more calibration time than tone, formatting, or anti-sycophancy.
+- **Janus DinP backlog** restructured Mar 22 → Apr 25 forensic reconstruction into five role-anchored categories per xian's framing. Resumable from 11:35 pause.
+
+### Pending (carried into Apr 26):
+- **OpenLaws Bet 1 sprint kickoff** — Mon Apr 27 (T-1), six-week window through Jun 7. Pitch v1.0 sealed, breadboards rendered, Vergil verification in place. Nothing actively blocked.
+- **Argus internal curation 14-day flag** — last Apr 13, hits flag tomorrow (Apr 27) if no session in next 24h. External scan healthy (Apr 20 last; Mon 9 AM PT auto-trigger runs again tomorrow).
+- **#992 floor-bypass-by-routing finding** — PM-level call pending on re-run vs. literal-output scoring; new tracked-issue candidate.
+- **Usage CSV update** — Apr 25 snapshot captured verbally / in this log; not yet appended to `intelligence/usage-tracking.csv`. kindsys balance thin ($14.46) heading into OpenLaws Bet 1 sprint.
+- **PO advice-on-working-with-xian responses** — DRAGONS in. Calliope (Klatch), CoS (PM), PA (PM) still inside their 5–7 day window. Tracking only.
+- **Janus DinP backlog `docs/backlog.md`** — three §1 (coordinative) items advanceable today if Janus resumes: bootstrap scaffolding update, memory file refresh, daily memo composition.
+- **Cross-pollination current week** — dispatch-side `cross-pollination-current-week.md` 6 days stale (Apr 20 mtime, covers Apr 13–19); DinP side fresh as of Apr 26.
+- **Fri May 1 (T-5)** — both extra-usage caps reset (dinp $200, kindsys $150).
+
+## 2026-04-26 (Sunday)
+**Focus**: Klatch MCP 1.0 feature-complete (1,131 tests, zero failures); PM #1004 contract v1.0 stable + all 6 Ship #040 leadership memos in; OpenLaws Bet 1 v0.4 → v0.6 with adversarial leakage audit; Pattern-063 proposed
+
+### What happened:
+- **Piper Morgan (product, ~25 commits — heaviest day on the network)**: Phase F decision authoritative (DO NOT AUTHORIZE pending #1002 + #1003); #1003 diagnostic confirms flag is no-op for harassment vector across 4 vectors; S2 flag-off result sharpens framing to category-conditional; #1004 contract v1.0 stable + Architect 3 refinements applied + CXO prompt body v0.1; CIO proposes Pattern-063 "Parallel-Authoring Drift"; Ship #040 workstream review with all 6 leadership memos in (HOST, CIO, CXO, Comms, PPM, Arch); mailbox-discipline norm shipped (mail to main only, hook-enforced); 35 exec memos triaged; Apr 26 omnibus + session-log wraps across all five Code-era agents.
+- **Piper Morgan (website)**: "Verify the Paraphrase" insight published.
+- **OpenLaws (6 commits)**: Bet 1 pitch v0.4 → v0.6 iteration — pricing reanchored to Lexis+ AI; adversarial cross-bet leakage audit (6 leaks + 13 inconclusive); v0.6 canonical-example reframe drafted (pending xian voice review). Sprint kickoff Apr 27.
+- **Klatch (10 commits, Sunday session)**: Round 28 AAXT export structural tests + first live behavioral probing (Theseus); Phase 5c-i write-path complete (`reflect` tool + `kit_briefing` prompt + URL-decode fix); Daedalus sign-off — MCP server feature-complete for 1.0 at 1,131 tests, zero failures; Pattern-062 + intel sweep #8 + PM #995 outreach.
+- **designinproduct (6 commits)**: Apr 27 cross-pollination brief delivered substantive (Klatch MCP 1.0, AAXT first live run, #1003 GUIDANCE finding, Pattern-063); PA filed Janus replies on OpenLaws Bet 1 Q1+Q2, Q3, Q4; Apr 26 log opened.
+- **Dispatch (5 commits)**: Apr 26 daily brief, weekly sandbox snapshot, DK consolidated relay (4 PO-advice respondents + Bet 1 bundle), Apr 25 daily memo to DK backfilled.
+- **Weather/Zephyr**: xpoll receipt only.
+- **Rebel**: Still not a git repo at top level (back burner since Apr 9).
+
+### Signals / decisions:
+- **Klatch MCP 1.0 feature-complete** — Phase 5a/5b/5c-i all shipped; 1,131 tests, zero failures. First live AAXT behavioral run produced two methodology findings: (a) Haiku 4.5 wraps JSON in markdown code fences — provider-specific JSON parsing matters; (b) probe generators produce false-positive Phantoms when target layer content is below a threshold — needs cross-layer awareness or content-threshold check.
+- **#1003 GUIDANCE-not-boundary finding (PM)** — Phase E S1 r2 confirms harassment vector reaches floor but routes to GUIDANCE intent rather than firing explicit boundary trigger. Audit envelope distinguishes "boundary triggered → decline path" vs "floor-aware → guidance path." Both correct, different audit shapes. Architectural implication for Klatch: any future safety/trust layer needs telemetry for both states.
+- **Pattern-063 "Parallel-Authoring Drift" proposed (CIO)** — when two authors extend a canonical rubric independently, the same label can carry different semantics with verdicts converging anyway (Phase E "C=Context Handling" vs "C=Clarity" both PASS). Diagnostic: would the two authors get the same score swapping rubrics? Safeguard: branch-or-anchor at authoring time, not after-the-fact registry maintenance. Slot conflict surfaced — predecessor's handoff already claimed 063 for "Extension Without Integration." Lead and CXO are number-agnostic.
+- **PM mailbox-discipline norm shipped** — mail to main only, hook-enforced.
+- **PM Ship #040 build phase on #1004 begins** — Lead Dev + Arch + CXO + PPM converged on contract v1.0.
+
+### Pending (carried into Apr 27):
+- **Pattern-063 slot confirmation** — xian call. CIO's framing has the right reference instance (Phase E C-axis reconciliation) but slot conflicts with predecessor's "Extension Without Integration."
+- **Bet 1 v0.6 voice review** — pitch scaffold has canonical-example reframe drafted, marked pending. Sprint starts Apr 27.
+- **Usage CSV refresh** — 10 days stale (last Apr 17). Apr 25 snapshot captured in log but never committed to `intelligence/usage-tracking.csv`. dinp 100% of $200 cap, kindsys 101% of $150 cap (over by $1.85) — both reset Fri May 1.
+- **piper-morgan-product stash-pop merge conflict** — carries from Apr 23 stash-pop incident (`archive/piper-morgan-0.1.1/claude_client.py`, `tests/orchestration/data/chromadb/chroma.sqlite3`). Stash entry retained.
+- **PO advice-on-working-with-xian responses** — DRAGONS in. Calliope (Klatch), CoS (PM), PA (PM) within 5–7 day window. Tracking only.
+- **Janus DinP backlog** three §1 items (bootstrap scaffolding update, memory file refresh, daily memo composition) — resumable from 11:35 Saturday pause.
+- **Sun Jun 15 (T-49)** — Sonnet 4 / Opus 4 deprecation. Aliases in place; one DB audit query for any pinned literal IDs remains (Argus tracked).
