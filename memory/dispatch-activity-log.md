@@ -1085,3 +1085,37 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - **Argus external CCR scan check** � latest file in `klatch/docs/intel/` is Apr 26; Mon Apr 27 9 AM PT auto-trigger does not appear to have produced a new file; flag if Apr 28's run is also missing.
 - **OpenLaws Bet 1 Sprint Day 2 (Apr 28) → Day 3 prototype bake-off prep (Apr 29)** → Sprint window close Sun Jun 7 (T+40).
 - **Sun Jun 15 (T+48)** � Sonnet 4 / Opus 4 deprecation. Aliases in place; DB audit query for pinned literal IDs is the remaining work (Argus tracked).
+
+## 2026-04-28 (Tuesday)
+
+**Focus**: PM 30+-commit day — branch/worktree/mailbox discipline v1.0 DRAFT; sign-off discipline; ADR-061 v0.1 review; deliver-mail b1 + merge-keeper-sweep adopted; Phase F flag-flip routed AUTHORIZE-WHEN-OBSERVED; Klatch Round 31 + 31b extended `/import` round-trip coverage; OpenLaws Bet 1 Sprint Day 2 PO Phase 4+5 audits + NY/TX citation upgrades; two new DK→DinP memos at 06:10
+
+### What happened:
+- **Piper Morgan (product, 30+ commits — heaviest day on the network)**: Branch + worktree + mailbox discipline v1.0 DRAFT (PA); sign-off discipline broadcast (Docs, push to origin/main before session end); ADR-061 v0.1 review filed by Lead Dev (strong v0.1, 2 substantive completeness fixes); #1007/#1008 vs #1018 — verdict don't fold, sequence #1018 first; SessionEnd + PreCompact hook scoping (~30–60 min, warn-only); deliver-mail (b1) + merge-keeper-sweep both ADOPTED; Phase F flag-flip routed AUTHORIZE-WHEN-OBSERVED, wait for calibration window; cleanup-dev-active sweep 67→13 files; Apr 27 omnibus filed (HOST 360 cohort + Architect Phase 1 review + Docs reframing). Five PR merges. HOST published 360 synthesis cover.
+- **Klatch (5 commits)**: Round 31 `/import/klatch` round-trip + `POST /api/projects` memory field; Round 31b extended coverage for round-trip; live MAXT (Theseus); Calliope routed round-trip findings to Iris (UX) + Daedalus (impl + design); provenance-summary fix for klatch-sourced channels.
+- **OpenLaws (~10 commits)**: Bet 1 Sprint Day 2 — Phase 4 PO factual-gap remediation (FL + DE); Audit Pass 5a + 5b complete; PO citation upgrades — NY → nysenate.gov (Open Legislation), TX → statutes.capitol.texas.gov; citation verification v2 plan + agents launched after fabrication caught; Tuesday PO accumulation log.
+- **designinproduct (~5 commits)**: Backlog §1a/§1c/§1d + PA-reply-convention closed; CSV reconciliation surfaced as active §1 item; xpoll receipt Apr 28 substantive (7/7 delivered) + Apr 29 receipt started; PA Q6 closure to Janus; relay of CoS Q2+Q5 for OpenLaws Bet 1 bundle; Apr 27 trigger fixes.
+- **Dispatch (~5 commits)**: Two new DK→DinP arrivals at 06:10 Wed (topology question + PO collab-patterns synthesis routing); mail-path correction memo to DK (briefing-YYYY-MM-DD.md, not current.md); standing-items config added (kindsys balance + working-tree hygiene); usage Apr 28 snapshot logged; Apr 28 daily memo to DK.
+- **Piper Morgan (website)**: "The Deeper Why" published Apr 28.
+- **Weather/Zephyr**: No new commits.
+- **Rebel**: Still not a git repo (back burner since Apr 9).
+
+### Signals / decisions:
+- **Branch + worktree + mailbox discipline v1.0 DRAFT (PA)** — codifies the discipline norms shipped over the past two weeks. Cross-account-relevant: same shape as Dispatch's mail-as-artifact discipline and the DK topology question.
+- **Phase F flag-flip routed AUTHORIZE-WHEN-OBSERVED** — observation gate set; calibration window pending; ADR-061 v0.1 in flight from Architect. Now an ops-cadence item, not a xian-input item. Closes the longest-running PM open question.
+- **#1007/#1008/#1018 don't-fold verdict** — Lead Dev sequenced #1018 first; #1007/#1008 stay separate. Architectural triage discipline holding.
+- **deliver-mail (b1) + merge-keeper-sweep ADOPTED** — two more PM standing patterns ratified same day. SessionEnd + PreCompact hooks scoped warn-only (~30–60 min).
+- **Klatch Round 31 + 31b extended `/import` round-trip coverage** — `POST /api/projects` memory field landed; Calliope 4/28 routed round-trip findings to Iris (UX) + Daedalus (impl + design). Live MAXT continues against imported Theseus channel.
+- **OpenLaws PO citation upgrades + verification v2** — NY → nysenate.gov, TX → statutes.capitol.texas.gov. Citation verification v2 plan + agents launched after fabrication caught — methodological tightening mid-sprint, not just remediation.
+- **DK two new memos at 06:10 Wed** — (a) topology question: should sister-agent mail land in per-agent inboxes on the dispatch hub directly (Shape B), rather than through inline-relay-on-demand (Shape A, current)? Concrete trigger: PO couldn't see Calliope's original advice-reply because PO doesn't clone Klatch. DK recommends B; (b) PO xian-collaboration-patterns synthesis (companion to inbound advice request, greenlit Friday) — DK delivering via shared `dispatch/mail/`, wants ack on routing path (per-agent inboxes / Janus / single shared post).
+
+### Pending (carried into Apr 29):
+- **DK topology question reply** — Shape A (status quo) vs Shape B (per-agent inboxes on dispatch hub) — xian gut read + volume check.
+- **PO collab-patterns routing ack** — pick a path (per-agent inboxes / Janus / single shared post on the hub).
+- **Usage CSV reconciliation** — now Janus §1; Apr 25 + Apr 28 snapshots in activity log waiting to be structured into `intelligence/usage-tracking.csv` (last appended Apr 17, 12 days stale).
+- **piper-morgan-product working-tree hygiene** — two untracked files (`dev/2026/04/28/2026-04-28-0652-pa-opus-log.md`, `dev/active/merge-keeper-2026-04-28.md`) + a deleted draft (`docs/public/comms/drafts/draft-the-deeper-why-v1.md`). Lead Dev tasks 1-4 complete, standing by.
+- **designinproduct working-tree hygiene** — 3 untracked log files (Apr 27, Apr 28) + `resources/` subdirs (labrador, memory-research, sneakernet-test).
+- **OpenLaws Bet 1 Sprint Day 3 (today, Wed Apr 29)** — prototype bake-off prep (John's Scalar vs OpenLaws POC), Vergil pickup signaled. Sprint window close Sun Jun 7 (T+39).
+- **Argus external CCR scan** — latest file in `klatch/docs/intel/` still Apr 26; Mon Apr 27 9 AM PT auto-trigger appears to have produced no new file (3 days dark, not yet at 8-day automation-flag threshold). Watch Mon May 4's run.
+- **Both extra-usage caps reset Fri May 1 (T+2)** — dinp $200 (currently $200.15 spent, balance $32.90), kindsys $150 (currently $151.85 spent / over by $1.85, balance $14.46 — still below $20 watch threshold).
+- **Sun Jun 15 (T+47)** — Sonnet 4 / Opus 4 deprecation. Aliases in place; DB audit query for pinned literal IDs is the remaining work (Argus-tracked).
