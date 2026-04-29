@@ -1056,3 +1056,32 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - dinp weekly usage jumped to 63% (was 12% Sat) â€” heavy Monday morning start
 - kindsys weekly usage jumped to 53% (was 27% Sat) â€” Dispatch-Kind active over weekend
 
+
+
+## 2026-04-27 (Monday)
+**Focus**: PM #1004 semantic detector shipped end-to-end (Steps 8+9, 112/112 PASS); #1002 + #1003 closed; Phase F flag-flip conditions met; Klatch first live MCP stdio integration test (27/27); OpenLaws Bet 1 Sprint Day 1 closed clean
+
+### What happened:
+- **Piper Morgan (product, 30+ commits Ñ heaviest day on the network)**: #1004 SHIPPED in one session Ñ Step 8 Phase C run-1 (11/20 PASS) â†’ CXO divergence scan â†’ prompt v0.2 + probe deltas â†’ run-2 (18/20 PASS) â†’ Step 9 ship merge. Full ethics suite 112/112 PASS. #1002 + #1003 closed with full evidence. Lead Dev filed Phase F notification Ñ all four conditions met (Architect scoping, #1002+#1003 closed, diagnostic shows flag matters, probe set + two calibration rounds on main); decision routed to PM/PA. CIO published Methodology-00 (Flywheel v2) broadcast + omnibus reframing/workstream review source-shift memo. CXO landed CT v2.3 with embedded Branch-or-Anchor section. Methodology-24 + 25 filed. Pattern-063 + Pattern-064 slot allocation ratified by PM (063 = "Parallel-Authoring Drift," 064 = "Extension Without Integration"). Three PR merges (#1022/#1023/#1024). HOST published 360 synthesis cover.
+- **Klatch (9 commits)**: Theseus Round 29 (extractJson regression) + Round 30 (probe content threshold). First live MCP stdio integration test in project history Ñ spawned server via official TS SDK over stdio, 27/27 pass on second run. Live export round-trip across all three formats Ñ three gap findings filed (UUID-matching, no re-import path, L4/L5 lost). Phase 3.5b dual-mode extraction live (9 field notes; cross-validation pattern visible). AAXT against imported 143-message Theseus channel: 13/13 Correct on first L1 probing. Calliope routed Argus PM #995 outreach via Dispatch.
+- **designinproduct (9 commits)**: Apr 28 cross-pollination brief shipped substantive (3 sources). Relayed CoS Q2 + Q5 replies for OpenLaws Bet 1 bundle. PA Q6 closure to Janus. Sweep + delivery receipts filed. Apr 27 log (Janus quick review of new 4-trigger rhythm).
+- **OpenLaws (~10 commits)**: Sprint Day 1 closed clean Ñ 6 deliverables, 3 deepenings, follow-ups tracker. Pitch v0.8 (bake-off â†’ cross-check reframe + Phase-1 carry-overs). Local cross-check MCP Ñ generic-OpenAPI proxy mirroring John's Scalar surface. Fat-marker sketches + audit walkthrough cleanup. DK Monday log + DinP thank-you. Vergil Tuesday-AM pickup signal filed.
+- **Dispatch (8 commits)**: Bundle complete signal (CoS Q2+Q5 landed); DK Monday relay received; consolidated PO relay updated; weekly cross-pollination digest Apr 21Ð27; brief 4/27.
+- **Weather/Zephyr**: No new commits (the two listed are reordered Sunday brief deliveries).
+- **Piper Morgan (website)**: No commits.
+- **Rebel**: Still not a git repo (back burner since Apr 9).
+
+### Signals / decisions:
+- **#1004 calibration pipeline transferable** Ñ typed probe dataclass + async runner + domain-expert divergence loop is reusable for Klatch's AAXT if it ever extends to behavioral-correctness assertions on redirect content. `hint_shape_violation` named as failure mode on substantive domain words (foreseeable gotcha for redirect-output input-substring leakage audits).
+- **Klatch first live MCP stdio integration (27/27)** + three export round-trip gaps mapped to Phase 3.5 / L5 portability work in flight: (a) UUID-matching gap â†’ re-import creates duplicate projects; (b) canonical format has no `/import` endpoint; (c) silent round-trip drops Layer 5 (Phase 3.5 must be explicitly invoked).
+- **Methodology-24 (Branch-or-Anchor) + Methodology-25 (Workstream Review Cadence) filed**. Pattern-063 self-implements via CT v2.3 Ñ canonical rubric now tells its own users how to avoid Parallel-Authoring Drift when extending it. Methodology-25 codifies source discipline for workstream reviews effective Ship #041 onward (read primary session logs first; omnibus is coverage check, not primary input).
+- **CoS PO advice landed (Q5)** Ñ source-check comparative claims before they ship under someone else's name. Reviewer-vs-author distinction; discipline depends on the relationship's tolerance for "wait, let me check that."
+
+### Pending (carried into Apr 28):
+- **#992 Phase F flag-flip decision (PM/PA call)** Ñ all four conditions met per PPM v4. Lead Dev's recommendation: defer the actual flip until ADR-061 (architectural-delta codification, in flight from Architect) lands.
+- **Usage CSV refresh + Apr 25 snapshot append** Ñ 11 days stale (last Apr 17). dinp 100% of $200 cap; kindsys 101% of $150 cap (over by $1.85). Both reset Fri May 1.
+- **PO advice-on-working-with-xian Ñ Calliope (Klatch) reply still pending** Ñ Day 4 of the 5Ð7 day window. DRAGONS, CoS, PA all on record. Tracking only.
+- **Janus DinP backlog three ¤1 items** (bootstrap scaffolding update, memory file refresh, daily memo composition) Ñ Apr 27 was a quick-review session, no advancement; resumable.
+- **Argus external CCR scan check** Ñ latest file in `klatch/docs/intel/` is Apr 26; Mon Apr 27 9 AM PT auto-trigger does not appear to have produced a new file; flag if Apr 28's run is also missing.
+- **OpenLaws Bet 1 Sprint Day 2 (Apr 28) â†’ Day 3 prototype bake-off prep (Apr 29)** â†’ Sprint window close Sun Jun 7 (T+40).
+- **Sun Jun 15 (T+48)** Ñ Sonnet 4 / Opus 4 deprecation. Aliases in place; DB audit query for pinned literal IDs is the remaining work (Argus tracked).
