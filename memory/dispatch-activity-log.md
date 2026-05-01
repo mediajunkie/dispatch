@@ -1119,3 +1119,74 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - **Argus external CCR scan** — latest file in `klatch/docs/intel/` still Apr 26; Mon Apr 27 9 AM PT auto-trigger appears to have produced no new file (3 days dark, not yet at 8-day automation-flag threshold). Watch Mon May 4's run.
 - **Both extra-usage caps reset Fri May 1 (T+2)** — dinp $200 (currently $200.15 spent, balance $32.90), kindsys $150 (currently $151.85 spent / over by $1.85, balance $14.46 — still below $20 watch threshold).
 - **Sun Jun 15 (T+47)** — Sonnet 4 / Opus 4 deprecation. Aliases in place; DB audit query for pinned literal IDs is the remaining work (Argus-tracked).
+
+## 2026-04-29 (Wednesday)
+
+**Focus**: Ship #040 LinkedIn cross-post live; PA branch-discipline v1.0 final published; Lead Dev #1014 AuthMiddleware refactor + 3 follow-ups; mailbox migration `pm/`→`ceo/`→`xian (ceo)/` reconciled; briefing-staleness-response norm + hook landed; B6 Flywheel paraphrase→citation sweep across 7 briefings; Argus 4/29 recovered orphan 4/27 sweep (external CCR not dark); OpenLaws PO cleanup pass on 8 lifecycle docs
+
+### What happened:
+- **Piper Morgan (product, ~18 commits — heaviest day)**: Ship #040 LinkedIn cross-post live + canonical link added; PA branch-discipline v1.0 final published; Lead Dev shipped #1014 (AuthMiddleware exclude_paths refactor) + filed 3 follow-ups (#1027/#1028/#1029); mailbox migration `pm/` → `ceo/` → `xian (ceo)/` reconciled with directory clarification + correction memo; exec inbox Day 4 cleanup (49 items to read/); briefing-staleness-response norm + hook landed; B6 Flywheel paraphrase→citation sweep across 7 briefings; Apr 28 omnibus filed.
+- **Klatch (4 commits)**: Argus 4/29 recovered orphan 4/27 sweep (the missing Mon CCR run from Apr 27) + curated + routed findings; Round 31b follow-ups routed to Daedalus; Daedalus 4/28 wrap log finalized with verification.
+- **designinproduct (3 commits)**: xpoll Apr 30 brief delivered (intel sweep orphan recovery + Pattern-064 + branch-discipline v1.0); Apr 29 brief (1203 tests, deliver-mail b1 + merge-keeper-sweep, ADR-061 gaps, Phase F calibration-window posture).
+- **OpenLaws (3 commits)**: PO cleanup pass on 8 lifecycle docs (Notion-ready) — final mediajunkie PR merge wraps the lingering po-cleanup branch.
+- **Piper Morgan (website, 1 commit)**: Ship #040 "The Methodology Audits Itself" published.
+- **Dispatch (2 commits)**: Apr 29 daily brief + auto activity-log + stranded-changes commit.
+- **Weather/Zephyr**: No new commits.
+- **Rebel**: Still not a git repo (back burner since Apr 9).
+
+### Signals / decisions:
+- **PA branch-discipline v1.0 final published** — codifies the discipline norms shipped over the past two weeks; CLAUDE.md pointer update handed to Docs.
+- **Argus external CCR scan: not dark** — Apr 27 run was orphaned in transit, recovered Apr 29; both `-sweep.md` and `-curated.md` for 4/27 now in place. Internal curation fresh (Apr 29 session). Closes the "external automation dark" flag carried since Apr 27.
+- **#1014 AuthMiddleware refactor merged** — three follow-ups filed (#1027/#1028/#1029); SessionEnd hook scoping work unblocked (PreCompact-first go-ahead).
+- **Mailbox migration `pm/` → `ceo/` → `xian (ceo)/` reconciled** with directory clarification + correction memo. Exec inbox Day 4 cleanup (49 items to read/).
+- **Briefing-staleness-response norm + hook landed** — process discipline for stale-brief handling shipped same day.
+- **B6 Flywheel paraphrase→citation sweep across 7 briefings** — methodological cleanup against paraphrase drift.
+- **OpenLaws PO cleanup pass on 8 lifecycle docs (Notion-ready)** — final mediajunkie PR merge wraps the lingering po-cleanup branch.
+
+### Pending (carried into Apr 30):
+- **DK topology question reply** — Shape A (status quo, inline relay) vs Shape B (per-agent inboxes on dispatch hub). xian gut read + volume check still open.
+- **PO collab-patterns routing ack** — pick a path (per-agent inboxes / Janus / single shared post on the hub).
+- **piper-morgan-product working-tree hygiene** — `dev/active/weekly-ship-040-draft-2026-04-26.md` modified, draft `the-deeper-why-v1.md` deleted, `merge-keeper-2026-04-28.md` untracked.
+- **designinproduct working-tree hygiene** — 3 untracked log files (Apr 27/28/29) + `resources/labrador/`, `resources/memory-research/`, `resources/sneakernet-test/`.
+- **Usage CSV reconciliation** — Janus §1; Apr 25 + Apr 28 snapshots in activity log waiting to be appended to `intelligence/usage-tracking.csv` (13 days stale).
+- **Janus DinP backlog three §1 items** still resumable (bootstrap scaffolding, memory file refresh, daily memo composition).
+- **Calliope (Klatch) PO advice-on-working-with-xian reply** — outside the original 5–7 day window. Tracking only.
+- **Both extra-usage caps reset Fri May 1 (T+1)** — dinp $200, kindsys $150.
+- **Sun Jun 7 (T+38)** — OpenLaws Bet 1 sprint window close. Sprint Day 4 today (Apr 30).
+- **Sun Jun 15 (T+46)** — Sonnet 4 / Opus 4 deprecation. Aliases in place; DB audit query for pinned literal IDs is the remaining work (Argus-tracked).
+
+## 2026-04-30 (Thursday)
+
+**Focus**: Phase F flag-flip ACTIVATED (CEO directive); #992 closed; ADR-061 v1.0 finalized; Lead Dev three-asks resolved (#1018 Phase 1 ratified); Architect calibration reframe confirmed (simulation-first); Ship #041 workstream kickoff; agent activity log relocated + backfilled Mar 23–Apr 28; "The Floor Comes Alive" published; mini-shai-hulud IoC scan clean; merge-keeper Apr 30 sweep; Klatch Iris session 6 (UX synthesis closure); DK topology + PO routing replies sent
+
+### What happened:
+- **Piper Morgan (product, ~20 commits — heaviest)**: Phase F flag-flip activated (CEO Apr 30 directive); `claude/phase-f-flag-flip` merged; #992 closed; ADR-061 v1.0 finalized; Lead Dev three-asks resolved (#1018 Phase 1 ratified); Architect calibration reframe confirmed (simulation-first); Ship #041 workstream kickoff (exec); IAC retrospective fold proposal; agent activity log relocated + backfilled Mar 23–Apr 28; "The Floor Comes Alive" archived (now published on Medium); mini-shai-hulud IoC scan clean (repo + GitHub account); merge-keeper Apr 30 sweep — 0 auto-merged, 2 known stale unowned escalations, 1 active skip.
+- **Klatch (2 commits)**: Iris session 6 — caught up after 2-week gap, UX synthesis closure; cross-pollination Apr 30 brief delivered.
+- **designinproduct (5 commits)**: xpoll Apr 30 receipt 7/7 substantive (orphan sweep recovery); xpoll May 1 brief — Phase F activated (alpha catch-22 resolved), Iris UX composition gap, "The Floor Comes Alive" published; Janus signaled PO collab-patterns distribution + log cleanup.
+- **OpenLaws**: no commits since Apr 30 lifecycle-doc cleanup merge.
+- **Piper Morgan (website, 1 commit)**: "The Floor Comes Alive" published.
+- **Dispatch (4 commits)**: DK topology Shape A reply + PO collab-patterns routing ack via Janus xpoll; daily memo to DK Apr 29 (one day late, miss owned); xpoll Apr 30 orphan-sweep-recovery brief; Apr 30 daily brief.
+- **Weather/Zephyr**: no activity.
+- **Rebel**: no activity.
+
+### Signals / decisions:
+- **Phase F flag-flip ACTIVATED (CEO Apr 30 directive)** — `claude/phase-f-flag-flip` merged; **#992 CLOSED**. Moves from "AUTHORIZE-WHEN-OBSERVED" (Apr 28) to live state. Closes the longest-running PM open question on the network.
+- **ADR-061 v1.0 finalized** — architectural-delta codification complete with Lead Dev's two completeness fixes applied; cross-project comms gap reply filed by Architect.
+- **Lead Dev three-asks resolved** — #1018 Phase 1 design ratified for Architect review.
+- **Architect calibration reframe confirmed (simulation-first)** — methodological posture set.
+- **DK topology reply: Shape A with convention lift** — per-agent inboxes (Shape B) deferred until volume justifies; closes Apr 28 question.
+- **PO collab-patterns routing ack: via Janus xpoll** — no separate per-agent or relay path needed; closes Apr 28 routing question.
+- **Agent activity log relocated + backfilled Mar 23–Apr 28** — historical reconstruction complete on the PM side.
+- **mini-shai-hulud IoC scan clean** — repo + GitHub account both verified.
+- **Klatch Iris session 6** — caught up after 2-week gap; UX synthesis closure.
+- **merge-keeper Apr 30 sweep** — 0 auto-merged, 2 known stale unowned escalations, 1 active skip.
+
+### Pending (carried into May 1):
+- **piper-morgan-product working-tree hygiene** — 5 modified MANIFEST.md files in mailboxes + `dev/active/merge-keeper-2026-04-28.md` still untracked (4 days old).
+- **designinproduct working-tree hygiene** — 4 untracked log files (Apr 27/28/29/30) + modified Apr 26 log + `resources/labrador/`, `resources/memory-research/`, `resources/sneakernet-test/`.
+- **Both extra-usage caps reset today (Fri May 1, T+0)** — dinp $200, kindsys $150. Fresh-state check next time in either dashboard.
+- **Usage CSV reconciliation** — Janus §1; 14 days stale (last append Apr 17). Apr 25 + Apr 28 snapshots in activity log waiting to be structured into `intelligence/usage-tracking.csv`.
+- **Janus DinP backlog three §1 items** still resumable (bootstrap scaffolding, memory file refresh, daily memo composition).
+- **Calliope (Klatch) PO advice-on-working-with-xian reply** — outside the original 5–7 day window. Tracking only.
+- **Sun Jun 7 (T+37)** — OpenLaws Bet 1 sprint window close; Sprint Day 5 today.
+- **Sun Jun 15 (T+45)** — Sonnet 4 / Opus 4 deprecation. Aliases in place; DB audit query for pinned literal IDs remains (Argus-tracked).
