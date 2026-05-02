@@ -1190,3 +1190,32 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - **Calliope (Klatch) PO advice-on-working-with-xian reply** — outside the original 5–7 day window. Tracking only.
 - **Sun Jun 7 (T+37)** — OpenLaws Bet 1 sprint window close; Sprint Day 5 today.
 - **Sun Jun 15 (T+45)** — Sonnet 4 / Opus 4 deprecation. Aliases in place; DB audit query for pinned literal IDs remains (Argus-tracked).
+
+## 2026-05-01 (Friday)
+**Focus**: Iris session 7 formal two-pass UX walkthrough begins (Surfaces 1–2, 12 findings + 2 cross-cutting patterns); OpenLaws Sprint Day 5/6 — pre-demo status to PO + week 1 retro input + POC→`openlaws-mcp-bet` rename cleanup; quiet PM-product day (xpoll-only); Ship #040 "The Methodology Audits Itself" surfaces in DinP record for the first time; both extra-usage caps reset (post-reset baseline still pending)
+
+### What happened:
+- **Klatch (2 commits)**: Iris session 7 (partial) — formal two-pass UX walkthrough of v0.10 / 1.0-beta begun; Surfaces 1–2 captured in `docs/ux/walkthrough-findings.md` with 12 findings + 2 cross-cutting patterns ("small/low-contrast type throughout"; "functional artifacts surviving early development"); paused mid-walkthrough, resume planned for Surfaces 3–8 + Pass 2 (Shipping News scenario). Plus May 2 xpoll brief.
+- **OpenLaws (6 commits)**: Sprint Day 6 — log + pre-demo status to PO + week 1 retro input + refreshed demo artifacts; post-merge cleanup after rename (POC → `openlaws-mcp-bet`); three Vergil merges from Apr 30 evening (memos, rename, parallel work). Plus May 2 xpoll brief.
+- **designinproduct (4 commits)**: May 2 xpoll brief shipped substantive (Iris walkthrough begins + Ship #040 surfaces — first time); May 2 sweep + delivery receipt 7/7; May 1 delivery receipt.
+- **Dispatch (3 commits + today's brief)**: May 1 daily brief; auto-commit (activity log + stranded changes); May 2 xpoll receipt.
+- **Piper Morgan (product)**: xpoll brief commit only — quiet day on the PM side.
+- **Piper Morgan (website), Weather/Zephyr, Rebel**: no narrative activity (xpoll-only or none).
+
+### Signals / decisions:
+- **Iris formal UX walkthrough begins (Klatch)** — two-pass structure (8-surface skim + Shipping News scenario in 5 phases). Surfaces 1–2 yielded 12 findings and 2 cross-cutting patterns. The "functional artifacts surviving early development" pattern flagged as a low-cost reusable sweep category for any product past months of active development — surface a one-time artifact pass before any user-facing review.
+- **Ship #040 "The Methodology Audits Itself" surfaces in DinP record for first time** — published Apr 29 but missed by Apr 30 and May 1 sweeps; confirms PM dual-channel publication rhythm (weekly Ships at pipermorgan.ai/shipping-news + Medium narrative arcs).
+- **OpenLaws rename POC → `openlaws-mcp-bet`** — post-merge cleanup pass; three Vergil merges from Apr 30 evening landed. Pre-demo status to PO + week 1 retro input filed.
+- **DinP xpoll briefs are now the fresh source of record for cross-project intelligence** — dispatch-side `cross-pollination-current-week.md` is 5 days stale (covers Apr 21–27, mtime Apr 27); day-level DinP xpoll briefs supersede.
+- **Anti-Zombie Pass clean** — no DECISIONS.md additions today close any open items; May 1 closures (DK topology Shape A; PO collab-patterns via Janus xpoll; Phase F activated) confirmed not re-flagged.
+
+### Pending (carried into May 2):
+- **piper-morgan-product working-tree hygiene** — 5 modified MANIFEST.md files (cio/comms/docs/host inboxes + exec/read) + `dev/active/merge-keeper-2026-04-28.md` still untracked (now 5 days old).
+- **designinproduct working-tree hygiene** — 4 untracked log files (Apr 27/28/29/30) + modified Apr 26 log + `resources/labrador/`, `resources/memory-research/`, `resources/sneakernet-test/`.
+- **OpenLaws working-tree hygiene** — `experiments/openlaws-mcp-poc-py/` untracked (likely residue from POC → bet rename).
+- **Usage CSV reconciliation** — Janus §1; 15 days stale (last append Apr 17). Apr 25 + Apr 28 snapshots in activity log waiting to be structured into `intelligence/usage-tracking.csv`. Both caps reset Fri May 1; post-reset snapshot would establish a fresh baseline.
+- **Janus DinP backlog three §1 items** — still resumable (bootstrap scaffolding, memory file refresh, daily memo composition).
+- **Iris UX walkthrough Surfaces 3–8 + Pass 2 (Shipping News scenario)** — paused mid-session; explicit resume plan on file.
+- **Calliope (Klatch) PO advice-on-working-with-xian reply** — outside the original 5–7 day window. Tracking only.
+- **Sun Jun 7 (T+36)** — OpenLaws Bet 1 sprint window close; Sprint Day 6 today (Sat May 2).
+- **Sun Jun 15 (T+44)** — Sonnet 4 / Opus 4 deprecation. Aliases in place; DB audit query for pinned literal IDs remains (Argus-tracked).
