@@ -1219,3 +1219,33 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - **Calliope (Klatch) PO advice-on-working-with-xian reply** — outside the original 5–7 day window. Tracking only.
 - **Sun Jun 7 (T+36)** — OpenLaws Bet 1 sprint window close; Sprint Day 6 today (Sat May 2).
 - **Sun Jun 15 (T+44)** — Sonnet 4 / Opus 4 deprecation. Aliases in place; DB audit query for pinned literal IDs remains (Argus-tracked).
+
+
+## Usage Snapshot — 2026-05-02 (Saturday, 6:50 AM PT) — Post-Reset
+
+### kindsys (kindsys.us) — Max 20x (upgraded from 5x)
+- **Current session**: 0% used (starts when a message is sent)
+- **Weekly (all models)**: 6% used, resets Fri 6:00 AM
+- **Sonnet only**: 0%
+- **Claude Design**: 0% (unused)
+- **Daily routine runs**: 0 / 15
+- **Extra usage**: $0.00 spent (0% of $200 cap, resets Jun 1)
+- **Balance**: $6.34, auto-reload ON
+
+### dinp (designinproduct.com) — Max 20x
+- **Current session**: 7% used, resets in 3h 18m
+- **Weekly (all models)**: 12% used, resets Wed 9:00 PM
+- **Sonnet only**: 1%
+- **Claude Design**: 21% used, resets Wed 9:00 PM
+- **Daily routine runs**: 1 / 15, resets in 23h 9m
+- **Extra usage**: $0.00 spent (0% of $200 cap, resets Jun 1)
+- **Balance**: $32.90, auto-reload ON
+
+### Notes
+- Both caps reset successfully May 1. Fresh $200 budgets on both accounts through Jun 1.
+- kindsys upgraded to Max 20x (was Max 5x). Much more headroom for Dispatch-Kind and OpenLaws work.
+- kindsys balance thin at $6.34 — if extra usage hits before Jun 1, this is the buffer. Consider a top-up if heavy weeks are expected.
+- dinp balance healthy at $32.90.
+- dinp Claude Design at 21% — first meaningful usage observed (Cowork sessions?).
+- Weekly usage low on both (6% Kind, 12% DinP) — light start to the new billing cycle.
+
