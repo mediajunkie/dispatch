@@ -18,3 +18,4 @@ For major architectural decisions, write a full ADR. This log is the lightweight
 2026-04-23 | Daily memo exchange format adopted between Dispatch-DinP and Dispatch-Kind: 5-10 line EOD summaries, skip days OK | xian + Dispatch-DinP + Dispatch-Kind
 2026-04-23 | DECISIONS.md autonomy: each project manages own process; Kind-side can diverge from DinP convention with reason | xian
 2026-04-28 | kindsys balance added as standing item in daily brief; daily brief task also auto-commits stranded activity-log changes and flags any uncommitted files in dispatch working tree | xian + Dispatch-DinP
+2026-05-02 | Two new scheduled tasks adopted: dk-daily-memo (6 PM daily) and dk-inbox-check (7:30 AM daily) to ensure DK comms stay responsive | xian + Dispatch-DinP
