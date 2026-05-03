@@ -1249,3 +1249,35 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - dinp Claude Design at 21% — first meaningful usage observed (Cowork sessions?).
 - Weekly usage low on both (6% Kind, 12% DinP) — light start to the new billing cycle.
 
+
+## 2026-05-03 (Sunday)
+
+**Focus**: Daily brief generation; xpoll brief 5/3 substantive (PM #1018 Phase 2 + M2d audit-cascade NOT PASSED + The Drift You Don't Notice published); designinproduct hygiene resolved; new Janus → CEO PO collaboration-patterns synthesis surfaced as carry item; PM-product hygiene now 6 days stale.
+
+### What happened:
+- **Piper Morgan (product, ~20 commits)**: #1018 Phase 2 shipped — `audit_transparency` durable PostgreSQL storage with cluster #1006/#1007/#1008 closed (TIMESTAMPTZ, phone PII pattern, AsyncMock fixes); 17/17 tests pass. M2d audit-cascade gate **NOT PASSED** on first read — #707/#714 stale "TBD pending discovery" framing from March, #703 silent-omission of COMPOSTED state. Restructure: 4 new issues (#1030/#1031/#1032/#1033), conceptual-integrity gate added to `m2-structure.md`. "The Drift You Don't Notice" Medium + LinkedIn syndication.
+- **Piper Morgan (website, 2 commits)**: Drift blog post added + heading fix.
+- **designinproduct (9 commits)**: xpoll brief 5/3 substantive + receipt finalized; Mon May 4 trigger-health verification checklist; backlog §1e/g closed + §1f Themis added; CLAUDE.md trigger-discipline section; Themis intro mail-on-main extraction; April research drafts committed (labrador, memory-research, sneakernet-test); session logs Apr 26–30 + May 2 committed. **Hygiene resolved** today.
+- **OpenLaws (8 commits)**: Sprint Day 5 wrap + week-1 retro input (4-person scaling, prompt mapping); JB4-10 + JB13 pitch artifacts (Notion download + suggested-edits); research/decisions (comp-landscape, ha-phan, turnbull deep-dives, ADR-tool-naming, john-bet-archive); PO→Vergil dispatch signals; DK sweep-standards PR #8 merged.
+- **Dispatch (12 commits)**: `xian-attention-queue.md` + pull-before-read convention adopted (DECISIONS.md); `dk-daily-memo` + `dk-inbox-check` scheduled tasks adopted (DECISIONS.md); May 2 EOD memo to DK; backfilled Apr 30 + May 1 EOD memos; merged DK sweep-standards PR #2; May 2 post-reset usage snapshot logged.
+- **Klatch**: No commits since May 2.
+- **Weather/Zephyr, Rebel**: No activity.
+
+### Signals / decisions:
+- **PM #1018 Phase 2 design call worth flagging**: per-write `session_scope()` swallows audit-write failures rather than rolling back the user-facing request — appropriate for audit sidechannel, but a transferable design choice if Daedalus/Mnemosyne ever build durable Klatch storage.
+- **Audit-cascade catches discovery-phase staleness** — issues filed during discovery don't auto-update when the discovery completes; PM's M2d audit caught this between issue and gameplan. Pattern transferable to any Klatch issue with "TBD pending [research/RFC]" language.
+- **PM publication tracks now structurally distinct**: Ship newsletters (operational cadence), Building Piper Morgan Medium series (narrative depth), `/blog/` insight posts (standalone methodology). The Drift You Don't Notice is the first `insight` category post.
+- **New CEO-mailbox memo (Janus → xian-ceo)**: PO collaboration-patterns synthesis distributed May 2; reciprocal complement to the closed PO advice cycle. Action: read + fold + push back if anything doesn't match self-observation.
+- **Anti-Zombie Pass clean** — no DECISIONS.md additions today close any open carry items; May 2 closures (xian-attention-queue + dk-daily-memo + dk-inbox-check adopted) confirmed not re-flagged.
+
+### Pending (carried into May 4):
+- **piper-morgan-product working-tree hygiene** — `dev/active/merge-keeper-2026-04-28.md` 6 days untracked; 11 modified MANIFEST.md files; new Janus CEO memo untracked.
+- **OpenLaws working-tree hygiene** — `experiments/openlaws-mcp-poc-py/` rename residue.
+- **Usage CSV reconciliation** — Janus §1; 16 days stale (last append Apr 17). Apr 25 + Apr 28 + May 2 (post-reset) snapshots in activity log waiting to be structured into `intelligence/usage-tracking.csv`.
+- **Janus DinP backlog three §1 items** — bootstrap scaffolding, memory file refresh, daily memo composition. Resumable.
+- **Iris UX walkthrough Surfaces 3–8 + Pass 2** — paused, resume planned Fri May 8.
+- **Calliope (Klatch) PO advice-on-working-with-xian reply** — outside original window. Tracking only.
+- **DK-side `dinp-daily-memo` (6:30 PM) + `dinp-inbox-check`** — symmetric automation ack pending.
+- **Mon May 4 (T+1)** — Argus CCR external trigger 9 AM PT; merge-keeper sweep at DK session-open; designinproduct trigger-health verification checklist.
+- **Sun Jun 7 (T+35)** — OpenLaws Bet 1 sprint window close.
+- **Sun Jun 15 (T+43)** — Sonnet 4 / Opus 4 deprecation. DB audit query for pinned literal IDs remains (Argus-tracked).
