@@ -2,7 +2,75 @@
 
 **Status:** Working reference for Cowork-based agent roles (Dispatch-Kind, Archie, Piper Open, Piper Alpha, and any future custodians).
 **Author:** Dispatch-Kind
-**Date:** April 8, 2026
+**Original date:** April 8, 2026
+**Last updated:** May 5, 2026
+
+---
+
+## Update — May 2026: harness-driven flow shift
+
+**Direct-to-main pushes from Code tasks are now blocked.** The harness deny message is explicit: *"Pushing directly to main is blocked; user authorization doesn't override this since the push bypasses PR review on the default branch."* The "Do NOT use worktree isolation" override controls only the worktree default; it does not lift the new push-to-default-branch deny.
+
+**New canonical flow: feature branch + PR + self-merge.** Code task creates a branch like `dk/<date>-<topic>`, pushes the branch, and opens a PR via `gh pr create`. The user self-merges (one click) when ready.
+
+**Critical: verify PR creation.** During the May 2026 transition, several Code tasks reached `gh pr create` and returned mixed signals — sometimes the GraphQL endpoint returned 502 while the underlying REST call succeeded; sometimes the call hung mid-step and the PR was never opened despite the branch being pushed. The result was orphan branches (content on origin under a feature branch, no PR record, never merged into main, invisible to other agents pulling main). One real instance: the Thursday 4/30 xpoll-intel signal sat un-merged for five days because the original Code task's `gh pr create` never completed but the branch push had succeeded.
+
+**Mitigation:** every push Code task must verify PR creation before reporting success.
+
+The new "Worked example" section below is the current canonical sequence. The pre-May-2026 worked example further down is preserved as historical context (it describes the direct-to-main path that no longer works for new commits).
+
+### Worked example (current canonical, May 2026 onward)
+
+```
+start_code_task(
+  cwd: "/Users/xian/Development/dispatch",
+  title: "Push signals",
+  prompt: """
+  IMPORTANT: Do NOT use worktree isolation. Work directly on main if the harness allows;
+  otherwise feature-branch + PR.
+
+  cd /Users/xian/Development/dispatch && \
+  git checkout main && \
+  git pull origin main && \
+  git checkout -b dk/<YYYY-MM-DD>-<short-topic> && \
+  git add <files> && \
+  git commit -m "<message>" && \
+  git push -u origin dk/<YYYY-MM-DD>-<short-topic>
+
+  # PR creation, with verification:
+  gh pr create --base main --head dk/<YYYY-MM-DD>-<short-topic> \
+    --title "<PR title>" \
+    --body "<short body>"
+
+  # Verify the PR was actually created (catches silent failures + GraphQL 502s):
+  PR_URL=$(gh pr view dk/<YYYY-MM-DD>-<short-topic> --json url --jq .url 2>/dev/null)
+  if [ -z "$PR_URL" ]; then
+    echo "ERROR: PR was not created. Branch is pushed but unmerged."
+    exit 1
+  fi
+  echo "PR created: $PR_URL"
+
+  Report: which path succeeded (direct-to-main vs feature-branch + PR), commit SHA,
+  and (if PR path) the PR URL. If PR creation cannot be verified, do NOT report
+  success — flag explicitly so the calling session knows to retry or escalate.
+  """
+)
+```
+
+### Why `gh pr view` after `gh pr create`
+
+- **Catches silent failures.** `gh pr create` exits 0 on success, but a transient GitHub API 502/500 between the create call and the URL-fetch follow-up can produce stderr noise that's easy to miss in transcript scanning. `gh pr view` is a fresh API call that succeeds only if the PR actually exists.
+- **Catches GraphQL/REST inconsistencies.** Observed May 5: `gh pr create` returned 502 on its GraphQL response but the underlying REST `/pulls` POST had succeeded. Without verification, the Code task would report failure when in fact the PR was created (or vice versa).
+- **Costs nothing.** One additional API call. The downside if you skip it is a multi-day stranded branch like the xpoll-intel case.
+
+### Cleanup of un-merged branches
+
+If a `gh pr view` verification fails after `gh pr create`, do NOT delete the pushed branch — the commit is the work product, and a human (or a follow-on Code task) needs to either:
+
+- Open the PR manually via the GitHub UI, or
+- Cherry-pick the branch's commit onto a fresh branch and try the PR creation again.
+
+The Monday merge-keeper sweep (`scripts/merge-keeper-sweep.sh` in repos that have it) will surface orphan branches as STRANDED so they don't sit invisible indefinitely. See `~/cool/dispatch/standards/MERGE-KEEPER-SWEEP.md`.
 
 ---
 
@@ -16,11 +84,13 @@ Historically this has produced the "invisible file" bug: a signal or memo that a
 
 ## The workaround
 
+> **Note (May 2026):** the section below describes the original April 2026 pattern using direct-to-main pushes. That path is now denied by the harness; see the **Update — May 2026** section above for the current canonical flow (feature branch + PR + verify PR creation). The text below is preserved as historical context.
+
 Cowork sessions cannot push, but they *can* dispatch Code tasks. A Code task runs outside the Cowork VM, on the host machine, with full access to SSH keys and git configuration. Use a Code task as the push arm.
 
 The Cowork session writes files, commits if desired, then dispatches a Code task whose sole job is to commit (if needed) and push.
 
-### Pattern
+### Pattern (pre-May-2026, historical)
 
 1. Cowork writes the files into the mounted repo path.
 2. Cowork dispatches a Code task via `start_code_task` with:
@@ -30,7 +100,7 @@ The Cowork session writes files, commits if desired, then dispatches a Code task
    - A request to report the commit SHA.
 3. Cowork reads the transcript to confirm the push and logs the SHA.
 
-### Worked example
+### Worked example (pre-May-2026, historical)
 
 ```
 start_code_task(
@@ -45,6 +115,8 @@ start_code_task(
   """
 )
 ```
+
+(See the May 2026 update at the top of this doc for the current canonical worked example.)
 
 ## Gotchas
 
