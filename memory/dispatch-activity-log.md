@@ -1281,3 +1281,37 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - **Mon May 4 (T+1)** — Argus CCR external trigger 9 AM PT; merge-keeper sweep at DK session-open; designinproduct trigger-health verification checklist.
 - **Sun Jun 7 (T+35)** — OpenLaws Bet 1 sprint window close.
 - **Sun Jun 15 (T+43)** — Sonnet 4 / Opus 4 deprecation. DB audit query for pinned literal IDs remains (Argus-tracked).
+
+## 2026-05-04 (Monday)
+
+**Focus**: PM M2d closed and M2e launched in single overnight burst — first M2e issue (#790 trust-gated calendar) already shipped; Argus external CCR auto-trigger fired on Mon 9 AM PT schedule; cross-pollination digest for Apr 27–May 3 published; designinproduct trigger-health checklist clean.
+
+### What happened:
+
+- **Piper Morgan (product, ~22 commits — heaviest)**: M2d closed (#1030 INSIGHT-PULL, #1031 INSIGHT-PASSIVE, #1032 INSIGHT-PUSH, #1033 COMPOSTED-EXPERIENCE all merged + #714 staleness UI + #704 lifecycle-indicator follow-on). M2e launched: 5 gameplans drafted with audit-cascade matrices, walkthrough complete (24/24 dispositions, 4 followups filed), #1018 split into #1039 + #1040 + #1041 (WIRE-triage). M2-review Topics 2 + 3 decided. **First M2e issue shipped: #790 trust-gated calendar.** M2e Phase -1 infra verification spike logged.
+- **Piper Morgan (website)**: "Friction-Focused Feedback" published (second `/blog/` insight post); "The Drift You Don't Notice" heading fix.
+- **designinproduct (~9 commits)**: Sweep-receipt 5/4 substantive; xpoll brief 5/4; Mon trigger-health verification ran clean. Hygiene fully resolved Sunday.
+- **Klatch**: Argus Mon CCR external auto-trigger fired at 06:11 (`2026-05-04-sweep.md`). 7-day cadence holding. No other commits.
+- **OpenLaws**: No new commits since Sunday's burst.
+- **Dispatch (3 commits)**: Cross-pollination digest week of Apr 27–May 3 published; weekly sandbox checkpoint; daily memo to DK 5/3.
+- **Weather/Zephyr, Rebel**: No activity.
+
+### Signals / decisions:
+
+- **PM M2d→M2e transition clean** — audit-cascade gate (Sunday's NOT PASSED) caught the staleness, restructure shipped Monday morning, M2e launched within hours of closeout. Methodology pattern holding.
+- **First M2e issue shipped same-day as M2e launch (#790 trust-gated calendar)** — momentum sustained.
+- **Argus external CCR automation healthy** — Apr 27 → May 4, 7-day cycle confirmed.
+- **Anti-Zombie Pass clean** — no DECISIONS.md additions today close any open carry items; all major closures from prior days (Phase F, DK topology, designinproduct hygiene, M2d audit-cascade restructure) confirmed not re-flagged.
+
+### Pending (carried into May 5):
+
+- **Janus CEO PO-collaboration-patterns synthesis** — sitting in `mailboxes/xian (ceo)/inbox/` untracked since May 2; xian read + fold + optional pushback.
+- **piper-morgan-product working-tree hygiene** — `merge-keeper-2026-04-28.md` 7 days untracked; 8 modified MANIFEST.md files (mailbox sweep churn); Janus CEO memo untracked; `tests/mux/probes/__init__.py` untracked.
+- **OpenLaws working-tree hygiene** — `experiments/openlaws-mcp-poc-py/` rename residue.
+- **Usage CSV reconciliation** — Janus §1; **17 days stale**. Apr 25 + Apr 28 + May 2 (post-reset) snapshots in activity log.
+- **Janus DinP §1 backlog** — bootstrap scaffolding, memory file refresh, daily memo composition. Resumable.
+- **Iris UX walkthrough Surfaces 3–8 + Pass 2** — paused, resume planned Fri May 8 (T+4).
+- **DK-side `dinp-daily-memo` (6:30 PM) + `dinp-inbox-check`** — symmetric automation ack pending.
+- **Calliope (Klatch) PO advice-on-working-with-xian reply** — outside original window. Tracking only.
+- **Sun Jun 7 (T+34)** — OpenLaws Bet 1 sprint window close.
+- **Sun Jun 15 (T+42)** — Sonnet 4 / Opus 4 deprecation. DB audit query for pinned literal IDs remains (Argus-tracked).
