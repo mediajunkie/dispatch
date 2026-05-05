@@ -1357,3 +1357,23 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - **Mon May 11 (T+6)**: Argus next external CCR auto-trigger (7-day cadence). Claude 3.7 Sonnet retires on Vertex AI same day (no Klatch impact).
 - **Sun Jun 7 (T+33)**: OpenLaws Bet 1 sprint window close (Sprint Day 9 today).
 - **Sun Jun 15 (T+41)**: Sonnet 4 / Opus 4 deprecation. Aliases in place; Klatch DB audit query for pinned literal model IDs remains overdue.
+
+## Usage Snapshot — 2026-05-05 (Mon 11:55 AM PT)
+
+### designinproduct.com (DinP) — Max 20x
+- Current session: 3% (resets in 3h 25m)
+- Weekly all-models: 48% (resets Wed 9:00 PM)
+- Sonnet only: 2%
+- Claude Design: 21%
+- Daily routine runs: 0/15
+- Extra usage: $0.00 spent of $200 (resets Jun 1), 0% used
+- Balance: $32.92, auto-reload ON
+
+### kindsys.us (Kind) — Max 20x
+- Current session: 24% (resets in 3m)
+- Weekly all-models: 19% (resets Fri 5:59 AM)
+- Sonnet only: 0%
+- Claude Design: 0% (not used yet)
+- Daily routine runs: 0/15
+- Extra usage: $0.00 spent of $200 (resets Jun 1), 0% used
+- Balance: $6.35, auto-reload ON
