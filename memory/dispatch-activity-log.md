@@ -1315,3 +1315,45 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - **Calliope (Klatch) PO advice-on-working-with-xian reply** — outside original window. Tracking only.
 - **Sun Jun 7 (T+34)** — OpenLaws Bet 1 sprint window close.
 - **Sun Jun 15 (T+42)** — Sonnet 4 / Opus 4 deprecation. DB audit query for pinned literal IDs remains (Argus-tracked).
+
+## 2026-05-05 (Tuesday)
+
+**Focus**: PM M2e INTENT-COVERAGE arc shipped 6 issues end-to-end (#1027 + #1042 RepoResolver + #1039/#1040 + #869 Phase 1 + #1052 Phase 1); audit-cascade catches #1052 persistence gap before any code runs (second instance of #1018→#1035 pattern in one week); 12 retroactive M2d state-transition corrections + #1047 M2D-UAT consolidated tracker; Ship #041 reviews from all 7 PM leadership roles complete (publish Wed May 6, paired with "Six Issues Before Dinner"); OpenLaws synonym-registry ADR + CLAUDE.md Operational Hygiene (P1+P2+P6) + `.git-busy` convention + Sprint Day 8 retro; Klatch automated CCR sweep flags `@anthropic-ai/sdk` 6 versions behind; piper-morgan-product working-tree hygiene RESOLVED.
+
+### What happened:
+
+- **Piper Morgan (product, ~22 commits — heaviest in two weeks)**: M2e INTENT-COVERAGE arc — 4 issues end-to-end (#1027 CLAUDE_OPUS repoint catching stale conditional-on-event triage, #1042 RepoResolver removing 14 hardcoded-repo refs incl. two user-facing chat templates, #1039 milestones+releases, #1040 labels+branches), plus #869 Phase 1 (tab component + Project Detail tab structure) and #1052 Phase 1 (StandupConversation persistence — caught by audit-cascade in #900 Phase 0 spike before any implementation code ran). Morning hygiene: 12 M2d issues shipped Sunday had never had GitHub state-transitions run, all corrected retroactively; #1047 M2D-UAT filed as consolidated tracker for deferred browser-smoke verifications. Ship #041 reviews delivered from all 7 leadership roles (Lead Dev / PA / PPM / Architect / Docs / CIO / Comms / HOST).
+- **OpenLaws (~20 commits — Vergil + PO heavy push)**: Synonym-registry ADR landed (v0 server-side via Rails API `GET /api/v1/synonyms`; v1 remote MCP wraps same data layer; signal sent to Vergil); CLAUDE.md Operational Hygiene section ratified (P1+P2+P6 process disciplines) + P1 extended to pre-commit; `.git-busy` convention shipped (renamed from `BUSY.md` per xian's first-try shape); working-patterns DRAFT promoted to canonical at `docs/working-patterns.md`; Vespa-synonym integration memo drafted for Stan; draft question to John on synonym-registry sitting in workdesk; Sprint Day 8 (Mon) joint retro (xian + PO + Vergil) + week 2 planning + pares bet 1 plan scaffold.
+- **designinproduct (~5 commits)**: 5/5 sweep receipt substantive; 5/5 xpoll brief covering 48h (PM M2e arc + audit-cascade persistence pattern repeats + close-issue-properly hygiene); 5/4 receipt finalized.
+- **Klatch**: Cross-pollination 5/4 brief delivered (no other session activity). Mon 5/4 automated external CCR sweep flagged `@anthropic-ai/sdk` 6 versions behind (0.92.0 published ~May 1; pinned `^0.86.1`).
+- **Dispatch (3 commits Mon + today's brief)**: Cross-pollination digest week of Apr 27–May 3 published; weekly sandbox checkpoint; daily memo to DK 5/3 + 5/4.
+- **Piper Morgan (website, 1 commit)**: "Friction-Focused Feedback" added (covered in 5/4 brief).
+- **Weather/Zephyr, Rebel**: No activity.
+
+### Signals / decisions:
+
+- **Audit-cascade catches #1052 persistence gap before any implementation code ran** — second instance of the #1018→#1035 pattern in one week. Stable enough to formalize as a one-line gameplan template addition for any Klatch work depending on data being available or resumable across sessions.
+- **#1042 RepoResolver decision-tree pattern**: 4-level resolution cascade (explicit args → user preference → env-var default → raise error) cleanly separates "what the user said" from "what we infer." Transferable to any Klatch capability that resolves an implicit target at runtime.
+- **#1047 M2D-UAT consolidation pattern**: deferred verifications collected into one named UAT issue rather than residual TODOs in closed issues. Cleaner backlog hygiene.
+- **OpenLaws synonym-registry ADR**: v0 server-side via Rails API; v1 remote MCP wraps same data layer. Two-stage path keeps backward-compat door open for Vespa.
+- **OpenLaws Operational Hygiene (P1+P2+P6) ratified into CLAUDE.md** — Vergil three-discipline package. Cross-project takeaway: process disciplines codified at agent CLAUDE.md layer (rather than human-skill discipline) survive session-to-session more reliably.
+- **piper-morgan-product working-tree hygiene RESOLVED** — git status now clean; merge-keeper-2026-04-28.md, 8 modified MANIFESTs, Janus CEO memo, `tests/mux/probes/__init__.py` all committed in Mon mail churn.
+- **PM May 6 paired-publish model**: Ship #041 newsletter + "Six Issues Before Dinner" narrative arc on the same day. Collapses editorial overhead of two-track publication.
+- **Anti-Zombie Pass clean** — no carry items re-flagged.
+
+### Pending (carried into May 6):
+
+- **Janus CEO PO-collaboration-patterns synthesis memo** — sitting in `mailboxes/xian (ceo)/inbox/` since May 2 (3 days). Read + fold + optional pushback.
+- **OpenLaws synonym-registry question to John** — PO drafted at `workdesk/draft-question-to-john-synonym-registry-2026-05-04.md`. xian sends when timing fits; light-touch sanity-check.
+- **OpenLaws working-tree hygiene** — `experiments/openlaws-mcp-poc-py/` rename residue (5+ days).
+- **Usage CSV reconciliation** — Janus §1; **18 days stale** (last append Apr 17). Apr 25 + Apr 28 + May 2 (post-reset) snapshots in activity log waiting to be structured into `intelligence/usage-tracking.csv`.
+- **Janus DinP §1 backlog** — bootstrap scaffolding, memory file refresh, daily memo composition. Resumable.
+- **DK-side `dinp-daily-memo` (6:30 PM) + `dinp-inbox-check`** — symmetric automation ack still pending.
+- **PM SDK 6 versions behind** — `@anthropic-ai/sdk 0.92.0` published ~May 1; PM pinned `^0.86.1`. Needs batch-bump at next dep-maintenance window.
+- **PM roadmap.md 23 days stale** — Docs audit (#1049) flagged Mon; PPM cadence proposal pending (5 options).
+- **Iris UX walkthrough Surfaces 3–8 + Pass 2 (Shipping News scenario)** — paused, resume planned Fri May 8 (T+3).
+- **Calliope (Klatch) PO advice-on-working-with-xian reply** — outside original window. Tracking only.
+- **Wed May 6 (T+1)**: PM Ship #041 publish target — paired narrative post.
+- **Mon May 11 (T+6)**: Argus next external CCR auto-trigger (7-day cadence). Claude 3.7 Sonnet retires on Vertex AI same day (no Klatch impact).
+- **Sun Jun 7 (T+33)**: OpenLaws Bet 1 sprint window close (Sprint Day 9 today).
+- **Sun Jun 15 (T+41)**: Sonnet 4 / Opus 4 deprecation. Aliases in place; Klatch DB audit query for pinned literal model IDs remains overdue.
