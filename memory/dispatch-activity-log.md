@@ -1377,3 +1377,42 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - Daily routine runs: 0/15
 - Extra usage: $0.00 spent of $200 (resets Jun 1), 0% used
 - Balance: $6.35, auto-reload ON
+
+## 2026-05-06 (Wednesday)
+
+**Focus**: PM M2e arc continued at velocity Tuesday (~22 commits, second heavy day in a row) — #900 standup 3-part structural collection shipped end-to-end in ~2h vs. 12–14h estimate (5 phases, 148 tests, durable `StandupPartialCapture` JSONB, resume protocol); #1052 Phase 2 + #869 Phase 2–4 + Architect-review-actioned #1055 –1518 LOC cleanup all same session; evening M2 unmapped-families triage (27 issues / 6 families) drops M2 open-issue surface 56 → 49 and surfaces 2 NEEDS PM CALL items; cross-agent git collision recovered via commit-after-each-functional-unit discipline. OpenLaws PO heaviest single-day push in two weeks (Sprint Day 9): Vespa research Phase 1 substantively complete, Vergil restart clean, SKILL v0.2 baseline landed with xian-flagged jurisdiction-generalization slip + PO drift-check. "Six Issues Before Dinner" published Tuesday afternoon (4 days early on narrative track); Ship #041 newsletter on calendar for today.
+
+### What happened:
+- **Piper Morgan (product, ~22 commits — second heavy day in a row)**: M2e arc — #900 standup 3-part structural collection end-to-end in ~2h (5 phases, 148 tests, `StandupPartialCapture` JSONB, resume protocol); #1052 Phase 2 (StandupConversationManager async rewrite); #869 Phase 2–4 (Project Config IA, Settings → Projects overview, project counts in API). **#1055 –1518 LOC** cleanup actioned same session as Architect's Apr 13 review return (Pattern-064 alive scaffolding from KnowledgeGraphService removed, legacy `services/ethics/boundary_enforcer.py` retired, dead allocation cleared). Evening M2 unmapped-families triage: 27 issues / 6 families, 2 close-superseded (#101 + #100), PM decisions on #987 GEMINI-QUOTA (Option 3 close), #991 ETHICS-RESPONSE-GATE (Option A close), #983 CONTEXT-BLOCKED (memo to Architect on label convention). M2 open-issue surface 56 → 49. Cross-agent git collision surfaced during #900 (parallel agent's `git reset` wiped Lead Dev's uncommitted Phase 3 work twice); recovery via commit-after-each-functional-unit discipline.
+- **Piper Morgan (website, 1 commit)**: "Six Issues Before Dinner" blog post added (paired with Medium publish Tuesday PM, 4 days early on narrative).
+- **OpenLaws (~22 commits — heaviest PO day in two weeks)**: Sprint Day 9 long, productive. Vespa research Phase 1 substantively complete — Tier 1 (schemas, ranking, BM25, YQL, linguistics, synonyms) + Tier 2 (vector/hybrid) + synthesis + Stan questions filed. Vergil restart self-executed clean (audit-cascade + SKILL.md redo); Jerry shipped repo; gameplan in workdesk for connecting + migrating to openlaws-research-agent. SKILL v0.2 baseline landed (compiled domain knowledge removed, wrapper mechanism formalized) — xian flagged jurisdiction-generalization slip; PO drift-check filed; scaffolding v0.2 substantive content prepared for Jerry's Wed CC. PO drafted Vergil restart memo + revised per xian's "growing pains" reframe.
+- **designinproduct (~5 commits)**: 5/6 xpoll brief substantive (#900 velocity + cross-agent git collision + M2 unmapped-families triage methodology + #1055 Pattern-064 cleanup + Six Issues fact-check discipline); 5/6 sweep receipt substantive; 5/6 cross-pollination delivery 7/7.
+- **Klatch**: Cross-pollination 5/6 brief delivered (no other session activity).
+- **Dispatch (4 commits)**: 5/6 xpoll brief, 5/5 daily memo to DK, 5/5 usage snapshot logged, auto activity-log + stranded-changes commit, yesterday's brief.
+- **Weather/Zephyr, Rebel**: No activity (xpoll receipt only on Weather; Rebel back-burner).
+
+### Signals / decisions:
+- **Pre-work-pays-dividends pattern measurable** — #900 shipped 2h vs. 12–14h estimate because #1052's persistence layer (shipped previous day) had already solved Phase 4's needs before Phase 4 code ran. Klatch transfer: any issue with a data-layer dependency, ship persistence pre-work first as a short standalone ticket — eliminates discovery-mid-implementation delay.
+- **Multi-agent git collision mitigation** — Lead Dev's twice-wiped Phase 3 recovery via commit-after-each-functional-unit (not at phase boundary). Smaller commits + more frequent pushes survive a parallel agent's `git reset`.
+- **Family-level backlog triage taxonomy** — SUPERSEDED / STILL NEEDED / NEEDS PM CALL / RE-SCOPED is a clean structure for any backlog audit. Conditional-on-event language ("pending billing call", "TBD") in issues filed during a discovery phase reliably drifts past trigger date — the family sweep catches it.
+- **Review-to-action latency discipline** — Architect's review sat 22 days non-blocking → Lead Dev read + filed #1055 + shipped –1518 LOC same session (~40 min). Filing the cleanup ticket before the review session ends is what anchors the work; "none blocking" items reliably stay open indefinitely without a named ticket.
+- **Janus CEO PO-collaboration-patterns synthesis memo RESOLVED** — moved to `mailboxes/xian (ceo)/read/` folder. Read.
+- **DK-side symmetric automation LIVE** — branch `dk/2026-05-05-symmetric-tasks-live` confirmed (commit dfa8a84, Mon AM). First symmetric daily-memo cycle ran Mon evening; first symmetric inbox-check ran Tue morning. May 2 process-improvements thread closed.
+- **Anti-Zombie Pass clean** — no carry items re-flagged.
+
+### Pending (carried into May 7):
+- **PM M2 NEEDS PM CALL items (2)** — #304 Notion integration (pre-floor code still intact? Notion in alpha scope?) + #471 Infrastructure parent epic (keep as one epic or break into M3 sub-epics?). Surfaced from Tue unmapped-families triage.
+- **OpenLaws SKILL v0.2 jurisdiction-generalization slip** — xian-flagged Tuesday; PO drift-check filed; awaits xian feedback before next iteration.
+- **OpenLaws synonym-registry question to John** — PO draft at `workdesk/draft-question-to-john-synonym-registry-2026-05-04.md` unsent (carried 2 days). Light-touch sanity-check.
+- **OpenLaws working-tree hygiene** — `experiments/openlaws-mcp-poc-py/` rename residue (6+ days).
+- **Usage CSV reconciliation** — Janus §1; **19 days stale** (last append Apr 17). Apr 25 + Apr 28 + May 2 + May 5 snapshots in activity log waiting to be structured into `intelligence/usage-tracking.csv`.
+- **Janus DinP §1 backlog** — bootstrap scaffolding, memory file refresh, daily memo composition. Resumable.
+- **PM SDK 6 versions behind** — `@anthropic-ai/sdk 0.92.0` published ~May 1; PM pinned `^0.86.1`. Queued for next dep-maintenance window.
+- **PM roadmap.md 25 days stale** — last mtime Apr 11; Docs audit (#1049) flagged Mon; PPM cadence proposal pending.
+- **#983 CONTEXT-BLOCKED label-convention memo to Architect** — sent Tue evening; tracking for Architect verdict before #983 unblocks.
+- **Iris UX walkthrough Surfaces 3–8 + Pass 2 (Shipping News scenario)** — paused, resume planned Fri May 8 (T+2).
+- **Calliope (Klatch) PO advice-on-working-with-xian reply** — outside original window. Tracking only.
+- **Today Wed May 6**: PM Ship #041 newsletter publish target.
+- **Mon May 11 (T+5)**: Argus next external CCR auto-trigger (7-day cadence). Claude 3.7 Sonnet retires on Vertex AI same day (no Klatch impact).
+- **Sun Jun 7 (T+32)**: OpenLaws Bet 1 sprint window close (Sprint Day 10 today).
+- **Sun Jun 15 (T+40)**: Sonnet 4 / Opus 4 deprecation. Klatch DB audit query for pinned literal model IDs remains overdue.
