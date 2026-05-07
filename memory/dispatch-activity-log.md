@@ -1416,3 +1416,43 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - **Mon May 11 (T+5)**: Argus next external CCR auto-trigger (7-day cadence). Claude 3.7 Sonnet retires on Vertex AI same day (no Klatch impact).
 - **Sun Jun 7 (T+32)**: OpenLaws Bet 1 sprint window close (Sprint Day 10 today).
 - **Sun Jun 15 (T+40)**: Sonnet 4 / Opus 4 deprecation. Klatch DB audit query for pinned literal model IDs remains overdue.
+
+## 2026-05-07 (Thursday)
+
+**Focus**: Ship #041 launched (PM, ~10 commits) — canonical + LinkedIn syndication; #1053 audit-cascade prep through Phases 1–3 gates; #1057 Architect's full 5-item punch list closed; M2 surface-review Topic 7 cleared (#471 break-out + parent close). OpenLaws second heaviest PO day in two weeks (Sprint Day 10): agent-orientation Option 3 shipped (HERE.md expansion + workdesk jargon tracker); Rubric v2 cascade refinement (Q7/A1 reframes, T4/A1/S3 drops, baseline reframed current-not-tuned BM25, split-scoring, dual-research-value framing) → xian-review editing pass (Quality rename, decision-criterion terminology, Slack scrubs, Tractability column drop) → PR #4→#5 + linguistic calibration. LawVable deep-dive resolved as skills marketplace (not research engine). Two DK branches landed unmerged on remote awaiting xian merge: `dk/2026-05-06-strategic-calls` (folds three verdicts into queue + meta-note that the queue mechanism didn't surface to xian) + `dk/2026-05-06-scheduled-task-pile-landing`.
+
+### What happened:
+- **Piper Morgan (product, ~10 commits)**: Ship #041 published (canonical + LinkedIn syndication). #1053 audit-cascade prep complete (Phases 1–3 gates passed). #1058 template-hygiene filed. #1057 Architect's full 5-item punch list closed (–1518 LOC scaffold cleanup landed previous day). M2 surface review Topic 7 closed (#471 break-out + parent close). 71b0c5b5 Docs ack to Lead Dev (verified-redundant). Sign-off discipline clean.
+- **Piper Morgan (website, 1 commit)**: Weekly Ship #041 post added.
+- **OpenLaws (~22 commits — second heaviest PO day in two weeks)**: Sprint Day 10. PO agent-orientation work shipped (Option 3: HERE.md expansion + workdesk jargon tracker). Rubric v2 went through full refinement cascade — Q7/A1 reframes, T4/A1/S3 drops, baseline reframed (current-not-tuned BM25), split-scoring, dual-research-value framing — then editing pass per xian review (Quality rename, decision-criterion terminology, Slack scrubs, Tractability column drop). PR #4→#5 + linguistic calibration. LawVable deep-dive research (skills marketplace, not research engine). PO process-improvement tracker filed. Multiple Vergil signals incl. plan re-tune + effective-date metadata recoverable.
+- **designinproduct (~3 commits)**: 5/7 sweep receipt substantive (start + finish); 5/7 cross-pollination brief delivered (silent prod bug via broad except, N/A count = template drift signal, Architect punch list closed, Ship #041 published).
+- **Klatch**: Brief receipt only (5/6 cross-pollination delivered). No session activity.
+- **Dispatch (4 commits + 2 unmerged DK branches landed on remote)**: 5/6 daily memo to DK + auto activity-log + stranded-changes commit + yesterday's brief. Two DK branches landed unmerged on remote: `dk/2026-05-06-scheduled-task-pile-landing` and `dk/2026-05-06-strategic-calls`.
+- **Weather/Zephyr, Rebel**: No activity (xpoll receipt only on Weather; Rebel back-burner).
+
+### Signals / decisions:
+- **DK shipped three strategic-call verdicts into queue** — branch `dk/2026-05-06-strategic-calls` (commit af11b83) folds xian verdicts into `xian-attention-queue.md`: (1) cadence-rigor — substantive-mail-can-substitute OK provided substitution is explicitly flagged; (2) branch-discipline brief — accept DinP's offer to draft as brief-class artifact for PM + Klatch distribution; (3) backfill rule formalized — skip-days OK provided next Janus session backfills from logs / cross-side traffic / git history. Queue cleared on DK side.
+- **DK meta-signal: queue mechanism didn't reach xian** — items piled 4–8 days because xian doesn't open `xian-attention-queue.md` at session-start. Next iteration likely shape: in-band "Pending xian decisions" section in daily memos themselves rather than separate file. Worth a design conversation; this brief and the daily DK memos may be the right surface.
+- **Dual-research-value framing on Rubric v2** — splitting decision-criterion scoring from baseline-tuning value, rather than collapsing both into one "research valuable" axis. Cleaner than a monolithic value column for any rubric where the act of measuring also produces secondary research signal.
+- **LawVable taxonomy correction** — deep-dive resolved LawVable as skills marketplace (not research engine). Useful for positioning + comparison-set hygiene.
+- **Anti-Zombie Pass clean** — no carry items re-flagged.
+
+### Pending (carried into May 8):
+- **DK strategic-calls branch merge** — `dk/2026-05-06-strategic-calls` awaits xian merge / cherry-pick so DinP side picks up the fold of three verdicts into `xian-attention-queue.md`.
+- **DK scheduled-task pile-landing branch** — `dk/2026-05-06-scheduled-task-pile-landing` lower-priority merge; content is read-once-and-roll.
+- **PM M2 NEEDS PM CALL (2)** — #304 Notion (pre-floor code intact? alpha scope?) + #471 Infrastructure parent epic disposition verdict (one epic vs. M3 sub-epics?). #471 break-out closed yesterday on M2-review track; parent-disposition verdict still pending.
+- **OpenLaws SKILL v0.2 jurisdiction-generalization slip** — PO drift-check filed; awaits xian feedback before next iteration.
+- **OpenLaws synonym-registry question to John** — PO draft at `workdesk/draft-question-to-john-synonym-registry-2026-05-04.md` unsent (carried 3 days).
+- **OpenLaws working-tree hygiene** — `experiments/openlaws-mcp-poc-py/` rename residue (7+ days, confirmed still untracked).
+- **Usage CSV reconciliation** — Janus §1; **20 days stale** (last append Apr 17). Apr 25 + Apr 28 + May 2 + May 5 snapshots in activity log awaiting structuring into `intelligence/usage-tracking.csv`.
+- **Janus DinP §1 backlog** — bootstrap scaffolding, memory file refresh, daily memo composition. Resumable.
+- **PM SDK 6 versions behind** — `@anthropic-ai/sdk 0.92.0` published ~May 1; PM pinned `^0.86.1`. Queued for next dep-maintenance window.
+- **PM roadmap.md 26 days stale** — last mtime Apr 11; Docs audit (#1049) flagged; PPM cadence proposal pending.
+- **#983 CONTEXT-BLOCKED label-convention memo to Architect** — sent Tue 5/05; awaiting Architect verdict before #983 unblocks.
+- **Iris UX walkthrough Surfaces 3–8 + Pass 2 (Shipping News scenario)** — paused, resume planned Fri May 8 (T+1).
+- **Calliope (Klatch) PO advice-on-working-with-xian reply** — outside original window. Tracking only.
+- **Cross-pollination current-week brief** — 3 days stale (mtime 5/4, covers Apr 27–May 3). Skipped this pass per >2-day rule. Next refresh on regular weekly cadence.
+- **Fri May 8 (T+1)**: planned Iris walkthrough resume.
+- **Mon May 11 (T+4)**: Argus next external CCR auto-trigger; Claude 3.7 Sonnet retires on Vertex AI same day (no Klatch impact).
+- **Sun Jun 7 (T+31)**: OpenLaws Bet 1 sprint window close (Sprint Day 11 today).
+- **Sun Jun 15 (T+39)**: Sonnet 4 / Opus 4 deprecation. Klatch DB audit query for pinned literal model IDs remains overdue.
