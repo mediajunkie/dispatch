@@ -8,7 +8,7 @@ Format:
 
 ## Active
 
-(none — queue cleared 2026-05-06)
+- [2026-05-06] from DK: dinp-daily-memo wrote memo at `mail/memo-dispatch-kind-to-dispatch-dinp-daily-2026-05-06.md`; push deferred — `start_code_task` tool not available in this Cowork sandbox. Action: human or interactive DK landing needed.
 
 ## Resolved
 
