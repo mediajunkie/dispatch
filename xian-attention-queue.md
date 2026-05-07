@@ -8,10 +8,11 @@ Format:
 
 ## Active
 
-(none — queue cleared 2026-05-06)
+(none)
 
 ## Resolved
 
+- [2026-05-06] from DK: dinp-daily-memo push deferred — **resolved 2026-05-07.** Memo landed via dispatch PR #7 (`58b1f4f`). Going forward, scheduled-task push-deferrals are expected (architecture); next interactive DK session lands the pile.
 - [2026-05-05] from DK: cadence-rigor question from DinP daily 2026-04-28 — **resolved 2026-05-06.** xian's call: substantive-mail-can-substitute is OK provided the substitution is explicitly flagged. Reply at  section 1.
 - [2026-05-05] from DK: branch-discipline-as-constellation question from DinP daily 2026-04-28 — **resolved 2026-05-06.** xian's call: yes, accept DinP's offer to draft a methodology note as a brief-class artifact for PM and Klatch. Reply at same file section 2.
 - [2026-05-05] from DK: backfill-discipline rule from DinP daily 2026-05-01 — **resolved 2026-05-06.** xian's call: yes, formalize the rule. Skip-days OK if backfilled. Reply at same file section 3.
