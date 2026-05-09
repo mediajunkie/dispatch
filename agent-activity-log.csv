@@ -156,3 +156,270 @@ date,project,role,slug,environment,device,account,model,summary,source
 2026-03-30,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,"Transitioned to faoilean on new infrastructure",xian-report
 2026-03-30,piper-morgan,Piper Alpha,pa,Code,faoilean,dinp,opus,"Launched on faoilean — first agent inhabiting PM role",xian-report
 2026-03-30,designinproduct,Janus,janus,Code,kindbook,dinp,opus,"Sweep verified + Dispatch-Kind prompt + activity CSV + registry UI + Dispatch memo",git-log
+2026-03-31,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"post-migration orientation, continuation of account migration work",2026-03-31-log.md
+2026-03-31,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-03-31,piper-morgan,CIO,cio,Chat,browser,dinp,opus,,2026-03-31-cio-session-log.md
+2026-03-31,piper-morgan,CXO,cxo,Chat,browser,dinp,opus,,2026-03-31-1705-cxo-opus-log.md
+2026-03-31,piper-morgan,Chief of Staff,exec,Chat,browser,dinp,opus,,2026-03-31-1242-exec-opus-log.md
+2026-03-31,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-03-31-1033-docs-code-opus-log.md
+2026-03-31,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-03-31-1127-lead-code-opus-log.md
+2026-03-31,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-03-31-1800-lead-code-opus-log.md
+2026-03-31,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-03-31-1100-pa-opus-log.md
+2026-04-01,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"Klatch migration, continued migration work",2026-04-01-log.md
+2026-04-01,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-01,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-01-2147-argus-opus-log.md
+2026-04-01,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-01-2057-calliope-opus-log.md
+2026-04-01,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-01-2140-daedalus-opus-log.md
+2026-04-01,klatch,Metis,metis,Cowork,faoilean,dinp,opus,,2026-04-01-2208-metis-opus-log.md
+2026-04-01,piper-morgan,CIO,cio,Chat,browser,dinp,opus,,2026-04-01-cio-session-log.md
+2026-04-01,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-01-0732-docs-code-opus-log.md
+2026-04-01,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-01-0656-pa-opus-log.md
+2026-04-02,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"migration wrap-up, triggers planning, Chat Project top-offs",2026-04-02-log.md
+2026-04-02,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-02,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-02-0818-argus-opus-log.md
+2026-04-02,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-02-0730-calliope-opus-log.md
+2026-04-02,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-02-0817-daedalus-opus-log.md
+2026-04-02,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-02-0715-docs-code-opus-log.md
+2026-04-02,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-02-0718-pa-opus-log.md
+2026-04-03,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"migration wrap-up, Ted Nadeau liaison role, triggers planning",2026-04-03-log.md
+2026-04-03,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-03,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-03-1823-argus-opus-log.md
+2026-04-03,piper-morgan,CXO,cxo,Chat,browser,dinp,opus,,2026-04-03-2153-cxo-opus-log.md
+2026-04-03,piper-morgan,Claude Code (general),code,Chat,browser,dinp,opus,,2026-04-03-2245-code-opus-log.md
+2026-04-03,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-03-2200-lead-code-opus-log.md
+2026-04-03,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-03-1906-pa-opus-log.md
+2026-04-04,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"Ted Nadeau PRD analysis, liaison role activation",2026-04-04-log.md
+2026-04-04,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-04,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-04-2032-argus-opus-log.md
+2026-04-04,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-04-0655-calliope-opus-log.md
+2026-04-04,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-04-2030-daedalus-opus-log.md
+2026-04-04,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-04-1901-docs-code-opus-log.md
+2026-04-04,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-04-2210-lead-code-opus-log.md
+2026-04-04,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-04-1047-pa-opus-log.md
+2026-04-05,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"migration completion, backlog review",2026-04-05-log.md
+2026-04-05,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-05,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-05-1109-calliope-opus-log.md
+2026-04-05,klatch,Iris,iris,Code,faoilean,dinp,opus,,2026-04-05-1137-iris-opus-log.md
+2026-04-05,klatch,Theseus Prime,theseus,Code,faoilean,dinp,opus,,2026-04-05-0958-theseus-opus-log.md
+2026-04-05,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-05-0712-docs-code-opus-log.md
+2026-04-05,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-05-1343-lead-code-opus-log.md
+2026-04-05,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-05-0911-pa-opus-log.md
+2026-04-06,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"mediajunkie trigger audit, trigger migration prep",2026-04-06-log.md
+2026-04-06,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-07,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"trigger migration execution, backlog review",2026-04-07-log.md
+2026-04-07,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-07,piper-morgan,CXO,cxo,Chat,browser,dinp,opus,,2026-04-07-1735-cxo-opus-log.md
+2026-04-07,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-07-1654-docs-code-opus-log.md
+2026-04-07,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-07-1701-lead-code-opus-log.md
+2026-04-07,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-07-1647-pa-opus-log.md
+2026-04-08,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-08,piper-morgan,CXO,cxo,Chat,browser,dinp,opus,,2026-04-08-0522-cxo-opus-log.md
+2026-04-08,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-08-0539-docs-code-opus-log.md
+2026-04-08,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-08-0540-lead-code-opus-log.md
+2026-04-08,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-08-0534-pa-opus-log.md
+2026-04-09,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"agenda review, cross-project sync",2026-04-09-log.md
+2026-04-09,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-09,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-09-0845-docs-code-opus-log.md
+2026-04-09,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-09-0738-lead-code-opus-log.md
+2026-04-09,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-09-0741-pa-opus-log.md
+2026-04-10,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"trigger prompt updates, sweep verification",2026-04-10-log.md
+2026-04-10,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-10,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-10-2308-calliope-opus-log.md
+2026-04-10,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-10-2312-daedalus-opus-log.md
+2026-04-10,piper-morgan,CIO,cio,Chat,browser,dinp,opus,,2026-04-10-2250-cio-opus-log.md
+2026-04-10,piper-morgan,CXO,cxo,Chat,browser,dinp,opus,,2026-04-10-2242-cxo-opus-log.md
+2026-04-10,piper-morgan,Chief Architect,arch,Chat,browser,dinp,opus,,2026-04-10-2250-arch-opus-log.md
+2026-04-10,piper-morgan,Comms Chief,comms,Chat,browser,dinp,opus,,2026-04-10-2255-comms-opus-log.md
+2026-04-10,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-10-1602-docs-code-opus-log.md
+2026-04-10,piper-morgan,HOST,host,Chat,browser,dinp,opus,,2026-04-10-2252-host-opus-log.md
+2026-04-10,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-10-1601-lead-code-opus-log.md
+2026-04-10,piper-morgan,PPM,ppm,Chat,browser,dinp,opus,,2026-04-10-2255-ppm-opus-log.md
+2026-04-10,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-10-1601-pa-opus-log.md
+2026-04-11,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"Labrador research, sweep verification",2026-04-11-log.md
+2026-04-11,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-11,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-11-1238-argus-opus-log.md
+2026-04-11,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-11-1211-calliope-opus-log.md
+2026-04-11,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-11-1610-daedalus-opus-log.md
+2026-04-11,klatch,Iris,iris,Code,faoilean,dinp,opus,,2026-04-11-1235-iris-opus-log.md
+2026-04-11,piper-morgan,CIO,cio,Chat,browser,dinp,opus,,2026-04-11-cio-session-log.md
+2026-04-11,piper-morgan,CXO,cxo,Chat,browser,dinp,opus,,2026-04-11-1613-cxo-opus-log.md
+2026-04-11,piper-morgan,Chief Architect,arch,Chat,browser,dinp,opus,,2026-04-11-1632-arch-opus-log.md
+2026-04-11,piper-morgan,Chief of Staff,exec,Chat,browser,dinp,opus,,2026-04-11-1142-exec-opus-log.md
+2026-04-11,piper-morgan,Comms Chief,comms,Chat,browser,dinp,opus,,2026-04-11-2204-comms-opus-log.md
+2026-04-11,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-11-0725-docs-code-opus-log.md
+2026-04-11,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-11-1614-docs-code-opus-log.md
+2026-04-11,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-11-0708-lead-code-opus-log.md
+2026-04-11,piper-morgan,PPM,ppm,Chat,browser,dinp,opus,,2026-04-11-1157-ppm-opus-log.md
+2026-04-11,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-11-1205-pa-opus-log.md
+2026-04-12,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"memory research plan, sweep verification",2026-04-12-log.md
+2026-04-12,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-12,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-12-1718-argus-opus-log.md
+2026-04-12,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-12-1152-calliope-opus-log.md
+2026-04-12,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-12-1421-daedalus-opus-log.md
+2026-04-12,klatch,Iris,iris,Code,faoilean,dinp,opus,,2026-04-12-1850-iris-opus-log.md
+2026-04-12,piper-morgan,CXO,cxo,Chat,browser,dinp,opus,,2026-04-12-1125-cxo-opus-log.md
+2026-04-12,piper-morgan,Chief Architect,arch,Chat,browser,dinp,opus,,2026-04-12-1126-arch-opus-log.md
+2026-04-12,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-12-0838-docs-code-opus-log.md
+2026-04-12,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-12-0955-lead-code-opus-log.md
+2026-04-12,piper-morgan,PPM,ppm,Chat,browser,dinp,opus,,2026-04-12-1124-ppm-opus-log.md
+2026-04-12,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-12-0806-pa-opus-log.md
+2026-04-13,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"distribution upgrade, schedule optimization, independent work items",2026-04-13-log.md
+2026-04-13,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-13,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-13-0816-argus-opus-log.md
+2026-04-13,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-13-0710-calliope-opus-log.md
+2026-04-13,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-13-1021-daedalus-opus-log.md
+2026-04-13,klatch,Iris,iris,Code,faoilean,dinp,opus,,2026-04-13-0815-iris-opus-log.md
+2026-04-13,piper-morgan,Claude Code (general),code,Chat,browser,dinp,opus,,2026-04-13-1000-code-opus-log.md
+2026-04-13,piper-morgan,Comms Chief,comms,Chat,browser,dinp,opus,,2026-04-13-0807-comms-opus-log.md
+2026-04-13,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-13-0812-docs-code-opus-log.md
+2026-04-13,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-13-0814-lead-code-opus-log.md
+2026-04-13,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-13-0742-pa-opus-log.md
+2026-04-14,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"trigger verification, DinP agenda review",2026-04-14-log.md
+2026-04-14,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-14,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-14-1729-argus-opus-log.md
+2026-04-14,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-14-0730-calliope-opus-log.md
+2026-04-14,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-14-1725-daedalus-opus-log.md
+2026-04-14,klatch,Iris,iris,Code,faoilean,dinp,opus,,2026-04-14-1710-iris-opus-log.md
+2026-04-14,piper-morgan,Chief Architect,arch,Chat,browser,dinp,opus,,2026-04-14-1347-arch-opus-log.md
+2026-04-14,piper-morgan,Comms Chief,comms,Chat,browser,dinp,opus,,2026-04-14-1151-comms-opus-log.md
+2026-04-14,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-14-1226-docs-code-opus-log.md
+2026-04-14,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-14-1235-lead-code-opus-log.md
+2026-04-14,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-14-1217-pa-opus-log.md
+2026-04-15,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"travel day sync, sweep recovery",2026-04-15-log.md
+2026-04-15,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-15-1711-argus-opus-log.md
+2026-04-15,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-15-1705-daedalus-opus-log.md
+2026-04-15,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-15-0629-docs-code-opus-log.md
+2026-04-15,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-15-0635-lead-code-opus-log.md
+2026-04-15,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-15-0625-pa-opus-log.md
+2026-04-16,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"OpenLaws data boundary review, conference day",2026-04-16-log.md
+2026-04-16,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-16,piper-morgan,CIO,cio,Chat,browser,dinp,opus,,2026-04-16-cio-session-log.md
+2026-04-16,piper-morgan,CXO,cxo,Chat,browser,dinp,opus,,2026-04-16-0649-cxo-opus-log.md
+2026-04-16,piper-morgan,Chief Architect,arch,Chat,browser,dinp,opus,,2026-04-16-1613-arch-opus-log.md
+2026-04-16,piper-morgan,Comms Chief,comms,Chat,browser,dinp,opus,,2026-04-16-1628-comms-opus-log.md
+2026-04-16,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-16-0857-docs-code-opus-log.md
+2026-04-16,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-16-0638-lead-code-opus-log.md
+2026-04-16,piper-morgan,PPM,ppm,Chat,browser,dinp,opus,,2026-04-16-1700-ppm-opus-log.md
+2026-04-16,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-16-0915-pa-opus-log.md
+2026-04-17,piper-morgan,CIO,cio,Chat,browser,dinp,opus,,2026-04-17-cio-session-log.md
+2026-04-17,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-17-1410-lead-code-opus-log.md
+2026-04-18,designinproduct,Janus,janus,Code,faoilean,dinp,opus,post-conference check-in,2026-04-18-log.md
+2026-04-18,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-18-1256-argus-opus-log.md
+2026-04-18,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-18-1124-calliope-opus-log.md
+2026-04-18,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-18-1141-daedalus-opus-log.md
+2026-04-18,piper-morgan,Chief Architect,arch,Chat,browser,dinp,opus,,2026-04-18-1355-arch-opus-log.md
+2026-04-18,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-18-0927-docs-code-opus-log.md
+2026-04-18,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-18-0751-pa-opus-log.md
+2026-04-19,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-19,piper-morgan,CIO,cio,Chat,browser,dinp,opus,,2026-04-19-cio-session-log.md
+2026-04-19,piper-morgan,CXO,cxo,Chat,browser,dinp,opus,,2026-04-19-0949-cxo-opus-log.md
+2026-04-19,piper-morgan,Chief Architect,arch,Chat,browser,dinp,opus,,2026-04-19-0941-arch-opus-log.md
+2026-04-19,piper-morgan,Chief of Staff,exec,Chat,browser,dinp,opus,,2026-04-19-1106-exec-opus-log.md
+2026-04-19,piper-morgan,Comms Chief,comms,Chat,browser,dinp,opus,,2026-04-19-0950-comms-opus-log.md
+2026-04-19,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-19-0639-docs-code-opus-log.md
+2026-04-19,piper-morgan,PPM,ppm,Chat,browser,dinp,opus,,2026-04-19-0946-ppm-opus-log.md
+2026-04-20,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"Argus research sweep check, session-start sync",2026-04-20-log.md
+2026-04-21,designinproduct,Janus,janus,Code,faoilean,dinp,opus,Apr 21 brief zombie-content fix + sweep prompt patch,2026-04-21-log.md
+2026-04-21,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-21,piper-morgan,Chief of Staff,exec,Chat,browser,dinp,opus,,2026-04-21-1808-exec-opus-log.md
+2026-04-21,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-21-2205-docs-code-opus-log.md
+2026-04-22,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"Apr 22 brief recovery + delivery, investigate branch-not-main regression",2026-04-22-log.md
+2026-04-22,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-22,piper-morgan,Chief of Staff,exec,Chat,browser,dinp,opus,,2026-04-22-1704-exec-opus-log.md
+2026-04-22,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-22-0711-docs-code-opus-log.md
+2026-04-22,piper-morgan,HOST,host,Code,faoilean,dinp,opus,,2026-04-22-1823-host-code-opus-log.md
+2026-04-22,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-22-1645-lead-code-opus-log.md
+2026-04-23,designinproduct,Janus,janus,Code,faoilean,dinp,opus,Apr 23 brief delivery + Option 1 delivery trigger build + config review memo,2026-04-23-log.md
+2026-04-23,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-23,piper-morgan,CIO,cio,Code,faoilean,dinp,opus,,2026-04-23-1154-cio-code-opus-log.md
+2026-04-23,piper-morgan,CIO,cio,Chat,browser,dinp,opus,,2026-04-23-cio-session-log.md
+2026-04-23,piper-morgan,Chief of Staff,exec,Chat,browser,dinp,opus,,2026-04-23-1038-exec-opus-log.md
+2026-04-23,piper-morgan,Comms Chief,comms,Chat,browser,dinp,opus,,2026-04-23-1757-comms-opus-log.md
+2026-04-23,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-23-0619-docs-code-opus-log.md
+2026-04-23,piper-morgan,HOST,host,Code,faoilean,dinp,opus,,2026-04-23-1835-host-code-opus-log.md
+2026-04-23,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-23-0923-lead-code-opus-log.md
+2026-04-23,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-23-0833-pa-opus-log.md
+2026-04-24,designinproduct,Janus,janus,Code,faoilean,dinp,opus,Apr 24 open — inventory and check-in after xian returns from OpenLaws sprint work,2026-04-24-log.md
+2026-04-24,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-24,piper-morgan,Chief of Staff,exec,Chat,browser,dinp,opus,,2026-04-24-0941-exec-opus-log.md
+2026-04-24,piper-morgan,Comms Chief,comms,Code,faoilean,dinp,opus,,2026-04-24-0916-comms-code-opus-log.md
+2026-04-24,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-24-1802-docs-code-opus-log.md
+2026-04-25,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"Apr 25 — PO advice request routing, mail review, goals-list inventory",2026-04-25-log.md
+2026-04-25,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-25,piper-morgan,CXO,cxo,Chat,browser,dinp,opus,,2026-04-25-1625-cxo-opus-log.md
+2026-04-25,piper-morgan,CXO,cxo,Code,faoilean,dinp,opus,,2026-04-25-1836-cxo-code-opus-log.md
+2026-04-25,piper-morgan,Chief Architect,arch,Chat,browser,dinp,opus,,2026-04-25-1658-arch-opus-log.md
+2026-04-25,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-25-0809-docs-code-opus-log.md
+2026-04-25,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-25-1526-lead-code-opus-log.md
+2026-04-25,piper-morgan,PPM,ppm,Chat,browser,dinp,opus,,2026-04-25-1632-ppm-opus-log.md
+2026-04-25,piper-morgan,PPM,ppm,Code,faoilean,dinp,opus,,2026-04-25-1840-ppm-code-opus-log.md
+2026-04-25,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-25-0843-pa-opus-log.md
+2026-04-26,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"Apr 26 Sun — wrap Sat log, mail/trigger inventory, daily memo to DK, resume backlog",2026-04-26-log.md
+2026-04-26,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-26,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-26-0701-argus-opus-log.md
+2026-04-26,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-26-0702-calliope-opus-log.md
+2026-04-26,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-26-0700-daedalus-opus-log.md
+2026-04-26,klatch,Theseus Prime,theseus,Code,faoilean,dinp,opus,,2026-04-26-1430-theseus-opus-log.md
+2026-04-26,piper-morgan,CIO,cio,Code,faoilean,dinp,opus,,2026-04-26-1306-cio-code-opus-log.md
+2026-04-26,piper-morgan,CXO,cxo,Code,faoilean,dinp,opus,,2026-04-26-0628-cxo-code-opus-log.md
+2026-04-26,piper-morgan,Chief Architect,arch,Chat,browser,dinp,opus,,2026-04-26-1240-arch-opus-log.md
+2026-04-26,piper-morgan,Chief of Staff,exec,Chat,browser,dinp,opus,,2026-04-26-1017-exec-opus-log.md
+2026-04-26,piper-morgan,Chief of Staff,exec,Chat,browser,dinp,opus,,2026-04-26-1341-exec-opus-log.md
+2026-04-26,piper-morgan,Comms Chief,comms,Code,faoilean,dinp,opus,,2026-04-26-1249-comms-code-opus-log.md
+2026-04-26,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-26-0626-docs-code-opus-log.md
+2026-04-26,piper-morgan,HOST,host,Code,faoilean,dinp,opus,,2026-04-26-2207-host-code-opus-log.md
+2026-04-26,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-26-0637-lead-code-opus-log.md
+2026-04-26,piper-morgan,PPM,ppm,Code,faoilean,dinp,opus,,2026-04-26-0640-ppm-code-opus-log.md
+2026-04-26,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-26-0640-pa-opus-log.md
+2026-04-27,designinproduct,Janus,janus,Code,faoilean,dinp,opus,Apr 27 Mon — quick DinP review before xian's OpenLaws/Kind workday; first full Mon of new 4-trigg...,2026-04-27-log.md
+2026-04-27,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-27,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-27-0807-calliope-opus-log.md
+2026-04-27,klatch,Theseus Prime,theseus,Code,faoilean,dinp,opus,,2026-04-27-1355-theseus-opus-log.md
+2026-04-27,piper-morgan,CXO,cxo,Code,faoilean,dinp,opus,,2026-04-27-1307-cxo-code-opus-log.md
+2026-04-27,piper-morgan,Chief Architect,arch,Chat,browser,dinp,opus,,2026-04-27-0815-arch-opus-log.md
+2026-04-27,piper-morgan,Chief of Staff,exec,Chat,browser,dinp,opus,,2026-04-27-0858-exec-opus-log.md
+2026-04-27,piper-morgan,Comms Chief,comms,Code,faoilean,dinp,opus,,2026-04-27-1401-comms-code-opus-log.md
+2026-04-27,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-27-0802-docs-code-opus-log.md
+2026-04-27,piper-morgan,HOST,host,Code,faoilean,dinp,opus,,2026-04-27-1308-host-code-opus-log.md
+2026-04-27,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-27-1212-lead-code-opus-log.md
+2026-04-27,piper-morgan,PPM,ppm,Code,faoilean,dinp,opus,,2026-04-27-1351-ppm-code-opus-log.md
+2026-04-27,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-27-0800-pa-opus-log.md
+2026-04-28,designinproduct,Janus,janus,Code,faoilean,dinp,opus,Apr 28 Tue — agent activity spreadsheet catch-up; review pending and standing agenda,2026-04-28-log.md
+2026-04-28,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-28,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-28-0848-argus-opus-log.md
+2026-04-28,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-28-0652-calliope-opus-log.md
+2026-04-28,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-28-0726-daedalus-opus-log.md
+2026-04-28,klatch,Iris,iris,Code,faoilean,dinp,opus,,2026-04-28-0639-iris-opus-log.md
+2026-04-28,piper-morgan,Chief Architect,arch,Chat,browser,dinp,opus,,2026-04-28-0655-arch-opus-log.md
+2026-04-28,piper-morgan,Chief of Staff,exec,Chat,browser,dinp,opus,,2026-04-28-0648-exec-opus-log.md
+2026-04-28,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-28-0712-docs-code-opus-log.md
+2026-04-28,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-28-0715-lead-code-opus-log.md
+2026-04-28,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-28-0652-pa-opus-log.md
+2026-04-29,designinproduct,Janus,janus,Code,faoilean,dinp,opus,Apr 29 Wed — standing routines health check (today's brief missing); resume CSV reconciliation di...,2026-04-29-log.md
+2026-04-29,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-29,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-29-1258-argus-opus-log.md
+2026-04-29,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-29-1302-daedalus-opus-log.md
+2026-04-29,piper-morgan,Chief of Staff,exec,Code,faoilean,dinp,opus,Day 3 wrap (Wed) + Day 4 wrap (Thu inbox 49→0),2026-04-29-1253-exec-opus-log.md
+2026-04-29,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-29-0821-docs-code-opus-log.md
+2026-04-29,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-29-1305-lead-code-opus-log.md
+2026-04-29,piper-morgan,Piper Alpha,pa,Code,faoilean,dinp,opus,,2026-04-29-1309-pa-opus-log.md
+2026-04-30,designinproduct,Janus,janus,Code,faoilean,dinp,opus,Apr 30 Thu — current status check on tracked items; CSV reconciliation likely,2026-04-30-log.md
+2026-04-30,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-04-30,klatch,Iris,iris,Code,faoilean,dinp,opus,,2026-04-30-0754-iris-opus-log.md
+2026-04-30,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,Apr 29 omnibus + agent activity log relocation/backfill (173 rows) + Floor Comes Alive publish,2026-04-30-0751-docs-code-opus-log.md
+2026-04-30,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,Phase F flag-flip merged + #992 closed; #1018 Phase 1 ratified same day; #948 fix shipped,2026-04-30-0632-lead-code-opus-log.md
+2026-05-01,designinproduct,Themis,themis,Code,cloud,dinp,opus,"role inception — naming, scope, voice, file structure for new business advisor agent alongside Janus",2026-05-01-themis-log.md
+2026-05-01,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
+2026-05-02,designinproduct,Janus,janus,Code,faoilean,dinp,opus,May 2 Sat — meet Themis (new DinP business-strategy role); catch up on changes; review open topics,2026-05-02-log.md
+2026-05-02,designinproduct,Themis,themis,Code,cloud,dinp,opus,"orientation — Xian's career arc, current Kind/OpenLaws posture, frame-setting for upcoming option...",2026-05-02-themis-log.md
+2026-05-02,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,Drift insight publish + Apr 30/May 1 omnibus + dev/active arch-memo archive,2026-05-02-1016-docs-code-opus-log.md
+2026-05-03,designinproduct,Themis,themis,Code,cloud,dinp,opus,timing-model refinement; preparation for Step 1 Q&A first pass,2026-05-03-themis-log.md
+2026-05-03,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,cloud,dinp,—,,activity-log
+2026-05-03,klatch,Iris,iris,Code,faoilean,dinp,opus,,2026-05-03-0700-iris-opus-log.md
+2026-05-04,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,cloud,dinp,—,,activity-log
+2026-05-05,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,cloud,dinp,—,,activity-log
+2026-05-06,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,cloud,dinp,—,,activity-log
+2026-05-07,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,cloud,dinp,—,,activity-log
+2026-05-08,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,cloud,dinp,—,,activity-log
+2026-05-09,designinproduct,Janus,janus,Code,faoilean,dinp,opus,May 9 Sat — return after 7-day gap; complete Themis branch work; agent tracker update per Dispatc...,2026-05-09-janus-log.md
+2026-05-09,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,cloud,dinp,—,,activity-log
