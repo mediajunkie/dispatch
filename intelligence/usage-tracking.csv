@@ -19,3 +19,11 @@ date,account,cycle_day,usage_status,notes
 2026-04-14,mediajunkie,Max 5x,0%,weekly (reset since Apr 12),$0 extra (0% of $200 cap),session 0%; Sonnet never used; balance $108.39; auto-reload off; sub auto-cancels Apr 15; separate API-credit warning observed
 2026-04-17,dinp,Max 20x,6%,weekly (resets Thu 3PM),$200.15 extra (100% of $200 cap; resets May 1),session 7% / resets 4h1m; Sonnet-only 0%; routines 1/15; balance $32.90
 2026-04-17,kindsys,Max 5x,0%,weekly (starts when msg sent),$98.84 extra (66% of $150 cap; resets May 1),session 0%; Sonnet never used; routines 0/15; balance $46.14
+2026-04-25,dinp,Max 20x,12%,weekly (resets Wed 9PM),$200.15 extra (100% of $200 cap; resets May 1),session 17% / resets 1h55m; Sonnet 0%; routines 1/15; balance $32.90; auto-reload ON
+2026-04-25,kindsys,Max 5x,27%,weekly (resets Fri 6AM),$151.85 extra (101% of $150 cap; resets May 1),session 0%; Sonnet 0%; routines 0/15; balance $14.46; auto-reload ON; OpenLaws sprint starting Monday will increase Kind-side burn
+2026-04-28,dinp,Max 20x,63%,weekly (resets Wed 9PM),$200.15 extra (100% of $200 cap; resets May 1),session 5% / resets 3h23m; Sonnet 2%; routines 1/15; balance $32.90; auto-reload ON; weekly jumped from 12% Sat
+2026-04-28,kindsys,Max 5x,53%,weekly (resets Fri 6AM),$151.85 extra (101% of $150 cap; resets May 1),session 0%; Sonnet 2%; routines 0/15; balance $14.46; auto-reload ON; weekly jumped from 27% Sat (DK active over weekend)
+2026-05-02,dinp,Max 20x,12%,weekly (resets Wed 9PM),$0 extra (0% of $200 cap; resets Jun 1),POST-RESET; session 7% / resets 3h18m; Sonnet 1%; Claude Design 21%; routines 1/15; balance $32.90; auto-reload ON
+2026-05-02,kindsys,Max 20x,6%,weekly (resets Fri 6AM),$0 extra (0% of $200 cap; resets Jun 1),POST-RESET + UPGRADED to Max 20x from Max 5x; session 0%; Sonnet 0%; routines 0/15; balance $6.34 (thin); auto-reload ON
+2026-05-05,dinp,Max 20x,48%,weekly (resets Wed 9PM),$0 extra (0% of $200 cap; resets Jun 1),session 3% / resets 3h25m; Sonnet 2%; Claude Design 21%; routines 0/15; balance $32.92; auto-reload ON
+2026-05-05,kindsys,Max 20x,19%,weekly (resets Fri 5:59AM),$0 extra (0% of $200 cap; resets Jun 1),session 24% / resets 3m; Sonnet 0%; routines 0/15; balance $6.35; auto-reload ON
