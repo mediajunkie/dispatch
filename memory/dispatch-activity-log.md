@@ -1498,3 +1498,48 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - **Mon 5/11 (T+3)**: Argus next external CCR auto-trigger (7-day cadence); Claude 3.7 Sonnet retires on Vertex AI (no Klatch impact — aliases in place).
 - **Sun Jun 7 (T+30)**: OpenLaws Bet 1 sprint window close.
 - **Sun Jun 15 (T+38)**: Sonnet 4 / Opus 4 deprecation. Klatch DB audit query for pinned literal model IDs remains overdue.
+
+## 2026-05-09 (Saturday)
+
+**Focus**: PM Friday late-day surge (~17 commits) — **PreCompact hook #86 shipped** (third sign-off layer, warn-only, fires before context compaction; logs to `dev/active/session-end-warnings.log`); #1063 stale-test rewrite closed in 15 min (12 skips → 0; standup directory 363/363 zero-skip); **P0 #1064 fabrication-regression hypothesis REFUTED** — apparent 9% drop (72.1% → 65.6%) is judge miscalibration + fixture pollution, not LLM degeneration (Q56 "show my todos" flagged as fabrication, but canonical user had 15 real DB rows accumulated from prior retest "add todo" mutations without cleanup; 0/10 auto-fails were pure fabrication, 7/10 false flags, 3/10 narrow code bugs); **CIO promoted Patterns-063, -064, -065 Emerging → Proven** (062-family now fully Proven). M2f opens but audit-cascade BLOCKED on pre-M2f remediation per CEO directive. OpenLaws Sprint Day 11 closed strong (~16 commits) — **spike-decision Friday landed POSITIVE: "Continue the bet"**; v0.2 SKILL shipped via PR #29 merged; vendor-packaging research synthesis filed (3-subagent fan-out); pre-PR audit checklist patterns #9–#12 added; `Checks` ruleset re-enabled active post-merge; five strategic open questions queued for Monday retro.
+
+### What happened:
+
+- **Piper Morgan (product, ~17 commits)**: Late-day Friday surge. **PreCompact hook (#86) shipped** — third sign-off layer (agent checklist → merge-keeper sweep → PreCompact hook), warn-only, fires before context compaction, logs to `dev/active/session-end-warnings.log`. **#1063 stale-test rewrite closed in 15 min**: 12 skips → 0; standup directory now 363/363 zero-skip (subagent-annotates → next-session-rewrites arc clean). **P0 #1064 fabrication-regression hypothesis REFUTED** — smoking gun: Q56 "show my todos" flagged as fabrication, but the canonical user had 15 real DB rows accumulated from prior retest "add todo" mutations without cleanup. Triage of 10 auto-fails: 0/10 pure fabrication, 7/10 false flags from judge + fixture, 3/10 narrow code bugs (`intent_service.py` setup-wizard refs, slot-filling `#N`). **CIO promoted Patterns-063, -064, -065 Emerging → Proven**. M2f opens but audit-cascade work BLOCKED on pre-M2f remediation (fixture reset + judge recalibration + 3 narrow bug fixes + clean retest) per CEO directive.
+- **Piper Morgan (website)**: No new commits.
+- **OpenLaws (~16 commits)**: Sprint Day 11 closed strong. **Spike-decision Friday landed POSITIVE — "Continue the bet."** v0.2 SKILL shipped via PR #29 merged. Vendor-packaging research synthesis filed (3-subagent fan-out). Pre-PR audit checklist patterns #9–#12 added; `Checks` ruleset re-enabled active post-merge. Five strategic open questions queued for Monday retro (cross-client aggressiveness, Smithery vs Anthropic-first, curated-vs-open, OAuth timing, Verified Publisher badge). PR #30 (PO's plain-language register layer + fixes) pending Jerry's review Monday.
+- **designinproduct (3 commits)**: 5/9 sweep receipt substantive; 5/9 cross-pollination brief delivered (PreCompact hook, #1064 false regression, Patterns-063/064/065 Proven).
+- **Klatch**: Cross-pollination 5/9 brief receipt; no session activity.
+- **Dispatch (4 commits)**: 5/8 cross-pollination brief; 5/8 daily memo to DK; auto activity-log + stranded-changes commit.
+- **Weather/Zephyr, Rebel**: No activity (xpoll receipt only on Weather; Rebel back-burner).
+
+### Signals / decisions:
+
+- **PreCompact hook portable to Klatch** — 3 git checks (uncommitted / unpushed / ahead-of-origin), warn-only, exit 0 always. Three-layer sign-off model (agent checklist → merge-keeper sweep → PreCompact hook) now complete in PM. Staged-rollout discipline worth adopting: defer SessionEnd hook until PreCompact catch-rate is observed; adding two hooks simultaneously makes attribution hard.
+- **Eval-harness fixture-hygiene pattern (Q56 finding)** — DB mutations from one run polluting next without visible error, mappable to any Klatch eval that writes to DB. Mitigation: per-run teardown or per-run isolated schema. Also: judge calibration should distinguish queries that need user-context-specificity from those that don't — a single dim=0 → FAIL on identity queries is a common false-positive shape.
+- **Pattern-064 "alive scaffolding" Proven** — 062/063/064 architectural-debt diagnostic (seams / vocabulary / extension) now fully Proven and ready as a portable triage tool. Directly Klatch-relevant.
+- **Regression-investigation discipline** — when retest auto-fail rate jumps, suspect judge + fixture before suspecting LLM. Triage 10 fails → categorize (pure fab / false flag / code bug); 0/10 pure fab is a classifier-and-state problem, not a model problem. Klatch transfer for any future eval-harness regression alarm.
+- **Spike-decision gate landed POSITIVE on OpenLaws Bet 1** — "Continue the bet." Local-iterate + cross-check #9 + Desktop simulation reproducibility was the path; PR #29 merged closes the v0.2 SKILL gate cleanly.
+- **M2f audit-cascade BLOCKED on pre-M2f remediation** — CEO directive: fixture reset + judge recalibration (CXO/PPM coordination) + 3 narrow bug fixes + clean retest must land before audit-cascade resumes. No xian decision required yet; heads-up if CXO/PPM coordination needs nudging.
+- **Anti-Zombie Pass clean** — no carry items re-flagged.
+
+### Pending (carried into May 10):
+
+- **PM M2f pre-remediation gate** — fixture reset + judge recalibration (CXO/PPM coordination) + 3 narrow bug fixes + clean retest blocks M2f audit-cascade per CEO directive 5/8 17:22.
+- **OpenLaws PR #30** — PO's plain-language register layer + fixes pending Jerry's review Monday. No action today.
+- **OpenLaws five strategic questions for Monday retro** — cross-client aggressiveness, Smithery vs Anthropic-first, curated-vs-open, OAuth timing, Verified Publisher badge.
+- **OpenLaws synonym-registry question to John** — PO draft at `workdesk/draft-question-to-john-synonym-registry-2026-05-04.md` unsent (carried 5 days). Light-touch sanity-check.
+- **OpenLaws working-tree hygiene** — `experiments/openlaws-mcp-poc-py/` rename residue (9+ days untracked).
+- **Usage CSV reconciliation** — Janus §1; **22 days stale** (last append Apr 17). Apr 25 + Apr 28 + May 2 + May 5 snapshots in activity log waiting to be structured into `intelligence/usage-tracking.csv`.
+- **Janus DinP §1 backlog** — bootstrap scaffolding, memory file refresh, daily memo composition. Resumable.
+- **PM SDK 6 versions behind** — `@anthropic-ai/sdk 0.92.0` vs. pinned `^0.86.1`. Queued for next dep-maintenance window.
+- **PM roadmap.md 28 days stale** — last mtime Apr 11; Docs audit (#1049) flagged; PPM cadence proposal pending.
+- **#983 CONTEXT-BLOCKED label-convention memo to Architect** — sent Tue 5/05; in arch inbox; awaiting Architect verdict.
+- **Iris (Klatch) UX walkthrough Surfaces 3–8 + Pass 2** — paused; 5/8 resume planned, did not happen; carries.
+- **Calliope (Klatch) PO advice-on-working-with-xian reply** — outside original window; tracking only.
+- **DK→DinP daily memos 5/8 + 5/9** — both unposted at brief time. Per 4/23 DECISIONS.md skip-days OK with backfill on next session. Tracking only.
+- **Argus split-regime status** — external sweep `2026-05-04-sweep.md` 5 days old (within 8-day window); curated `2026-04-27-sweep-curated.md` 12 days (within 14-day flag); next external CCR auto-trigger Mon 5/11.
+- **Cross-pollination current-week brief** — 5 days stale (mtime May 4, covers Apr 27–May 3). Skipped per >2-day rule.
+- **Mon 5/11 (T+2)**: Argus next external CCR auto-trigger (7-day cadence); Claude 3.7 Sonnet retires on Vertex AI (no Klatch impact — aliases in place); OpenLaws PR #30 review with Jerry.
+- **Sun Jun 7 (T+29)**: OpenLaws Bet 1 sprint window close.
+- **Sun Jun 15 (T+37)**: Sonnet 4 / Opus 4 deprecation. Klatch DB audit query for pinned literal model IDs remains overdue.
