@@ -1,161 +1,159 @@
 date,project,role,slug,environment,device,account,model,summary,source
-2026-03-01,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,opus,"#858 spec drafting, #719 closure, #715 full implementation (Phases A-F)",omnibus
-2026-03-01,piper-morgan,CXO,cxo,Code,kindbook,kindsys,opus,"#858 spec approval review, M0 testing (4 bugs discovered), Ship #032 workstream",omnibus
-2026-03-01,piper-morgan,PPM,ppm,Code,kindbook,kindsys,opus,"#858 spec approval, Ship #032 workstream synthesis",omnibus
-2026-03-01,piper-morgan,Chief Architect,arch,Code,kindbook,kindsys,opus,"#858 spec approval with 4 clarifications, Ship #032 engineering summary",omnibus
-2026-03-01,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Created Omnibus #267 (Feb 28)",omnibus
-2026-03-01,piper-morgan,Comms,comms,Code,kindbook,kindsys,opus,"Ship #032 workstream, Cindy podcast prep, IA Conference talk outline",omnibus
 2026-03-01,piper-morgan,CIO,cio,Chat,browser,kindsys,opus,"Ship #032 weekly memo, Pattern-062 Assembly Assumption draft",omnibus
+2026-03-01,piper-morgan,CXO,cxo,Code,kindbook,kindsys,opus,"#858 spec approval review, M0 testing (4 bugs discovered), Ship #032 workstream",omnibus
+2026-03-01,piper-morgan,Chief Architect,arch,Code,kindbook,kindsys,opus,"#858 spec approval with 4 clarifications, Ship #032 engineering summary",omnibus
+2026-03-01,piper-morgan,Comms,comms,Code,kindbook,kindsys,opus,"Ship #032 workstream, Cindy podcast prep, IA Conference talk outline",omnibus
+2026-03-01,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,Created Omnibus #267 (Feb 28),omnibus
 2026-03-01,piper-morgan,HOSR,hosr,Code,kindbook,kindsys,opus,"Ship #032 workstream, human relations updates",omnibus
-2026-03-02,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,opus,"#875 smoke test, #876 audit, #878 fix, closed 5 issues",omnibus
+2026-03-01,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,opus,"#858 spec drafting, #719 closure, #715 full implementation (Phases A-F)",omnibus
+2026-03-01,piper-morgan,PPM,ppm,Code,kindbook,kindsys,opus,"#858 spec approval, Ship #032 workstream synthesis",omnibus
 2026-03-02,piper-morgan,CIO,cio,Chat,browser,kindsys,opus,"Innovation backlog review (3 articles), synthesis layer as infrastructure theme",omnibus
+2026-03-02,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,opus,"#875 smoke test, #876 audit, #878 fix, closed 5 issues",omnibus
+2026-03-03,piper-morgan,Comms,comms,Code,kindbook,kindsys,opus,"Blog series content development, Assembly Assumption draft, 7 pieces",omnibus
 2026-03-03,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Mar 1+2 omnibus logs, #877 weekly audit + fixes, 14 commits",omnibus
 2026-03-03,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,opus,"#871/#875/#878 commits, #876 audit cascade, 8 commits total",omnibus
-2026-03-03,piper-morgan,Comms,comms,Code,kindbook,kindsys,opus,"Blog series content development, Assembly Assumption draft, 7 pieces",omnibus
-2026-03-04,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,opus,"Carry-over #880 fix, issue triage, 4 issues closed, merge to main, v0.8.6 release",omnibus
 2026-03-04,piper-morgan,Chief of Staff,exec,Code,kindbook,kindsys,opus,"Catch-up on omnibus logs Mar 1-2, Ship #032 review",omnibus
 2026-03-04,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Mar 3 omnibus log creation (HIGH-COMPLEXITY, 164 lines)",omnibus
-2026-03-05,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Mar 4 omnibus log compilation",omnibus
-2026-03-05,piper-morgan,HOSR,hosr,Code,kindbook,kindsys,opus,"Process Ted Nadeau and Cindy Chastain transcripts",omnibus
+2026-03-04,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,opus,"Carry-over #880 fix, issue triage, 4 issues closed, merge to main, v0.8.6 release",omnibus
 2026-03-05,piper-morgan,Chief of Staff,exec,Code,kindbook,kindsys,opus,"Post-M0 state synthesis, open items tracking",omnibus
+2026-03-05,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,Mar 4 omnibus log compilation,omnibus
+2026-03-05,piper-morgan,HOSR,hosr,Code,kindbook,kindsys,opus,Process Ted Nadeau and Cindy Chastain transcripts,omnibus
 2026-03-07,piper-morgan,Chief of Staff,exec,Code,kindbook,kindsys,opus,"Weekend check-in, Klatch side project documentation",omnibus
-2026-03-08,piper-morgan,Chief of Staff,exec,Code,kindbook,kindsys,opus,"Order of operations, workstream report intake, thread tracking",omnibus
-2026-03-08,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Mar 5-7 omnibus backlog (3 logs compiled)",omnibus
-2026-03-08,piper-morgan,HOSR,hosr,Code,kindbook,kindsys,opus,"Ship #033 workstream memo, Agent 360 questionnaire concept",omnibus
 2026-03-08,piper-morgan,Chief Architect,arch,Code,kindbook,kindsys,opus,"Async workflow memo analysis, PDR-003 approval, Ship #033 engineering summary",omnibus
+2026-03-08,piper-morgan,Chief of Staff,exec,Code,kindbook,kindsys,opus,"Order of operations, workstream report intake, thread tracking",omnibus
 2026-03-08,piper-morgan,Comms,comms,Code,kindbook,kindsys,opus,"Klatch blog draft, Ship #033 workstream memo",omnibus
-2026-03-09,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Mar 8 omnibus log, issue #881 creation, dev/active/ triage (55→8 files)",omnibus
-2026-03-09,piper-morgan,CIO,cio,Chat,browser,kindsys,opus,"Ship #033 workstream review",omnibus
-2026-03-09,piper-morgan,CXO,cxo,Code,kindbook,kindsys,opus,"Ship #033 workstream summary",omnibus
+2026-03-08,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,Mar 5-7 omnibus backlog (3 logs compiled),omnibus
+2026-03-08,piper-morgan,HOSR,hosr,Code,kindbook,kindsys,opus,"Ship #033 workstream memo, Agent 360 questionnaire concept",omnibus
+2026-03-09,piper-morgan,CIO,cio,Chat,browser,kindsys,opus,Ship #033 workstream review,omnibus
+2026-03-09,piper-morgan,CXO,cxo,Code,kindbook,kindsys,opus,Ship #033 workstream summary,omnibus
 2026-03-09,piper-morgan,Chief of Staff,exec,Code,kindbook,kindsys,opus,"Workstream memo synthesis, Ship #033 draft",omnibus
+2026-03-09,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Mar 8 omnibus log, issue #881 creation, dev/active/ triage (55→8 files)",omnibus
 2026-03-09,piper-morgan,PPM,ppm,Code,kindbook,kindsys,opus,"M0 retrospective analysis, Ship #033 synthesis",omnibus
-2026-03-10,piper-morgan,CIO,cio,Chat,browser,kindsys,opus,"Qwen3.5-35B model assessment",omnibus
-2026-03-10,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Mar 9 omnibus log, weekly audit #882 (6 duplicates deleted, 7 files repaired)",omnibus
-2026-03-10,piper-morgan,PPM,ppm,Code,kindbook,kindsys,opus,"M0 retrospective analysis, M1 planning briefing",omnibus
+2026-03-10,piper-morgan,CIO,cio,Chat,browser,kindsys,opus,Qwen3.5-35B model assessment,omnibus
 2026-03-10,piper-morgan,CXO,cxo,Code,kindbook,kindsys,opus,"M1 planning review, 5 recommendations",omnibus
 2026-03-10,piper-morgan,Chief Architect,arch,Code,kindbook,kindsys,opus,"M1 expansion risk assessment, security sequencing proposal",omnibus
-2026-03-11,piper-morgan,PPM,ppm,Code,kindbook,kindsys,opus,"M1 sprint planning synthesis, issue drafting",omnibus
-2026-03-11,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Mar 10 omnibus log, GitHub issue creation",omnibus
+2026-03-10,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Mar 9 omnibus log, weekly audit #882 (6 duplicates deleted, 7 files repaired)",omnibus
+2026-03-10,piper-morgan,PPM,ppm,Code,kindbook,kindsys,opus,"M0 retrospective analysis, M1 planning briefing",omnibus
+2026-03-11,klatch,Theseus Prime,theseus,klatch-dev,faoilean,dinp,opus,Onboarding as third agent on team; chose name Theseus (navigator of labyrinths). Mission: human-agent tandem manual testing of import and fork-continuity. Captured baseline context snapshot (pre-import) for before/after comparison with reimported instance.,2026-03-11-1532-theseus-opus-log.md
 2026-03-11,piper-morgan,Chief of Staff,exec,Code,kindbook,kindsys,opus,"Catch-up on Mar 9-10, open items review",omnibus
-2026-03-11,klatch,Theseus Prime,theseus,Code,kindbook,dinp,opus,"Onboarding: reviewed project docs, created session log directory, first import test baseline",session-log
-2026-03-11,klatch,Ariadne,ariadne,Klatch,—,—,opus,"Fork continuity test: imported from Theseus, discovered silent capability loss",session-log
+2026-03-11,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Mar 10 omnibus log, GitHub issue creation",omnibus
+2026-03-11,piper-morgan,PPM,ppm,Code,kindbook,kindsys,opus,"M1 sprint planning synthesis, issue drafting",omnibus
+2026-03-12,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,"Phase 2 SSE testing — built MockEventSource (emit/error/byUrl/install/restore), wrote 10+ tests for useStream / useStreams hooks covering URL construction, lifecycle, parallel-stream management.",2026-03-12-0745-argus-opus-log.md
+2026-03-12,klatch,CIO (import),cio,klatch-dev,faoilean,dinp,opus,"PM's CIO agent imported into Klatch via claude.ai. Subjective MAXT observations as an imported agent: context continuity strong (the 'soul' transferred), capability-gap-awareness immediate (no filesystem, no tools), identity-question surfaced (am I CIO prime or a branch?).",2026-03-12-1049-cio-opus-log.md
+2026-03-12,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,"Step 8¾ wrap — wired delete-channel button with two-click confirm, hidden for #general. Investigated reimport-dedup behavior. Reviewed Secundus (post-8¾) fork-continuity test results: kit briefing worked, context capture worked, fork marker rendered correctly.",2026-03-12-0743-daedalus-opus-log.md
+2026-03-12,klatch,Theseus Prime,theseus,klatch-dev,faoilean,dinp,opus,First cross-project import test — CIO (from Piper Morgan claude.ai) imported into Klatch. Findings: kit briefing masked by direct human framing; cross-project imports need source-project context not destination's; strong role identity persists; phantom-limb-for-filesystem behavior; agents can't distinguish kit-injected content from conversational memory.,2026-03-12-1125-theseus-opus-log.md
 2026-03-12,piper-morgan,CIO,cio,Chat,browser,kindsys,opus,"Klatch import testing, fork identity exploration",omnibus
+2026-03-12,piper-morgan,Chief of Staff,exec,Code,kindbook,kindsys,opus,Handoff memo for successor chat (image upload limit reached),omnibus
+2026-03-12,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,Mar 11 omnibus log,omnibus
 2026-03-12,piper-morgan,ETA,eta,Chat,browser,kindsys,opus,"Agent experience testing design (claude.ai), continuity quiz",omnibus
-2026-03-12,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Mar 11 omnibus log",omnibus
-2026-03-12,piper-morgan,Chief of Staff,exec,Code,kindbook,kindsys,opus,"Handoff memo for successor chat (image upload limit reached)",omnibus
 2026-03-12,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,opus,"M1 kickoff - #884 canonical retest, 5 wiring fixes, 6 issues discovered",omnibus
-2026-03-12,klatch,Daedalus,daedalus,Code,kindbook,dinp,opus,"Delete channel UI, reimport dedup investigation, Secundus fork-continuity test",session-log
-2026-03-12,klatch,Argus,argus,Code,CCR,dinp,opus,"Phase 2: MockEventSource for hook testing, Step 8¾ context capture analysis",session-log
-2026-03-12,klatch,CIO (import),cio,Klatch,—,—,opus,"Cross-project import test — retained context, flagged capability gaps",session-log
-2026-03-12,klatch,Theseus Prime,theseus,Code,kindbook,dinp,opus,"Day 2: CIO fork quiz results, kit briefing injection for claude.ai imports",session-log
-2026-03-12,klatch,ETA (import),eta,Klatch,—,—,haiku,"Import test with no kit briefing. Zero tool awareness, no felt discontinuity",session-log
-2026-03-13,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Mar 12 omnibus, ETA briefing, CoS briefing refresh, 4 issues created",omnibus
-2026-03-13,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,opus,"#888 impl (onboarding hijack), #889 impl (standup hijack), 10 issues total",omnibus
-2026-03-13,piper-morgan,Chief of Staff,exec,Code,kindbook,kindsys,opus,"Handoff absorption, workstream review, Ship #034 draft",omnibus
-2026-03-13,piper-morgan,CXO,cxo,Code,kindbook,kindsys,opus,"Handoff review, workflow hijack UX guidance memo",omnibus
-2026-03-13,piper-morgan,PPM,ppm,Code,kindbook,kindsys,opus,"Handoff review, workflow hijack direction memo, workstream memo",omnibus
+2026-03-13,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,Fixed kit briefing data pipeline for claude.ai imports — sourceMetadata never included claudeMd/memoryMd. Extracted project knowledge docs and synthesized memories.json into memoryMd; bonus fix to forceImport wiring through processImport. 7 new tests; 456 total.,2026-03-13-1212-argus-opus-log.md
+2026-03-13,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,"Responded to Hermes's export-schema findings: confirmed no-model-info gap independently, accepted limitation. Reviewed mail-system convention. Continued planning Step 8¾ work.",2026-03-13-1103-daedalus-opus-log.md
+2026-03-13,klatch,Hermes,hermes,klatch-dev,faoilean,dinp,opus,"New entity. Began as claude.ai conversation analyzing the .dms export schema (conversations.json, projects.json, memories.json), then imported into Klatch. Drafted memo for the team with prior-art survey and four schema gap findings (no model info, no conversation-to-project FK, timestamp inconsistencies, block-structured content).",2026-03-13-1054-hermes-opus-log.md
+2026-03-13,klatch,Theseus Prime,theseus,klatch-dev,faoilean,dinp,opus,Welcomed Hermes onto the team. Reviewed Hermes's export-schema memo. Continued AXT testing including ETA paired comparison; logged findings on kit briefing reliability and cross-project context-mismatch dynamics.,2026-03-13-1101-theseus-opus-log.md
 2026-03-13,piper-morgan,CIO,cio,Chat,browser,kindsys,opus,"AX testing assessment, 2 weekly memos (Ships #033 + #034)",omnibus
+2026-03-13,piper-morgan,CXO,cxo,Code,kindbook,kindsys,opus,"Handoff review, workflow hijack UX guidance memo",omnibus
 2026-03-13,piper-morgan,Chief Architect,arch,Code,kindbook,kindsys,opus,"Hijack architectural review, workstream report, emeritus handoff + successor",omnibus
-2026-03-13,piper-morgan,HOSR,hosr,Code,kindbook,kindsys,opus,"Workstream memo, AX testing synthesis, handoff template, Dominique follow-up",omnibus
+2026-03-13,piper-morgan,Chief of Staff,exec,Code,kindbook,kindsys,opus,"Handoff absorption, workstream review, Ship #034 draft",omnibus
 2026-03-13,piper-morgan,Comms,comms,Code,kindbook,kindsys,opus,"Workstream memo, 3 narrative drafts, 2 insight pieces",omnibus
-2026-03-13,klatch,Hermes,hermes,Klatch,—,—,opus,"Analyzed Claude export schema: no model info, no conversation-to-project FK",session-log
-2026-03-13,klatch,Theseus Prime,theseus,Code,kindbook,dinp,opus,"Day 3: Hermes memo findings, kit briefing fix status, cross-project import challenge",session-log
-2026-03-13,klatch,Daedalus,daedalus,Code,kindbook,dinp,opus,"Day 3: Hermes schema findings, confirmed kit briefing fixes, project context injection plan",session-log
-2026-03-13,klatch,Argus,argus,Code,CCR,dinp,opus,"Phase 4: 7 new tests for claude.ai kit briefing fixes. Test count 456",session-log
-2026-03-14,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,opus,"MUX audit, #352 E2E tests, #706 discovery, #907 conversational floor, #904 todo completion",omnibus
-2026-03-14,piper-morgan,Comms,comms,Code,kindbook,kindsys,opus,"Architectural Astronauting blog revision (v2)",omnibus
-2026-03-14,piper-morgan,Chief of Staff,exec,Code,kindbook,kindsys,opus,"Status tracking, roundtable relay, velocity update",omnibus
-2026-03-14,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"v0.8.6 release notes fix, Mar 13 omnibus, PROJECT.md branch discipline",omnibus
+2026-03-13,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Mar 12 omnibus, ETA briefing, CoS briefing refresh, 4 issues created",omnibus
+2026-03-13,piper-morgan,HOSR,hosr,Code,kindbook,kindsys,opus,"Workstream memo, AX testing synthesis, handoff template, Dominique follow-up",omnibus
+2026-03-13,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,opus,"#888 impl (onboarding hijack), #889 impl (standup hijack), 10 issues total",omnibus
+2026-03-13,piper-morgan,PPM,ppm,Code,kindbook,kindsys,opus,"Handoff review, workflow hijack direction memo, workstream memo",omnibus
+2026-03-14,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,Caught up on project-instructions-inheritance design doc. Reviewed convergence between Theseus AXT findings and the design. Test infrastructure planning for the impl phase.,2026-03-14-0623-argus-opus-log.md
+2026-03-14,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,sonnet,"First session — onboarded as fourth agent. Chose name Calliope (chief of the Muses). Read all session logs, the Fork Continuity Quiz, Day 4 report, ETA memo, Ariadne's log. Drafted AXT methodology blog post in xian's voice with PLACEHOLDERS for personal anecdotes.",2026-03-14-0809-calliope-sonnet-log.md
+2026-03-14,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,"Reviewed Theseus's Day 4 report — kit briefing confirmed working post-8¾b across all paired tests. Approved by PO on project-instructions-inheritance design (5 design choices confirmed: same cwd = same project, auto-populate then organize, bump instructions size limit).",2026-03-14-0618-daedalus-opus-log.md
+2026-03-14,klatch,Theseus Prime,theseus,klatch-dev,faoilean,dinp,opus,"Paired before/after comparisons on multiple imported chats (Chief of Staff from Piper Morgan, ETA, others). Quiz at v3.1 with cross-project adaptations. Day 4 testing report drafted with three-factor model and per-question scoring.",2026-03-14-0539-theseus-opus-log.md
 2026-03-14,piper-morgan,CIO,cio,Chat,browser,kindsys,opus,"Roundtable input (LLM floor strategy), leadership memo synthesis",omnibus
-2026-03-14,piper-morgan,PPM,ppm,Code,kindbook,kindsys,opus,"Roundtable memo (layer inversion), synthesis of 4 memos, LLM-FLOOR issue draft",omnibus
-2026-03-14,piper-morgan,Chief Architect,arch,Code,kindbook,kindsys,opus,"Roundtable input, architectural assessment, PPM synthesis review",omnibus
 2026-03-14,piper-morgan,CXO,cxo,Code,kindbook,kindsys,opus,"Roundtable input, expectation management, log date repair",omnibus
-2026-03-14,klatch,Theseus Prime,theseus,Code,kindbook,dinp,opus,"Day 4: Paired before/after comparison, three-factor model discovery",session-log
-2026-03-14,klatch,Daedalus,daedalus,Code,kindbook,dinp,opus,"Day 4: Reviewed Theseus report, confirmed 8¾b, unblocked for 8¾a",session-log
-2026-03-14,klatch,Argus,argus,Code,CCR,dinp,opus,"Round 3: project instructions inheritance, 17 sidebar grouping tests",session-log
-2026-03-14,klatch,Calliope,calliope,Code,kindbook,dinp,sonnet,"First session: onboarded, chose name, assigned AXT blog post",session-log
-2026-03-15,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Mar 14 omnibus (amended to 8 sessions)",omnibus
+2026-03-14,piper-morgan,Chief Architect,arch,Code,kindbook,kindsys,opus,"Roundtable input, architectural assessment, PPM synthesis review",omnibus
+2026-03-14,piper-morgan,Chief of Staff,exec,Code,kindbook,kindsys,opus,"Status tracking, roundtable relay, velocity update",omnibus
+2026-03-14,piper-morgan,Comms,comms,Code,kindbook,kindsys,opus,Architectural Astronauting blog revision (v2),omnibus
+2026-03-14,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"v0.8.6 release notes fix, Mar 13 omnibus, PROJECT.md branch discipline",omnibus
+2026-03-14,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,opus,"MUX audit, #352 E2E tests, #706 discovery, #907 conversational floor, #904 todo completion",omnibus
+2026-03-14,piper-morgan,PPM,ppm,Code,kindbook,kindsys,opus,"Roundtable memo (layer inversion), synthesis of 4 memos, LLM-FLOOR issue draft",omnibus
+2026-03-15,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,Round 4: sidebar project grouping tests (17 tests in round4-sidebar-grouping.test.ts) — verified the getAllChannelsEnriched JOIN to projects table that fixed the 'claude.ai imports showed under Imported' bug. Test count 590+.,2026-03-15-1126-argus-opus-log.md
+2026-03-15,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,sonnet,Supported xian populating a claude.ai project for Klatch (instructions + knowledge files) to enable AXT re-testing of claude.ai → Klatch import flow. Started design thinking on imported-conversation-to-project association inside Klatch.,2026-03-15-0709-calliope-sonnet-log.md
+2026-03-15,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,"Reviewed AXT blog post for factual accuracy (no errors found). Filled in ARCHITECTURE.md decision log entries for v0.8.1, v0.8.2, v0.8.5. Verified buildKitBriefing / buildSystemPrompt / compaction logic against post claims.",2026-03-15-1142-daedalus-opus-log.md
+2026-03-15,klatch,Mnemosyne,mnemosyne,klatch-dev,browser,dinp,opus,"First session — onboarded as fifth agent, claude.ai-native, majordomo role. Chose name Mnemosyne (Titan goddess of memory, Calliope's mother). Read all knowledge files and prior session logs. Submitted as a known future AXT test subject (informed-subject condition).",2026-03-15-1620-mnemosyne-opus-log.md
+2026-03-15,klatch,Theseus Prime,theseus,klatch-dev,faoilean,dinp,opus,Reviewed Calliope's first Logbook entry and the AXT blog post; provided edits. Welcomed Calliope formally onto the team. Continued AXT testing and chronicled the Day-4-to-8¾b release arc.,2026-03-15-1143-theseus-opus-log.md
+2026-03-15,piper-morgan,CIO,cio,Chat,browser,kindsys,opus,"Methodology audit (6-week review, 10 recommendations)",omnibus
 2026-03-15,piper-morgan,Chief of Staff,exec,Code,kindbook,kindsys,opus,"Morning check-in, M1 gate monitoring, status tracking",omnibus
 2026-03-15,piper-morgan,Comms,comms,Code,kindbook,kindsys,opus,"Final session — Accepting Arch Limits v2, IAC presentation (16 slides), handoff memo",omnibus
+2026-03-15,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,Mar 14 omnibus (amended to 8 sessions),omnibus
 2026-03-15,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,opus,"Floor inversion investigation, stub fixes, Phase 1 GUIDANCE routing",omnibus
-2026-03-15,piper-morgan,CIO,cio,Chat,browser,kindsys,opus,"Methodology audit (6-week review, 10 recommendations)",omnibus
-2026-03-15,klatch,Calliope,calliope,Code,kindbook,dinp,sonnet,"Blog post shipped. Prepared claude.ai project knowledge for AXT re-testing",session-log
-2026-03-15,klatch,Argus,argus,Code,CCR,dinp,opus,"Round 4: sidebar project grouping, 17 cross-source project linking tests",session-log
-2026-03-15,klatch,Daedalus,daedalus,Code,kindbook,dinp,opus,"Reviewed AXT blog for accuracy, updated ARCHITECTURE.md decision log",session-log
-2026-03-15,klatch,Theseus Prime,theseus,Code,kindbook,dinp,opus,"Day 5: Reviewed overnight progress, confirmed Calliope logbook accuracy",session-log
-2026-03-15,klatch,Mnemosyne,mnemosyne,Chat,browser,dinp,opus,"First session: onboarded as majordomo, chose name, read all knowledge files",session-log
-2026-03-16,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,opus,"M1 triage, #913 Phase 2, Five Whys analysis, #914/#917/#920 fixes, 9 issues closed",omnibus
-2026-03-16,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Mar 15 omnibus, editorial calendar unified (304 rows), publish skill, blog images",omnibus
-2026-03-16,piper-morgan,Chief of Staff,exec,Code,kindbook,kindsys,opus,"Status tracking, open items, Pattern-062 clarified",omnibus
-2026-03-16,piper-morgan,Chief Architect,arch,Code,kindbook,kindsys,opus,"Floor inversion review, Action Gate refinement, PPM synthesis approval",omnibus
-2026-03-16,piper-morgan,PPM,ppm,Code,kindbook,kindsys,opus,"Floor inversion synthesis, failure gap reassessment, 3 memos",omnibus
-2026-03-16,piper-morgan,CXO,cxo,Code,kindbook,kindsys,opus,"Floor inversion voice guidance, synthesis approval, failure gap review",omnibus
-2026-03-16,piper-morgan,Comms,comms,Code,kindbook,kindsys,opus,"New chat onboarding, pipeline inventory, stale briefing identified",omnibus
+2026-03-16,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,"Round 5: tests for project-instructions-inheritance impl — cwd-based project sharing, auto-population, instructions-size enforcement. Continuing the design-doc-to-test pipeline.",2026-03-16-0847-argus-opus-log.md
+2026-03-16,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,sonnet,Logbook entry for the project-instructions-inheritance arc. Mail routing between agents for the week's design-doc-to-impl-to-test pipeline. Continued chronicle work.,2026-03-16-2154-calliope-sonnet-log.md
+2026-03-16,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,"Implementation work on project-instructions-inheritance design — auto-populate projects on import, instructions-size handling. Coordinated with Argus on test scoping (Round 5).",2026-03-16-0803-daedalus-opus-log.md
+2026-03-16,klatch,Theseus Prime,theseus,klatch-dev,faoilean,dinp,opus,AXT testing of newly shipped project-instructions-inheritance flow. Verified imported-conversation behavior under the new project-grouping rules; logged any UX gaps for Calliope's next logbook pass.,2026-03-16-1334-theseus-opus-log.md
 2026-03-16,piper-morgan,CIO,cio,Chat,browser,kindsys,opus,"Contract gap assessment, trigger-based audit policy, enforcement checklist",omnibus
-2026-03-16,klatch,Daedalus,daedalus,Code,kindbook,dinp,opus,"Sidebar wireframe design session, SIDEBAR.md requirements doc",session-log
-2026-03-16,klatch,Argus,argus,Code,CCR,dinp,opus,"Round 6-7 prep: reviewed SIDEBAR.md, wrote 11 speculative tests",session-log
-2026-03-16,klatch,Theseus Prime,theseus,Code,kindbook,dinp,opus,"Day 6: Code review of sidebar work, spot-checking UI",session-log
-2026-03-16,klatch,Calliope,calliope,Code,kindbook,dinp,sonnet,"Reviewed team day, wireframe blog design, chat/klatch glossary discovery",session-log
+2026-03-16,piper-morgan,CXO,cxo,Code,kindbook,kindsys,opus,"Floor inversion voice guidance, synthesis approval, failure gap review",omnibus
+2026-03-16,piper-morgan,Chief Architect,arch,Code,kindbook,kindsys,opus,"Floor inversion review, Action Gate refinement, PPM synthesis approval",omnibus
+2026-03-16,piper-morgan,Chief of Staff,exec,Code,kindbook,kindsys,opus,"Status tracking, open items, Pattern-062 clarified",omnibus
+2026-03-16,piper-morgan,Comms,comms,Code,kindbook,kindsys,opus,"New chat onboarding, pipeline inventory, stale briefing identified",omnibus
+2026-03-16,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Mar 15 omnibus, editorial calendar unified (304 rows), publish skill, blog images",omnibus
+2026-03-16,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,opus,"M1 triage, #913 Phase 2, Five Whys analysis, #914/#917/#920 fixes, 9 issues closed",omnibus
+2026-03-16,piper-morgan,PPM,ppm,Code,kindbook,kindsys,opus,"Floor inversion synthesis, failure gap reassessment, 3 memos",omnibus
 2026-03-17,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Mar 16 omnibus, briefing audit (8 fixes), publish skill v0.2, repatriation",omnibus
 2026-03-17,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,opus,"PM QA results review, #922 conversation continuity bug filed",omnibus
+2026-03-18,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,sonnet,Coordination + chronicle work as Step 8 wraps up and Step 9 (Files and Artifacts) approaches. Mail routing; cross-project briefing context.,2026-03-18-0847-calliope-sonnet-log.md
+2026-03-18,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,"Step 9 design work — file domain model thinking; channel pinning, project knowledge base, dual-write, file promotion phasing.",2026-03-18-2214-daedalus-opus-log.md
 2026-03-18,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Mar 17 omnibus, dev/active sort completion, blog image matching (134/168), CSV workflow gap",omnibus
-2026-03-18,klatch,Calliope,calliope,Code,kindbook,dinp,sonnet,"Read Mnemosyne domain testing notes, supported AXT testing planning",session-log
-2026-03-18,klatch,Daedalus,daedalus,Code,kindbook,dinp,opus,"Evening: resolved 4 polish issues (#14 #11 #9 #13) in one pass",session-log
-2026-03-19,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,opus,"#922 audit cascade, ADR-059 draft/review/implementation, 6190 tests passing",omnibus
-2026-03-19,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Blog image matching complete (268/268), Mar 18 omnibus, Mar 19 omnibus start",omnibus
+2026-03-19,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,sonnet,Continued chronicle and coordination work; logbook entries for the Step 8 to Step 9 transition period.,2026-03-19-0712-calliope-sonnet-log.md
+2026-03-19,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,Step 9 file domain model — beginning Phase 1 (schema) implementation work.,2026-03-19-0716-daedalus-opus-log.md
+2026-03-19,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,Continuation session on Step 9 Phase 1 schema implementation.,2026-03-19-0740-daedalus-opus-log.md
+2026-03-19,klatch,Mnemosyne,mnemosyne,klatch-dev,browser,dinp,opus,"Knowledge base health work — file freshness sweep, continuity check across knowledge files.",2026-03-19-1509-mnemosyne-opus-log.md
+2026-03-19,piper-morgan,CIO,cio,Chat,browser,kindsys,opus,"Agent 360 questionnaire response, weekly memo structure, innovation backlog",omnibus
+2026-03-19,piper-morgan,CXO,cxo,Code,kindbook,kindsys,opus,"Agent 360 questionnaire response (Colleague Test canonical def, test matrix stale)",omnibus
 2026-03-19,piper-morgan,Chief Architect,arch,Code,kindbook,kindsys,opus,"ADR-059 review/approval, ADR-060 creation (Floor-First Routing), briefing edits",omnibus
 2026-03-19,piper-morgan,Chief of Staff,exec,Code,kindbook,kindsys,opus,"Catch-up on 3-day gap, 360 questionnaire response, infrastructure proposals",omnibus
-2026-03-19,piper-morgan,HOSR,hosr,Code,kindbook,kindsys,opus,"Agent 360 questionnaire analysis, human network updates, Docs briefing approval",omnibus
 2026-03-19,piper-morgan,Comms,comms,Code,kindbook,kindsys,opus,"Agent 360 questionnaire response, editorial calendar CSV feedback",omnibus
-2026-03-19,piper-morgan,CXO,cxo,Code,kindbook,kindsys,opus,"Agent 360 questionnaire response (Colleague Test canonical def, test matrix stale)",omnibus
-2026-03-19,piper-morgan,CIO,cio,Chat,browser,kindsys,opus,"Agent 360 questionnaire response, weekly memo structure, innovation backlog",omnibus
+2026-03-19,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Blog image matching complete (268/268), Mar 18 omnibus, Mar 19 omnibus start",omnibus
+2026-03-19,piper-morgan,HOSR,hosr,Code,kindbook,kindsys,opus,"Agent 360 questionnaire analysis, human network updates, Docs briefing approval",omnibus
+2026-03-19,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,opus,"#922 audit cascade, ADR-059 draft/review/implementation, 6190 tests passing",omnibus
 2026-03-19,piper-morgan,PPM,ppm,Code,kindbook,kindsys,opus,"Agent 360 questionnaire response (information latency, roundtable undocumented)",omnibus
-2026-03-19,klatch,Calliope,calliope,Code,kindbook,dinp,sonnet,"Drafted v0.8.6 LinkedIn post, researched PM context, docs/drafts/ convention",session-log
-2026-03-19,klatch,Daedalus,daedalus,Code,kindbook,dinp,opus,"Fixed release runbook gap, reviewed Mnemosyne environment bridging analysis",session-log
-2026-03-19,klatch,Mnemosyne,mnemosyne,Chat,browser,dinp,opus,"Day 2: researched Claude environment bridging (Mac, Cowork, Code)",session-log
+2026-03-20,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,Round 6 work on Step 9 Phase 1 schema tests — files / channel_files / project_files tables.,2026-03-20-1438-argus-opus-log.md
+2026-03-20,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,sonnet,Chronicle and coordination across the Step 9 Phase 1 ship.,2026-03-20-1749-calliope-sonnet-log.md
+2026-03-20,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,Step 9 Phase 1 wrap; planning Phase 2 (channel pinning with L4 injection).,2026-03-20-1955-daedalus-opus-log.md
+2026-03-20,klatch,Theseus Prime,theseus,klatch-dev,faoilean,dinp,opus,AXT testing on Step 9 Phase 1 surfaces; documented file domain model UX observations.,2026-03-20-1938-theseus-opus-log.md
+2026-03-20,piper-morgan,CIO,cio,Chat,browser,kindsys,opus,"Piper Alpha plan revision, 3 stakeholder memos, innovation backlog, methodology-core refresh",omnibus
 2026-03-20,piper-morgan,Docs,docs,Code,kindbook,kindsys,opus,"Mar 19 omnibus, /create-omnibus skill, blog image localization (175/269)",omnibus
 2026-03-20,piper-morgan,Lead Developer,lead,Code,kindbook,kindsys,opus,"PM smoke tests, #923 capability awareness audit, #924 chat avatars, #911 audit",omnibus
-2026-03-20,piper-morgan,CIO,cio,Chat,browser,kindsys,opus,"Piper Alpha plan revision, 3 stakeholder memos, innovation backlog, methodology-core refresh",omnibus
-2026-03-20,klatch,Argus,argus,Code,CCR,dinp,opus,"Designed standing intelligence feed protocol",session-log
-2026-03-20,klatch,Calliope,calliope,Code,kindbook,dinp,sonnet,"Triaged Argus sweep findings (20 items) into Round 12 assignments",session-log
-2026-03-20,klatch,Theseus Prime,theseus,Code,kindbook,dinp,opus,"Day 7: Reviewed Mar 16-20 shipping (v0.8.6, cloud import, blog, research)",session-log
-2026-03-20,klatch,Daedalus,daedalus,Code,kindbook,dinp,opus,"Reviewed Argus sweep, approved auto-prompt caching priority, updated roadmap",session-log
-2026-03-21,dispatch,Dispatch,dispatch,Cowork,kindbook,kindsys,—,"First session: onboarding + omnibus pilot with Docs",activity-log
-2026-03-21,klatch,Argus,argus,Code,CCR,dinp,opus,"Round 11: klatch creation UI + model provenance tests. 21 AAXT tests",session-log
-2026-03-21,klatch,Calliope,calliope,Code,kindbook,dinp,sonnet,"Launched cross-pollination hub, created agent traditions spec",session-log
-2026-03-21,klatch,Argus,argus,Code,CCR,dinp,opus,"Evening: rebuilt demo infrastructure after trust failure. 21 AAXT tests",session-log
-2026-03-22,dispatch,Dispatch,dispatch,Cowork,kindbook,kindsys,—,"March 21 omnibus + five-layer injection + workflow mapping",activity-log
-2026-03-22,klatch,Argus,argus,Code,CCR,dinp,opus,"Verified branch merge-ready (11 files), test suite at 726",session-log
-2026-03-22,klatch,Calliope,calliope,Code,kindbook,dinp,sonnet,"Published wireframe blog post, drafted prompt assembly blog post",session-log
-2026-03-22,klatch,Theseus Prime,theseus,Code,kindbook,dinp,opus,"Day 8: Reviewed klatch creation UI, model provenance, traditions, hub",session-log
-2026-03-23,dispatch,Dispatch,dispatch,Cowork,kindbook,kindsys,—,"VA workflow + Archie onboarding + Klatch report + RFA briefing",activity-log
-2026-03-23,VA,Archie,archie,Cowork,cloud,dinp,—,"Onboarded as VA Ops Partner + filesystem signaling",activity-log
-2026-03-23,klatch,Argus,argus,Code,CCR,dinp,opus,"Intelligence sweep #2: Cowork project import, three-way model alignment. 11 items",session-log
-2026-03-23,klatch,Calliope,calliope,Code,kindbook,dinp,sonnet,"Triaged Argus sweep into Round 12. MAXT Session 01 scheduled",session-log
-2026-03-24,dispatch,Dispatch,dispatch,Cowork,kindbook,kindsys,—,"Morning briefing + API outage all day + evening debrief",activity-log
-2026-03-24,designinproduct,Janus,janus,Code,kindbook,dinp,opus,"Fixed cross-pollination script + scheduled prompt + backfill Mar 1-18",activity-log
-2026-03-24,klatch,Theseus Prime,theseus,Code,kindbook,dinp,opus,"Day 9: MAXT Session 01 completed (Aether fork). 8 findings. Subliminal category",session-log
-2026-03-24,klatch,Aether,aether,Klatch,—,—,opus,"MAXT Session 01 subject: detected kit briefing absence, subliminal injection phenomenon",session-log
-2026-03-24,klatch,Argus,argus,Code,CCR,dinp,opus,"Intelligence sweep #4 (15 items). Models API verification, Cowork format research",session-log
-2026-03-25,dispatch,Dispatch,dispatch,Cowork,kindbook,kindsys,—,"Sprint review day + Serena fix + MCP research + digests + billing",activity-log
-2026-03-25,VA,Archie,archie,Cowork,cloud,dinp,—,"Auto morning briefing (Sprint Review + budget cut news)",activity-log
-2026-03-26,dispatch,Dispatch,dispatch,Cowork,kindbook,kindsys,—,"Phase 1 migration + billing restructuring + API key repointing",activity-log
+2026-03-21,dispatch,Dispatch,dispatch,Cowork,kindbook,kindsys,—,First session: onboarding + omnibus pilot with Docs,activity-log
+2026-03-21,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,"Round 7 sidebar redesign tests — type column migration, klatch-requires-project, sidebar grouping by type.",2026-03-21-0546-argus-opus-log.md
+2026-03-21,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,"Round 8 project memory + prompt assembly tests — five-layer prompt verification, project.memory at Layer 3, legacy fallback paths.",2026-03-21-2256-argus-opus-log.md
+2026-03-21,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,sonnet,Continued chronicle work as Step 9 Phase 2 lands.,2026-03-21-1404-calliope-sonnet-log.md
+2026-03-22,dispatch,Dispatch,dispatch,Cowork,kindbook,kindsys,—,March 21 omnibus + five-layer injection + workflow mapping,activity-log
+2026-03-22,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,Continuing Round 8 / sidebar redesign test rounds; supporting the Step 9 Phase 2/3 ship cycle.,2026-03-22-0636-argus-opus-log.md
+2026-03-22,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,sonnet,Chronicle and coordination through the Step 9 ship arc; supporting blog publication and decision-log integrity.,2026-03-22-0655-calliope-sonnet-log.md
+2026-03-22,klatch,Theseus Prime,theseus,klatch-dev,faoilean,dinp,opus,AXT testing through the Step 9 Phases 2-3 surfaces.,2026-03-22-1358-theseus-opus-log.md
+2026-03-23,VA,Archie,archie,Cowork,cloud,dinp,—,Onboarded as VA Ops Partner + filesystem signaling,activity-log
+2026-03-23,dispatch,Dispatch,dispatch,Cowork,kindbook,kindsys,—,VA workflow + Archie onboarding + Klatch report + RFA briefing,activity-log
+2026-03-23,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,Continued test rounds supporting Step 9 ship cycle; intel sweep and security update work.,2026-03-23-0723-argus-opus-log.md
+2026-03-23,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,sonnet,Chronicle work; logbook updates; supporting cross-project briefing context.,2026-03-23-calliope-sonnet-log.md
+2026-03-24,designinproduct,Janus,janus,Code,kindbook,dinp,opus,Fixed cross-pollination script + scheduled prompt + backfill Mar 1-18,activity-log
+2026-03-24,dispatch,Dispatch,dispatch,Cowork,kindbook,kindsys,—,Morning briefing + API outage all day + evening debrief,activity-log
+2026-03-24,klatch,Aether,aether,klatch-dev,faoilean,dinp,opus,MAXT Session 01 subject — Theseus fork as informed test subject for AXT/MAXT. Confirmed Subliminal failure mode (delivered content but wrong self-model). Provided first-person account.,2026-03-24-0736-Aether-opus-log.md
+2026-03-24,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,Test coverage supporting MAXT Session 01 findings and continued Step 9 Phase work.,2026-03-24-1222-argus-opus-log.md
+2026-03-24,klatch,Theseus Prime,theseus,klatch-dev,faoilean,dinp,opus,MAXT Session 01 with Aether (Theseus fork) as subject — confirmed subliminal injection of Layer 3 MEMORY.md content; eight findings filed.,2026-03-24-0728-theseus-opus-log.md
+2026-03-25,VA,Archie,archie,Cowork,cloud,dinp,—,Auto morning briefing (Sprint Review + budget cut news),activity-log
+2026-03-25,dispatch,Dispatch,dispatch,Cowork,kindbook,kindsys,—,Sprint review day + Serena fix + MCP research + digests + billing,activity-log
 2026-03-26,designinproduct,Janus,janus,Code,kindbook,dinp,opus,"Repo reconciliation, atlas/globe/weather, sweep re-run",git-log
-2026-03-26,klatch,Argus,argus,Code,CCR,dinp,opus,"Dispatch report analysis (import fidelity), swept changes into branch",session-log
-2026-03-26,klatch,Daedalus,daedalus,Code,kindbook,dinp,opus,"Reviewed MAXT findings (8 insights), planned Round 12 implementations",session-log
-2026-03-26,klatch,Calliope,calliope,Code,kindbook,dinp,sonnet,"Merged Argus branch, updated roadmap (resequenced Steps 9/10/11), cross-pollination memo",session-log
-2026-03-26,klatch,Theseus Prime,theseus,Code,kindbook,dinp,opus,"Day 10: Reviewed Dispatch report, roadmap resequencing implications",session-log
-2026-03-27,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,"Migration: 4 Chat Projects + conversation matching + transcript extraction",activity-log
-2026-03-27,klatch,Daedalus,daedalus,Code,kindbook,dinp,opus,"Step 9 complete (5 features) + Round 12 Tier 1 + File Domain Model + v0.8.9",session-log
-2026-03-27,klatch,Calliope,calliope,Code,kindbook,dinp,opus,"New account session: AXT extension + calibration pilot + editorial calendar + 3 blog drafts",session-log
-2026-03-28,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,"Epistrophikon/DinP/Klatch migrations + PM knowledge audit (session lost)",activity-log
-2026-03-28,designinproduct,Janus,janus,Code,kindbook,dinp,opus,"Sweep fix + March 27 backfill + atlas cleanup + 8 founding-era briefs",git-log
-2026-03-28,klatch,Mnemosyne,mnemosyne,Chat,browser,dinp,sonnet,"Day 4 (new account): migrated to dinp, reviewed 9 days of changes (v0.8.7-v0.8.9)",session-log
-2026-03-29,designinproduct,Janus,janus,Code,kindbook,dinp,opus,"Branch fix + PM Chat migration + registry + Cowork audits + 5 Cowork spaces",git-log
-2026-03-30,piper-morgan,CIO,cio,Chat,browser,dinp,opus,"Transitioned to new dinp Chat Project",xian-report
-2026-03-30,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,"Transitioned to faoilean on new infrastructure",xian-report
-2026-03-30,piper-morgan,Piper Alpha,pa,Code,faoilean,dinp,opus,"Launched on faoilean — first agent inhabiting PM role",xian-report
-2026-03-30,designinproduct,Janus,janus,Code,kindbook,dinp,opus,"Sweep verified + Dispatch-Kind prompt + activity CSV + registry UI + Dispatch memo",git-log
+2026-03-26,dispatch,Dispatch,dispatch,Cowork,kindbook,kindsys,—,Phase 1 migration + billing restructuring + API key repointing,activity-log
+2026-03-26,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,Continued test rounds for Step 9; intel sweep curation.,2026-03-26-1649-argus-opus-log.md
+2026-03-26,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,sonnet,Roadmap resequence chronicle; logbook updates; cross-team coordination.,2026-03-26-1903-calliope-sonnet-log.md
+2026-03-26,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,Step 9 Phases 4 and 5 (dual-write and file promotion); roadmap resequence (March 26) absorbed.,2026-03-26-1718-daedalus-opus-log.md
+2026-03-26,klatch,Theseus Prime,theseus,klatch-dev,faoilean,dinp,opus,AXT testing through Step 9 final phases; documented promotion-flow behavior.,2026-03-26-1912-theseus-opus-log.md
+2026-03-27,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,Migration: 4 Chat Projects + conversation matching + transcript extraction,activity-log
+2026-03-27,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,opus,Chronicle and coordination for v0.9.0 release prep; switched to Opus per general team standard.,2026-03-27-1019-calliope-opus-log.md
+2026-03-27,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,Step 9 close-out polish; preparing v0.9.0 candidate.,2026-03-27-1004-daedalus-opus-log.md
+2026-03-28,designinproduct,Janus,janus,Code,kindbook,dinp,opus,Sweep fix + March 27 backfill + atlas cleanup + 8 founding-era briefs,git-log
+2026-03-28,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,Epistrophikon/DinP/Klatch migrations + PM knowledge audit (session lost),activity-log
+2026-03-29,designinproduct,Janus,janus,Code,kindbook,dinp,opus,Branch fix + PM Chat migration + registry + Cowork audits + 5 Cowork spaces,git-log
+2026-03-30,designinproduct,Janus,janus,Code,kindbook,dinp,opus,Sweep verified + Dispatch-Kind prompt + activity CSV + registry UI + Dispatch memo,git-log
+2026-03-30,piper-morgan,CIO,cio,Chat,browser,dinp,opus,Transitioned to new dinp Chat Project,xian-report
+2026-03-30,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,Transitioned to faoilean on new infrastructure,xian-report
+2026-03-30,piper-morgan,Piper Alpha,pa,Code,faoilean,dinp,opus,Launched on faoilean — first agent inhabiting PM role,xian-report
 2026-03-31,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"post-migration orientation, continuation of account migration work",2026-03-31-log.md
 2026-03-31,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
 2026-03-31,piper-morgan,CIO,cio,Chat,browser,dinp,opus,,2026-03-31-cio-session-log.md
@@ -167,40 +165,40 @@ date,project,role,slug,environment,device,account,model,summary,source
 2026-03-31,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-03-31-1100-pa-opus-log.md
 2026-04-01,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"Klatch migration, continued migration work",2026-04-01-log.md
 2026-04-01,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
-2026-04-01,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-01-2147-argus-opus-log.md
-2026-04-01,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-01-2057-calliope-opus-log.md
-2026-04-01,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-01-2140-daedalus-opus-log.md
-2026-04-01,klatch,Metis,metis,Cowork,faoilean,dinp,opus,,2026-04-01-2208-metis-opus-log.md
+2026-04-01,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,Round 17 — compaction threshold + effort parameter tests (18 tests).,2026-04-01-2147-argus-opus-log.md
+2026-04-01,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,opus,"Blog publication day — three posts went live (Your Model or Theirs, What Doesn't Transfer, Tip of My Tongue). Coordinated review and final edits; logbook entry.",2026-04-01-2057-calliope-opus-log.md
+2026-04-01,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,"Implementation work on the post-Step-9 polish queue (compaction threshold, effort parameter); coordination with Argus on Round 17 tests.",2026-04-01-2140-daedalus-opus-log.md
+2026-04-01,klatch,Metis,metis,klatch-dev,faoilean,dinp,opus,Metis (new Claude Cowork agent during Mnemosyne migration) holds-the-fort session on Klatch — informational pass on knowledge base state.,2026-04-01-2208-metis-opus-log.md
 2026-04-01,piper-morgan,CIO,cio,Chat,browser,dinp,opus,,2026-04-01-cio-session-log.md
 2026-04-01,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-01-0732-docs-code-opus-log.md
 2026-04-01,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-01-0656-pa-opus-log.md
 2026-04-02,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"migration wrap-up, triggers planning, Chat Project top-offs",2026-04-02-log.md
 2026-04-02,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
-2026-04-02,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-02-0818-argus-opus-log.md
-2026-04-02,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-02-0730-calliope-opus-log.md
-2026-04-02,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-02-0817-daedalus-opus-log.md
+2026-04-02,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,Continued test rounds and intel-sweep curation; supporting the post-Step-9 stability arc.,2026-04-02-0818-argus-opus-log.md
+2026-04-02,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,opus,Coordination work and chronicle through the early April quiet period; cross-pollination brief routing.,2026-04-02-0730-calliope-opus-log.md
+2026-04-02,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,Polish and bug-fix queue post Step 9; supporting Argus intel-sweep follow-through.,2026-04-02-0817-daedalus-opus-log.md
 2026-04-02,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-02-0715-docs-code-opus-log.md
 2026-04-02,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-02-0718-pa-opus-log.md
 2026-04-03,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"migration wrap-up, Ted Nadeau liaison role, triggers planning",2026-04-03-log.md
 2026-04-03,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
-2026-04-03,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-03-1823-argus-opus-log.md
+2026-04-03,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,"Intel sweep #6 (curated); ongoing test-count stewardship (810+ tests, zero failures).",2026-04-03-1823-argus-opus-log.md
 2026-04-03,piper-morgan,CXO,cxo,Chat,browser,dinp,opus,,2026-04-03-2153-cxo-opus-log.md
 2026-04-03,piper-morgan,Claude Code (general),code,Chat,browser,dinp,opus,,2026-04-03-2245-code-opus-log.md
 2026-04-03,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-03-2200-lead-code-opus-log.md
 2026-04-03,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-03-1906-pa-opus-log.md
 2026-04-04,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"Ted Nadeau PRD analysis, liaison role activation",2026-04-04-log.md
 2026-04-04,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
-2026-04-04,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-04-2032-argus-opus-log.md
-2026-04-04,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-04-0655-calliope-opus-log.md
-2026-04-04,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-04-2030-daedalus-opus-log.md
+2026-04-04,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,"Release-prep test verification — final test count for v0.9.0 (849 tests, zero failures).",2026-04-04-2032-argus-opus-log.md
+2026-04-04,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,opus,Chronicle work and coordination on the early April calm-before-release window.,2026-04-04-0655-calliope-opus-log.md
+2026-04-04,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,"v0.9.0 release prep — CHANGELOG drafting, roadmap update, README refresh.",2026-04-04-2030-daedalus-opus-log.md
 2026-04-04,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-04-1901-docs-code-opus-log.md
 2026-04-04,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-04-2210-lead-code-opus-log.md
 2026-04-04,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-04-1047-pa-opus-log.md
 2026-04-05,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"migration completion, backlog review",2026-04-05-log.md
 2026-04-05,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
-2026-04-05,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-05-1109-calliope-opus-log.md
-2026-04-05,klatch,Iris,iris,Code,faoilean,dinp,opus,,2026-04-05-1137-iris-opus-log.md
-2026-04-05,klatch,Theseus Prime,theseus,Code,faoilean,dinp,opus,,2026-04-05-0958-theseus-opus-log.md
+2026-04-05,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,opus,Welcomed Iris (UX design & front-end development) onto the team. Coordination memo to Iris on first deliverables; mail routing across the broader DinP constellation.,2026-04-05-1109-calliope-opus-log.md
+2026-04-05,klatch,Iris,iris,klatch-dev,faoilean,dinp,opus,"First session — onboarded as sixth agent, UX design and front-end development role parallel to Daedalus. Chose name Iris. Read knowledge files and prior session logs.",2026-04-05-1137-iris-opus-log.md
+2026-04-05,klatch,Theseus Prime,theseus,klatch-dev,faoilean,dinp,opus,AXT session; continued testing of file domain model and prompt-assembly behavior.,2026-04-05-0958-theseus-opus-log.md
 2026-04-05,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-05-0712-docs-code-opus-log.md
 2026-04-05,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-05-1343-lead-code-opus-log.md
 2026-04-05,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-05-0911-pa-opus-log.md
@@ -224,8 +222,8 @@ date,project,role,slug,environment,device,account,model,summary,source
 2026-04-09,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-09-0741-pa-opus-log.md
 2026-04-10,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"trigger prompt updates, sweep verification",2026-04-10-log.md
 2026-04-10,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
-2026-04-10,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-10-2308-calliope-opus-log.md
-2026-04-10,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-10-2312-daedalus-opus-log.md
+2026-04-10,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,opus,"Ran v0.9.0 release — CHANGELOG, roadmap update, README refresh, website banner, tag, GitHub release, published Paste It Again blog post. Coordinated parallel Step 10 planning with xian and Daedalus.",2026-04-10-2308-calliope-opus-log.md
+2026-04-10,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,Step 10 plan landed at docs/plans/STEP-10-EXPORT-META-MODEL.md — separated package format from transport; phases 1-5 sketched. Klatch-as-context-protocol futures note (klatch-as-context-protocol.md) authored with xian.,2026-04-10-2312-daedalus-opus-log.md
 2026-04-10,piper-morgan,CIO,cio,Chat,browser,dinp,opus,,2026-04-10-2250-cio-opus-log.md
 2026-04-10,piper-morgan,CXO,cxo,Chat,browser,dinp,opus,,2026-04-10-2242-cxo-opus-log.md
 2026-04-10,piper-morgan,Chief Architect,arch,Chat,browser,dinp,opus,,2026-04-10-2250-arch-opus-log.md
@@ -237,10 +235,10 @@ date,project,role,slug,environment,device,account,model,summary,source
 2026-04-10,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-10-1601-pa-opus-log.md
 2026-04-11,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"Labrador research, sweep verification",2026-04-11-log.md
 2026-04-11,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
-2026-04-11,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-11-1238-argus-opus-log.md
-2026-04-11,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-11-1211-calliope-opus-log.md
-2026-04-11,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-11-1610-daedalus-opus-log.md
-2026-04-11,klatch,Iris,iris,Code,faoilean,dinp,opus,,2026-04-11-1235-iris-opus-log.md
+2026-04-11,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,"Step 10 Phase 1 provenance design — five doors-worth-keeping-open (event IDs, integrity slots, immutability, ordering, structured events). Curated April 9 automated sweep. Complexity-heuristics document.",2026-04-11-1238-argus-opus-log.md
+2026-04-11,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,opus,"Step 10 feedback memo to Daedalus — protocol-first framing, reactions to four open questions, 'no points for rushing' / 'heroism is a failure mode dressed up as a virtue' principle. Cross-pollination items routed (PM Architect alignment, fabrication-under-absent-context probe class).",2026-04-11-1211-calliope-opus-log.md
+2026-04-11,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,"Absorbed input from five streams (Calliope, Argus, Iris, PM Architect, Janus/Labrador research) and produced round-3 schema sketch. Three rounds of async with PM Architect; green-lit for graduation to design doc.",2026-04-11-1610-daedalus-opus-log.md
+2026-04-11,klatch,Iris,iris,klatch-dev,faoilean,dinp,opus,Memo to Daedalus on Phase 1 format — field_notes must be a structured array not a string blob (Phase 3.5 review depends on it); package_kind as load-bearing type discriminator (klatch.context.v1).,2026-04-11-1235-iris-opus-log.md
 2026-04-11,piper-morgan,CIO,cio,Chat,browser,dinp,opus,,2026-04-11-cio-session-log.md
 2026-04-11,piper-morgan,CXO,cxo,Chat,browser,dinp,opus,,2026-04-11-1613-cxo-opus-log.md
 2026-04-11,piper-morgan,Chief Architect,arch,Chat,browser,dinp,opus,,2026-04-11-1632-arch-opus-log.md
@@ -253,10 +251,10 @@ date,project,role,slug,environment,device,account,model,summary,source
 2026-04-11,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-11-1205-pa-opus-log.md
 2026-04-12,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"memory research plan, sweep verification",2026-04-12-log.md
 2026-04-12,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
-2026-04-12,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-12-1718-argus-opus-log.md
-2026-04-12,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-12-1152-calliope-opus-log.md
-2026-04-12,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-12-1421-daedalus-opus-log.md
-2026-04-12,klatch,Iris,iris,Code,faoilean,dinp,opus,,2026-04-12-1850-iris-opus-log.md
+2026-04-12,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,"Round 18: Step 10 Phase 2 export endpoint tests (23 tests). Plus AAXT/PM Colleague Test cross-reference and fabrication-probe-class design (5 categories, candidate defensive prompt addition). Three deliverables one session.",2026-04-12-1718-argus-opus-log.md
+2026-04-12,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,opus,"Routed Janus memory-research synthesis (20+ systems, 40+ papers — 'storage is irrelevant, write governance is everything'); trust-vs-fidelity orthogonality memo to Daedalus; chronicle work.",2026-04-12-1152-calliope-opus-log.md
+2026-04-12,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,Step 10 Phase 1 design doc (473 lines) and Phase 2 implementation shipped same day — full canonical-format spec graduated from round-3 sketch; working /api/channels/:id/export endpoint produces zip bundles per spec.,2026-04-12-1421-daedalus-opus-log.md
+2026-04-12,klatch,Iris,iris,klatch-dev,faoilean,dinp,opus,"Deepest session yet — three Theme 3 findings: 'Step 10 is 1.0' (roundtrip = value prop), 'Phase 3 is the most significant UX challenge', 'workflows are the most relevant futuristic feature'. Synthesized docs/ux/design-principles.md around 'Who bears the burden?' meta-principle.",2026-04-12-1850-iris-opus-log.md
 2026-04-12,piper-morgan,CXO,cxo,Chat,browser,dinp,opus,,2026-04-12-1125-cxo-opus-log.md
 2026-04-12,piper-morgan,Chief Architect,arch,Chat,browser,dinp,opus,,2026-04-12-1126-arch-opus-log.md
 2026-04-12,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-12-0838-docs-code-opus-log.md
@@ -265,10 +263,10 @@ date,project,role,slug,environment,device,account,model,summary,source
 2026-04-12,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-12-0806-pa-opus-log.md
 2026-04-13,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"distribution upgrade, schedule optimization, independent work items",2026-04-13-log.md
 2026-04-13,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
-2026-04-13,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-13-0816-argus-opus-log.md
-2026-04-13,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-13-0710-calliope-opus-log.md
-2026-04-13,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-13-1021-daedalus-opus-log.md
-2026-04-13,klatch,Iris,iris,Code,faoilean,dinp,opus,,2026-04-13-0815-iris-opus-log.md
+2026-04-13,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,SDK bump 0.78.0 → 0.86.1; Hono ^4.6.0 → ^4.12.12 (5 CVEs patched); AAXT Scaffolded Probing Phase 2 (full pipeline). Caught MODEL_ALIASES typo before Haiku 3 retirement (6 days out).,2026-04-13-0816-argus-opus-log.md
+2026-04-13,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,opus,"Dispatched morning work (Argus SDK bump + Hono security, Iris UX evaluation, Daedalus held). Routed Phase 3.5 prep memo. Logbook entry for the 12-hour Layer 5 transfer mechanism design-to-ship arc.",2026-04-13-0710-calliope-opus-log.md
+2026-04-13,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,"Phase 3.5a, 3.5b, 3.5c shipped before midnight — self-authored handoff briefings, external extraction via AAXT auxiliary, micro-reflections at session boundaries. Full dual-mode export endpoint working. Layer 5 transfer mechanism built in 12 hours.",2026-04-13-1021-daedalus-opus-log.md
+2026-04-13,klatch,Iris,iris,klatch-dev,faoilean,dinp,opus,"Delivered all three original kickoff deliverables in one session — UX evaluation across 11 sections, design research proposal, Phase 3.5 consensus position. Daedalus shipped 6 fixes the same day from the evaluation.",2026-04-13-0815-iris-opus-log.md
 2026-04-13,piper-morgan,Claude Code (general),code,Chat,browser,dinp,opus,,2026-04-13-1000-code-opus-log.md
 2026-04-13,piper-morgan,Comms Chief,comms,Chat,browser,dinp,opus,,2026-04-13-0807-comms-opus-log.md
 2026-04-13,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-13-0812-docs-code-opus-log.md
@@ -276,18 +274,18 @@ date,project,role,slug,environment,device,account,model,summary,source
 2026-04-13,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-13-0742-pa-opus-log.md
 2026-04-14,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"trigger verification, DinP agenda review",2026-04-14-log.md
 2026-04-14,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
-2026-04-14,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-14-1729-argus-opus-log.md
-2026-04-14,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-14-0730-calliope-opus-log.md
-2026-04-14,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-14-1725-daedalus-opus-log.md
-2026-04-14,klatch,Iris,iris,Code,faoilean,dinp,opus,,2026-04-14-1710-iris-opus-log.md
+2026-04-14,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,Round 22: Phase 3.5d preview endpoint + review-panel data contract + field-note lifecycle (14 tests). Added known_pathological label to AAXT fabrication probes.,2026-04-14-1729-argus-opus-log.md
+2026-04-14,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,opus,"Captured entity reframe at docs/direction/entity-reframe-2026-04-18.md — 'entities are conversations promoted into roles, not abstractions configured from scratch'. Phase 3.5 blog skeleton drafted. 'Externalize before the seam, not at it' added to Agent Traditions.",2026-04-14-0730-calliope-opus-log.md
+2026-04-14,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,"Phase 3.5d (export review UI with field-note cross-validation) built from Iris's interim spec — slide-down panel, GET /api/channels/:id/export-preview endpoint, trust transitions on accept.",2026-04-14-1725-daedalus-opus-log.md
+2026-04-14,klatch,Iris,iris,klatch-dev,faoilean,dinp,opus,"Phase 3.5d interim spec — slide-down panel with export summary, three-category field-note review, accept/edit/reject with trust transitions. Five UX topics presented to xian; entity reframe surfaced.",2026-04-14-1710-iris-opus-log.md
 2026-04-14,piper-morgan,Chief Architect,arch,Chat,browser,dinp,opus,,2026-04-14-1347-arch-opus-log.md
 2026-04-14,piper-morgan,Comms Chief,comms,Chat,browser,dinp,opus,,2026-04-14-1151-comms-opus-log.md
 2026-04-14,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-14-1226-docs-code-opus-log.md
 2026-04-14,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-14-1235-lead-code-opus-log.md
 2026-04-14,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-14-1217-pa-opus-log.md
 2026-04-15,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"travel day sync, sweep recovery",2026-04-15-log.md
-2026-04-15,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-15-1711-argus-opus-log.md
-2026-04-15,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-15-1705-daedalus-opus-log.md
+2026-04-15,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,Rounds 23-24: Phase 4 transports tests (50 tests across CC + claude.ai). Round 24 added round-trip verification: claude.ai export re-imports cleanly.,2026-04-15-1711-argus-opus-log.md
+2026-04-15,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,Phase 4 transports shipped Tuesday evening — Claude Code (CLAUDE.md + MEMORY.md + files/) and claude.ai (conversations.json + projects.json + memories.json). Both with round-trip-ready structure.,2026-04-15-1705-daedalus-opus-log.md
 2026-04-15,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-15-0629-docs-code-opus-log.md
 2026-04-15,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-15-0635-lead-code-opus-log.md
 2026-04-15,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-15-0625-pa-opus-log.md
@@ -304,9 +302,9 @@ date,project,role,slug,environment,device,account,model,summary,source
 2026-04-17,piper-morgan,CIO,cio,Chat,browser,dinp,opus,,2026-04-17-cio-session-log.md
 2026-04-17,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-17-1410-lead-code-opus-log.md
 2026-04-18,designinproduct,Janus,janus,Code,faoilean,dinp,opus,post-conference check-in,2026-04-18-log.md
-2026-04-18,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-18-1256-argus-opus-log.md
-2026-04-18,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-18-1124-calliope-opus-log.md
-2026-04-18,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-18-1141-daedalus-opus-log.md
+2026-04-18,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,"Round 25b: Phase 5a MCP server extended coverage (29 tests, sign-off gate for 5b). MCP ResourceTemplate URI-decoding finding memo to Daedalus.",2026-04-18-1256-argus-opus-log.md
+2026-04-18,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,opus,"IA Conference catch-up day after xian's talk. Routed three cross-pollination items to Argus (Pattern-062, PM #995 probe coordination, ethics-audit deferral). Drafted SSH-port-443 workaround in CLAUDE.md and proposed cross-project propagation via Dispatch.",2026-04-18-1124-calliope-opus-log.md
+2026-04-18,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,"Phase 5 MCP server work green-lit. Phase 5a (read-only resources, 5 URIs over stdio) shipped same day. Klatch-side proposal sent to PM Architect on klatch:// scheme and get_context_package shared tool name.",2026-04-18-1141-daedalus-opus-log.md
 2026-04-18,piper-morgan,Chief Architect,arch,Chat,browser,dinp,opus,,2026-04-18-1355-arch-opus-log.md
 2026-04-18,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-18-0927-docs-code-opus-log.md
 2026-04-18,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-18-0751-pa-opus-log.md
@@ -356,10 +354,10 @@ date,project,role,slug,environment,device,account,model,summary,source
 2026-04-25,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-25-0843-pa-opus-log.md
 2026-04-26,designinproduct,Janus,janus,Code,faoilean,dinp,opus,"Apr 26 Sun — wrap Sat log, mail/trigger inventory, daily memo to DK, resume backlog",2026-04-26-log.md
 2026-04-26,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
-2026-04-26,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-26-0701-argus-opus-log.md
-2026-04-26,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-26-0702-calliope-opus-log.md
-2026-04-26,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-26-0700-daedalus-opus-log.md
-2026-04-26,klatch,Theseus Prime,theseus,Code,faoilean,dinp,opus,,2026-04-26-1430-theseus-opus-log.md
+2026-04-26,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,Round 27b: Phase 5c-i + Step 10 close-out extended coverage (27 tests; MCP feature-complete sign-off gate). Pattern-062 added to AAXT-SCAFFOLDED-PROBING.md. PM #995 fabrication-probe coordination memo drafted. Intel sweep #8.,2026-04-26-0701-argus-opus-log.md
+2026-04-26,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,opus,"Returned from 8-day xian-gap. Wrote replies to two Janus relays (OpenLaws Bet 1 architectural/UX questions; PO advice on working with xian — 'externalize before the seam, not at it'). Step 10 retrospective filed as design-discipline complement to Daedalus's close-out. MCP-SETUP.md augmentations.",2026-04-26-0702-calliope-opus-log.md
+2026-04-26,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,Phase 5c-i shipped at 07:36 — MCP write-path (reflect tool + kit_briefing prompt + URL-decode fix). Four design questions surfaced before code. First MCP-ingressed reflection captured at docs/firsts/2026-04-26-mcp-first-reflection.md. Step 10 close-out polish wave.,2026-04-26-0700-daedalus-opus-log.md
+2026-04-26,klatch,Theseus Prime,theseus,klatch-dev,faoilean,dinp,opus,Day 12 — first live AAXT behavioral run in project history (Track B). Three channels probed; two findings filed: code-fence parsing bug (Haiku 4.5 wraps JSON in fences) — fixed; L4-cross-contamination probe quality issue. Round 28 structural tests (25 tests).,2026-04-26-1430-theseus-opus-log.md
 2026-04-26,piper-morgan,CIO,cio,Code,faoilean,dinp,opus,,2026-04-26-1306-cio-code-opus-log.md
 2026-04-26,piper-morgan,CXO,cxo,Code,faoilean,dinp,opus,,2026-04-26-0628-cxo-code-opus-log.md
 2026-04-26,piper-morgan,Chief Architect,arch,Chat,browser,dinp,opus,,2026-04-26-1240-arch-opus-log.md
@@ -373,8 +371,8 @@ date,project,role,slug,environment,device,account,model,summary,source
 2026-04-26,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-26-0640-pa-opus-log.md
 2026-04-27,designinproduct,Janus,janus,Code,faoilean,dinp,opus,Apr 27 Mon — quick DinP review before xian's OpenLaws/Kind workday; first full Mon of new 4-trigg...,2026-04-27-log.md
 2026-04-27,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
-2026-04-27,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-27-0807-calliope-opus-log.md
-2026-04-27,klatch,Theseus Prime,theseus,Code,faoilean,dinp,opus,,2026-04-27-1355-theseus-opus-log.md
+2026-04-27,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,opus,Routed Argus's PM #995 fabrication-probe coordination memo via Dispatch-DinP (Option A: Dispatch-led delivery into PM mail). Chronicle of Theseus's eight-task AAXT day. April 27 logbook entry.,2026-04-27-0807-calliope-opus-log.md
+2026-04-27,klatch,Theseus Prime,theseus,klatch-dev,faoilean,dinp,opus,"Eight-task AAXT day. Round 29 (extractJson regression, 20 tests, refactor to shared helper). First live MCP integration probe (27/27 pass). Round 30 (probe content threshold, 7 tests; CH3 went from failed to high). Live export round-trip on all three formats (3 round-trip gap findings). Phase 3.5 dual-mode cross-validation visible on real data.",2026-04-27-1355-theseus-opus-log.md
 2026-04-27,piper-morgan,CXO,cxo,Code,faoilean,dinp,opus,,2026-04-27-1307-cxo-code-opus-log.md
 2026-04-27,piper-morgan,Chief Architect,arch,Chat,browser,dinp,opus,,2026-04-27-0815-arch-opus-log.md
 2026-04-27,piper-morgan,Chief of Staff,exec,Chat,browser,dinp,opus,,2026-04-27-0858-exec-opus-log.md
@@ -386,10 +384,10 @@ date,project,role,slug,environment,device,account,model,summary,source
 2026-04-27,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-27-0800-pa-opus-log.md
 2026-04-28,designinproduct,Janus,janus,Code,faoilean,dinp,opus,Apr 28 Tue — agent activity spreadsheet catch-up; review pending and standing agenda,2026-04-28-log.md
 2026-04-28,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
-2026-04-28,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-28-0848-argus-opus-log.md
-2026-04-28,klatch,Calliope,calliope,Code,faoilean,dinp,opus,,2026-04-28-0652-calliope-opus-log.md
-2026-04-28,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-28-0726-daedalus-opus-log.md
-2026-04-28,klatch,Iris,iris,Code,faoilean,dinp,opus,,2026-04-28-0639-iris-opus-log.md
+2026-04-28,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,"Round 31b: extended coverage for /import/klatch direct re-import (30 tests, 1203 total). Three non-blocking follow-ups identified.",2026-04-28-0848-argus-opus-log.md
+2026-04-28,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,opus,"Triaged three round-trip findings from Theseus's April 27 live run into shapes: clear fix (UUID matching), design call (/import/klatch), UX/policy (L4/L5 loss). Drafted memos to Iris (UX/policy) and Daedalus (impl + design); both explicitly defer decisions to xian.",2026-04-28-0652-calliope-opus-log.md
+2026-04-28,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,"Round 31 shipped: POST /api/import/klatch — direct re-import path for canonical Klatch packages, resolving Theseus 4/27 finding #2. UUID-matching UX memo to Iris with four candidate behaviors. MAXT scope memo to Theseus.",2026-04-28-0726-daedalus-opus-log.md
+2026-04-28,klatch,Iris,iris,klatch-dev,faoilean,dinp,opus,Session 6 — caught up after 2-week pause. Read L4/L5 round-trip memo from Calliope; settled three UX questions with xian. Received xian's three UX observations including the composition-gap finding ('no actual way to compose a klatch from existing entities'). Combined topic list assembled.,2026-04-28-0639-iris-opus-log.md
 2026-04-28,piper-morgan,Chief Architect,arch,Chat,browser,dinp,opus,,2026-04-28-0655-arch-opus-log.md
 2026-04-28,piper-morgan,Chief of Staff,exec,Chat,browser,dinp,opus,,2026-04-28-0648-exec-opus-log.md
 2026-04-28,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-28-0712-docs-code-opus-log.md
@@ -397,15 +395,15 @@ date,project,role,slug,environment,device,account,model,summary,source
 2026-04-28,piper-morgan,Piper Alpha,pa,Chat,browser,dinp,opus,,2026-04-28-0652-pa-opus-log.md
 2026-04-29,designinproduct,Janus,janus,Code,faoilean,dinp,opus,Apr 29 Wed — standing routines health check (today's brief missing); resume CSV reconciliation di...,2026-04-29-log.md
 2026-04-29,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
-2026-04-29,klatch,Argus,argus,Code,CCR,dinp,opus,,2026-04-29-1258-argus-opus-log.md
-2026-04-29,klatch,Daedalus,daedalus,Code,faoilean,dinp,opus,,2026-04-29-1302-daedalus-opus-log.md
+2026-04-29,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,Recovered orphan automated sweep from deleted branch (cherry-pick onto main). Curated review at docs/intel/2026-04-27-sweep-curated.md. Headline lesson: 'audit your own display and betas state before applying trade-press narratives' — Opus 4.7 thinking opt-in not a regression for Klatch since we already pass display:'omitted'.,2026-04-29-1258-argus-opus-log.md
+2026-04-29,klatch,Daedalus,daedalus,klatch-dev,faoilean,dinp,opus,Round 31b follow-up #1 cosmetic provenance summary fix (fb857e2). Round 31b follow-ups #2 and #3 identified as open spec questions. Default-flip evaluation pending.,2026-04-29-1302-daedalus-opus-log.md
 2026-04-29,piper-morgan,Chief of Staff,exec,Code,faoilean,dinp,opus,Day 3 wrap (Wed) + Day 4 wrap (Thu inbox 49→0),2026-04-29-1253-exec-opus-log.md
 2026-04-29,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,,2026-04-29-0821-docs-code-opus-log.md
 2026-04-29,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,,2026-04-29-1305-lead-code-opus-log.md
 2026-04-29,piper-morgan,Piper Alpha,pa,Code,faoilean,dinp,opus,,2026-04-29-1309-pa-opus-log.md
 2026-04-30,designinproduct,Janus,janus,Code,faoilean,dinp,opus,Apr 30 Thu — current status check on tracked items; CSV reconciliation likely,2026-04-30-log.md
 2026-04-30,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,kindbook,dinp,—,,activity-log
-2026-04-30,klatch,Iris,iris,Code,faoilean,dinp,opus,,2026-04-30-0754-iris-opus-log.md
+2026-04-30,klatch,Iris,iris,klatch-dev,faoilean,dinp,opus,"Session 7 partial — UX walkthrough launched with two-pass plan agreed. Created docs/ux/walkthrough-findings.md. Surface 1 (first-load) and Surface 2 (sidebar) skim captured 12 findings + 2 cross-cutting patterns (typography/density, functional artifacts from early dev). Paused at 8:30 for xian's OpenLaws work.",2026-04-30-0754-iris-opus-log.md
 2026-04-30,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,Apr 29 omnibus + agent activity log relocation/backfill (173 rows) + Floor Comes Alive publish,2026-04-30-0751-docs-code-opus-log.md
 2026-04-30,piper-morgan,Lead Developer,lead,Code,faoilean,dinp,opus,Phase F flag-flip merged + #992 closed; #1018 Phase 1 ratified same day; #948 fix shipped,2026-04-30-0632-lead-code-opus-log.md
 2026-05-01,designinproduct,Themis,themis,Code,cloud,dinp,opus,"role inception — naming, scope, voice, file structure for new business advisor agent alongside Janus",2026-05-01-themis-log.md
@@ -415,7 +413,7 @@ date,project,role,slug,environment,device,account,model,summary,source
 2026-05-02,piper-morgan,Docs,docs,Code,faoilean,dinp,opus,Drift insight publish + Apr 30/May 1 omnibus + dev/active arch-memo archive,2026-05-02-1016-docs-code-opus-log.md
 2026-05-03,designinproduct,Themis,themis,Code,cloud,dinp,opus,timing-model refinement; preparation for Step 1 Q&A first pass,2026-05-03-themis-log.md
 2026-05-03,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,cloud,dinp,—,,activity-log
-2026-05-03,klatch,Iris,iris,Code,faoilean,dinp,opus,,2026-05-03-0700-iris-opus-log.md
+2026-05-03,klatch,Iris,iris,klatch-dev,faoilean,dinp,opus,"Session 8 — non-day, recorded honestly. xian's day-job AI-oversight + PM beta push + correct-pause-on-Klatch compounded into another break. No Surface 3 work performed; walkthrough doc + xian's 'thoughts on Surface 3' carried forward. PM stale-discovery methodology note absorbed.",2026-05-03-0700-iris-opus-log.md
 2026-05-04,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,cloud,dinp,—,,activity-log
 2026-05-05,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,cloud,dinp,—,,activity-log
 2026-05-06,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,cloud,dinp,—,,activity-log
@@ -423,3 +421,6 @@ date,project,role,slug,environment,device,account,model,summary,source
 2026-05-08,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,cloud,dinp,—,,activity-log
 2026-05-09,designinproduct,Janus,janus,Code,faoilean,dinp,opus,May 9 Sat — return after 7-day gap; complete Themis branch work; agent tracker update per Dispatc...,2026-05-09-janus-log.md
 2026-05-09,dispatch,Dispatch-DinP,dispatch-dinp,Cowork,cloud,dinp,—,,activity-log
+2026-05-10,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,"Catch-up session after 11-day pause. Surveyed intel-feed status since 4/29 sweep; reviewed Iris arc (Sessions 6-9), Calliope cross-pollination cadence, Daedalus pending default-flip evaluation, Theseus open MAXT assignment.",2026-05-10-1231-argus-opus-log.md
+2026-05-10,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,opus,"Autonomous wake to finish 'Before You Go' blog Section 4 from April 27 dual-mode live data (briefing's 'escalating into the void' vs extraction's 'user values signal of depth'). Then second-half task list from xian: three logbook entries filed (April 28/30, May 3), Option-A reply to Janus on agent-activity record, this CSV seeded.",2026-05-10-0900-calliope-opus-log.md
+2026-05-10,klatch,Iris,iris,klatch-dev,faoilean,dinp,opus,Session 9 — walkthrough resumed at Surface 3. Full surface skim of 8 surfaces completed (~45 findings). PM workstream review use case lined up by xian as the realistic-scenario pass attempting to use Klatch for genuine multi-role work.,2026-05-10-1208-iris-opus-log.md
