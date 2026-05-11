@@ -1584,3 +1584,47 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - *PM M2f pre-remediation gate* — Run 7 PASS=68.9% exceeds Apr 12 baseline; CEO criterion met; audit-cascade unblocked.
 - *Usage CSV reconciliation (22-day carry)* — committed yesterday (Apr 25/28 + May 2/5 snapshots structured in).
 - *Janus activity-log catch-up* — Mar 31→May 9 landed (267 rows; PM canonical from Docs CSV; Klatch preliminary pending Calliope reply).
+
+## 2026-05-11 (Monday)
+
+**Focus**: Sunday surge across Piper Morgan, Klatch, and DinP. PM (~20 commits): M2d gate consolidated + UI Lifecycle Rubric v0.1 + labels reference; #921 FastAPI 0.115.14/starlette 0.46.2/httpx 0.28.1 upgrade shipped via directional evidence after PM pushback; Ship #042 draft "What Was Working Got Written Down" filed; multi-mailbox triage sweep (lead inbox to zero, PA day 40, exec Ship #042 cohort, CIO Ship #042 workstream review, CEO inbox); **PreCompact hook severity tiering (HARD/SOFT/QUIET) shipped**; Roadmap v15 → v16 swap per PPM memo + CEO ratification; bundled response acks (Architect test attestation, #983 unblocked, #1010 noted); staging-race tactical note under Rule 3 per HOST stance; comms fact-scrub correcting alfrick attribution. Klatch (~10 commits): Argus 5/04 external sweep curated + DB audit closed; MemPalace spike delta routed to Daedalus + Calliope; methodology cross-reference gap routed to Janus; **Calliope CSV backfill 103 canonical rows Mar 11→May 10**; Iris session 9 surface skim complete (~45 findings). DinP: Klatch CSV loop closed end-to-end (Option A, 103 canonical rows, aggregator integrated); 5/10 xpoll receipt 7/7. Dispatch: 5/10 daily memo to DK; **branch-bottleneck signal to DK (two-tier push policy proposed: operational mail to main, structural changes via PR)**.
+
+### What happened:
+- **Piper Morgan (product, ~20 commits)**: M2d gate consolidated criteria + UI Lifecycle Rubric v0.1 + labels reference landed; M2d ping to PPM (cc cohort). #921 FastAPI 0.115.14 + starlette 0.46.2 + httpx 0.28.1 upgrade shipped via directional evidence after PM pushback. Ship #042 draft "What Was Working Got Written Down" filed. Multi-mailbox triage: lead inbox to zero (12 items to read/), PA day 40 (60 items, 55 archived informational, 4 PA-direct, then 12 more), exec Ship #042 cohort triage (21 items to read/), CIO Ship #042 workstream review (May 1-7), CEO inbox triaged. PreCompact hook severity tiering (HARD/SOFT/QUIET) shipped. Roadmap v15 → v16 swap per PPM memo + CEO ratification. Bundled response acks to Architect (test attestation cited, #983 unblocked, #1010 noted). Staging-race tactical note under Rule 3 per HOST stance. Comms fact-scrub correcting alfrick attribution.
+- **Klatch (~10 commits)**: Argus 5/04 external sweep curated + DB audit closed; MemPalace spike delta on April 12 synthesis routed to Daedalus + Calliope; methodology cross-reference gap routed to Janus; session log finalized + COORDINATION updated. Calliope: CSV backfill 103 rows Mar 11 → May 10 (canonical), 3 logbook entries, Janus reply, "Before You Go" Section 4 finished from Apr 27 live run. Iris session 9 surface skim complete (8 surfaces, ~45 findings, synthesis); session 8 closed (May 3, no work).
+- **designinproduct (5 commits)**: 5/10 logs — Klatch CSV loop closed end-to-end (Option A, 103 canonical rows, aggregator integrated, viz synced); agents sync from aggregator with Klatch portion now Calliope-canonical; 5/10 xpoll receipt 7/7 delivered; 5/9 Janus log closed (8 closures, no blockers).
+- **Dispatch (8 commits)**: 5/10 daily memo to DK; signal to DK on branch bottleneck for daily memos (two-tier push policy proposed); intel re-anchored to Calliope's canonical Klatch backfill (102 → 103 rows, first-hand summaries, klatch-dev env preserved); auto activity log + stranded changes; yesterday's brief.
+- **PM website, Rebel, Weather, OpenLaws**: no commits.
+
+### Signals / decisions:
+- **PreCompact hook severity tiering (HARD/SOFT/QUIET) shipped** — three-tier warning model now in PM PreCompact hook. Lets the third sign-off layer differentiate "must commit before compact" from "informational" without spamming. Portable to Klatch's hook architecture once basic PreCompact rate-of-catch is observed.
+- **Two-tier push policy proposed (DinP→DK)** — pattern bit twice (5/4-5/6 pile, 5/6-5/8 pile): structural changes to daily-memo machinery sit on branches awaiting xian merge while operational mail piles up. DinP signal proposes operational mail → main directly; structural changes → PR. Awaiting DK response. Worth ratifying as cross-side discipline.
+- **#921 directional-evidence pattern under PM pushback** — FastAPI/starlette/httpx upgrade shipped after PM initially blocked on test-coverage uncertainty. Directional evidence (Run 6 PASS unchanged across upgrade) substituted for full re-eval; cleared the gate. Pattern: when full validation is expensive, directional evidence + bounded-blast-radius reasoning is a legitimate gate-passing path.
+- **Calliope CSV backfill canonical (103 rows)** — Klatch portion of agent activity tracker now Calliope-canonical (was preliminary in Janus 267-row catch-up). Aggregator integrated; agents sync downstream. Closes the prelim flag from 5/10.
+- **Roadmap v15 → v16 swap** — PPM memo proposed swap; CEO ratified. Document-cadence discipline: roadmap doc swaps go through PPM-proposes → CEO-ratifies, not Lead Dev edit-in-place.
+- **Argus DB audit closed** — 5/04 external sweep + DB audit both landed in 5/10 wrap. Klatch DB audit query for pinned literal model IDs (overdue) remains; this audit was a separate sweep-deliverable, not the model-ID audit.
+- **Anti-Zombie Pass clean** — no carry items re-flagged.
+
+### Pending (carried into May 12):
+- **DK reply on branch-bottleneck signal** — DinP sent two-tier push policy proposal 5/10 22:31; awaiting DK response.
+- **OpenLaws PR #30 (Jerry's review)** — TODAY. PO's plain-language register layer + fixes pending since Friday.
+- **OpenLaws Monday retro** — TODAY. Five strategic questions queued: cross-client aggressiveness, Smithery vs Anthropic-first, curated-vs-open, OAuth timing, Verified Publisher badge.
+- **Argus next external CCR auto-trigger** — TODAY 9 AM PT.
+- **Usage snapshots fresh** — both designinproduct.com (Max 20x, 48% weekly mtime 5/5, reset Wed 5/6 passed) and kindsys.us (Max 20x, 19% weekly mtime 5/5, reset Fri 5/8 passed) due today (6 days stale, past respective resets).
+- **OpenLaws synonym-registry question to John** — PO draft `workdesk/draft-question-to-john-synonym-registry-2026-05-04.md` unsent (carried 7 days). Light-touch sanity-check.
+- **OpenLaws working-tree hygiene** — `experiments/openlaws-mcp-poc-py/` rename residue (11+ days untracked).
+- **PM SDK 6 versions behind** — `@anthropic-ai/sdk 0.92.0` vs. pinned `^0.86.1`. Queued for next dep-maintenance window.
+- **PM roadmap.md 30 days stale** — last mtime Apr 11; Docs audit (#1049) flagged; PPM cadence proposal pending.
+- **#983 CONTEXT-BLOCKED label-convention memo to Architect** — sent Tue 5/05; in arch inbox; awaiting Architect verdict.
+- **Iris (Klatch) UX walkthrough Surfaces 3–8 + Pass 2** — paused; tracking only.
+- **Calliope (Klatch) PO advice-on-working-with-xian reply** — outside original window. Tracking only.
+- **Cross-pollination current-week brief** — 7 days stale (mtime May 4, covers Apr 27–May 3). Skipped per >2-day rule.
+- **Sun Jun 7 (T+27)**: OpenLaws Bet 1 sprint window close.
+- **Sun Jun 15 (T+35)**: Sonnet 4 / Opus 4 deprecation. Klatch DB audit query for pinned literal model IDs remains overdue.
+
+**Dropped this pass (resolved):**
+- *PM M2f Group A+B* — closed end-to-end Saturday (−2,229 LOC removed); Run 7 PASS=68.9% > Apr 12 baseline 65.6%; audit-cascade unblocked.
+- *Usage CSV reconciliation* — 22-day carry closed Saturday.
+- *Janus activity-log catch-up* — Mar 31→May 9 (267 rows) landed Saturday.
+- *DK→DinP 5/8 daily memo* — landed Sunday via merged branch.
+- *Calliope Klatch CSV preliminary→canonical* — 103-row backfill landed Sunday; agents downstream synced.
