@@ -1628,3 +1628,46 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - *Janus activity-log catch-up* — Mar 31→May 9 (267 rows) landed Saturday.
 - *DK→DinP 5/8 daily memo* — landed Sunday via merged branch.
 - *Calliope Klatch CSV preliminary→canonical* — 103-row backfill landed Sunday; agents downstream synced.
+
+## 2026-05-12 (Tuesday)
+
+**Focus**: PM M2f Group C closed end-to-end via autonomous loop — **#1071 audit-log on validation rejection shipped** (emits `KEY_VALIDATION_FAILED` audit event) + **#857 token refresh shipped** (gameplan → implementation → unit tests → rotation + login-issues-refresh + 401-retry wrapper → merge in one session); 4 issues closed in the day; #984 Phase 0 audit complete (STOP at PM-decision gate). "The Inchworm Position" published on PM website. Klatch (~15 commits): Argus 5/11 sweep curated + Daedalus 5/11 wrap, **Round 35 (claude.ai canonical UUID dedup) + Round 34 (MicroReflection.validUntil temporal validity)** + **Opus 4.7 plumbing with per-model gating**; SDK 0.86.1→0.95.1, Hono 4.12.12→4.12.18; Iris session 10 productive (Pass 2 complete, T1 triage + T2.1–T2.4 down payments + Daedalus unblocked on Track 1). OpenLaws (~22 commits): heavy Vergil research day — C1 competitive scan complete (Westlaw / Lexis+ AI / CoCounsel) + Week 3 Streams A & B + Claude-surface packaging round 1 (Chat install skeleton, Cowork install guide, Code CLI install guide); xian C1 review GTM-draft inputs to PO; sideload audit after Connectors-directory bug. DinP: 5/12 cross-pollination brief delivered (Managed Agents Dreaming theme — Opus 4.7 tokenizer, Iris two-track, PM M2f Group C). Dispatch: 5/11 memo + brief + auto-log + 5/12 xpoll brief filed.
+
+### What happened:
+
+- **Piper Morgan (product, ~20 commits)**: **M2f Group C closed end-to-end via autonomous loop.** #1071 audit-log on validation rejection shipped (`KEY_VALIDATION_FAILED` audit event); #857 token refresh shipped (Option A — gameplan → implementation → unit tests → rotation + login-issues-refresh + 401-retry wrapper → merge in one session). Four issues closed in the day; M2f Group C complete. #984 Phase 0 audit complete, STOP at PM-decision gate. CIO/Lead/Arch exchange on Pattern-067 slot-renumber + 12j ordering resolved by CIO disposition; lead filed two acks to `read/`. Inchworm Position syndication complete; comms voice/tone guide filed five PROPOSED additions for PM voice-pass.
+- **Piper Morgan (website, 2 commits)**: "The Inchworm Position" published; heading promotion to h1 follow-up.
+- **Klatch (~15 commits)**: Argus 5/11 sweep curated + Round 33 partial slice + 4 routings. Daedalus 5/11 log wrap protocol verification + finalized. **Round 35 (claude.ai round-trip canonical UUID dedup, Finding 1)** + **Round 34 (MicroReflection.validUntil temporal validity, audit-safe)** + **Opus 4.7 plumbing** (model registration, xhigh effort enum, **per-model gating**). SDK bumped 0.86.1 → 0.95.1; Hono 4.12.12 → 4.12.18. Iris session 10 opens: Pass 2 complete (workstream review), triage Tier 1 + cross-cutting typography pass + Tier 2 down payments (T2.1–T2.4) delivered; Daedalus unblocked on Track 1.
+- **OpenLaws (~22 commits)**: Heavy Vergil day. C1 competitive scan complete (Westlaw / Lexis+ AI / CoCounsel) + Week 3 Streams A & B research complete + Claude-surface packaging round 1. Bring-your-own-chat landing concept sketched; Chat install skeleton + Cowork install guide + Code CLI install guide drafted. xian C1 review GTM-draft inputs filed to PO. Sideload audit after Connectors-directory bug; uninstall workaround documented for xian.
+- **designinproduct (4 commits)**: 5/12 sweep finalized substantive; **5/12 cross-pollination brief delivered** (Managed Agents Dreaming, Opus 4.7 tokenizer, Iris two-track, PM M2f Group C); 5/11 receipt 7/7; hub index updated.
+- **Dispatch (5 commits)**: 5/11 daily memo to DK; 5/11 brief; auto activity log + stranded changes; 5/12 cross-pollination brief filed.
+- **Weather/Rebel**: No activity.
+
+### Signals / decisions:
+
+- **Opus 4.7 disciplined-rollout pattern (per-model gating)** — Klatch shipped model registration + xhigh effort enum + per-model gating in one commit. Per-model gating is the portable piece: don't expose new tiers globally; gate by model identity until cohort tested. Worth encoding wherever PM/OpenLaws add new model variants.
+- **PM M2f Group C autonomous loop** — #1071 + #857 shipped end-to-end without xian intervention; 4 issues closed in one cycle. CEO gate criterion (≥ Apr 12 baseline) remained met across the run. Confirms the autonomy pattern from Group A+B (Saturday) is reproducible.
+- **Iris two-track workload pattern** — Pass 2 (workstream review) and session 10 triage running in parallel rather than sequentially. Mirrors PM's multi-mailbox concurrent-operation pattern; both projects converging on the same parallel-track agent shape.
+- **Argus sweep-lag self-disclosure** — 5/11 curation flagged three items already shipped by Daedalus ahead of curation (SDK bump, Hono bump, Opus 4.7 plumbing). Sweep is lagging behind in-session velocity, not the other way around. Sweep self-correction: claim that Klatch runs HTTP/SSE MCP was wrong (it's STDIO per `bin.ts:13`); OX CVE-class conclusion still holds for the right reason (server-side, never spawns MCP subprocesses).
+- **PM SDK carry was mis-attribution** — version pin `^0.86.1` matched Klatch's TypeScript stack, not PM's Python; Klatch shipped 0.86.1 → 0.95.1 via 7b85660. Carry closed. Lesson: cross-project carry items should record the stack/repo, not just the package name.
+- **Anti-Zombie Pass clean** — multiple long-standing carries resolved (SDK mis-attribution, roadmap.md v15→v16 swap, #983 bundled ack, Iris Surfaces 3–8 superseded by triage).
+
+### Pending (carried into May 13):
+
+- **DK reply on branch-bottleneck signal** — DinP sent two-tier push policy proposal 5/10 22:31; ~36h unacknowledged at brief time. Under 48h window. No DK→DinP daily memo since 5/8 (within 4/23 DECISIONS.md skip-days-OK bounds).
+- **Usage snapshots overdue** — last CSV entry 2026-05-05 (7 days stale), past both dinp (Wed 9PM) and kindsys (Fri 5:59AM) weekly resets. Yesterday's brief flagged due today; still not landed.
+- **OpenLaws synonym-registry question to John** — workdesk draft mtime 2026-05-05 (8 days unsent, verified this pass). Light-touch sanity-check.
+- **OpenLaws working-tree hygiene** — `experiments/openlaws-mcp-poc-py/` rename residue (12+ days untracked, verified `git status` this pass).
+- **Calliope (Klatch) PO advice-on-working-with-xian reply** — outside original window. Tracking only.
+- **Janus DinP §1 backlog** — bootstrap scaffolding + memory file refresh + daily memo composition. Resumable.
+- **Sun Jun 7 (T+26)**: OpenLaws Bet 1 sprint window close.
+- **Sun Jun 15 (T+34)**: Sonnet 4 / Opus 4 deprecation. Klatch DB audit query for pinned literal model IDs remains overdue.
+
+**Dropped this pass (resolved or unverifiable):**
+
+- *Argus 5/11 external CCR auto-trigger* — landed 7:04, curated same-day 22:08.
+- *PM SDK 6 versions behind* — mis-attribution (Klatch TypeScript, not PM Python); Klatch shipped 0.86.1 → 0.95.1 via 7b85660; closed.
+- *PM roadmap.md staleness* — v15 → v16 swap landed 5/10 per PPM memo + CEO ratification.
+- *#983 CONTEXT-BLOCKED memo to Architect* — bundled-response ack 5/10 confirmed #983 unblocked.
+- *Iris UX walkthrough Surfaces 3–8 + Pass 2* — Pass 2 complete; session 10 triage workstream active and productive.
+- *OpenLaws PR #30 (Jerry's review) + Monday retro 5 strategic questions* — both scheduled 5/11; no DECISIONS.md update and no PR-#30 commits visible in OpenLaws log. Per drop-on-unverifiable rule.
