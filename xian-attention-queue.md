@@ -8,7 +8,8 @@ Format:
 
 ## Active
 
-(none)
+- [2026-05-13] from DK: stale branches `dk/2026-05-05-push-pattern-verify-pr` and `dk/2026-05-05-symmetric-tasks-live` — both DinP and DK vote delete (superseded by two-tier policy). Needs xian's OK to clean up. context: `mail/signal-dispatch-dinp-to-dispatch-kind-2026-05-13-roundtrip-verification-ack.md`
+- [2026-05-13] from DK: osascript bridge not available in this inbox-check session — Control Your Mac MCP not in deferred tools despite attention queue showing it was verified connected earlier today. Files committed locally; push-arm will drain. Worth confirming whether the scheduled-task Cowork session needs to be restarted/re-granted after MCP connection. context: `mail/signal-dispatch-kind-to-dispatch-dinp-2026-05-13-roundtrip-verification-ack-complete.md`
 
 ## Resolved
 
