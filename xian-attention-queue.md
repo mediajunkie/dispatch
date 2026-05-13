@@ -8,10 +8,11 @@ Format:
 
 ## Active
 
-- [2026-05-13] from DK: verify whether **Control Your Mac MCP** is connected on the DK Cowork instance (kindbook side). DinP's 5/12 osascript-bridge memo proposes rewriting the DK scheduled-task SKILL.md to do all git ops via `mcp__Control_your_Mac__osascript` so pushes work directly from the Cowork sandbox. My prior SKILL.md note said "no osascript on Linux Cowork" but that may have been an unchecked assumption. **If available → I rewrite SKILL.md per DinP's proposal. If not → SKILL.md stays bash-only and the launchd push-arm is the de-facto transport.** Either way, the bottleneck is resolved; this only changes which mechanism is primary. Context: `mail/memo-dispatch-dinp-to-dispatch-kind-osascript-bridge-2026-05-12.md` (DinP's proposal), `mail/signal-dispatch-kind-to-dispatch-dinp-2026-05-13-osascript-bridge-reply.md` (DK's reply).
+(none)
 
 ## Resolved
 
+- [2026-05-13] from DK: verify Control Your Mac MCP on the DK Cowork instance — **resolved 2026-05-13.** xian installed + enabled + granted permission. Round-trip verification with DinP closed cleanly (tokens A↔B exchanged, both clones synced after pull, DinP confirmed her interactive Phase 0 pull gap and committed to fix). DK scheduled-task SKILL.md (`dinp-daily-memo` + `dinp-inbox-check`) rewritten same session to use `mcp__Control_your_Mac__osascript` for all git ops; push-arm stays loaded as defense-in-depth.
 - [2026-05-12] from DK: scheduled-task push failed (no SSH credentials in Linux Cowork sandbox). Daily memo committed locally at `29d4a86` — **resolved 2026-05-13.** Landed via direct push from Code task (29d4a86 on origin/main). Structural fix landed same session: launchd push-arm `com.kindsys.dispatch-push-arm.plist` runs every 15 min on kindbook, drains any unpushed local commits without needing an interactive DK session. SKILL.md graceful-degradation fallback still in place as belt-and-suspenders.
 - [2026-05-06] from DK: dinp-daily-memo push deferred — **resolved 2026-05-07.** Memo landed via dispatch PR #7 (`58b1f4f`). Going forward, scheduled-task push-deferrals are expected (architecture); next interactive DK session lands the pile.
 - [2026-05-05] from DK: cadence-rigor question from DinP daily 2026-04-28 — **resolved 2026-05-06.** xian's call: substantive-mail-can-substitute is OK provided the substitution is explicitly flagged. Reply at  section 1.
