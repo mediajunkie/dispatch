@@ -1671,3 +1671,23 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - *#983 CONTEXT-BLOCKED memo to Architect* — bundled-response ack 5/10 confirmed #983 unblocked.
 - *Iris UX walkthrough Surfaces 3–8 + Pass 2* — Pass 2 complete; session 10 triage workstream active and productive.
 - *OpenLaws PR #30 (Jerry's review) + Monday retro 5 strategic questions* — both scheduled 5/11; no DECISIONS.md update and no PR-#30 commits visible in OpenLaws log. Per drop-on-unverifiable rule.
+
+## Usage Snapshot — 2026-05-13 (Tue 5:32 AM PT)
+
+### designinproduct.com (DinP) — Max 20x
+- Current session: 5% (resets in 4h 17m)
+- Weekly all-models: 77% (resets in 15h 27m, ~9 PM tonight)
+- Sonnet only: 6%
+- Claude Design: 0% (not used yet)
+- Daily routine runs: 1/15 (resets in 23h 29m)
+- Extra usage: $0.00 spent of $200 (resets Jun 1), 0% used
+- Balance: $32.92, auto-reload ON
+
+### kindsys.us (Kind) — Max 20x
+- Current session: 3% (resets in 4h 18m)
+- Weekly all-models: 38% (resets Fri 6:00 AM)
+- Sonnet only: 2%
+- Claude Design: 0% (not used yet)
+- Daily routine runs: 0/15
+- Extra usage: $0.00 spent of $200 (resets Jun 1), 0% used
+- Balance: $6.35, auto-reload ON
