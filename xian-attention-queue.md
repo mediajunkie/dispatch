@@ -9,6 +9,11 @@ Format:
 ## Active
 
 - [2026-05-13] from DK: stale branches `dk/2026-05-05-push-pattern-verify-pr` and `dk/2026-05-05-symmetric-tasks-live` — both DinP and DK vote delete (superseded by two-tier policy). Needs xian's OK to clean up. context: `mail/signal-dispatch-dinp-to-dispatch-kind-2026-05-13-roundtrip-verification-ack.md`
+- [2026-05-14] from DK: **merge PR #10 (and PR #9) on openlaws.** PR #10 contains the safelist fix that prevents `merge-keeper-sweep.sh` from attempting to delete `origin/main`. Tonight's sweep needed the fix re-applied locally as a one-off before continuing. Until #10 lands, every routine sweep needs the same patch reapplied. Strong recommend merging. context: `logs/2026-05-14-dispatch-kind-log.md`
+- [2026-05-14] from DK: **`merge-keeper-sweep.sh` v0.2 fixes needed**: Phase 3 force-removes ALL worktree dirs, not only those pinning EMPTY branches as the script comment claims. Tonight's sweep needed a `SWEEP_SKIP_WORKTREE` env-guard inline to avoid removing the runner session's own worktree. Bake the guard into v0.2. context: same log
+- [2026-05-14] from DK: **two prior DK logs sitting uncommitted** on the shared openlaws checkout: `logs/2026-05-05-dispatch-kind-log.md` and `logs/2026-05-11-dispatch-kind-log.md`. Per the per-memo commit-and-push norm, these should have landed already. Out of scope for the sweep tonight; flag for next DK Code-task push. context: same log
+- [2026-05-14] from DK: **sweep DERIVED branches need review**: claude/busy-mirzakhani-08ca55 (DK), po-cleanup-pass-2026-04-29 (PO, PR #4 merged → likely safe), vergil/install-guide-fix-2026-04-30 (Vergil, local + origin). Each looks safe-to-delete but the standard's procedure is "human review before delete." Want me to delete with prejudice, or do you want to walk through each first?
+- [2026-05-14] from DK: **sweep STRANDED branches**: (1) `claude/elegant-borg-0e5d15` — DK's own duplicate of PR #9 content; safe to delete once #9 lands. (2) `origin/vergil/cross-check-10-state-2026-04-29` — 8 commits, Vergil's Haiku ablation work; do NOT delete without Vergil's input. Vergil to triage when he's back.
 
 ## Resolved
 
