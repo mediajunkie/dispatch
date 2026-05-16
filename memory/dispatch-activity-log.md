@@ -840,25 +840,25 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 **Focus**: "Four Roles, Ninety Minutes" shipped; Janus zombie-content fix + anti-zombie sweep prompt hardening; PM #996 weekly audit findings
 
 ### What happened:
-- **Piper Morgan Product + Website**: "Four Roles, Ninety Minutes" shipped to blog + Medium late Tue (website `998cc89f3`, product `b644d2d6`). Docs worked the open #996 weekly audit in same session Ñ posted findings + 3-link broken-path fix in `pattern-049`.
-- **Janus Ñ Apr 21 zombie-content fix complete**: Revised Apr 21 cross-pollination brief from 4 insights to 2 (kept PDR-004 canonical-term discipline + Sibling Intelligence; dropped ethics-voice duplicate + weak mechanism-verification). Patched live sweep prompt + reference copy with Step 2.5 anti-zombie orientation, Step 3 retrospective-log rule, Step 4 dedup check. Delivered to all 6 readers clean.
+- **Piper Morgan Product + Website**: "Four Roles, Ninety Minutes" shipped to blog + Medium late Tue (website `998cc89f3`, product `b644d2d6`). Docs worked the open #996 weekly audit in same session ï¿½ posted findings + 3-link broken-path fix in `pattern-049`.
+- **Janus ï¿½ Apr 21 zombie-content fix complete**: Revised Apr 21 cross-pollination brief from 4 insights to 2 (kept PDR-004 canonical-term discipline + Sibling Intelligence; dropped ethics-voice duplicate + weak mechanism-verification). Patched live sweep prompt + reference copy with Step 2.5 anti-zombie orientation, Step 3 retrospective-log rule, Step 4 dedup check. Delivered to all 6 readers clean.
 - **designinproduct**: Apr 21 fix session closed in log. Hub sweep prompt patched against zombie content (filename-date extraction + dedup against recent briefs' Key Insight headings).
 - **Dispatch / klatch / OpenLaws / weather**: Each took the revised Apr 21 cross-pollination brief. Dispatch also filed the Apr 21 brief + weekly sandbox snapshot.
 - **Rebel**: Still not a git repo (back burner since Apr 9).
 - **Dispatch-K**: Day 8 offline (kindsys laptop at Apple Store since Apr 14). DinP + Janus + PO coverage holding.
 
 ### Signals / decisions:
-- Anti-zombie sweep prompt hardening Ñ Step 2.5 / Step 3 retrospective-log rule / Step 4 dedup check are the new reference template for duplicate-insight prevention across xpoll cycles.
+- Anti-zombie sweep prompt hardening ï¿½ Step 2.5 / Step 3 retrospective-log rule / Step 4 dedup check are the new reference template for duplicate-insight prevention across xpoll cycles.
 - Option 1 dedicated delivery CCR trigger design is ready to build whenever xian is (Janus).
 
 ### Pending (carried into Apr 22):
-- Usage snapshot refresh Ñ CSV 5 days stale, past 3-day threshold. dinp extra usage at 100% of $200 cap (resets May 1, 9 days out), kindsys at 66% of $150.
-- PM #996 audit morning review items: BRIEFING-CURRENT-STATE.md 6 days old (1 day from 7-day warn), roadmap.md 10 days stale, patterns/README.md line-6 count inconsistency (says 63, should be 62), 3 macOS-style duplicate files in dev/active/, 14 open issues missing milestone (#982Ð#996 range), 86 services/ files with mock_/fallback Ñ Docs recommends dedicated sweep issue.
-- PM Apr 17/18/19/20 omnibus logs Ñ deferred to today; 4 days to synthesize.
-- Option 1 dedicated delivery CCR trigger design (Janus) Ñ ready post dinp auth restore.
-- OpenLaws PM session-log PostToolUse hook adoption Ñ decision Apr 20, pending implementation.
-- PM #995 fabrication probe-set coordination Ñ parked behind Round 25b, tracking only.
-- Argus Ñ internal curated sweep Apr 13 now 9 days (under 14-day threshold but in watch zone).
+- Usage snapshot refresh ï¿½ CSV 5 days stale, past 3-day threshold. dinp extra usage at 100% of $200 cap (resets May 1, 9 days out), kindsys at 66% of $150.
+- PM #996 audit morning review items: BRIEFING-CURRENT-STATE.md 6 days old (1 day from 7-day warn), roadmap.md 10 days stale, patterns/README.md line-6 count inconsistency (says 63, should be 62), 3 macOS-style duplicate files in dev/active/, 14 open issues missing milestone (#982ï¿½#996 range), 86 services/ files with mock_/fallback ï¿½ Docs recommends dedicated sweep issue.
+- PM Apr 17/18/19/20 omnibus logs ï¿½ deferred to today; 4 days to synthesize.
+- Option 1 dedicated delivery CCR trigger design (Janus) ï¿½ ready post dinp auth restore.
+- OpenLaws PM session-log PostToolUse hook adoption ï¿½ decision Apr 20, pending implementation.
+- PM #995 fabrication probe-set coordination ï¿½ parked behind Round 25b, tracking only.
+- Argus ï¿½ internal curated sweep Apr 13 now 9 days (under 14-day threshold but in watch zone).
 
 ## 2026-04-22 (Wednesday)
 **Focus**: PM HOST Chatâ†’Code migration; #992 ETHICS-ACTIVATE Phases Aâ€“D shipped; Dispatch-Kind rebooted
@@ -1062,29 +1062,29 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 **Focus**: PM #1004 semantic detector shipped end-to-end (Steps 8+9, 112/112 PASS); #1002 + #1003 closed; Phase F flag-flip conditions met; Klatch first live MCP stdio integration test (27/27); OpenLaws Bet 1 Sprint Day 1 closed clean
 
 ### What happened:
-- **Piper Morgan (product, 30+ commits Ñ heaviest day on the network)**: #1004 SHIPPED in one session Ñ Step 8 Phase C run-1 (11/20 PASS) â†’ CXO divergence scan â†’ prompt v0.2 + probe deltas â†’ run-2 (18/20 PASS) â†’ Step 9 ship merge. Full ethics suite 112/112 PASS. #1002 + #1003 closed with full evidence. Lead Dev filed Phase F notification Ñ all four conditions met (Architect scoping, #1002+#1003 closed, diagnostic shows flag matters, probe set + two calibration rounds on main); decision routed to PM/PA. CIO published Methodology-00 (Flywheel v2) broadcast + omnibus reframing/workstream review source-shift memo. CXO landed CT v2.3 with embedded Branch-or-Anchor section. Methodology-24 + 25 filed. Pattern-063 + Pattern-064 slot allocation ratified by PM (063 = "Parallel-Authoring Drift," 064 = "Extension Without Integration"). Three PR merges (#1022/#1023/#1024). HOST published 360 synthesis cover.
-- **Klatch (9 commits)**: Theseus Round 29 (extractJson regression) + Round 30 (probe content threshold). First live MCP stdio integration test in project history Ñ spawned server via official TS SDK over stdio, 27/27 pass on second run. Live export round-trip across all three formats Ñ three gap findings filed (UUID-matching, no re-import path, L4/L5 lost). Phase 3.5b dual-mode extraction live (9 field notes; cross-validation pattern visible). AAXT against imported 143-message Theseus channel: 13/13 Correct on first L1 probing. Calliope routed Argus PM #995 outreach via Dispatch.
+- **Piper Morgan (product, 30+ commits ï¿½ heaviest day on the network)**: #1004 SHIPPED in one session ï¿½ Step 8 Phase C run-1 (11/20 PASS) â†’ CXO divergence scan â†’ prompt v0.2 + probe deltas â†’ run-2 (18/20 PASS) â†’ Step 9 ship merge. Full ethics suite 112/112 PASS. #1002 + #1003 closed with full evidence. Lead Dev filed Phase F notification ï¿½ all four conditions met (Architect scoping, #1002+#1003 closed, diagnostic shows flag matters, probe set + two calibration rounds on main); decision routed to PM/PA. CIO published Methodology-00 (Flywheel v2) broadcast + omnibus reframing/workstream review source-shift memo. CXO landed CT v2.3 with embedded Branch-or-Anchor section. Methodology-24 + 25 filed. Pattern-063 + Pattern-064 slot allocation ratified by PM (063 = "Parallel-Authoring Drift," 064 = "Extension Without Integration"). Three PR merges (#1022/#1023/#1024). HOST published 360 synthesis cover.
+- **Klatch (9 commits)**: Theseus Round 29 (extractJson regression) + Round 30 (probe content threshold). First live MCP stdio integration test in project history ï¿½ spawned server via official TS SDK over stdio, 27/27 pass on second run. Live export round-trip across all three formats ï¿½ three gap findings filed (UUID-matching, no re-import path, L4/L5 lost). Phase 3.5b dual-mode extraction live (9 field notes; cross-validation pattern visible). AAXT against imported 143-message Theseus channel: 13/13 Correct on first L1 probing. Calliope routed Argus PM #995 outreach via Dispatch.
 - **designinproduct (9 commits)**: Apr 28 cross-pollination brief shipped substantive (3 sources). Relayed CoS Q2 + Q5 replies for OpenLaws Bet 1 bundle. PA Q6 closure to Janus. Sweep + delivery receipts filed. Apr 27 log (Janus quick review of new 4-trigger rhythm).
-- **OpenLaws (~10 commits)**: Sprint Day 1 closed clean Ñ 6 deliverables, 3 deepenings, follow-ups tracker. Pitch v0.8 (bake-off â†’ cross-check reframe + Phase-1 carry-overs). Local cross-check MCP Ñ generic-OpenAPI proxy mirroring John's Scalar surface. Fat-marker sketches + audit walkthrough cleanup. DK Monday log + DinP thank-you. Vergil Tuesday-AM pickup signal filed.
-- **Dispatch (8 commits)**: Bundle complete signal (CoS Q2+Q5 landed); DK Monday relay received; consolidated PO relay updated; weekly cross-pollination digest Apr 21Ð27; brief 4/27.
+- **OpenLaws (~10 commits)**: Sprint Day 1 closed clean ï¿½ 6 deliverables, 3 deepenings, follow-ups tracker. Pitch v0.8 (bake-off â†’ cross-check reframe + Phase-1 carry-overs). Local cross-check MCP ï¿½ generic-OpenAPI proxy mirroring John's Scalar surface. Fat-marker sketches + audit walkthrough cleanup. DK Monday log + DinP thank-you. Vergil Tuesday-AM pickup signal filed.
+- **Dispatch (8 commits)**: Bundle complete signal (CoS Q2+Q5 landed); DK Monday relay received; consolidated PO relay updated; weekly cross-pollination digest Apr 21ï¿½27; brief 4/27.
 - **Weather/Zephyr**: No new commits (the two listed are reordered Sunday brief deliveries).
 - **Piper Morgan (website)**: No commits.
 - **Rebel**: Still not a git repo (back burner since Apr 9).
 
 ### Signals / decisions:
-- **#1004 calibration pipeline transferable** Ñ typed probe dataclass + async runner + domain-expert divergence loop is reusable for Klatch's AAXT if it ever extends to behavioral-correctness assertions on redirect content. `hint_shape_violation` named as failure mode on substantive domain words (foreseeable gotcha for redirect-output input-substring leakage audits).
+- **#1004 calibration pipeline transferable** ï¿½ typed probe dataclass + async runner + domain-expert divergence loop is reusable for Klatch's AAXT if it ever extends to behavioral-correctness assertions on redirect content. `hint_shape_violation` named as failure mode on substantive domain words (foreseeable gotcha for redirect-output input-substring leakage audits).
 - **Klatch first live MCP stdio integration (27/27)** + three export round-trip gaps mapped to Phase 3.5 / L5 portability work in flight: (a) UUID-matching gap â†’ re-import creates duplicate projects; (b) canonical format has no `/import` endpoint; (c) silent round-trip drops Layer 5 (Phase 3.5 must be explicitly invoked).
-- **Methodology-24 (Branch-or-Anchor) + Methodology-25 (Workstream Review Cadence) filed**. Pattern-063 self-implements via CT v2.3 Ñ canonical rubric now tells its own users how to avoid Parallel-Authoring Drift when extending it. Methodology-25 codifies source discipline for workstream reviews effective Ship #041 onward (read primary session logs first; omnibus is coverage check, not primary input).
-- **CoS PO advice landed (Q5)** Ñ source-check comparative claims before they ship under someone else's name. Reviewer-vs-author distinction; discipline depends on the relationship's tolerance for "wait, let me check that."
+- **Methodology-24 (Branch-or-Anchor) + Methodology-25 (Workstream Review Cadence) filed**. Pattern-063 self-implements via CT v2.3 ï¿½ canonical rubric now tells its own users how to avoid Parallel-Authoring Drift when extending it. Methodology-25 codifies source discipline for workstream reviews effective Ship #041 onward (read primary session logs first; omnibus is coverage check, not primary input).
+- **CoS PO advice landed (Q5)** ï¿½ source-check comparative claims before they ship under someone else's name. Reviewer-vs-author distinction; discipline depends on the relationship's tolerance for "wait, let me check that."
 
 ### Pending (carried into Apr 28):
-- **#992 Phase F flag-flip decision (PM/PA call)** Ñ all four conditions met per PPM v4. Lead Dev's recommendation: defer the actual flip until ADR-061 (architectural-delta codification, in flight from Architect) lands.
-- **Usage CSV refresh + Apr 25 snapshot append** Ñ 11 days stale (last Apr 17). dinp 100% of $200 cap; kindsys 101% of $150 cap (over by $1.85). Both reset Fri May 1.
-- **PO advice-on-working-with-xian Ñ Calliope (Klatch) reply still pending** Ñ Day 4 of the 5Ð7 day window. DRAGONS, CoS, PA all on record. Tracking only.
-- **Janus DinP backlog three ¤1 items** (bootstrap scaffolding update, memory file refresh, daily memo composition) Ñ Apr 27 was a quick-review session, no advancement; resumable.
-- **Argus external CCR scan check** Ñ latest file in `klatch/docs/intel/` is Apr 26; Mon Apr 27 9 AM PT auto-trigger does not appear to have produced a new file; flag if Apr 28's run is also missing.
+- **#992 Phase F flag-flip decision (PM/PA call)** ï¿½ all four conditions met per PPM v4. Lead Dev's recommendation: defer the actual flip until ADR-061 (architectural-delta codification, in flight from Architect) lands.
+- **Usage CSV refresh + Apr 25 snapshot append** ï¿½ 11 days stale (last Apr 17). dinp 100% of $200 cap; kindsys 101% of $150 cap (over by $1.85). Both reset Fri May 1.
+- **PO advice-on-working-with-xian ï¿½ Calliope (Klatch) reply still pending** ï¿½ Day 4 of the 5ï¿½7 day window. DRAGONS, CoS, PA all on record. Tracking only.
+- **Janus DinP backlog three ï¿½1 items** (bootstrap scaffolding update, memory file refresh, daily memo composition) ï¿½ Apr 27 was a quick-review session, no advancement; resumable.
+- **Argus external CCR scan check** ï¿½ latest file in `klatch/docs/intel/` is Apr 26; Mon Apr 27 9 AM PT auto-trigger does not appear to have produced a new file; flag if Apr 28's run is also missing.
 - **OpenLaws Bet 1 Sprint Day 2 (Apr 28) â†’ Day 3 prototype bake-off prep (Apr 29)** â†’ Sprint window close Sun Jun 7 (T+40).
-- **Sun Jun 15 (T+48)** Ñ Sonnet 4 / Opus 4 deprecation. Aliases in place; DB audit query for pinned literal IDs is the remaining work (Argus tracked).
+- **Sun Jun 15 (T+48)** ï¿½ Sonnet 4 / Opus 4 deprecation. Aliases in place; DB audit query for pinned literal IDs is the remaining work (Argus tracked).
 
 ## 2026-04-28 (Tuesday)
 
@@ -1691,3 +1691,25 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - Daily routine runs: 0/15
 - Extra usage: $0.00 spent of $200 (resets Jun 1), 0% used
 - Balance: $6.35, auto-reload ON
+
+## 2026-05-15 (Friday)
+
+**Focus**: Themis patch relay end-to-end; dk-daily-memo ghost-run root-caused and fixed (osascript â†’ `start_code_task`); CIO duty cycle V1 design captured for May 16 pilot.
+
+### What happened:
+
+- **Themis patch relay complete** â€” 4 patches applied to the designinproduct branch and pushed to origin. Relay path Themis â†’ DinP held; no merge conflicts on the apply side. Branch now carries the full sequence for downstream pickup.
+- **dk-daily-memo ghost-run diagnosed and fixed** â€” recurring scheduled task was firing but producing no daily memo (visible DK-side as the missing 5/13â€“5/14 entries until the backfill commit `816a298`). Root cause: osascript bridge path was failing silently. Rewrote the task to invoke `start_code_task` directly instead of routing through osascript. Task now recurs daily at 8 PM and produces a real memo per run.
+- **CIO duty cycle V1 design captured to memory** â€” first formal duty-cycle spec for an agent role, written to memory ahead of the **CIO pilot tomorrow (May 16)**. Pilot will be the empirical check on whether the V1 cycle shape (cadence + handoff boundaries + closing criteria) holds before it gets generalized to other roles.
+- **Ghost-run diagnosis memo sent to DK** â€” filed in `mail/` describing the osascript failure mode, the `start_code_task` fix, and what to watch for on the DK side if their own scheduled tasks exhibit the same ghost-run signature.
+
+### Signals / decisions:
+
+- **`start_code_task` is the canonical path for scheduled-task-driven work** â€” osascript bridge is now confirmed as a silent-failure surface for recurring tasks. Any new scheduled task that needs to invoke a Code agent should call `start_code_task` directly; existing tasks on the osascript path should be audited and migrated as encountered.
+- **Duty-cycle pilots are role-at-a-time** â€” CIO is the first; results from the 5/16 pilot gate any rollout to other roles.
+
+### Pending (carried into May 16):
+
+- **CIO duty cycle V1 pilot** â€” TOMORROW (5/16). First empirical run of the captured design.
+- **dk-daily-memo needs "Run now" for tool pre-approval** â€” operational: the rewritten task still needs an interactive "Run now" invocation so the tool calls get pre-approved for the recurring schedule. Until that happens, the next scheduled fire may prompt and stall. Single manual run clears it.
+- **Audit other scheduled tasks for osascript-bridge usage** â€” same ghost-run pattern likely exists elsewhere; sweep when next touching the scheduled-tasks list.
