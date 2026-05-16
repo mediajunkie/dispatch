@@ -127,7 +127,6 @@ date,project,role,slug,environment,device,account,model,summary,source
 2026-03-22,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,Continuing Round 8 / sidebar redesign test rounds; supporting the Step 9 Phase 2/3 ship cycle.,2026-03-22-0636-argus-opus-log.md
 2026-03-22,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,sonnet,Chronicle and coordination through the Step 9 ship arc; supporting blog publication and decision-log integrity.,2026-03-22-0655-calliope-sonnet-log.md
 2026-03-22,klatch,Theseus Prime,theseus,klatch-dev,faoilean,dinp,opus,AXT testing through the Step 9 Phases 2-3 surfaces.,2026-03-22-1358-theseus-opus-log.md
-2026-03-23,VA,Archie,archie,Cowork,cloud,dinp,—,Onboarded as VA Ops Partner + filesystem signaling,activity-log
 2026-03-23,dispatch,Dispatch,dispatch,Cowork,kindbook,kindsys,—,VA workflow + Archie onboarding + Klatch report + RFA briefing,activity-log
 2026-03-23,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,Continued test rounds supporting Step 9 ship cycle; intel sweep and security update work.,2026-03-23-0723-argus-opus-log.md
 2026-03-23,klatch,Calliope,calliope,klatch-dev,faoilean,dinp,sonnet,Chronicle work; logbook updates; supporting cross-project briefing context.,2026-03-23-calliope-sonnet-log.md
@@ -136,7 +135,6 @@ date,project,role,slug,environment,device,account,model,summary,source
 2026-03-24,klatch,Aether,aether,klatch-dev,faoilean,dinp,opus,MAXT Session 01 subject — Theseus fork as informed test subject for AXT/MAXT. Confirmed Subliminal failure mode (delivered content but wrong self-model). Provided first-person account.,2026-03-24-0736-Aether-opus-log.md
 2026-03-24,klatch,Argus,argus,klatch-dev,CCR,dinp,opus,Test coverage supporting MAXT Session 01 findings and continued Step 9 Phase work.,2026-03-24-1222-argus-opus-log.md
 2026-03-24,klatch,Theseus Prime,theseus,klatch-dev,faoilean,dinp,opus,MAXT Session 01 with Aether (Theseus fork) as subject — confirmed subliminal injection of Layer 3 MEMORY.md content; eight findings filed.,2026-03-24-0728-theseus-opus-log.md
-2026-03-25,VA,Archie,archie,Cowork,cloud,dinp,—,Auto morning briefing (Sprint Review + budget cut news),activity-log
 2026-03-25,dispatch,Dispatch,dispatch,Cowork,kindbook,kindsys,—,Sprint review day + Serena fix + MCP research + digests + billing,activity-log
 2026-03-26,designinproduct,Janus,janus,Code,kindbook,dinp,opus,"Repo reconciliation, atlas/globe/weather, sweep re-run",git-log
 2026-03-26,dispatch,Dispatch,dispatch,Cowork,kindbook,kindsys,—,Phase 1 migration + billing restructuring + API key repointing,activity-log
