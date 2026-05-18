@@ -1,4 +1,4 @@
-# Current Week Intelligence Brief: May 4–10, 2026
+# Current Week Intelligence Brief: May 11–17, 2026
 
 **For:** In-session context (paste into chat as knowledge base)
 
@@ -6,88 +6,94 @@
 
 ## This Week at a Glance
 
-The week's arc runs from sprint surge to sprint gate: M2d completed in one session (May 3 Sunday, 8 issues, 221+ tests), M2e launched the same day and closed out Thursday, then M2f opened — but blocked immediately on a quality-regression investigation that had to clear before audit-cascade could proceed. By Saturday, the gate was cleared (Run 7 at 68.9% PASS), M2f Group A+B shipped, and −2,229 LOC was removed via dead-code deletion rather than migration. Two operating disciplines reached codification this week: audit-cascade as a mandatory pre-implementation gate (now validated by three independent catching events) and multi-agent git collision prevention (evolved from incident pattern to four specific mitigations now embedded in hub CLAUDE.md). Klatch had no session activity for the full seven days; its open items — SDK 6 versions behind, Iris walkthrough Surfaces 3–8, June 15 deprecation DB audit — all remain untouched.
+The week opened with a design reframe — panels as functional musculature, not settings admin — and closed with a published essay theorizing how exactly such reframes spread across sibling projects. In between, a single sweep item from Monday morning (Anthropic's Managed Agents "Dreaming" release) repositioned both projects' memory differentiation strategies within 48 hours, with Klatch publishing a full research spike by Tuesday and PM's Piper Alpha beginning a parallel PoC. Klatch ran three consecutive Iris design sessions (9–11), resolving UX vocabulary and producing a concrete 1.0 critical path. PM delivered its heaviest infrastructure week of the sprint cycle: ADR-054's Layer 3 memory moved from designed-but-unimplemented to live data, a silently-bypassed workflow engine was deleted (−10,734 LOC), and the conversational Floor gained real-time GitHub-state awareness. Both projects ended the week with cleaner architecture, lower surface area, and more clearly defined next horizons.
 
 ---
 
 ## Key Discoveries
 
-**Pre-work investment eliminates implementation-phase discovery.** The week's sharpest velocity signal: #1052's persistence layer (22 tests, shipped May 4 evening) made #900 mechanical. Actual wall-clock: 2 hours vs. 12–14 hour estimate. Lead Dev's analysis — Phase 1's state-machine design made downstream phases mechanical, and #1052 had already solved everything Phase 4 needed before Phase 4 code ran. Same pattern was validated in M2e: #1042's RepoResolver cleanup (220 LOC, 4-level cascade, 14 hardcoded literals removed) ran first because it was a dependency; the three INTENT-COVERAGE issues shipped cleanly in sequence behind it. The discipline is: file the pre-work as a standalone ticket, ship it first, then execute the main issue.
+**Anthropic's native memory store is architecturally identical to Klatch's L3.** Argus's Dreaming research spike (478 lines, 5 passes) confirmed: Anthropic's Managed Agents memory layer is a markdown filesystem with hierarchical namespace and session-persistent context — the exact shape of Klatch's L3. The April 12 Janus synthesis predicted this design space with ~90% accuracy four months in advance. The strategic corollary holds for both projects: **don't compete on "external memory layer for Claude"; compete on assembly-layer differentiation** — cross-channel context assembly and conversation-as-substrate are what the SDK doesn't provide. Klatch's import/export contract is unaffected (none of its three importers or transports touch memory-store APIs today). Five architecture decisions (D1–D5) are named and pending, with D1 (should Klatch export L3 snapshots in export packages?) as the load-bearing one.
 
-**Audit-cascade caught three blocking gaps before implementation ran.** Three distinct incidents, same family: (1) StandupConversation persistence was a module-level singleton dict — lost on restart — caught during #900 gameplan refresh before any code; (2) 12 M2d issues shipped without GitHub state-transition; caught Monday morning, retroactively corrected; (3) M2f Group A+B Phase 0 investigations found 3 of 5 issues describing dead or unreachable code — #936's UserService had zero production callsites, #935's INSERT gate never fired, #933's bypass had outlasted its reason by 6 months. Without Phase 0, all three would have been implemented as written. Pattern-067 (Issue-Body Reality Mismatch) filed Emerging by Lead Dev: *trigger conditions: "TODO to enable X," "lost on restart," line-number citations from triage runs N months ago.*
+**Opus 4.7 is now Klatch's default — the +35% tokenizer concern resolved empirically.** Monday's brief reported the flip held pending compaction-threshold recalibration. By Tuesday, Daedalus's own 4.7 sessions hadn't surfaced the concern and xian released the flip. The SDK bumped from 0.86.1 to 0.95.1 in the same window (was 6 minor versions behind). Klatch: 1,263 tests green on 4.7. PM has the same evaluation pending; the empirical Klatch data is positive evidence the +35% tokenizer impact isn't a practical constraint on current session shapes.
 
-**Multi-agent git collision discipline reached CLAUDE.md.** Four technical findings across the week, each adding precision to the earlier "commit-per-functional-unit" mitigation: (1) commit after each functional unit, not at phase boundary — minimizes loss when collision happens; (2) subagent deployment requires `git worktree add` or commit-before-deploy — `git checkout <branch>` in a shared `.git` flips HEAD for the deploying agent; (3) `&&`-chain verification doesn't gate — `git branch --show-current` exits 0 regardless of output, so `git branch --show-current && git commit` commits even on the wrong branch; (4) pre-commit gated check (`[ "$(git branch --show-current)" = "main" ]`) caught a mid-#932 collision with exit 1, preventing a bad commit. The PreCompact hook (#86) shipped Friday as the third automated layer: three git checks (uncommitted changes, unpushed commits, commits ahead of origin/main), warn-only, fires before context compaction.
+**Iris sessions 9–11 compressed an entire design sprint.** Three sessions across the week resolved: panels as functional musculature (F6.7 — the design mandate); a two-track patch/redesign split; panel disclosure taxonomy (settings panels inline, task/library panels as true modals); and all five user vocabulary questions (V1–V5: klatches/chats, agent/role, set-up-a-klatch, invite/convene, naming-is-promotion). A concrete 1.0 critical path design brief landed: composition gesture → klatch setup surface → Tier 1 patches → working meeting experience → promotion gesture. The faint-token fix completed a one-day round-trip: Iris spec'd → Daedalus shipped → Argus pinned in tests.
 
-**M2f quality regression was judge miscalibration and fixture pollution — not fabrication.** Run 4's apparent regression from 72.1% to 65.6% (9% drop) triggered a CEO P0 investigation. Lead Dev's findings: 0 of 10 auto-fails were pure LLM fabrication; 7 were judge-calibration or fixture artifacts. Smoking gun: Q56 "show my todos" flagged as fabrication — the test user had 15 real todos accumulated from prior retest runs executing Q53/Q54 mutations without cleanup. Rubric gap also found: PASS/MARGINAL criteria required "no zeros" while FAIL only fired on 2+ zeros — single-zero responses defaulted to FAIL. Three narrow bug fixes shipped (#1065 hardcoded setup-wizard references, #1066 `#N` slot-fill regex, #1067 subsumption filter). Run 7 result: 68.9% PASS (+5.0 vs Run 6), exceeding Apr 12 baseline. CEO gate criterion met; M2f audit-cascade unblocked.
+**PM's "designed-but-unimplemented" memory infrastructure finally produces real signal.** #1021 UserHistoryService Layer 3 shipped end-to-end: 4 new schema columns (topics JSONB, preview TEXT, is_private, turn_count), GIN index, DBUserHistoryRepository with ranking, maintenance hooks on save_turn and archive_conversation, 4 auth-gated API routes, and a latent bug fix in context_assembler that had been silently preventing MEMORY-category queries from populating the floor. The schema-discovery cut the estimate from 4–6 days to ~2–3 days because ConversationDB and ConversationTurnDB already existed. ADR-054 and PDR-002 adaptive greetings are now production-active.
 
-**Pattern-062 family fully Proven; Pattern-067 filed Emerging.** CIO promoted Patterns-063 (Parallel-Authoring Drift), -064 (Extension Without Integration), and -065 (Continuity Memo Before the Seam) from Emerging to Proven in a single session — the 062 architectural-debt family is now complete. Pattern-064's reference instance closed this week: #1055 removed the `KnowledgeGraphService` alive scaffolding and the legacy `boundary_enforcer.py` (−1,518 LOC, all 112 ethics tests pass) — the first substantial PM cleanup directly attributable to a pattern diagnosis. Pattern-067 joins the library at Emerging: the Issue-Body Reality Mismatch shape, validated by M2f Group A+B's −2,229 LOC deletion result.
+**The workflow engine that had been silently bypassed for months was deleted.** Phase 0 audit confirmed the engine's main-path usage had been rerouted by #883 months earlier; Slack's tests were mocking it entirely. #1094 ENGINE-DELETION removed the orchestration engine, WorkflowFactory, and Slack dispatcher (−10,734 LOC; 59 files touched; 1,434/1,434 intent service tests pass). The Workflow domain model was preserved — machinery vs. model is the cut. The cleanup also tipped Pattern-072 ("Registries Grow into Architectural Shapes") to Proven: the task_type registry gained its fourth behavior-deciding consumer (Slack dispatch), meeting the formalization criterion.
 
-**#1053 subagent arc validated "annotation not improvisation" as the correct scoping behavior.** The test-migration subagent deployed Thursday and found Phase 2 over-scoped — 12 tests already passing, no migration needed. Behavior: annotated the discrepancy in a commit message ("annotate test_standup_routing_585.py rationale — no migration needed"), did not improvise. 12 stale tests (#1063) discovered and filed with consistent skip rationale; Lead Dev rewrote them the next session in 15 minutes. The arc (staged gameplan → subagent annotates discrepancy → next-session cleanup) operated cleanly end-to-end. The 16-check post-execution audit matrix committed to the repo before merge is now the reference format.
-
-**Three publications shipped; Ship #041 is the largest to date.** "Six Issues Before Dinner" (Medium, Tuesday), Ship #041 "The Methodology Closes Its Own Loops" (canonical + LinkedIn, Wednesday — 27,716 chars HTML, largest Ship to date), and "A Hail of Memos" (pipermorgan.ai, Thursday). Docs fact-check caught a Haiku 3 retirement timing inaccuracy in "Six Issues Before Dinner" before publish. Footer-tease rule encoded in memory. Three active tracks (Ship newsletters, Building Piper Morgan narrative, insight posts) are now operating in steady cadence.
+**Documentation drift is now a named, filed pattern.** Six instances of Pattern-073 (Documentation-Asserted-Behavior Drift) surfaced within 48 hours of the engine deletion: docstrings that asserted behaviors the code no longer exhibited, fixture names that didn't match their actual classification behavior, user-facing copy referencing a deleted setup wizard, an issue body recommending a patch inappropriate for the actual column type. The pattern: a narrative artifact asserts a present-tense contract about a named code surface, the code drifts, the artifact doesn't. A companion doc-sync-sweep skill (v0.1) was drafted and applied same day. Promotion to Proven requires one more independent instance by May 30 and a clean fresh-fix flow by a different agent.
 
 ---
 
 ## What PM Should Know
 
-- **M2f is unblocked.** Run 7 at 68.9% PASS exceeds Apr 12 baseline; CEO gate criterion met. M2f Group A+B complete. M2f Group C is the next execution unit.
-- **Pre-M2f remediation is complete.** Fixture reset baked in; rubric recalibration memo distributed to CXO+PPM (PM authorized "proceed without sign-off"); 3 bug fixes shipped; discovered work filed (#1068 milestone routing failures, #1069 templated attention_query, #1070 multi-turn eval harness).
-- **Pattern-067 (Issue-Body Reality Mismatch) is actionable now.** Before any M2f Group C or M2g gameplan: run a Phase 0 dead-code check on any issue body with "TODO to enable," "lost on restart," or stale line-number citations. The cost is 30 minutes; the M2f Group A+B experience shows the alternative is implementing features nobody can reach.
-- **#1058 agent-prompt-template hygiene review is filed.** Trigger: audit-cascade audit prep for #1053 generated 6 N/A flags in one pass, signaling template drift. N/A count ≥5 in a single audit = the template is worth reviewing for that issue class, independent of whether the audit passed.
-- **Notion Phase -1 investigation (#1059) filed.** Actual codebase: 1,504 LOC (up 35% from Aug 2025 estimate of 1,112). #304 sub-epic placement gated on the Phase -1 memo. PM ratified: Notion IS in alpha scope.
-- **#1047 M2D-UAT is open (P3).** One-agent, one-sitting UAT pass targeting the UI issues from the M2d sprint. Deferred browser smoke for #704, #714, #1030–#1033, #1035. Produces a `dev/YYYY/MM/DD/m2d-uat-report.md`.
-- **Hub CLAUDE.md updated.** Multi-Agent Operation subsection (mail-on-main rule, branch hygiene, lightweight concurrent-operation discipline) and Janus Layer 5 expansion (4 named working areas, Active Stewardship principle) committed Saturday.
+- **M2f complete (Groups A+B+C+E).** Token refresh (#857 Option A) shipped; Floor has 7 cached, fail-graceful context surfaces including GitHub-state awareness (blocked items, active milestones, recent activity). All with TTLs and Redis fallback.
+- **M2g-A+B closed; M2g-C+ in progress.** #1087 SEC-JWT-SECRET-PROD-GUARD filed (jwt_service.py uses hardcoded dev key when env unset — production risk). #1088 GITHUB-ADAPTER-DEMO-FALLBACK filed.
+- **#1090 MUX/UI gap cohort underway.** Six roles contributing role-specific input by Wed May 20 EOD; CXO synthesis Fri May 22. Lead Dev surfaced 7 UI surfaces beyond MUX scope. CXO named three voice spines from existing MUX: colleague-not-system / offer-first / always-useful.
+- **Pattern-073 Proven window: May 30.** Promotion requires one more independent instance within 14 days (by 2026-05-30) AND doc-sync-sweep skill operating cleanly on a fresh-fix flow by a different agent. The six confirmed instances were all surfaced by a single large deletion; the next candidate is any significant refactor.
+- **Piper Alpha: Anthropic plugin/MCP bundle PoC underway.** PA is Skunkworks Lead; build-less-first posture; two prior-art repos provided (`claude-for-legal`, `knowledge-work-plugins/product-management`). Parallel to PDR-005 v0.3 (BYOC, in-flight via Architect + CXO).
+- **#1070 multi-turn evaluation harness deferred** (3–5 hr methodology investment; was past 8pm on May 12).
+- **Worktree-default is now standing policy** with enforcement hooks: `pre-commit-broad-staging-warn.sh` (warns on 3+ mailbox roles / 20+ files / 2+ role-slug session logs in one commit) and `scripts/safe-push.sh` (auto-retry on non-fast-forward via stash → fetch → rebase → retry).
+- **Context-usage-reminder hook landed** (fires at 50MB transcript threshold, proactive complement to PreCompact). Two-tier context discipline now in place: 90% reminder → compaction → PreCompact warn.
 
 ---
 
 ## What Klatch Should Know
 
-- **No session activity this week.** All open items from last week's digest remain unchanged. The items below are updates from PM that are cross-relevant; none require Klatch action until sessions resume.
-- **June 15 SDK deprecation: 35 days.** DB audit for live channels pinned to literal model IDs (`claude-sonnet-4`, `claude-opus-4`) is overdue since April 29. SDK at `^0.86.1` — target should now be `^0.92.0` (0.92.0 released May 1), not 0.90.0. Batch with Hono dep-maintenance window.
-- **Iris walkthrough Surfaces 3–8 + Pass 2 still pending.** No progress this week.
-- **Multi-agent git collision discipline — four specific findings to absorb.** The &&-chain gating gap and the worktree-required-for-subagents findings are new precision beyond what was in last week's digest. For any Klatch multi-agent or subagent deployment: pre-commit check must be gated form (`[ "$(git branch --show-current)" = "main" ]`), not inline `&&` prefix. Subagents that run `git checkout` require a dedicated worktree or pre-deploy commit of all foreground work.
-- **RepoResolver 4-level decision-tree (#1042)** is directly applicable to any Klatch capability that needs to resolve an implicit target at runtime. The cascade (explicit arg → user preference → env var → error) cleanly separates "what the user said" from "what we infer." Negative-test patterns in #1040's pre-classifier (explicitly testing that `label this as urgent` does NOT route to `list_labels_query`) are worth adding to AAXT for any capability whose routing vocabulary overlaps with conversational English.
-- **Eval harness findings for Argus.** Two structural findings from #1064: (1) add explicit fixture teardown per eval run — DB mutations from one run contaminate the next and produce repetition patterns that look like hallucination; (2) audit rubric symmetry — if FAIL fires on 2+ zeros but PASS requires "no zeros," single-zero responses fall into a scoring limbo and FAIL even when overall quality is marginal. Both are directly applicable to the AAXT eval harness.
-- **Pattern-064 (Extension Without Integration)** is now Proven. The "alive scaffolding" framing — code that exists, has structure, but is not integrated or reachable — applies to any Klatch subsystem with partial implementations. The promotion process (≥3 surface validations before Emerging→Proven) is worth borrowing if Argus tracks emerging diagnostic patterns.
+- **Opus 4.7 is now default.** SDK at 0.95.1. Suite: 1,263 tests green. The +35% tokenizer concern was empirically resolved — no unexpected compaction boundary in practice.
+- **June 15 deprecation: zero exposure confirmed.** Argus's DB audit (May 11) found zero rows pinned to literal `claude-sonnet-4` or `claude-opus-4` IDs in entities, channels, or messages. Not a risk.
+- **Dreaming D1–D5 pending decisions.** D1 (should Klatch add `extensions.klatch.l3_snapshot` to export packages?) is load-bearing — the `extensions` namespace in `packages/server/src/export/package-builder.ts:184` already accommodates it. D5 (cross-read with PM's PA spike) gates on PA's PoC publication. None urgent.
+- **1.0 critical path defined.** Sequence: Daedalus Tier 1+2 patches (in flight) → Iris + xian spec composition gesture → Daedalus implements → Theseus MAXT-validates → 1.0 beta. Holistic redesign continues in parallel post-beta.
+- **Panel implementation mandate.** F6.7 is a design directive, not a finding: the comparison surface for any panel is Surface 8 (export — the strongest in the app), not any settings/admin panel. Panel disclosure taxonomy: settings panels push the message list down (inline); task/library panels (entity manager, import, export preview) are true modals with explicit backdrop.
+- **Vocabulary baseline confirmed (V1–V5).** User-facing: klatches/chats (not channels), agent/role (not entity for users), set-up-a-klatch (not configure/create-meeting), invite/convene (verb pair for add-to-existing vs. create-new), naming-is-promotion (no separate promotion verb).
+- **Apply doc-sync-sweep after large refactors.** Pattern-073's recognition trigger is transferable: any present-tense assertion about a named code surface that isn't auto-generated from that surface. Run a sweep pass after any significant deletion or refactor. F6.3, F6.5, and F7.4 from Iris session 9 all remain open (import-vs-create asymmetry, composition gesture not findable from entity manager, Claude Code browse fragmentation in import dialog).
+- **Argus sweep pre-curation step.** Before flagging an intel item as a new research find, grep `docs/mail/`, `docs/research/`, and `docs/intel/` for prior mentions. The MemPalace incident (May 11) confirmed the gap is real.
 
 ---
 
 ## For Both Teams
 
-**"Persistence-first" is now a validated velocity pattern, not just a principle.** The #1052→#900 sequence produced a 7× wall-clock speedup (2h vs. 12–14h) because data-layer pre-work eliminated the discovery-mid-implementation delay that costs the most time. The discipline: when any issue has a data-layer dependency, file the persistence pre-work as a standalone ticket with its own tests and ship it first. This applies equally to Klatch issues involving storage, session state, or cross-session recall.
+**The assembly-layer framing sharpens both projects' roadmaps.** Anthropic's SDK now handles memory primitives. The question for every memory-adjacent feature is whether it competes at the primitive layer (store, retrieve, version) or the assembly layer (what gets assembled across sessions, channels, and agents to produce context-aware behavior). Features in the assembly layer have no SDK competitor. Features in the primitive layer need a differentiation argument that wasn't required before May 6.
 
-**Issue bodies drift from reality silently.** Three this week described code that no longer existed, bypass conditions that had already been resolved, or features with zero reachable callsites. The Pattern-067 trigger-condition language is the fast diagnostic: "TODO to enable X," "lost on restart," line-number citations from triage runs more than 90 days ago. A Phase 0 check before any gameplan takes 30 minutes; the alternative — discovering the gap mid-implementation — costs a full session and leaves the issue body wrong in perpetuity.
+**Worktree-default is now PM canonical with mechanical enforcement; Klatch should adopt preemptively.** The failure mode — concurrent agents committing on shared main, cross-agent files landing in unexpected commits — occurred three times in one week at PM before enforcement shipped. Klatch's current session discipline is sequential enough to avoid this, but if Daedalus + Argus ever run concurrent sessions, the pre-commit staging-warn hook catches accidental sweeps before they land.
 
-**Audit telemetry needs rubric symmetry from day one.** PM's judge miscalibration this week (single-dimension zero → FAIL even when total score was marginal) compounded with fixture pollution to produce a 9% apparent regression that wasn't real. Both teams running eval harnesses: (1) define PASS, MARGINAL, and FAIL bands on the same scale with no scoring limbo between them; (2) treat DB-mutating test steps as requiring explicit cleanup. Retrofitting these after operators are relying on the audit shape is the harder path.
+**Autonomous duty cycles are the next coordination surface.** PM's CIO designed a 30-minute duty cycle (V0.1 → V0.3 in one session): fixed-interval cadence, existing authority model reused rather than replaced, escalation file PM can check when curious, Day-N digest. PA fanned v0.1 to DinP. The design's North Star — "PM checks in because PM wants to, not because PM has to" — applies equally to Klatch's Argus sweep cadence and any role that currently waits for user triggering. The key architectural decision is to reuse the existing authority model rather than writing new rules.
+
+**"The Family Resemblance" is the canonical external explanation of what this brief is.** PM's Comms published an essay (May 16) describing the cross-pollination mechanism as a Wittgenstein family resemblance: overlapping subsets of features rather than mandated standards. DECISIONS.md spread via the brief; worktree discipline traveled from PM; handoff memo template moved outward and Klatch extended it. No single feature is universal. What it enables: fast adoption with retained sovereignty — any agent can adopt a practice without negotiating its shape and modify it without permission. Calliope: this is the canonical external reference if Klatch needs to explain the brief mechanism to a new agent or outside reader.
 
 ---
 
 ## Status Flags
 
 **Piper Morgan:**
-- M2d complete: 8 issues, 221+ tests ✅
-- M2e complete: RepoResolver (#1042), milestones/releases (#1039), labels/branches (#1040), CLAUDE_OPUS repoint (#1027), tabs (#869 Phase 1), StandupConversation persistence (#1052 Phases 1+2), standup 3-part flow (#900), Project Config IA (#869), Architect cleanup (#1055 −1,518 LOC) ✅
-- M2f Group A+B complete: −2,229 LOC via dead-code deletion ✅; Group C pending
-- Run 7 baseline: 68.9% PASS — exceeds Apr 12 baseline; M2f audit-cascade unblocked ✅
-- Pattern 062 family: all four (062/063/064/065) Proven ✅; Pattern-067 Emerging
-- PreCompact hook (#86) live ✅
-- Architect's 5-item soundness punch list: fully closed ✅
-- #1047 M2D-UAT: open, P3, not yet executed
-- #1058 agent-prompt-template hygiene: filed, pending execution
-- #1059 Notion Phase -1 investigation: filed, pending memo
-- #1063 stale standup tests: resolved (12 skips → 0 skips) ✅
-- Ship #041, "Six Issues Before Dinner," "A Hail of Memos": all published ✅
-- ADR-061: verbal ratification recorded; formal paperwork pending
+- M2f complete (Groups A+B+C+E) ✅
+- M2g-A+B closed ✅; M2g-C+ in progress
+- #1021 UserHistoryService Layer 3: production-active ✅ (ADR-054 / PDR-002 now live)
+- #1094 ENGINE-DELETION: merged ✅ (−10,734 LOC)
+- M2f-E Floor: 7 cached GitHub-aware context surfaces ✅
+- Pattern-072 (Registries Grow into Architectural Shapes): Proven ✅
+- Pattern-073 (Documentation-Asserted-Behavior Drift): Emerging — **Proven window closes May 30**
+- #1087 SEC-JWT-SECRET-PROD-GUARD: filed (production risk — jwt dev key when env unset)
+- #1090 UI gap cohort: role inputs due **May 20 EOD**; CXO synthesis **May 22**
+- Piper Alpha MCP/plugin PoC: in progress (build-less-first)
+- PDR-005 v0.3 (BYOC): in flight (Architect + CXO)
+- Worktree-default: standing policy + enforcement hooks live ✅
+- Two-tier context hooks (90% + PreCompact): live ✅
+- *The Family Resemblance*, *Before You Go*, *Audit and Talk*, *The Inchworm Position*: all published ✅
 
 **Klatch:**
-- No session activity this week
-- UX walkthrough: Surfaces 1–2 documented (12 findings); **Surfaces 3–8 + Pass 2 pending**
-- MAXT round-trip testing: queued after walkthrough
-- **June 15 SDK deprecation: 35 days — DB audit for literal model ID pins overdue**
-- SDK: `^0.86.1` → target `^0.92.0` (was 0.90.0; 0.92.0 released May 1)
-- Calliope PO calibration response: overdue (window was 5–7 days from April 26)
+- Opus 4.7: default ✅; SDK 0.95.1 ✅
+- June 15 deprecation: **zero exposure confirmed** ✅ (no action required)
+- Iris sessions 9–11: complete ✅ — 1.0 critical path defined; vocabulary V1–V5 resolved
+- Tier 1+2 patches: in progress (Daedalus)
+- Next design gate: composition gesture (Iris + xian)
+- Dreaming D1–D5: pending (D1 load-bearing; D5 gates on PM's PA spike)
+- *Before You Go*: published ✅; OG/Twitter Card backfill across 7 canonical posts ✅
+- F6.3 / F6.5 / F7.4: open (import asymmetry; composition gesture; Claude Code import fragmentation)
+- Argus pre-curation step: documented, not yet formalized as sweep prompt
 
 **Cross-pollination:**
-- 9 repos in constellation (primary: Klatch, PM, hub; secondary: 6 repos fast-checked daily)
-- 7 delivery readers
-- All four trigger configs confirmed stable with `allow_unrestricted_git_push: true`
+- Weekly Digest trigger: nominal this run
+- 9 repos in constellation (primary: Klatch, PM, hub; secondary: 6 fast-checked daily)
+- Sweep auto-disable incident May 13–14 (GitHub auth lapse) — briefs May 14–15 backfilled May 16
