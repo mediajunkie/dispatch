@@ -1713,3 +1713,34 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - **CIO duty cycle V1 pilot** — TOMORROW (5/16). First empirical run of the captured design.
 - **dk-daily-memo needs "Run now" for tool pre-approval** — operational: the rewritten task still needs an interactive "Run now" invocation so the tool calls get pre-approved for the recurring schedule. Until that happens, the next scheduled fire may prompt and stall. Single manual run clears it.
 - **Audit other scheduled tasks for osascript-bridge usage** — same ghost-run pattern likely exists elsewhere; sweep when next touching the scheduled-tasks list.
+
+## 2026-05-17 (Sunday)
+
+**Focus**: First brief on the working path after the 5/15 ghost-run fix; catch-up reconstruction of 5/13–5/16. Saturday was a banner day across PM + DinP + OpenLaws.
+
+### What happened:
+
+- **Piper Morgan (product)**: **Pattern-073 filed (Documentation-Asserted-Behavior Drift)** on a six-instance cluster; companion **`doc-sync-sweep` skill v0.1 drafted** and applied in-session. Lead Dev closed 7 issues + #1083 hook. **CIO V1 duty cycle (v0.1→v0.3)** designed in one Saturday session — 30-min autonomous interval, escalation file, daily digest. PA assigned Skunkworks Lead for an Anthropic plugin/MCP bundle PoC. **"The Family Resemblance" essay published**.
+- **Piper Morgan (website)**: `publish-post.js` single-command pipeline + `/admin/publish-queue` Dashboard A shipped; 25 syndication-duplicate entries quarantined + write-path fix; 60 explicit-any casts replaced; sync-csv-to-json field destructure corrected (11→13 cols).
+- **OpenLaws / Vergil**: **Phase 2 trust artifacts substantively complete** (8 Evaluator Brief + 9 System Card sections). **V-broader bulk scoring 102/102 pillars at 100% provisional pass**; 8 anchor candidates flagged for xian spot-check. SME advisors unlocked via John (Dave Zvenyach FAR, Chris Hilliard fin-svcs). Friday demo recorded.
+- **designinproduct (Janus banner Saturday — 8 substantive closures)**: Auth outage recovery + 5/14–5/16 brief backfills; **plain-language-pass discipline baked into Sweep (Step 4.5)**; Klatch Intel Sweep methodology fix (Step 3.5 grep); **Letters to xian launched** (Janus seed letter); **outage-detection trigger built** (daily 14:30 UTC brief-health check); PM-push 403 root-caused; backlog refreshed end-to-end. **DinP §1 backlog now closed as a multi-week carry.**
+- **Dispatch**: Ghost-run fix verified working (this brief is proof). Daily DK memo cadence restored both sides (5/14, 5/15, 5/16, 5/17). 5/14–5/17 cross-pollination briefs filed. Aggregator catch-up: 425 → 475 rows.
+
+### Signals / decisions:
+
+- **Pattern-073 is the narrative sibling of Pattern-064 (Alive Scaffolding)** — recognition trigger is portable: a present-tense assertion about a named code surface, not auto-generated from it. `doc-sync-sweep` skill is a candidate transfer to Klatch once that repo is reachable.
+- **CIO V1 duty cycle as portable autonomy template** — reuses existing authority model; escalation-surface pattern (single visible markdown file) is a lightweight alternative to richer status reporting. Applicable to Argus + Klatch roles currently waiting on user triggering.
+- **Plain-language discipline (Sweep Step 4.5)** targets a third failure mode beyond drift/rigidity: importing a phrase as if it carried its mechanism. Operational countermeasure to jargon-as-content opacity.
+- **Bet 1 cross-cutting decisions (5/12)** — PII Shield deferred; four-path landing-page IA accepted; daily standup in #bet-sandbox dropped; API JSON shapes are suggestions not mandates; Trust Center → Vanta (no custom page).
+
+### Pending (carried into May 18):
+
+- **OpenLaws PR #9 + PR #10 — merge before tomorrow's sweep.** #10 carries the safelist fix keeping `merge-keeper-sweep.sh` from deleting `origin/main`.
+- **DK stale branches deletion** — `dk/2026-05-05-push-pattern-verify-pr`, `dk/2026-05-05-symmetric-tasks-live`. Both votes are delete. Open since 5/13.
+- **OpenLaws DERIVED + STRANDED branch review pattern** — DK awaiting direction.
+- **Bet 1 Phase 2 cover blockers** — product name + contact channels decisions; cover material can't land until resolved.
+- **Bet 1 V-broader anchor spot-check** (8 candidates: V-16–V-21, V-24, V-26).
+- **Anthropic competitive context — meeting?** xian's own surfaced question from 5/12; still open.
+- **Usage CSV refresh** — 12 days stale, past two weekly resets. Activity log has 5/13 snapshot to structure in.
+- **`merge-keeper-sweep.sh` v0.2** — bake in worktree guard (DK applied inline 5/14 as one-off).
+- **Sun Jun 7 (T+20)**: OpenLaws Bet 1 sprint window close. **Sun Jun 15 (T+28)**: Sonnet 4 / Opus 4 deprecation.
