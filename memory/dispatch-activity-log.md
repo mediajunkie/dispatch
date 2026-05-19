@@ -1744,3 +1744,50 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - **Usage CSV refresh** — 12 days stale, past two weekly resets. Activity log has 5/13 snapshot to structure in.
 - **`merge-keeper-sweep.sh` v0.2** — bake in worktree guard (DK applied inline 5/14 as one-off).
 - **Sun Jun 7 (T+20)**: OpenLaws Bet 1 sprint window close. **Sun Jun 15 (T+28)**: Sonnet 4 / Opus 4 deprecation.
+
+## 2026-05-19 (Tuesday)
+
+**Focus**: Banner Monday across PM (CIO V1 cycle cohort adoption), OpenLaws (Phase 1+2+2.5+3 reorg + wiki MVP + PR #40 opened by xian), and PM website (CLI B walking-skeleton). Janus back on cadence after 2-day gap; both Sun + Mon sweeps + deliveries clean.
+
+### What happened:
+
+- **Piper Morgan (product, ~103 commits Mon)**: **CIO V1 Duty Cycle cohort-adoption rollout** — HOST adopted in-session (first cohort extension); Docs adopted (kit v2 with `git worktree add -b` single-op + role-health-touch + canonical overlay flags); Exec adopted (first cycle Thu 5/21 post-HOST-wrap + post-Ship-#043); PA still pending. **Pattern-073 promoted Emerging → Proven** on an 11-instance / 9-surface-layer body of evidence; Lead Dev filed promotion memo, CIO ratified, methodology-29 cross-ref landed. **PDR-005 Bring-Your-Own-Chat v0.4** shipped via PPM (CEO Round-2 ratification absorbed; Phase 2.2 signal architecture explicit). Surface 2 + Surface 4 builds unblocked with sufficient-signal memos. **CXO Surface 7 MUX doc v0.1** drafted + handed to Comms. **methodology-30 Consumer-Trace Verification filed**. **Anthropic Outcomes platform-productization disposition** filed by CIO; Lead Dev spec-read + paper-comparison findings; Exec coordination-lens response distributed. #973 MEM-CACHE-AUDIT disposition: ship-now-as-prep. **PP-004 instance #2 confirmed** during HOST cycle. HOST V3 cycle docs-ask trigger-gap flagged + Option 2 concur landed end-of-day.
+- **Piper Morgan (website, ~8 commits)**: **CLI B walking-skeleton shipped** (`publish-cli.js` + engine queue module) + enrichment pass with 4 engine modules + report extension to `publish-post.js`. New **conversion-rule corpus harness** (15 entries) test-validates the publish pipeline. Gap 2 (block-level HTML pass-through) + Gap 3 (empty-frontmatter check) shipped. Blog-index syndication-dup filter + numbered-list `<ol>/<li>` conversion fix. Route groups refactored — `(public)/` for marketing, admin/ outside.
+- **OpenLaws (~40 commits Mon)**: **Repo Phase 1+2+2.5+3 reorg landed** — new top-level `roles/`, `working/`, `wiki/`, `deliverables/`, `prototypes/`, `archive/`; workdesk retired into archive. **NAVIGATION.md** at repo root (Piper Morgan pattern). **Wiki MVP shipped** at `wiki/` (Karpathy LLM-wiki pattern; SCHEMA.md authoring spec; 3 principles entries migrated). **Jerry's PR #39 merged + manually tested** by xian. **xian's cold-start POC** built + tested in-session — surfaced template-load bug + invocation-prefix + first-install Desktop-restart finding. **Phase A bundle PR #40 opened** by xian directly (cold-start interview skill + plug-in CLAUDE.md template + sample-queries; 5 files; ready-for-review). Vergil shipped 6 deliverables. PO drafted experiments execution plan (14 candidates, Tier 1/2/3, Tue 5/27 start). Week-4 plan + HTML refreshed. Jerry meeting outcomes: `compare_divisions` dropped from scope (no reliable effective dates); hosted-MCP reframed to "technical SPIKE first, decision after"; calendar: xian off Fri 5/22, Jerry off 6/5.
+- **designinproduct (5 commits)**: Janus back Mon afternoon after 2-day gap. **5/17 + 5/18 sweeps both substantive**; both deliveries **7/7 (1 via MCP fallback each — 5/16 prompt update holding)**. **BYOC alignment relay (Daedalus → PM Architect) routed** — Calliope's 13:25 PT request honored; Daedalus's 326-line reply filed to PM Architect inbox + Klatch-side ack to Calliope (both uncommitted per no-push rule, pending xian's Klatch walk). 5/17 brief health-check passed quietly (no Slack alert → quiet-on-success path worked). 5/17 brief was first under new disciplines (plain-language Step 4.5 + Letters Step 4.6).
+- **Dispatch (6 commits)**: 5/17 daily memo to DK + inbox-check confirmed clean both sides; cross-pollination 5/17 brief filed. DK side: 5/17 daily memo to DinP + ack of DinP signal, confirmed DK SKILL.md still on osascript (DK clones use working bridge). No 5/18 dispatch commits.
+- **Klatch (auto-scan only)**: Klatch repo not fetchable from `mediajunkie` org again (404). External auto-scan landed 5/18 — **Anthropic billing split June 15** surfaced (Agent SDK / `claude -p` headless / GitHub Actions / third-party SDK apps move to separate credit pool); SDK 0.96.0 shipped 5/13 (one minor above Klatch's `^0.95.1` pin; adds `BetaManagedAgentsSearchResultBlock`); Claude Code 2.1.143 (5/15) added `worktree.bgIsolation: "none"`. Argus loop closed on sweep-methodology Step 3.5 grep fix.
+
+### Signals / decisions:
+
+- **CIO V1 cohort extension confirmed transferable** — three adoption proposals (HOST → Docs → Exec+PA joint) all landed YES same day; cadence floor pinned at hourly per PM 21:40 directive. Validates the V1 design as a portable autonomy template, not just a CIO-specific shape. Worth absorbing across other projects' agent roles waiting on user triggering (Argus, Klatch).
+- **Pattern-073 Proven on 11 instances / 9 surface layers** — promotion gate cleared. Catalog grew during the M2g build itself (Slack `router` calling nonexistent `client.get_conversation_history`). Recognition trigger ("present-tense assertion about a named code surface, not auto-generated from it") is now well-evidenced.
+- **First-real-use codification pattern** (cross-pollination 5/18) — Docs ran *From Protocol to Infrastructure* through `publish-post.js`; exposed nine process gaps; each patched + codified in-session; skill went v0.10 → v0.16. Narrow-version-per-discipline (one behavior change + one rationale per increment) keeps each version independently auditable. Candidate transfer to Klatch.
+- **Anthropic billing split June 15 — strategic surface.** Cross-cuts PM PA Skunkworks PoC (plugin runs programmatically → new credit pool) and Klatch Step 10 export (Agent SDK path now hits Agent SDK credits, not subscription). Monthly caps Pro $20 / Max 5x $100 / Max 20x $200; no rollover; interactive use (Claude Code CLI, claude.ai, Cowork) stays in subscription. Reinforces the still-open Anthropic-meeting question.
+- **Ship-available-scope-first** (cross-pollination 5/18) — `search:read` OAuth scope gap mid-build → V1 ships DMs only, mentions deferred. Candidate transfer to Argus when full coverage needs an elevated permission not in agent's control.
+- **Standing principle banked** (Sun evening): *"Extend an existing mechanism until we find we're overloading that channel."* Vergil noted independently for OpenLaws. Worth absorbing across projects.
+- **Brief health-check quiet-on-success path worked** — 5/17 brief landed cleanly; no Slack alert fired. Outage-detection trigger behaves as designed.
+
+### Pending (carried into May 20):
+
+- **PR #40 review** — Jerry + Copilot review pending; xian is integration arbiter. Opened directly Mon evening after Vergil wrapped at 16:30.
+- **Week-3 retro decision** — xian's sign-off ("Maybe that's a good sign, lol. Let's discuss if we want to do that tomorrow am before our memories fade fully"); PO holding for the call.
+- **4-day-week EOW priorities** — xian off Fri 5/22; PO told explicitly not to load morning with bet-1 work that pre-empts other priorities. Needs xian to surface what those are.
+- **V-broader anchor spot-check (V-16–V-21, V-24, V-26)** — still pending partial-attention review; validation gate before 102/102 provisional pass can ratify.
+- **OpenLaws DERIVED + STRANDED branch review pattern** — `claude/busy-mirzakhani-08ca55`, `po-cleanup-pass-2026-04-29`, `vergil/install-guide-fix-2026-04-30` (DERIVED); `vergil/cross-check-10-state-2026-04-29` (8 commits Haiku ablation, STRANDED, needs Vergil input). All five still present on origin.
+- **Anthropic meeting question** — xian's surfaced 5/12 question; reinforced by billing-split T+27.
+- **Bet 1 product-name + contact-channels decisions** — Phase 2 cover material blocked; working title still "OpenLaws Legal Research Agent"; shortlist Research Workpaper / Research Trail / Verifiable Legal Research.
+- **Usage CSV refresh** — 14 days stale, past three weekly resets; 5/13 activity-log snapshot waiting to structure in. kindsys balance $6.35 under $10 watch threshold three weeks running.
+- **Two DK logs uncommitted** on shared openlaws checkout (`2026-05-05`, `2026-05-11`); flagged for next DK Code-task push.
+- **Thu May 21 (T+2)**: Exec V1 Duty Cycle first cycle (post-HOST-wrap + post-Ship-#043).
+- **Tue May 27 (T+8)**: OpenLaws experiments-execution plan Tier-1 start.
+- **Sun Jun 7 (T+19)**: OpenLaws Bet 1 sprint close.
+- **Mon Jun 15 (T+27)**: Anthropic billing split + Sonnet 4 / Opus 4 deprecation; Klatch DB audit query for pinned literal model IDs overdue.
+
+**Dropped this pass (resolved or superseded):**
+
+- *OpenLaws PR #9 + PR #10 (merge-keeper safelist fix)* — both merged (`761b9dc`, `5d4a69e`); sweep tooling unblocked end-to-end.
+- *DK stale branches `dk/2026-05-05-push-pattern-verify-pr` + `dk/2026-05-05-symmetric-tasks-live`* — not present in `git ls-remote --heads origin`; deleted.
+- *OpenLaws working-tree hygiene (`experiments/openlaws-mcp-poc-py/` rename residue)* — superseded by Mon's reorg; clean folder under new top-level structure.
+- *OpenLaws synonym-registry question to John* — no signal either way in 5/18 logs or DECISIONS.md; retiring per drop-on-unverifiable.
+- *Iris session 10 / Surfaces 3–8* — Klatch repo still unfetchable; drop per drop-on-unverifiable until next Klatch-visible cycle.
