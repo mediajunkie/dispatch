@@ -1713,3 +1713,21 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - **CIO duty cycle V1 pilot** — TOMORROW (5/16). First empirical run of the captured design.
 - **dk-daily-memo needs "Run now" for tool pre-approval** — operational: the rewritten task still needs an interactive "Run now" invocation so the tool calls get pre-approved for the recurring schedule. Until that happens, the next scheduled fire may prompt and stall. Single manual run clears it.
 - **Audit other scheduled tasks for osascript-bridge usage** — same ghost-run pattern likely exists elsewhere; sweep when next touching the scheduled-tasks list.
+
+---
+
+## 2026-05-19 (Tuesday) — ~8:17 AM PT
+
+**Focus**: Princeton reunion travel logistics; DK inbox sweep.
+
+### What happened:
+
+- **Princeton reunion travel research (May 23–26)** — researched options end-to-end:
+  - **Lodging**: Jersey City hotel range $148–189/night; staging there over Princeton/NYC for cost + transit access.
+  - **EWR car rental**: $415–814 for the window. High end driven by demand on the return leg.
+  - **NJ Transit alternative**: ~$45 round trip vs $415+ for the cheapest car. Order-of-magnitude difference; transit clearly wins if no off-corridor errands materialize.
+- **DK inbox check**: ran clean. No new memos from Dispatch-Kind needing routing or reply.
+
+### Pending (carried into next session):
+
+- **Reunion itinerary doc** — travel planning ongoing; a consolidated itinerary document may follow once lodging and transit are locked in.
