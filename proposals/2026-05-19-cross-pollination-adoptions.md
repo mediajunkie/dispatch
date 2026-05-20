@@ -74,6 +74,27 @@ Lifted from PM `scripts/safe-push.sh` (commit 04a86ef6, 2026-05-15) under the fa
 
 **DK prior:** adopt. Worth the small overhead even if the trigger fires rarely.
 
+### Status: ADOPTED — 2026-05-20
+
+Lifted from PM `.claude/hooks/pre-commit-broad-staging-warn.sh` (commit 04a86ef6, 2026-05-15) under the family-resemblance convention. Installed at:
+- `dispatch/scripts/hooks/pre-commit-broad-staging-warn.sh` + `dispatch/.git/hooks/pre-commit` symlink
+- `openlaws/scripts/hooks/pre-commit-broad-staging-warn.sh` + `openlaws/.git/hooks/pre-commit` symlink
+- `dispatch/scripts/install-hooks.sh` + `openlaws/scripts/install-hooks.sh` — setup script for new clones to install the symlinks
+- `dispatch/standards/PRE-COMMIT-HOOK.md` — usage, thresholds per repo, install procedure, lift provenance
+
+**Adaptations per repo** (PM uses `mailboxes/<role>/` directory structure that we don't have):
+- **Dispatch:** detects author prefixes in `mail/` filenames (`memo-dispatch-<role>-to-...`); threshold 2 distinct dispatch authors OR 15 total files. Uses awk for extraction (BSD sed alternation is unreliable).
+- **Openlaws:** matches known agent slugs in any staged path; threshold 3 distinct slugs OR 20 total files OR 2 distinct session-log authors in `logs/`.
+
+**Tested 2026-05-20:**
+- No-warn case (single author, few files) — exit 0
+- Warn case dispatch (2 authors in mail/) — exit 2, formatted warning ✓
+- Warn case openlaws (3 distinct slugs) — exit 2, formatted warning ✓
+- Warn case openlaws (2 session-log authors) — exit 2, formatted warning ✓
+- Empty index — exit 0
+
+Warn-mode (exit 2), not block. Bypass on a specific commit with `git commit --no-verify` after verifying. Bug found and fixed during testing: BSD sed `-E` doesn't handle `(memo|signal)` alternation reliably; rewrote that path with awk.
+
 ---
 
 ## 3. Pattern-073 awareness + `doc-sync-sweep` skill
