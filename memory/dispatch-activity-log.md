@@ -1825,6 +1825,12 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 
 ### Verification:
 
+`git fetch origin && git log origin/main --oneline -3` at session close:
+
 ```
-[git log origin/main --oneline -3 — captured at session close, appended below by Dispatch-DinP]
+48e3b11 practice: adopt DECISIONS.md discipline, session-wrap verification, one-off plan convention
+e274abd [dispatch-kind] inbox-check 2026-05-20: cascade-resolve PR#9+#10 + stale branches; consolidate Vergil branch items
+2296596 inbox-check: clean 2026-05-20 — no >24h backlog, queue discrepancy flagged
 ```
+
+Practice-upgrade commit (`48e3b11`) confirmed at top of `origin/main`. This is the first session to close under the new session-wrap verification practice; the practice was used to verify its own landing.
