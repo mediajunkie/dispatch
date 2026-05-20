@@ -23,3 +23,5 @@ For major architectural decisions, write a full ADR. This log is the lightweight
 2026-05-20 | DECISIONS.md discipline adopted: every session making config/scheduling/process changes appends a one-line entry; daily brief checks for adherence as part of anti-zombie sweep | Dispatch-DinP + xian
 2026-05-20 | Session-wrap verification adopted: each Dispatch session pastes `git log origin/main --oneline -3` into the activity log entry before closing, to catch pushed-to-wrong-branch failures | Dispatch-DinP + xian
 2026-05-20 | One-off plan convention adopted: long-running plans use stable names at known locations; one-off plans are dated or named for the specific work; on completion outcomes roll into the relevant long-running doc | Dispatch-DinP + xian
+2026-05-20 | dispatch-daily-brief converted from one-shot to recurring cron (0 6 * * *) | Dispatch-DinP + xian
+2026-05-20 | cio-duty-cycle-pilot archived and disabled — CIO managing own duty cycle | Dispatch-DinP + xian

@@ -41,7 +41,7 @@ We will not move past Step 1 until these are answered.
 
 Each step has a decision gate. Do not proceed to the next step until the current step's verification passes.
 
-### Step 1 — Diagnostic: inspect Cowork scheduled-task state
+### Step 1 — Diagnostic: inspect Cowork scheduled-task state — DONE
 
 - xian opens the Cowork UI Scheduled section and reports the status of `dispatch-daily-brief` and `dispatch-brief-reminder` (enabled / disabled / errored / last-run timestamp).
 - Check `coworkd.log` for fire attempts on May 18 and May 20. Grep for the task names and for the dates.
@@ -51,7 +51,7 @@ Each step has a decision gate. Do not proceed to the next step until the current
 
 ---
 
-### Step 2 — Fix `dispatch-daily-brief` scheduling
+### Step 2 — Fix `dispatch-daily-brief` scheduling — DONE
 
 - Convert from one-shot `fireAt` back to a recurring cron. Proposed: `0 6 * * *` (6:00 AM PT daily).
 - Read the current `SKILL.md` content. Confirm it does not contain an exposed PAT — the DK memo redacted it, but the original file needs to be checked directly.
