@@ -46,6 +46,21 @@ Dispatch **cannot push to origin** — git push requires host SSH/auth credentia
 2. A Claude Code agent (Docs, Lead Dev, Archie) does the push
 3. xian commits and pushes files Dispatch has written locally
 
+## Session Wrap Verification
+
+Before any Dispatch session ends, paste the output of `git log origin/main --oneline -3` into that day's activity log entry under a **Verification** heading.
+
+**Why:** Sessions have repeatedly reported "done" while the commit sat on a feature branch nobody was going to merge. The verification is a single read against the remote — if main has the new commit, you'll see it at the top of the log. If not, fix it before closing out.
+
+**How to apply:**
+1. Run `git fetch origin && git log origin/main --oneline -3` at the very end of the session.
+2. Copy the three-line output verbatim into the activity log entry, under a `### Verification` heading.
+3. If the expected commits aren't visible on `origin/main`, do not close the session — push or land them first, then re-verify.
+
+This is the required closing step for Dispatch sessions. It applies whether the session pushed work itself or relied on xian/another agent to push.
+
+See also: DECISIONS.md discipline (every config/scheduling/process change gets a one-line entry in `DECISIONS.md` at repo root) and the one-off plan convention in `plans/` (dated names for scoped work; stable names for long-running references). Both adopted 2026-05-20 alongside this section.
+
 ## Daily Bookending (Target Routine — In Development)
 
 ### Morning

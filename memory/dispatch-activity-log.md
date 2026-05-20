@@ -1793,3 +1793,38 @@ Massive migration and billing day. Phase 1 complete (Dharma Bots, PAPM mined, mu
 - *OpenLaws working-tree hygiene (`experiments/openlaws-mcp-poc-py/` rename residue)* — superseded by Mon's reorg; clean folder under new top-level structure.
 - *OpenLaws synonym-registry question to John* — no signal either way in 5/18 logs or DECISIONS.md; retiring per drop-on-unverifiable.
 - *Iris session 10 / Surfaces 3–8* — Klatch repo still unfetchable; drop per drop-on-unverifiable until next Klatch-visible cycle.
+
+---
+
+## 2026-05-20 (Wednesday)
+
+**Focus:** Bootstrapping operational rigor before tackling brief-reliability work. Plan 1 (practice upgrade) drafted, reviewed, approved, executed; Plan 2 (brief reliability) drafted and queued for next session.
+
+### What happened:
+
+- **Two plans drafted in `plans/`:**
+  - `plans/dispatch-practice-upgrade-2026-05-20.md` — three lightweight practices adopted from Klatch / Piper Morgan, scaled to Dispatch's operational surface (DECISIONS.md discipline, session-wrap verification, one-off plan convention).
+  - `plans/brief-reliability-fix-2026-05-20.md` — 8-step plan to diagnose and restore daily brief generation after the May 17 osascript-to-bash migration left it unreliable (May 18 + May 20 both missed). Includes a backfill step for the May 13/14/15/16/18/20 gap and a gap-detection step to escape silent-failure mode going forward.
+- **Plan 1 executed:**
+  - Three DECISIONS.md entries appended (one per practice).
+  - `PROTOCOLS.md` updated with a new **Session Wrap Verification** section codifying the `git log origin/main --oneline -3` paste as the required closing step. Cross-references DECISIONS.md discipline and one-off plan convention.
+  - This activity log entry itself is the first instance of the new practices in action.
+- **Plan 2 status:** DRAFT, depends on Plan 1 being live before execution. Next session can pick it up at Step 1 (Cowork scheduler diagnostic).
+
+### Signals / decisions:
+
+- Three operational practices adopted (see DECISIONS.md entries dated 2026-05-20). All three are cheap: one line each, no hooks, no automation needed. The cost of not having them has already been paid in repeated silent failures.
+- Plan 2 deliberately frontloads diagnosis over remediation — Step 1 is a hard decision gate requiring a documented hypothesis for *why* May 18 + May 20 missed before any scheduling changes get made. Fixing the wrong thing is worse than fixing nothing.
+- Backfilled briefs in Step 3 of Plan 2 must carry an explicit `[BACKFILLED 2026-05-20 — reconstructed from available records]` marker. Reconstructed-from-records is not the same artifact as live overnight observation and must not be mistaken for one by future readers.
+- Gap detector (Plan 2 Step 6) has a non-negotiable requirement: alerts go to xian via SendUserMessage, not a silent log. We are not solving silent-brief-failure by introducing silent-detector-failure.
+
+### Pending (carried into May 21):
+
+- **Plan 2 execution** — start at Step 1 (Cowork scheduled-task UI inspection + `coworkd.log` review for May 18 + 20 fire attempts). Hard gate before any scheduling changes.
+- All prior pending items from May 19 carry forward — see that day's entry.
+
+### Verification:
+
+```
+[git log origin/main --oneline -3 — captured at session close, appended below by Dispatch-DinP]
+```
