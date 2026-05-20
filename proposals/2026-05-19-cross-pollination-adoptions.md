@@ -40,6 +40,20 @@ Six innovations from the PM and Klatch sibling projects, surfaced in the 5/16–
 
 **DK prior:** adopt. This is the most directly-painful gap on our current setup.
 
+### Status: ADOPTED — 2026-05-20
+
+Lifted from PM `scripts/safe-push.sh` (commit 04a86ef6, 2026-05-15) under the family-resemblance convention. Installed at:
+- `dispatch/scripts/safe-push.sh`
+- `openlaws/scripts/safe-push.sh`
+
+**Adaptation:** dropped `-u` from `git stash push` to respect this repo's shared-checkout discipline (PM's original sweeps untracked files; we don't, per CLAUDE.md). All other semantics preserved.
+
+**Documentation:** `dispatch/standards/SAFE-PUSH.md` covers usage, exit codes, failure modes, and the rationale for the `-u` removal.
+
+**SKILL.md integration:** DK scheduled-task SKILL.md files (`dinp-daily-memo`, `dinp-inbox-check`) will be updated next to call `./scripts/safe-push.sh origin main` instead of raw `git push`. This will be tested on the next scheduled-task fire.
+
+**Tested:** bash syntax check passed on both copies. First real-world push (landing this script + standards + status update) used the script itself as a self-test.
+
 ---
 
 ## 2. `pre-commit-broad-staging-warn.sh` hook
