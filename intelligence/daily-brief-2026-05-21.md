@@ -82,4 +82,4 @@ From the 5/21 cross-pollination brief (fresh, published this morning):
 
 ## Brief reliability note
 
-This is the first brief landing under the recurring-cron schedule (`0 6 * * *`) after the May 18 + 20 silent misfires. Plan 2 (brief-reliability fix, 8 steps, currently DRAFT) still pending execution; today's clean fire counts as Step 1's hypothesis test — though one fire isn't a fix. Backfill of the 5/18 + 5/20 gap is still owed.
+First brief landing under the recurring-cron schedule (`0 6 * * *`) after the May 18 + 20 silent misfires. **Plan 2 Steps 3–6 already DONE** (commits `e5cdce9` backfill + `0bf962f` migrations + gap detection): the May 13/14/15/16/18/20 gap is backfilled with explicit `[BACKFILLED 2026-05-20]` markers; `dispatch-brief-reminder` and `sandbox-snapshot` both migrated off osascript to the git-clone-in-sandbox pattern; gap-detection added. Steps 7–8 (3-day monitor + close-out) remain pending — today's clean fire counts as monitor day 1.
