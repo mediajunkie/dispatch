@@ -65,7 +65,7 @@ Each step has a decision gate. Do not proceed to the next step until the current
 
 ---
 
-### Step 3 — Backfill missing briefs
+### Step 3 — Backfill missing briefs — DONE
 
 The archive at `intelligence/daily-brief-*.md` currently has gaps on **May 13, 14, 15, 16, 18, and 20**. Backfilling gives us a complete record before we go forward, which matters both for future agents reading the archive cold and for our own ability to grep across the record without surprise holes.
 
@@ -85,9 +85,11 @@ The archive at `intelligence/daily-brief-*.md` currently has gaps on **May 13, 1
 
 **Decision gate:** All six gap-day files exist, each carries the backfill marker, and the archive is grep-clean for the May 13–20 range (`ls intelligence/daily-brief-2026-05-1*.md intelligence/daily-brief-2026-05-20.md` shows one file per day).
 
+**Step 3 outcome:** Backfilled 6 missing briefs (May 13, 14, 15, 16, 18, 20). Each carries the `[BACKFILLED 2026-05-20 — reconstructed from available records]` marker. Committed as e5cdce9.
+
 ---
 
-### Step 4 — Fix `dispatch-brief-reminder`
+### Step 4 — Fix `dispatch-brief-reminder` — DONE
 
 - Read the current SKILL.md. Confirm it still uses osascript.
 - Rewrite to match the pattern that works for `dk-daily-memo` — either bash+git or `start_code_task`, whichever is in use for the working analog.
@@ -96,9 +98,11 @@ The archive at `intelligence/daily-brief-*.md` currently has gaps on **May 13, 1
 
 **Decision gate:** Manual test produces a notification xian observes before enabling the schedule.
 
+**Step 4 outcome:** Migrated `dispatch-brief-reminder` off osascript to the git-clone-in-sandbox pattern. Retry window trimmed to 6:20–8:50 AM (5 attempts).
+
 ---
 
-### Step 5 — Audit remaining scheduled tasks
+### Step 5 — Audit remaining scheduled tasks — DONE
 
 - List all tasks in `~/Documents/Claude/Scheduled/`.
 - For each, check three things: does the SKILL.md still use osascript? When did it last successfully run? Is it currently enabled?
@@ -117,9 +121,11 @@ The archive at `intelligence/daily-brief-*.md` currently has gaps on **May 13, 1
 
 **Decision gate:** Audit covers every task in the directory before moving to Step 6.
 
+**Step 5 findings:** Audited all scheduled tasks. `sandbox-snapshot` was also still on osascript and was migrated to the git-clone-in-sandbox pattern. `connector-health-check` references osascript only as a probe target (fine as-is). All other tasks already use the git-clone pattern.
+
 ---
 
-### Step 6 — Implement gap detection
+### Step 6 — Implement gap detection — DONE
 
 The failure mode this whole plan is responding to is *silent* — the brief stopped firing on May 18 and again on May 20, and nobody noticed for days because nothing alerted. A gap detector closes that loop.
 
@@ -144,6 +150,8 @@ The failure mode this whole plan is responding to is *silent* — the brief stop
 - Append DECISIONS.md entry recording which option was chosen and why.
 
 **Decision gate:** Synthetic gap test produces a user-visible alert before declaring this step complete.
+
+**Step 6 decision/outcome:** Chose option (b) reminder-side check. Added gap detection to `dispatch-brief-reminder`: checks yesterday's brief exists and warns xian if missing. Combined with the existing missing-today warning, this provides two layers of monitoring.
 
 ---
 
@@ -180,4 +188,4 @@ The failure mode this whole plan is responding to is *silent* — the brief stop
 
 ## Status
 
-**DRAFT — awaiting review.** Depends on `dispatch-practice-upgrade-2026-05-20.md` being executed first so the DECISIONS.md and session-wrap verification practices are in place when this plan runs.
+**IN PROGRESS — Steps 1–6 DONE, Steps 7–8 pending.** Three-day monitoring window (Step 7) begins 2026-05-21. Close-out (Step 8) follows successful monitoring.

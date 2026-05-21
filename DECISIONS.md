@@ -26,3 +26,6 @@ For major architectural decisions, write a full ADR. This log is the lightweight
 2026-05-20 | dispatch-daily-brief converted from one-shot to recurring cron (0 6 * * *) | Dispatch-DinP + xian
 2026-05-20 | cio-duty-cycle-pilot archived and disabled — CIO managing own duty cycle | Dispatch-DinP + xian
 2026-05-20 | Daily brief archive backfilled for May 13, 14, 15, 16, 18, 20 (Plan 2 Step 3); each file carries [BACKFILLED 2026-05-20 — reconstructed from available records] marker | Dispatch-DinP + xian
+2026-05-20 | brief-reminder migrated off osascript to git-clone-in-sandbox; retry window trimmed to 5 attempts | Dispatch-DinP + xian
+2026-05-20 | sandbox-snapshot migrated off osascript to git-clone-in-sandbox | Dispatch-DinP + xian
+2026-05-20 | gap detection added to brief-reminder: checks yesterday's brief, warns on missing | Dispatch-DinP + xian
