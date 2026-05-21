@@ -25,3 +25,4 @@ For major architectural decisions, write a full ADR. This log is the lightweight
 2026-05-20 | One-off plan convention adopted: long-running plans use stable names at known locations; one-off plans are dated or named for the specific work; on completion outcomes roll into the relevant long-running doc | Dispatch-DinP + xian
 2026-05-20 | dispatch-daily-brief converted from one-shot to recurring cron (0 6 * * *) | Dispatch-DinP + xian
 2026-05-20 | cio-duty-cycle-pilot archived and disabled — CIO managing own duty cycle | Dispatch-DinP + xian
+2026-05-20 | Daily brief archive backfilled for May 13, 14, 15, 16, 18, 20 (Plan 2 Step 3); each file carries [BACKFILLED 2026-05-20 — reconstructed from available records] marker | Dispatch-DinP + xian
