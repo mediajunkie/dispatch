@@ -1834,3 +1834,57 @@ e274abd [dispatch-kind] inbox-check 2026-05-20: cascade-resolve PR#9+#10 + stale
 ```
 
 Practice-upgrade commit (`48e3b11`) confirmed at top of `origin/main`. This is the first session to close under the new session-wrap verification practice; the practice was used to verify its own landing.
+
+---
+
+## 2026-05-21 (Thursday)
+
+**Focus:** Auto-summary from daily brief — first brief landing cleanly under the recurring-cron schedule (`0 6 * * *`) after the May 18 + 20 silent misfires. Plan 2 Steps 3–6 already in (backfill + osascript migrations + gap detection). Day 50 PA mass triage on PM side; OpenLaws Surveyor SKILL handoff reframed; CIO V1 duty-cycle v0.1 committed.
+
+### What happened:
+
+- **Piper Morgan (product, ~10 commits Wed)**: **Day 50 PA mass triage** — 58 mailbox items moved to read after PA caught backlog at 23:11; inbox empty in MANIFEST. Five U-items executed; B-item (V1-DC PA adoption) blocked on PM. **May 19 omnibus closed** HIGH-COMPLEXITY:COORDINATION (9 agents; Ship #043 v0.1→v0.2 drift + skill-filing + Docs strand-recovery + discipline amendments + PDR-005 v0.5 + Surface 2 MUX v0.1). Stranded-worktree triage in flight (9 sibling worktrees; HOST KEEP-pending-retool, Docs MERGED-today).
+- **OpenLaws (~5 commits Wed)**: **Surveyor SKILL Jerry handoff reframed** — dropped internal Phase A/B language, anchored to PR #40 (commit `264c809`). Dashboard GTM voice-pass × 3 deferred per xian 5/20 (loose end closed). DK pre-commit hook structural false-positive fixed (signal-file slug-counting). Vergil: PR #43 review + signal + hook collision resolved.
+- **designinproduct (5 commits Wed)**: 5/20 sweep substantive + 5/20 delivery 7/7 (1 MCP fallback) holding. 5/21 sweep substantive + 5/21 cross-pollination brief published — *Klatch paused, duty-cycle v0.1, Ship #043 fabrication failure mode*.
+- **Klatch**: **PAUSED 2026-05-20 by PM direction.** Last substantive session May 18 (Calliope wrap + Argus Round 33b). Daedalus relay removed from PM Architect's forward queue. Clean handoff point.
+- **Dispatch (~12 commits)**: 5/20 DK daily memos both directions; **brief-reliability plan filed** + Plan 1 (practice upgrade) executed end-to-end (DECISIONS.md discipline + session-wrap verification + one-off plan convention adopted, archived `cio-duty-cycle-pilot`, converted dispatch-daily-brief to recurring cron). **PROTOCOLS.md updated** with Session Wrap Verification section. DK adopted DinP-side practices in parallel.
+- **Piper Morgan (website, 2 commits Wed)**: Gap 4 (linked-image markdown) shipped (`70a708abc`); plan-HTML partial reflect; retro-close 5/19 log + open 5/20.
+
+### Signals / decisions:
+
+- **CIO V1 duty-cycle v0.1 committed** (three loops, one north-star sentence: *"wake if idle, check new messages/tasks, do unblocked things until blocked, batch update for my attention, then sleep."*). Decision table covers normal cycle / PM-interrupt / blocked-everywhere / idle-wait. Worth banking as prior art for any other project considering autonomous background cycles.
+- **HOST durability memo (`40daac934`)**: `CronCreate durable=true` is session-only, terminates at session boundary not calendar day. Closes the May 18 "possibility #1 of three" caveat. Each session re-instantiates.
+- **Ship #043 fabrication failure mode** — *The Skill That Doesn't Fire* essay External section fabricated publication titles/dates instead of cross-checking editorial calendar (recursive irony: essay about documenting discipline without enforcement infrastructure leaves the gap open). Downstream fix: Ship #044 onward, every workstream memo carries a mandatory `§Publications shipped/held` block cross-referencing editorial calendar by row ID. Pattern worth mirroring anywhere agents make dated claims about publications without a mandatory verification step.
+- **Pattern-073 Proven** holds on cross-report. Klatch-paused state is the well-defined hold, not a stop-work — handoff is clean for resumption.
+- **Brief landed under recurring-cron** (`0 6 * * *`) — first clean fire after May 18 + 20 silent misfires. Plan 2 Steps 7–8 (3-day monitor + close-out) remain; today counts as monitor day 1.
+
+### Pending (carried into May 22):
+
+- **PR #40 (Phase A bundle)** — Jerry + Copilot review pending; xian is integration arbiter. Carried from 5/19.
+- **OpenLaws Bet 1 priorities pre-Friday-off (5/22)** — PO looking for what xian wants loaded; "don't pre-empt other priorities" still in effect. Phase B surveyor handoff memo by Vergil **pending xian relay to Jerry** per DK 5/20 daily.
+- **Anthropic competitive context — meeting?** xian's 5/12 surfaced question; reinforced by June 15 billing split (Agent SDK / `claude -p` / GitHub Actions / third-party SDK apps move to separate credit pool). T+25.
+- **Bet 1 product-name + contact-channels decisions** — Phase 2 cover material still gated. Shortlist: Research Workpaper / Research Trail / Verifiable Legal Research.
+- **V-broader anchor spot-check (V-16–V-21, V-24, V-26)** — validation gate before 102/102 provisional pass can ratify.
+- **OpenLaws Vergil-branch triage** — `vergil/install-guide-fix-2026-04-30` + `vergil/cross-check-10-state-2026-04-29` (8 commits Haiku ablation; **do NOT delete without Vergil**). Three other DERIVED branches verified absent from origin 5/20.
+- **`merge-keeper-sweep.sh` v0.2 `SWEEP_SKIP_WORKTREE` env-guard** — blocks next scheduled sweep Monday 2026-05-25. Open since 5/14.
+- **CIO V1-DC PA adoption disposition** — PA flagged blocked-on-PM; is the May 18 CIO proposal still live spec, or has CIO refined elsewhere PA isn't seeing? Two days silent.
+- **Usage CSV refresh** — 16 days stale (last entry 2026-05-05), past three weekly resets. kindsys balance $6.35 still under $10 watch threshold three weeks running; auto-reload should fire on next burn, eyes-on.
+- **Plan 2 Steps 7–8** — 3-day brief-reliability monitor (today is day 1) + close-out.
+- **Thu 5/21 (today)**: Exec V1 Duty Cycle first cycle.
+- **Fri 5/22 (T+1)**: xian off (4-day week); Thursday-night Loom in place of Friday demo.
+- **Tue 5/27 (T+6)**: OpenLaws experiments-execution plan Tier-1 start.
+- **Sun Jun 7 (T+17)**: OpenLaws Bet 1 sprint window close.
+- **Mon Jun 15 (T+25)**: Anthropic billing split + Sonnet 4 / Opus 4 deprecation.
+
+**Dropped this pass (resolved or superseded):**
+
+- *5/19 retro decision* — not surfaced in 5/20 logs; treated as held by xian, drop until re-raised.
+- *Surveyor SKILL Jerry handoff internal Phase A/B language* — reframed and committed (`264c809`); no further action.
+- *Dashboard GTM voice-pass × 3* — deferred per xian 2026-05-20 (`eda3b70`).
+- *Two DK logs uncommitted on shared openlaws checkout (5/05, 5/11)* — not surfaced in 5/20 DK memo; drop per drop-on-unverifiable.
+- *Iris session 10 / Surfaces 3–8 / Klatch-side carries* — Klatch paused; carries drop until pause lifts.
+- *Three OpenLaws DERIVED branches* (`claude/busy-mirzakhani-08ca55`, `po-cleanup-pass-2026-04-29`, `claude/elegant-borg-0e5d15`) — verified absent from openlaws origin 5/20; already gone.
+
+### Source:
+
+Auto-generated by `dispatch-activity-log` scheduled task from `intelligence/daily-brief-2026-05-21.md`.
